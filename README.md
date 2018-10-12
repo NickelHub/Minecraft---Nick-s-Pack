@@ -1,1 +1,1 @@
-# Minecraft---Variety-Revelations
+# Minecraft - Variety Revelations
