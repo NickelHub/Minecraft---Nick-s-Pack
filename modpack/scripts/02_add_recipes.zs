@@ -166,7 +166,7 @@ recipes.addShaped(<bibliocraft:bibliochase>, [[null, <ore:slabWood>, null],[<ore
 recipes.addShaped(<bibliocraft:biblioglasses:2>, [[null, <ore:nuggetGold>, null],[<ore:nuggetGold>, <ore:paneGlass>, <ore:nuggetGold>], [null, <ore:nuggetGold>, null]]);
 recipes.addShaped(<bibliocraft:tape>, [[<ore:string>, <ore:string>, <ore:string>],[<ore:string>, <ore:dyeYellow>, <ore:string>], [<ore:string>, <ore:string>, <ore:string>]]);
 recipes.addShapedMirrored(<bibliocraft:framingsaw>, [[<ore:ingotIron>, <ore:ingotIron>, null],[null, <ore:ingotIron>, <ore:plankWood>], [null, null, <ore:plankWood>]]);
-recipes.addShapeless(<bibliocraft:framingsheet>, [<ore:plankWood>,<bibliocraft:framingsaw>.reuse()]);
+recipes.addShapeless(<bibliocraft:framingsheet> * 2, [<ore:plankWood>,<bibliocraft:framingsaw>.reuse()]);
 recipes.addShaped(<bibliocraft:stockroomcatalog>, [[<ore:paper>, <ore:dyeGreen>, <ore:paper>],[<ore:paper>, <minecraft:writable_book>, <ore:paper>], [<ore:paper>, <ore:paper>, <ore:paper>]]);
 recipes.addShaped(<bibliocraft:cookiejar>, [[null, <ore:ingotIron>, null],[<ore:paneGlass>, <minecraft:cookie>, <ore:paneGlassColorless>], [<ore:paneGlassColorless>, <ore:dustRedstone>, <ore:paneGlassColorless>]]);
 recipes.addShaped(<bibliocraft:printingpress>, [[<ore:ingotIron>, <ore:itemBlazeRod>, <ore:ingotIron>],[<ore:slabWood>, <minecraft:heavy_weighted_pressure_plate>, <ore:slabWood>], [<ore:blockIron>, <ore:blockIron>, <ore:blockIron>]]);
@@ -238,14 +238,39 @@ recipes.addShapeless(<exoticbirds:bird_book>, [<minecraft:book>,<ore:feather>]);
 recipes.addShapeless(<extrabitmanipulation:bodypart_template>, [<ore:cobblestone>]);
 //Adding back Extra Utilities 2's stuff
 recipes.addShapedMirrored(<extrautils2:wateringcan:1000>, [[<ore:stone>, null, null],[<ore:stone>, <minecraft:bowl>, <ore:stone>], [null, <ore:stone>, null]]);
-recipes.addShaped(<extrautils2:grocket:3>, [[null, <randomthings:stableenderpearl>, null],[<extrautils2:grocket>, <ore:gemEmerald>, <extrautils2:grocket>], [null, <randomthings:stableenderpearl>, null]]);
-recipes.addShaped(<extrautils2:grocket:4>, [[null, <randomthings:stableenderpearl>, null],[<extrautils2:grocket:2>, <ore:gemDiamond>, <extrautils2:grocket:2>], [null, <randomthings:stableenderpearl>, null]]);
+recipes.addShaped(<extrautils2:grocket:3> * 2, [[null, <randomthings:stableenderpearl>, null],[<extrautils2:grocket>, <ore:gemEmerald>, <extrautils2:grocket>], [null, <randomthings:stableenderpearl>, null]]);
+recipes.addShaped(<extrautils2:grocket:4> * 2, [[null, <randomthings:stableenderpearl>, null],[<extrautils2:grocket:2>, <ore:gemDiamond>, <extrautils2:grocket:2>], [null, <randomthings:stableenderpearl>, null]]);
 recipes.addShaped(<extrautils2:machine>.withTag({Type: "extrautils2:generator_ender"}), [[<randomthings:stableenderpearl>, <randomthings:stableenderpearl>, <randomthings:stableenderpearl>],[<randomthings:stableenderpearl>, <ore:obsidian>, <randomthings:stableenderpearl>], [<ore:dustRedstone>, <extrautils2:machine>.withTag({Type: "extrautils2:furnace"}).onlyWithTag({Type: "extrautils2:furnace"}), <ore:dustRedstone>]]);
 recipes.addShapeless(<extrautils2:klein>, [<minecraft:glass_bottle>,<ore:dustEnderPearl>,<ore:dustEnderPearl>]);
 recipes.addShaped(<extrautils2:interactionproxy>, [[<ore:string>, <randomthings:stableenderpearl>, <ore:string>],[<randomthings:stableenderpearl>, <extrautils2:powermanager>, <randomthings:stableenderpearl>], [<ore:string>, <randomthings:stableenderpearl>, <ore:string>]]);
 recipes.addShaped(<extrautils2:terraformer>, [[<randomthings:stableenderpearl>, <extrautils2:terraformer:9>, <randomthings:stableenderpearl>], [<ore:alloyBasic>, <minecraft:comparator>, <ore:alloyBasic>]]);
 //Adding Extreme Reactor's stuff
 mods.mekanism.crusher.addRecipe(<bigreactors:ingotmetals:4>, <bigreactors:dustmetals:4>);
+//Adding Gravestone Mod's and Gravestone Mod Extended's stuff
+recipes.addShaped(<gravestone-extended:gsexecution:3>, [[null, <ore:plankWood>, null],[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<minecraft:hay_block>, <ore:plankWood>, <minecraft:hay_block>]]);
+recipes.addShaped(<gravestone-extended:gsexecution:2>, [[<ore:plankWood>, <ore:slabWood>, <ore:plankWood>], [<ore:plankWood>, null, <ore:plankWood>]]);
+recipes.addShaped(<gravestone-extended:gsexecution:1>, [[<ore:plankWood>, <ore:plankWood>],[<ore:plankWood>, <minecraft:lead>], [<ore:plankWood>, <ore:blockIron>]]);
+recipes.addShaped(<gravestone-extended:gsexecution>, [[<ore:plankWood>, <ore:plankWood>],[<ore:plankWood>, <minecraft:lead>], [<ore:plankWood>, null]]);
+recipes.addShaped(<gravestone-extended:gstrap>, [[null, <minecraft:stone_pressure_plate>, null],[<ore:dustRedstone>, <ore:bricksNether>, <ore:dustRedstone>], [null, <ore:soulSand>, null]]);
+recipes.addShaped(<gravestone-extended:gs_withered_glass>, [[<ore:blockGlass>, <ore:blockGlass>, <minecraft:glass>],[<ore:soulSand>, <ore:obsidian>, <ore:soulSand>], [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]]);
+recipes.addShaped(<gravestone-extended:gstrap:1>, [[null, <minecraft:stone_pressure_plate>, null],[<ore:dustRedstone>, <ore:bricksStone>, <ore:dustRedstone>], [null, <ore:soulSand>, null]]);
+recipes.addShaped(<gravestone-extended:gs_undertaker_backpack>, [[<ore:string>, <ore:blockWool>, <ore:string>],[<minecraft:tripwire_hook>, <ore:chestWood>, <minecraft:tripwire_hook>], [<ore:string>, <ore:blockWool>, <ore:string>]]);
+recipes.addShaped(<gravestone-extended:gscandle>, [[<ore:string>],[<ore:dyeWhite>], [<ore:itemWax>]]);
+//Adding Magic Bee's stuff
+recipes.addShapedMirrored(<magicbees:resource:13>, [[null, <ore:blockGold>, null],[<ore:blockQuartz>, <ore:pearlEnderEye>, <ore:blockQuartz>], [null, <ore:endstone>, null]]);
+recipes.addShapedMirrored(<magicbees:resource:12>, [[<magicbees:wax:1>, <ore:egg>, <magicbees:wax:1>],[<ore:glowstone>, <minecraft:magma_cream>, <ore:glowstone>], [<magicbees:wax:1>, <ore:egg>, <magicbees:wax:1>]]);
+recipes.addShapedMirrored(<magicbees:resource:10>, [[<ore:blockGlass>, <magicbees:wax>, <ore:blockGlass>],[<magicbees:wax>, <ore:blockIron>, <magicbees:wax>], [<ore:blockGlass>, <magicbees:wax>, <ore:blockGlass>]]);
+recipes.addShapedMirrored(<magicbees:resource:9>, [[<ore:blockGlass>, <magicbees:wax:1>, <ore:blockGlass>],[<magicbees:wax:1>, <minecraft:clock>, <magicbees:wax:1>], [<ore:blockGlass>, <magicbees:wax:1>, <ore:blockGlass>]]);
+recipes.addShapedMirrored(<magicbees:resource:8>, [[<ore:blockGlass>, <magicbees:wax:1>, <ore:blockGlass>],[<magicbees:wax:1>, <minecraft:rotten_flesh>, <magicbees:wax:1>], [<ore:blockGlass>, <magicbees:wax:1>, <ore:blockGlass>]]);
+recipes.addShapedMirrored(<magicbees:resource:7>, [[<ore:blockGlass>, <magicbees:wax:1>, <ore:blockGlass>],[<magicbees:wax:1>, <ore:plant>, <magicbees:wax:1>], [<ore:blockGlass>, <magicbees:wax:1>, <ore:blockGlass>]]);
+recipes.addShaped(<magicbees:effectjar>, [[<ore:blockGlass>, <ore:slabWood>, <ore:blockGlass>],[<ore:gemQuartz>, <magicbees:pollen>, <ore:gemQuartz>], [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]]);
+recipes.addShaped(<magicbees:manasteelscoop>, [[<ore:livingwoodTwig>, <ore:blockWool>, <ore:livingwoodTwig>],[<ore:livingwoodTwig>, <ore:ingotManasteel>, <ore:livingwoodTwig>], [null, <ore:livingwoodTwig>, null]]);
+recipes.addShapedMirrored(<magicbees:manasteelgrafter>, [[null, null, <ore:ingotManasteel>],[null, <ore:livingwoodTwig>, null], [<ore:livingwoodTwig>, null, null]]);
+//Adding Malisi's Mods' stuff
+recipes.addShaped(<malisisdoors:saloon> * 3, [[<ore:plankWood>, <ore:plankWood>],[<ore:stickWood>, <ore:stickWood>], [<ore:plankWood>, <ore:plankWood>]]);
+recipes.addShaped(<malisisdoors:shoji_door> * 3, [[<ore:plankWood>, <ore:paper>],[<ore:plankWood>, <ore:paper>], [<ore:plankWood>, <ore:paper>]]);
+recipes.addShaped(<malisisdoors:garage_door>, [[<ore:plankWood>, <ore:blockGlass>, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+
 
 print("Initialized 02_add_recipes");
 

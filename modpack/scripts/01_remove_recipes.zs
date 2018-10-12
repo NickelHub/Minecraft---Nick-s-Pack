@@ -11,7 +11,40 @@ import crafttweaker.item.IItemTransformer;
 
 print("Initializing 01_remove_recipes.zs");
 
+#Removing Malisi's Mod's stuff
+recipes.removeByRecipeName("malisisdoors:shoji_door");
+recipes.removeByRecipeName("malisisdoors:saloon");
+recipes.removeByRecipeName("malisisdoors:garage_door");
+
+#Removing Magic Bee's stuff
+recipes.removeByRecipeName("magicbees:essence_fl1");
+recipes.removeByRecipeName("magicbees:essence_fl2");
+recipes.removeByRecipeName("magicbees:essence_cg1");
+recipes.removeByRecipeName("magicbees:essence_cg2");
+recipes.removeByRecipeName("magicbees:essence_lt1");
+recipes.removeByRecipeName("magicbees:essence_lt2");
+recipes.removeByRecipeName("magicbees:essence_eld1");
+recipes.removeByRecipeName("magicbees:essence_eld2");
+recipes.remove(<magicbees:resource:12>);
+recipes.removeByRecipeName("magicbees:dimensionalsingularity");
+recipes.removeByRecipeName("magicbees:effectjar");
+recipes.remove(<magicbees:manasteelgrafter>);
+recipes.remove(<magicbees:manasteelscoop>);
+
 #Removing Gravestone Mod's and Gravestone Mod Extended's stuff
+recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/gallows");
+recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/gibbets");
+recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/stocks");
+recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/burning_stake");
+recipes.removeByRecipeName("gravestone-extended:skeleton_spawner");
+recipes.removeByRecipeName("gravestone-extended:spider_spawner");
+recipes.removeByRecipeName("gravestone-extended:zombie_spawner");
+recipes.removeByRecipeName("gravestone-extended:wither_spawner");
+recipes.removeByRecipeName("gravestone-extended:nightstone");
+recipes.removeByRecipeName("gravestone-extended:thunderstone");
+recipes.removeByRecipeName("gravestone-extended:crafting/blocks/withered_glass");
+recipes.removeByRecipeName("gravestone-extended:crafting/blocks/candle");
+recipes.removeByRecipeName("gravestone-extended:gs_undertaker_backpack");
 
 #Removing Extra Utilities 2's stuff
 recipes.removeByRecipeName("extrautils2:watering_can");
