@@ -11,6 +11,46 @@ import crafttweaker.item.IItemTransformer;
 
 print("Initializing 01_remove_recipes.zs");
 
+#Removing Environmental Tech's stuff
+recipes.removeByRecipeName("environmentaltech:m_multiblocks/m_void/m_ore/void_ore_miner_cont_1");
+recipes.removeByRecipeName("environmentaltech:m_multiblocks/m_void/m_resource/void_res_miner_cont_1");
+recipes.removeByRecipeName("environmentaltech:m_multiblocks/m_void/m_botanic/void_botanic_miner_cont_1");
+
+#Removing Minecraft's stuff
+recipes.removeByRecipeName("minecraft:chiseled_stonebrick");
+
+#Removing tweaked recipes
+recipes.removeByRecipeName("endercore:slabcobblestone_to_cobblestone");
+recipes.removeByRecipeName("endercore:slabstone_to_stone");
+recipes.removeByRecipeName("endercore:slabstonebrick_to_stonebrick");
+
+#Removing Blood Magic's stuff
+recipes.removeByRecipeName("bloodmagic:teleposer");
+mods.jei.JEI.removeAndHide(<bloodmagic:component:24>);
+
+#Removing Biomes O'Plenty's stuff
+recipes.removeByRecipeName("biomesoplenty:terrestrial_artifact");
+recipes.removeByRecipeName("biomesoplenty:biome_finder");
+recipes.removeByRecipeName("biomesoplenty:empty_jar");
+mods.jei.JEI.removeAndHide(<biomesoplenty:gem_ore:0>);
+mods.jei.JEI.removeAndHide(<biomesoplenty:gem_ore:1>);
+mods.jei.JEI.removeAndHide(<biomesoplenty:gem_ore:6>);
+mods.jei.JEI.removeAndHide(<biomesoplenty:gem_ore:7>);
+mods.jei.JEI.removeAndHide(<biomesoplenty:gem_ore:2>);
+mods.jei.JEI.removeAndHide(<biomesoplenty:gem_block:0>);
+mods.jei.JEI.removeAndHide(<biomesoplenty:gem_block:1>);
+mods.jei.JEI.removeAndHide(<biomesoplenty:gem_block:2>);
+mods.jei.JEI.removeAndHide(<biomesoplenty:gem_block:6>);
+mods.jei.JEI.removeAndHide(<biomesoplenty:gem_block:7>);
+
+#Removing Modern Metals' stuff
+mods.jei.JEI.removeAndHide(<modernmetals:chromium_casing>);
+mods.jei.JEI.removeAndHide(<modernmetals:titanium_casing>);
+
+#Removing Base Metals' stuff
+mods.jei.JEI.removeAndHide(<basemetals:zinc_casing>);
+mods.jei.JEI.removeAndHide(<basemetals:human_detector>);
+
 #Removing Applied Energestics 2's stuff
 mods.jei.JEI.removeAndHide(<appliedenergistics2:material:4>);
 recipes.removeByRecipeName("appliedenergistics2:misc/fluixpearl");
@@ -116,6 +156,7 @@ recipes.removeByRecipeName("props:decowand");
 #Removing Constructers Armory's stuff
 recipes.removeByRecipeName("conarm:travel_slowfall");
 recipes.removeByRecipeName("conarm:travel_sack");
+recipes.removeByRecipeName("conarm:invisible_ink");
 
 #Removing uneeded Chisel recipes
 recipes.removeByRecipeName("chisel:factory");

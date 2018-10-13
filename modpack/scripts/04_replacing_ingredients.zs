@@ -46,6 +46,27 @@ recipes.replaceAllOccurences(<ore:blockGlowstone>, <ore:glowstone>);
 recipes.replaceAllOccurences(<minecraft:redstone_block>, <ore:blockRedstone>);
 recipes.replaceAllOccurences(<minecraft:lapis_block>, <ore:blockLapis>);
 
+#Fixing sugar
+recipes.replaceAllOccurences(<minecraft:sugar>, <ore:listAllsugar>);
+
+#Stone Slabs
+recipes.replaceAllOccurences(<minecraft:stone_slab:0>, <ore:slabStone>);
+
+#Stonebricks slab
+recipes.replaceAllOccurences(<minecraft:stone_slab:5>, <ore:slabBricksStone>);
+
+#Cobblestone slab
+recipes.replaceAllOccurences(<minecraft:stone_slab:3>, <ore:slabCobblestone>);
+
+#Fixing vines
+recipes.replaceAllOccurences(<minecraft:vine>, <ore:vine>);
+
+#Just to be sure
+recipes.replaceAllOccurences(<bloodmagic:component:24>, <ore:dustSaltpeter>);
+
+#Fixing sugar
+recipes.replaceAllOccurences(<minecraft:water_bucket>, <ore:listAllwater>);
+
 print("Initialized 04_replacing_ingredients.zs");
 
 //File End
