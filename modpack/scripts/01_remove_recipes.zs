@@ -147,12 +147,6 @@ recipes.removeByRecipeName("bibliocraft:monocle");
 mods.unidict.removalByKind.get("Crafting").remove("gear");
 mods.unidict.removalByKind.get("Crafting").remove("plate");
 
-#Removing Iskallium Reactors' stuff
-recipes.removeByRecipeName("iskalliumreactors:steel_casing");
-recipes.removeByRecipeName("iskalliumreactors:steel_ingot");
-recipes.removeByRecipeName("iskalliumreactors:steel_controller");
-recipes.removeByRecipeName("iskalliumreactors:steel_powertap");
-
 #Removing Harvestcraft's stuff
 recipes.removeByRecipeName("harvestcraft:string");
 

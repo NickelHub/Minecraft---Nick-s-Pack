@@ -101,11 +101,6 @@ recipes.addShaped(<immersivepetroleum:stone_decoration> * 8, [[<ore:sand>, <ther
 #Adding The Beneath's stuff
 recipes.addShaped(<beneath:teleporterbeneath>, [[<ore:compressed4xCobblestone>, <ore:compressed4xCobblestone>, <ore:compressed4xCobblestone>],[<ore:compressed4xCobblestone>, <minecraft:nether_star>, <ore:compressed4xCobblestone>], [<ore:compressed4xCobblestone>, <ore:compressed4xCobblestone>, <ore:compressed4xCobblestone>]]);
 
-#Adding Iskallium Reactors' stuff
-recipes.addShaped(<iskalliumreactors:steel_controller>, [[<iskalliumreactors:steel_casing>, <ore:dustRedstone>, <iskalliumreactors:steel_casing>],[<iskalliumreactors:iskallium_essence>, <ore:gemDiamond>, <iskalliumreactors:iskallium_essence>], [<iskalliumreactors:steel_casing>, <ore:dustRedstone>, <iskalliumreactors:steel_casing>]]);
-recipes.addShaped(<iskalliumreactors:steel_powertap>, [[<iskalliumreactors:steel_casing>, <ore:dustRedstone>, <iskalliumreactors:steel_casing>],[<ore:dustRedstone>, null, <ore:dustRedstone>], [<iskalliumreactors:steel_casing>, <ore:dustRedstone>, <iskalliumreactors:steel_casing>]]);
-recipes.addShaped(<iskalliumreactors:steel_casing> * 4, [[<ore:ingotGraphite>, <ore:ingotSteel>, <ore:ingotGraphite>],[<ore:ingotSteel>, <bigreactors:reactorcasingcores>, <ore:ingotSteel>], [<ore:ingotGraphite>, <ore:ingotSteel>, <ore:ingotGraphite>]]);
-
 #Adding Storage Drawers' stuff
 recipes.addShaped(<storagedrawers:controllerslave>, [[<ore:stone>, <ore:stone>, <ore:stone>],[<minecraft:comparator>, <ore:drawerBasic>, <minecraft:comparator>], [<ore:stone>, <ore:ingotGold>, <ore:stone>]]);
 recipes.addShaped(<storagedrawers:controller>, [[<ore:stone>, <ore:stone>, <ore:stone>],[<minecraft:comparator>, <ore:drawerBasic>, <minecraft:comparator>], [<ore:stone>, <ore:craftingIndustrialDiamond>, <ore:stone>]]);
