@@ -336,11 +336,6 @@
          "id":"astralsorcery:blockcustomore:0"
       },
       {
-         "target":"green",
-         "weight":200,
-         "id":"OD:orePeridot"
-      },
-      {
          "target":"orange",
          "weight":200,
          "id":"OD:oreTopaz"
@@ -384,11 +379,6 @@
          "target":"purple",
          "weight":200,
          "id":"OD:oreIolite"
-      },
-      {
-         "target":"purple",
-         "weight":200,
-         "id":"OD:oreAmethyst"
       },
       {
          "target":"pink",
