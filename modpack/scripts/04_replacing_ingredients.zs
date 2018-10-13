@@ -1,4 +1,4 @@
-#File name: 03_oredictionary.zs
+#File name: 04_replacing_ingredients.zs
 
 #Imports
 import crafttweaker.item.IIngredient;
@@ -8,7 +8,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemTransformer;
 
-print("Initializing 03_oredictionary.zs");
+print("Initializing 04_replacing_ingredients.zs");
 
 //Replacing ingrendients in recipes
 
@@ -45,6 +45,6 @@ recipes.replaceAllOccurences(<ore:blockGlowstone>, <ore:glowstone>);
 recipes.replaceAllOccurences(<minecraft:redstone_block>, <ore:blockRedstone>);
 recipes.replaceAllOccurences(<minecraft:lapis_block>, <ore:blockLapis>);
 
-print("Initialized 03_oredictionary.zs");
+print("Initialized 04_replacing_ingredients.zs");
 
 //File End
