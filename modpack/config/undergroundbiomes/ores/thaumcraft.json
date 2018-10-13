@@ -1,0 +1,14 @@
+[
+  {
+    "internalOreName": "thaumcraft:ore_cinnabar",
+    "meta": -1,
+    "overlay": "undergroundbiomes:blocks/overlays/custom/cinnabar",
+    "oreDirectories": ["oreCinnabar"]
+  },
+  {
+	"internalOreName": "thaumcraft:ore_amber",
+    "meta": -1,
+    "overlay": "undergroundbiomes:blocks/overlays/custom/amber",
+    "oreDirectories": ["oreAmber"]
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "internalOreName": "abyssalcraft:nitreore",
+    "meta": -1,
+    "overlay": "undergroundbiomes:blocks/overlays/custom/ore_contrast2",
+    "color": "#71653a",
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "abyssalcraft:abyore",
+    "meta": -1,
+    "overlay": "undergroundbiomes:blocks/overlays/custom/ore_contrast2",
+    "color": "#5b22a9",
+    "oreDirectories": []
+  },
+  {
+    "internalOreName": "abyssalcraft:coraliumore",
+    "meta": -1,
+    "overlay": "undergroundbiomes:blocks/overlays/custom/gem",
+    "color": "#358b95",
+    "oreDirectories": []
+  }
+]
