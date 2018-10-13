@@ -11,18 +11,6 @@ import crafttweaker.item.IItemTransformer;
 
 print("Initializing 01_remove_recipes.zs");
 
-#Removing Gendustry's stuff
-recipes.removeByRecipeName("gendustry:recipe9");
-recipes.removeByRecipeName("gendustry:recipe45");
-recipes.removeByRecipeName("gendustry:recipe38");
-recipes.removeByRecipeName("gendustry:recipe43");
-recipes.removeByRecipeName("gendustry:recipe44");
-recipes.removeByRecipeName("gendustry:recipe47");
-recipes.removeByRecipeName("gendustry:recipe40");
-recipes.removeByRecipeName("gendustry:recipe34");
-recipes.removeByRecipeName("gendustry:recipe4");
-recipes.removeByRecipeName("gendustry:recipe5");
-
 #Removing Forestry stuff
 recipes.removeByRecipeName("forestry:wheat_to_compost");
 recipes.removeByRecipeName("forestry:ash_to_compost");
