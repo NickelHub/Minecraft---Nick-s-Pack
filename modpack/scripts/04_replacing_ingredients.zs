@@ -31,6 +31,7 @@ recipes.replaceAllOccurences(<ore:minecraft:feather>, <ore:feather>);
 
 #Unifying wax
 recipes.replaceAllOccurences(<forestry:beeswax>, <ore:itemWax>);
+recipes.replaceAllOccurences(<ore:itemBeeswax>, <ore:itemWax>);
 recipes.replaceAllOccurences(<harvestcraft:beeswaxitem>, <ore:itemWax>);
 
 #Unifying Iron Bars
