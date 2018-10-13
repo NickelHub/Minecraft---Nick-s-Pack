@@ -36,6 +36,33 @@ mods.mekanism.enrichment.removeRecipe(<minecraft:obsidian>);
 mods.mekanism.crusher.addRecipe(<minecraft:obsidian>, <thermalfoundation:material:770> * 2);
 mods.mekanism.enrichment.addRecipe(<minecraft:obsidian>, <thermalfoundation:material:770> * 4);
 
+#Adding Gendustry's stuff
+recipes.addShaped(<gendustry:labware> * 16, [[<ore:paneGlass>, null, <ore:paneGlass>],[<ore:paneGlass>, null, <ore:paneGlass>], [null, <ore:craftingIndustrialDiamond>, null]]);
+recipes.addShaped(<gendustry:apiary.upgrade>, [[<ore:ingotBronze>, <ore:dropRoyalJelly>, <ore:ingotBronze>],[<ore:listAllsugar>, <gendustry:upgrade_frame>, <ore:listAllsugar>], [<ore:ingotBronze>, <ore:gearBronze>, <ore:ingotBronze>]]);
+recipes.addShaped(<gendustry:apiary.upgrade:6>, [[<ore:netherrack>, <ore:netherrack>, <ore:netherrack>],[<ore:ingotBronze>, <gendustry:upgrade_frame>, <ore:ingotBronze>], [<ore:ingotBronze>, <ore:blockGlass>, <ore:ingotBronze>]]);
+recipes.addShaped(<gendustry:apiary.upgrade:21>, [[<ore:gearBronze>, <gendustry:climate_module>, <ore:gearBronze>],[<ore:listAllwater>, <gendustry:upgrade_frame>, <ore:listAllwater>], [<ore:gearBronze>, <gendustry:env_processor>, <ore:gearBronze>]]);
+recipes.addShaped(<gendustry:apiary.upgrade:18>, [[<ore:gearBronze>, <gendustry:climate_module>, <ore:gearBronze>],[<ore:vine>, <gendustry:upgrade_frame>, <ore:vine>], [<ore:gearBronze>, <gendustry:env_processor>, <ore:gearBronze>]]);
+recipes.addShaped(<gendustry:apiary.upgrade:16>, [[<ore:gearBronze>, <gendustry:climate_module>, <ore:gearBronze>],[<ore:sand>, <gendustry:upgrade_frame>, <ore:sand>], [<ore:gearBronze>, <gendustry:env_processor>, <ore:gearBronze>]]);
+recipes.addShaped(<gendustry:apiary.upgrade:5>, [[<ore:sand>, <ore:sand>, <ore:sand>],[<ore:ingotBronze>, <gendustry:upgrade_frame>, <ore:ingotBronze>], [<ore:ingotBronze>, <ore:blockGlass>, <ore:ingotBronze>]]);
+recipes.addShaped(<gendustry:apiary.upgrade:17>, [[<ore:gearBronze>, <gendustry:climate_module>, <ore:gearBronze>],[<ore:grass>, <gendustry:upgrade_frame>, <ore:grass>], [<ore:gearBronze>, <gendustry:env_processor>, <ore:gearBronze>]]);
+recipes.addShaped(<gendustry:bee_receptacle>, [[<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>],[<ore:ingotBronze>, <ore:paneGlass>, <ore:ingotBronze>], [<ore:dustRedstone>, <minecraft:light_weighted_pressure_plate>, <ore:dustRedstone>]]);
+recipes.addShaped(<gendustry:mutagen_tank>, [[<ore:ingotTin>, <ore:paneGlass>, <ore:ingotTin>],[<ore:ingotTin>, <ore:paneGlass>, <ore:ingotTin>], [<ore:ingotTin>, <ore:paneGlass>, <ore:ingotTin>]]);
+
+#Adding Forestry stuff
+recipes.addShaped(<forestry:fertilizer_bio>, [[null, <ore:dustAsh>, null],[<ore:dustAsh>, <ore:dirt>, <ore:dustAsh>], [null, <ore:dustAsh>, null]]);
+recipes.addShaped(<forestry:fertilizer_bio> * 4, [[null, <ore:listAllgrain>, null],[<ore:listAllgrain>, <ore:dirt>, <ore:listAllgrain>], [null, <ore:listAllgrain>, null]]);
+recipes.addShaped(<forestry:fertilizer_compound> * 12, [[<ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>],[<ore:dustAsh>, <magicbees:resource:2>, <ore:dustAsh>], [<ore:dustAsh>, <ore:dustAsh>, <ore:dustAsh>]]);
+recipes.addShaped(<forestry:fertilizer_compound> * 6, [[null, <ore:sand>, null],[null, <magicbees:resource:2>, null], [null, <ore:sand>, null]]);
+recipes.addShaped(<forestry:fertilizer_compound> * 6, [[<ore:sand>, <magicbees:resource:2>, <ore:sand>]]);
+recipes.addShaped(<forestry:humus> * 8, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>, <forestry:fertilizer_bio>, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
+recipes.addShaped(<forestry:humus> * 8, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>, <forestry:fertilizer_compound>, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
+recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <forestry:capsule:1>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
+recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <forestry:refractory:1>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
+recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <forestry:can:1>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
+recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
+recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <ore:listAllwater>, <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
+recipes.addShaped(<forestry:ffarm>, [[<ore:ingotCopper>, <ore:bricksStone>, <ore:ingotCopper>], [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]]);
+
 #Adding Blood Magic's stuff
 recipes.addShaped(<bloodmagic:teleposer>, [[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>],[<randomthings:stableenderpearl>, <bloodmagic:teleposition_focus>, <randomthings:stableenderpearl>], [<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>]]);
 

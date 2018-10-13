@@ -12,6 +12,10 @@ print("Initializing 03_oredictionary.zs");
 
 //Adding additional oredictionary entries
 
+#Royal Jelly
+val jellyr = <ore:dropRoyalJelly>;
+jellyr.add(<harvestcraft:royaljellyitem>);
+
 #Unifying crude oil
 val crudeOil = <ore:OilCrude>;
 crudeOil.add(<thermalfoundation:fluid_crude_oil>);
@@ -162,6 +166,7 @@ brickblock.add(<minecraft:brick_block>);
 brickblock.add(<chisel:bricks:*>);
 brickblock.add(<chisel:bricks1:*>);
 brickblock.add(<chisel:bricks2:*>);
+brickblock.add(<forestry:ash_brick>);
 
 #Ordicting rabbit hide
 val rabbithideitem = <ore:itemLeatherRabbit>;

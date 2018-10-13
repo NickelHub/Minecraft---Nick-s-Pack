@@ -11,6 +11,45 @@ import crafttweaker.item.IItemTransformer;
 
 print("Initializing 01_remove_recipes.zs");
 
+#Removing Gendustry's stuff
+recipes.removeByRecipeName("gendustry:recipe9");
+recipes.removeByRecipeName("gendustry:recipe45");
+recipes.removeByRecipeName("gendustry:recipe38");
+recipes.removeByRecipeName("gendustry:recipe43");
+recipes.removeByRecipeName("gendustry:recipe44");
+recipes.removeByRecipeName("gendustry:recipe47");
+recipes.removeByRecipeName("gendustry:recipe40");
+recipes.removeByRecipeName("gendustry:recipe34");
+recipes.removeByRecipeName("gendustry:recipe4");
+recipes.removeByRecipeName("gendustry:recipe5");
+
+#Removing Forestry stuff
+recipes.removeByRecipeName("forestry:wheat_to_compost");
+recipes.removeByRecipeName("forestry:ash_to_compost");
+recipes.removeByRecipeName("forestry:pam_compost_barley");
+recipes.removeByRecipeName("forestry:pam_compost_rye");
+recipes.removeByRecipeName("forestry:pam_compost_oats");
+recipes.removeByRecipeName("magicbees:fertilizer1");
+recipes.removeByRecipeName("magicbees:fertilizer2");
+recipes.removeByRecipeName("magicbees:fertilizer3");
+recipes.removeByRecipeName("forestry:item.for.fertilizer_compound");
+recipes.remove(<forestry:bog_earth>);
+recipes.remove(<forestry:humus>);
+mods.jei.JEI.removeAndHide(<forestry:resources:1>);
+mods.jei.JEI.removeAndHide(<forestry:resources:2>);
+mods.jei.JEI.removeAndHide(<forestry:honeyed_slice>);
+mods.jei.JEI.removeAndHide(<forestry:greenhouse:0>);
+mods.jei.JEI.removeAndHide(<forestry:greenhouse:3>);
+mods.jei.JEI.removeAndHide(<forestry:greenhouse:4>);
+mods.jei.JEI.removeAndHide(<forestry:greenhouse:5>);
+mods.jei.JEI.removeAndHide(<forestry:climatiser:0>);
+mods.jei.JEI.removeAndHide(<forestry:climatiser:1>);
+mods.jei.JEI.removeAndHide(<forestry:climatiser:2>);
+mods.jei.JEI.removeAndHide(<forestry:climatiser:3>);
+mods.jei.JEI.removeAndHide(<forestry:climatiser:4>);
+mods.jei.JEI.removeAndHide(<forestry:greenhouse.window>);
+mods.jei.JEI.removeAndHide(<forestry:greenhouse.window_up>);
+
 #Removing Environmental Tech's stuff
 recipes.removeByRecipeName("environmentaltech:m_multiblocks/m_void/m_ore/void_ore_miner_cont_1");
 recipes.removeByRecipeName("environmentaltech:m_multiblocks/m_void/m_resource/void_res_miner_cont_1");
