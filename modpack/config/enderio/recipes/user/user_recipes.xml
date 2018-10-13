@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+<recipe name="Alloy: Slag" required="true">
+    <alloying energy="20000" exp="1">
+      <input name="oredict:dirt" amount="6" />
+      <input name="oredict:itemClay" amount="6" />
+      <input name="oredict:gravel" amount="6" />
+      <output name="oredict:crystalSlag" amount="6" />
+    </alloying>
+  </recipe>
+
+  <recipe name="Alloy: SlagRich" required="true">
+    <alloying energy="20000" exp="1">
+      <input name="oredict:sand" amount="12" />
+      <input name="oredict:crystalSlag" amount="12" />
+      <input name="oredict:cobblestone" amount="12" />
+      <output name="oredict:crystalSlagRich" amount="6" />
+    </alloying>
+  </recipe>
+  
+</enderio:recipes>

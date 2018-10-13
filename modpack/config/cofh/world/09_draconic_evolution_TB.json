@@ -1,0 +1,28 @@
+{
+   "dependencies":"draconicevolution",
+   "populate":{
+      "draconium_the_beneath":{
+         "distribution":"uniform",
+         "generator":{
+            "block":[
+               {
+                  "name":"draconicevolution:draconium_ore"
+               }
+            ],
+            "material":"stone",
+            "cluster-size":6
+         },
+         "cluster-count":4,
+         "min-height":0,
+         "max-height":256,
+         "retrogen":"true",
+         "biome":"all",
+         "dimension":{
+            "restriction":"whitelist",
+            "value":[
+               -11350
+            ]
+         }
+      }
+   }
+}

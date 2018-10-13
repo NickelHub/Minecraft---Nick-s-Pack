@@ -1,0 +1,19 @@
+# Configuration file
+
+{
+    "landScheme": "CONTINENTS",
+    "tempScheme": "large_zones",
+    "rainScheme": "medium_zones",
+    "biomeSize": "large",
+    "amplitude": 1.0,
+    "generateBopOre": false,
+    "generatePoisonIvy": true,
+    "generateFlax": true,
+    "generateBerryBushes": true,
+    "generateThorns": true,
+    "generateQuicksand": true,
+    "generateLiquidPoison": true,
+    "generateHotSprings": true,
+    "generateNetherHives": true,
+    "generateEndFeatures": true
+}

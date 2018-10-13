@@ -1,0 +1,29 @@
+{
+   "dependencies":"thermalfoundation",
+   "populate":{
+      "redstone_clathrate_the_beneath":{
+         "distribution":"uniform",
+         "generator":{
+            "block":[
+               {
+                  "name":"thermalfoundation:ore_fluid",
+                  "metadata":2
+               }
+            ],
+            "material":"minecraft:stone",
+            "cluster-size":16
+         },
+         "cluster-count":6,
+         "min-height":0,
+         "max-height":256,
+         "retrogen":"true",
+         "biome":"all",
+         "dimension":{
+            "restriction":"whitelist",
+            "value":[
+               -11350
+            ]
+         }
+      }
+   }
+}
