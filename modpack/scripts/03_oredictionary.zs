@@ -10,19 +10,23 @@ import crafttweaker.item.IItemTransformer;
 
 print("Initializing 03_oredictionary.zs");
 
-#Adding additional oredictionary entries to items, blocks and fluids
-//Unifying crude oil
+//Adding additional oredictionary entries
+
+#Unifying crude oil
 val crudeOil = <ore:OilCrude>;
 crudeOil.add(<thermalfoundation:fluid_crude_oil>);
 crudeOil.add(<immersivepetroleum:fluid_crude_oil>);
-//Unifying leather stuff
+
+#Unifying leather
 val hardenedLeather = <ore:LeatherHardened>;
 hardenedLeather.add(<improvedbackpacks:tanned_leather>);
 hardenedLeather.add(<harvestcraft:hardenedleatheritem>);
-//Adding additional itemRubber
+
+#Unifying itemRubber
 val rubber = <ore:itemRubber>;
 rubber.add(<mekanism:polyethene:2>);
-//Adding ordictionary to Draconic Evolution's Chaos Shards
+
+#Adding ordictionary to Draconic Evolution's Chaos Shards
 val csTiny = <ore:shardChaosTiny>;
 csTiny.add(<draconicevolution:chaos_shard:3>);
 val csSmall = <ore:shardChaosSmall>;
@@ -31,7 +35,8 @@ val csLarge = <ore:shardChaosLarge>;
 csLarge.add(<draconicevolution:chaos_shard:1>);
 val csComplete = <ore:shardChaos>;
 csComplete.add(<draconicevolution:chaos_shard:0>);
-//Adding additional entries to Oreberry Bushes' berries
+
+#Adding additional entries to Oreberry Bushes' berries
 val berryEssence = <ore:berryEssence>;
 berryEssence.add(<oreberries:essence_oreberry>);
 val berryIron = <ore:berryIron>;
@@ -155,43 +160,49 @@ berryAethium.add(<oreberries:crystalaethium_oreberry>);
 val berryLonsdaleite = <ore:berryLonsdaleite>;
 berryLonsdaleite.add(<oreberries:crystallonsdaleite_oreberry>);
 
+#Adding more bricks 
 val brickblock = <ore:blockBrick>;
 brickblock.add(<minecraft:brick_block>);
 brickblock.add(<chisel:bricks:*>);
 brickblock.add(<chisel:bricks1:*>);
 brickblock.add(<chisel:bricks2:*>);
 
+#Ordicting rabbit hide
 val rabbithideitem = <ore:itemLeatherRabbit>;
 rabbithideitem.add(<minecraft:rabbit_hide>);
-
 val rabbithide = <ore:leatherRabbit>;
 rabbithide.add(<minecraft:rabbit_hide>);
 rabbithide.add(<immersivehempcraft:fabric>);
 
+#Ordicting bird meat
 val listallrawbird = <ore:listAllbirdraw>;
 listallrawbird.add(<exoticbirds:birdmeat:0>);
 val listallcookedbird = <ore:listAllbirdcooked>;
 listallcookedbird.add(<exoticbirds:cooked_birdmeat>);
-
 val listallrawmeat = <ore:listAllmeatraw>;
 listallrawmeat.add(<exoticbirds:birdmeat>);
 val listallcookedmeat = <ore:listAllmeatcooked>;
 listallcookedmeat.add(<exoticbirds:cooked_birdmeat>);
 
+#Adding more feathers
 val feather = <ore:feather>;
 feather.add(<exoticbirds:peacock_feather>);
 feather.add(<exoticbirds:phoenix_feather>);
 feather.add(<gravestone-extended:gs_raven_feather>);
 
+#Ordicting bat wings
 val batwing = <ore:wingBat>;
 batwing.add(<gravestone-extended:gs_bat_wing>);
+batwing.add(<actuallyadditions:item_misc:15>);
 
+#Ordicting Nether Bricks
 val netherbrick = <ore:bricksNether>;
 netherbrick.add(<minecraft:nether_brick>);
 netherbrick.add(<minecraft:red_nether_brick>);
 netherbrick.add(<chisel:netherbrick:*>);
 netherbrick.add(<nex:nether_brick:*>);
 
+#More Stone Bricks
 val stonebrick = <ore:bricksStone>;
 stonebrick.add(<minecraft:stonebrick:*>);
 stonebrick.add(<abyssalcraft:darkstone_brick:0>);
@@ -253,56 +264,19 @@ stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_darkstone_br
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_darkstone_brick_0:*>);
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_darkstone_brick_0:*>);
 
+#Unifying wax
 val wax = <ore:itemWax>;
 wax.add(<forestry:beeswax>);
 wax.add(<harvestcraft:beeswaxitem>);
 
+#More Iron Bars
 val ibars = <ore:barsIron>;
 ibars.add(<chisel:ironpane:*>);
 
-#Adding additional recipes with oredictionary support
-recipes.addShaped(<storagedrawers:controllerslave>, [[<ore:stone>, <ore:stone>, <ore:stone>],[<minecraft:comparator>, <ore:drawerBasic>, <minecraft:comparator>], [<ore:stone>, <ore:ingotGold>, <ore:stone>]]);
-recipes.addShaped(<storagedrawers:controller>, [[<ore:stone>, <ore:stone>, <ore:stone>],[<minecraft:comparator>, <ore:drawerBasic>, <minecraft:comparator>], [<ore:stone>, <ore:craftingIndustrialDiamond>, <ore:stone>]]);
-recipes.addShaped(<storagedrawers:compdrawers>, [[<ore:stone>, <ore:stone>, <ore:stone>],[<ore:craftingPiston>, <ore:drawerBasic>, <ore:craftingPiston>], [<ore:stone>, <ore:ingotIron>, <ore:stone>]]);
-recipes.addShaped(<biomesoplenty:biome_finder>, [[null, <ore:gemAmethyst>, null],[<ore:gemAmethyst>, <biomesoplenty:terrestrial_artifact>, <ore:gemAmethyst>], [null, <ore:gemAmethyst>, null]]);
-recipes.addShapeless(<biomesoplenty:terrestrial_artifact>, [<ore:gemEmerald>,<ore:gemPeridot>,<ore:gemTanzanite>,<ore:gemMalachite>,<ore:gemSapphire>,<ore:gemTopaz>,<ore:gemAmber>,<ore:gemRuby>]);
-
-#Replacing items with Oredictionary entries
-//Fixing rubber
-recipes.replaceAllOccurences(<industrialforegoing:plastic>, <ore:itemRubber>);
-
-//Fixing sticks
-recipes.replaceAllOccurences(<minecraft:stick>, <ore:stickWood>);
-
-//Hardened Leather
-recipes.replaceAllOccurences(<improvedbackpacks:tanned_leather>, <ore:LeatherHardened>);
-recipes.replaceAllOccurences(<harvestcraft:hardenedleatheritem>, <ore:LeatherHardened>);
-
-//Fixing leather
-recipes.replaceAllOccurences(<minecraft:leather>, <ore:leather>);
-
-//Fixing feather
-recipes.replaceAllOccurences(<minecraft:feather>, <ore:feather>);
-recipes.replaceAllOccurences(<ore:minecraft:feather>, <ore:feather>);
-
-//Unifying wax
-recipes.replaceAllOccurences(<forestry:beeswax>, <ore:itemWax>);
-recipes.replaceAllOccurences(<harvestcraft:beeswaxitem>, <ore:itemWax>);
-
-//Unifying Iron Bars
-recipes.replaceAllOccurences(<minecraft:iron_bars>, <ore:barsIron>);
-
-//Wooden Gear
-recipes.replaceAllOccurences(<buildcraftcore:gear_wood>, <ore:gearWood>);
-
-//Fixing Bricks
-recipes.replaceAllOccurences(<minecraft:brick_block>, <ore:blockBrick>);
-
-//Fixing obsidian, redstone and glowstone etc. in recipes
-recipes.replaceAllOccurences(<minecraft:glowstone>, <ore:glowstone>);
-recipes.replaceAllOccurences(<ore:blockGlowstone>, <ore:glowstone>);
-recipes.replaceAllOccurences(<minecraft:redstone_block>, <ore:blockRedstone>);
-recipes.replaceAllOccurences(<minecraft:lapis_block>, <ore:blockLapis>);
+#More Stone
+val stone = <ore:stone>;
+stone.add(<appliedenergistics2:sky_stone_block>);
+stone.add(<appliedenergistics2:smooth_sky_stone_block>);
 
 print("Initialized 03_oredictionary.zs");
 

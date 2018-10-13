@@ -11,6 +11,17 @@ import crafttweaker.item.IItemTransformer;
 
 print("Initializing 01_remove_recipes.zs");
 
+#Removing Applied Energestics 2's stuff
+mods.jei.JEI.removeAndHide(<appliedenergistics2:material:4>);
+recipes.removeByRecipeName("appliedenergistics2:misc/fluixpearl");
+
+#Removing Actually Additions' stuff
+recipes.removeByRecipeName("actuallyadditions:recipes114");
+recipes.removeByRecipeName("actuallyadditions:recipes123");
+recipes.removeByRecipeName("actuallyadditions:recipes6");
+recipes.removeByRecipeName("actuallyadditions:recipes49");
+recipes.removeByRecipeName("actuallyadditions:recipes70");
+
 #Removing Malisi's Mod's stuff
 recipes.removeByRecipeName("malisisdoors:shoji_door");
 recipes.removeByRecipeName("malisisdoors:saloon");
@@ -54,6 +65,7 @@ recipes.removeByRecipeName("extrautils2:klein_flash");
 recipes.removeByRecipeName("extrautils2:generator_generator_ender");
 recipes.removeByRecipeName("extrautils2:terraformer_controller");
 recipes.removeByRecipeName("extrautils2:porcupine");
+recipes.removeByRecipeName("extrautils2:teleporter");
 
 #Removing Extra Bit Manipulation's stuff
 recipes.removeByRecipeName("extrabitmanipulation:bodypart_template");
@@ -118,20 +130,6 @@ recipes.removeByRecipeName("chisel:offsettool");
 recipes.removeByRecipeName("chickenchunks:chunk_loader");
 recipes.removeByRecipeName("chickenchunks:spot_loader");
 
-#Removing Buildcraft'S stuff
-recipes.removeByRecipeName("buildcraftsilicon:plug_gate_create_clay_brick_no_modifier");
-recipes.removeByRecipeName("buildcraftsilicon:plug_gate_create_nether_brick_no_modifier");
-recipes.removeByRecipeName("buildcrafttransport:pipe_sandstone_item_colorless");
-recipes.removeByRecipeName("buildcrafttransport:pipe_void_item_colorless");
-recipes.removeByRecipeName("buildcraftcore:marker_volume");
-recipes.removeByRecipeName("buildcraftcore:marker_path");
-
-#Removing BC Extra Pipes. Adding them back later with Stable Ender Pearl
-recipes.removeByRecipeName("bcextrapipes:teleport_sender_item");
-recipes.removeByRecipeName("bcextrapipes:teleport_sender_fluid");
-recipes.removeByRecipeName("bcextrapipes:teleport_receiver_item");
-recipes.removeByRecipeName("bcextrapipes:teleport_receiver_fluid");
-
 #Removing Bibliocraft stuff without oredictionary
 recipes.removeByRecipeName("bibliocraft:white_lanterngold");
 recipes.removeByRecipeName("bibliocraft:white_lanterniron");
@@ -149,26 +147,29 @@ recipes.removeByRecipeName("bibliocraft:monocle");
 mods.unidict.removalByKind.get("Crafting").remove("gear");
 mods.unidict.removalByKind.get("Crafting").remove("plate");
 
-#Recipes removed by structure
-recipes.removeShaped(<ore:ingotSteel>, [[<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, <minecraft:coal_block>, <minecraft:iron_ingot>], [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]]);
-
-#Recipes removed by name
+#Removing Iskallium Reactors' stuff
 recipes.removeByRecipeName("iskalliumreactors:steel_casing");
+recipes.removeByRecipeName("iskalliumreactors:steel_ingot");
 recipes.removeByRecipeName("iskalliumreactors:steel_controller");
 recipes.removeByRecipeName("iskalliumreactors:steel_powertap");
-recipes.removeByRecipeName("extrautils2:teleporter");
-recipes.removeByRecipeName("natura:common/bread");
-recipes.removeByRecipeName("natura:common/string");
+
+#Removing Harvestcraft's stuff
 recipes.removeByRecipeName("harvestcraft:string");
-recipes.removeByRecipeName("natura:common/wool");
-recipes.removeByRecipeName("natura:common/barley_flour");
+
+#Removing Plants 2's stuff
 recipes.removeByRecipeName("plants2:recipe195");
+
+#Removing Mekanism's stuff
 recipes.removeByRecipeName("mekanism:teleportationcore");
 recipes.removeByRecipeName("mekanism:basicblock_7");
 recipes.removeByRecipeName("mekanism:machineblock_11");
-recipes.removeByRecipeName("buildcraftbuilders:quarry");
 recipes.removeByRecipeName("mekanism:ingot_3_alt");
-//Removing Natura wood recipes to add them back with normal wood
+
+#Removing Natura's stuff
+recipes.removeByRecipeName("natura:common/wool");
+recipes.removeByRecipeName("natura:common/barley_flour");
+recipes.removeByRecipeName("natura:common/bread");
+recipes.removeByRecipeName("natura:common/string");
 recipes.removeByRecipeName("natura:tools/nether/ghostwood/ghostwood_sword");
 recipes.removeByRecipeName("natura:tools/nether/ghostwood/ghostwood_pickaxe");
 recipes.removeByRecipeName("natura:tools/nether/ghostwood/ghostwood_shovel");
@@ -219,15 +220,6 @@ recipes.removeByRecipeName("natura:decorative/nether/fence/bloodwood_fence");
 recipes.removeByRecipeName("natura:decorative/nether/fence/bloodwood_fence_gate");
 recipes.removeByRecipeName("natura:decorative/nether/fence/darkwood_fence");
 recipes.removeByRecipeName("natura:decorative/nether/fence/darkwood_fence_gate");
-//Removing bound leather recipe, because hemp fabric cannot be melted; wax should be used instead
-recipes.removeByRecipeName("improvedbackpacks:item.bound_leather");
-
-#JEI removed and hidden
-//Removing unnessecary flour
-mods.jei.JEI.removeAndHide(<natura:materials:1>);
-mods.jei.JEI.removeAndHide(<natura:materials:2>);
-
-//Removing unnessecary Natura stuff
 mods.jei.JEI.removeAndHide(<natura:netherquartz_pickaxe>);
 mods.jei.JEI.removeAndHide(<natura:netherquartz_shovel>);
 mods.jei.JEI.removeAndHide(<natura:netherquartz_axe>);
@@ -259,6 +251,13 @@ mods.jei.JEI.removeAndHide(<natura:nether_workbenches:0>);
 mods.jei.JEI.removeAndHide(<natura:nether_workbenches:1>);
 mods.jei.JEI.removeAndHide(<natura:nether_workbenches:2>);
 mods.jei.JEI.removeAndHide(<natura:nether_workbenches:3>);
+//Removing unnessecary flour
+mods.jei.JEI.removeAndHide(<natura:materials:1>);
+mods.jei.JEI.removeAndHide(<natura:materials:2>);
+
+#Removing Improved Backpacks' stuff
+//Removing bound leather recipe, because hemp fabric cannot be melted; wax should be used instead
+recipes.removeByRecipeName("improvedbackpacks:item.bound_leather");
 
 //Removing unnessecary Extra Cells stuff
 mods.jei.JEI.removeAndHide(<extracells:part.base:0>);
