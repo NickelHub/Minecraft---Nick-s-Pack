@@ -10,11 +10,13 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemTransformer;
 import crafttweaker.recipes.IFurnaceRecipe;
 import mods.appliedenergistics2.Grinder;
+import mods.appliedenergistics2.Inscriber;
 import mods.immersiveengineering.Crusher;
 import mods.mekanism.crusher;
 import mods.mekanism.enrichment;
 import mods.thermalexpansion.Pulverizer;
 import mods.techreborn.grinder;
+
 
 print("Initializing 02_add_recipes.zs");
 
@@ -47,6 +49,8 @@ recipes.addShaped(<gendustry:apiary.upgrade:5>, [[<ore:sand>, <ore:sand>, <ore:s
 recipes.addShaped(<gendustry:apiary.upgrade:17>, [[<ore:gearBronze>, <gendustry:climate_module>, <ore:gearBronze>],[<ore:grass>, <gendustry:upgrade_frame>, <ore:grass>], [<ore:gearBronze>, <gendustry:env_processor>, <ore:gearBronze>]]);
 recipes.addShaped(<gendustry:bee_receptacle>, [[<ore:ingotBronze>, <ore:ingotBronze>, <ore:ingotBronze>],[<ore:ingotBronze>, <ore:paneGlass>, <ore:ingotBronze>], [<ore:dustRedstone>, <minecraft:light_weighted_pressure_plate>, <ore:dustRedstone>]]);
 recipes.addShaped(<gendustry:mutagen_tank>, [[<ore:ingotTin>, <ore:paneGlass>, <ore:ingotTin>],[<ore:ingotTin>, <ore:paneGlass>, <ore:ingotTin>], [<ore:ingotTin>, <ore:paneGlass>, <ore:ingotTin>]]);
+Inscriber.addRecipe(<gendustry:genetics_processor>, <ore:dustEnderPearl>, false, <appliedenergistics2:material:23>, <appliedenergistics2:material:24>);
+Inscriber.addRecipe(<gendustry:env_processor>, <ore:dustLapis>, false, <appliedenergistics2:material:23>, <appliedenergistics2:material:24>);
 
 #Adding Forestry stuff
 recipes.addShaped(<forestry:fertilizer_bio>, [[null, <ore:dustAsh>, null],[<ore:dustAsh>, <ore:dirt>, <ore:dustAsh>], [null, <ore:dustAsh>, null]]);
