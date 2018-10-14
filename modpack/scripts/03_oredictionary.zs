@@ -26,6 +26,18 @@ val hardenedLeather = <ore:LeatherHardened>;
 hardenedLeather.add(<improvedbackpacks:tanned_leather>);
 hardenedLeather.add(<harvestcraft:hardenedleatheritem>);
 
+#Adding Simple Machine Case
+val simCase = <ore:machineBlockBasic>;
+simCase.add(<teslacorelib:machine_case>);
+simCase.add(<thermalexpansion:frame>);
+simCase.add(<enderio:item_material:0>);
+simCase.add(<rftools:machine_frame>);
+
+#Adding Advanced Machine Case
+val advCase = <ore:machineBlockAdvanced>;
+advCase.add(<mekanism:machineblock:8>);
+advCase.add(<nuclearcraft:part:10>);
+
 #Unifying itemRubber
 val rubber = <ore:itemRubber>;
 rubber.add(<mekanism:polyethene:2>);
@@ -161,29 +173,40 @@ val berryLonsdaleite = <ore:berryLonsdaleite>;
 berryLonsdaleite.add(<oreberries:crystallonsdaleite_oreberry>);
 
 #Adding more bricks 
-val brickblock = <ore:blockBrick>;
+val brickblock = <ore:blockBrick>; // This adds more bricks like the ones made of clay
 brickblock.add(<minecraft:brick_block>);
 brickblock.add(<chisel:bricks:*>);
 brickblock.add(<chisel:bricks1:*>);
 brickblock.add(<chisel:bricks2:*>);
 brickblock.add(<forestry:ash_brick>);
+brickblock.add(<unlimitedchiselworks:chisel_bricks_forestry_ash_brick_0:*>);
+brickblock.add(<unlimitedchiselworks:chisel_bricks1_forestry_ash_brick_0:*>);
+brickblock.add(<unlimitedchiselworks:chisel_bricks2_forestry_ash_brick_0:*>);
 
-#Ordicting rabbit hide
-val rabbithideitem = <ore:itemLeatherRabbit>;
+#Ordicting rabbit hide 
+val rabbithideitem = <ore:itemLeatherRabbit>; //This is for recipes like to craft leather, which cannot contain an alternative
 rabbithideitem.add(<minecraft:rabbit_hide>);
 val rabbithide = <ore:leatherRabbit>;
 rabbithide.add(<minecraft:rabbit_hide>);
 rabbithide.add(<immersivehempcraft:fabric>);
 
+#More egg
+val egg = <ore:egg>;
+egg.add(<primitivemobs:dodo_egg>);
+
 #Ordicting bird meat
 val listallrawbird = <ore:listAllbirdraw>;
 listallrawbird.add(<exoticbirds:birdmeat:0>);
+listallrawbird.add(<primitivemobs:dodo>);
 val listallcookedbird = <ore:listAllbirdcooked>;
 listallcookedbird.add(<exoticbirds:cooked_birdmeat>);
+listallcookedbird.add(<primitivemobs:cooked_dodo>);
 val listallrawmeat = <ore:listAllmeatraw>;
 listallrawmeat.add(<exoticbirds:birdmeat>);
+listallrawmeat.add(<primitivemobs:dodo>);
 val listallcookedmeat = <ore:listAllmeatcooked>;
 listallcookedmeat.add(<exoticbirds:cooked_birdmeat>);
+listallcookedmeat.add(<primitivemobs:cooked_dodo>);
 
 #Adding more feathers
 val feather = <ore:feather>;
@@ -204,7 +227,7 @@ netherbrick.add(<chisel:netherbrick:*>);
 netherbrick.add(<nex:nether_brick:*>);
 
 #More Stone Bricks
-val stonebrick = <ore:bricksStone>;
+val stonebrick = <ore:bricksStone>; //This adds more bricks made of any kind of stone
 stonebrick.add(<bloodmagic:demon_brick_1:*>);
 stonebrick.add(<bloodmagic:demon_brick_2:*>);
 stonebrick.add(<minecraft:stonebrick:*>);
@@ -266,7 +289,35 @@ stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_appliedenergistics2_sky_
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_darkstone_brick_0:*>);
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_darkstone_brick_0:*>);
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_darkstone_brick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_1:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_1:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_1:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_2:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_2:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_2:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_3:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_3:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_3:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_4:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_4:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_4:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_5:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_5:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_5:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_6:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_6:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_6:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_7:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_7:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_7:*>);
 stonebrick.add(<botania:biomestoneb:*>);
+stonebrick.add(<botania:livingrock:1>);
+stonebrick.add(<botania:livingrock:2>);
+stonebrick.add(<botania:livingrock:3>);
+stonebrick.add(<botania:livingrock:4>);
 stonebrick.add(<environmentalmaterials:alabaster_paver:*>);
 stonebrick.add(<environmentalmaterials:alabaster_bricks:*>);
 stonebrick.add(<environmentalmaterials:alabaster_tiles:*>);
@@ -276,6 +327,24 @@ stonebrick.add(<environmentalmaterials:basalt_tiles>);
 stonebrick.add(<environmentalmaterials:hardened_stone_paver>);
 stonebrick.add(<environmentalmaterials:hardened_stone_bricks>);
 stonebrick.add(<environmentalmaterials:hardened_stone_tiles>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_livingrock_1:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_livingrock_1:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_livingrock_1:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_dreadbrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_dreadbrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_dreadbrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_abybrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_abybrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_abybrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_abydreadbrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_abydreadbrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_abydreadbrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_ethaxiumbrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_ethaxiumbrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_ethaxiumbrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_cstonebrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_cstonebrick_0:*>);
+stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_cstonebrick_0:*>);
 
 #Adding different stone slab for tweaked recipes
 val stoneslabblock = <ore:slabStoneUnique>;
@@ -306,6 +375,7 @@ stoneslab.add(<undergroundbiomes:igneous_stone_halfslab:*>);
 stoneslab.add(<undergroundbiomes:metamorphic_stone_halfslab:*>);
 stoneslab.add(<appliedenergistics2:sky_stone_slab>);
 stoneslab.add(<appliedenergistics2:smooth_sky_stone_slab>);
+stoneslab.add(<botania:livingrock0slab>);
 stoneslab.add(<botania:biomestonea0slab>);
 stoneslab.add(<botania:biomestonea1slab>);
 stoneslab.add(<botania:biomestonea2slab>);
@@ -315,6 +385,9 @@ stoneslab.add(<botania:biomestonea5slab>);
 stoneslab.add(<botania:biomestonea6slab>);
 stoneslab.add(<botania:biomestonea7slab>);
 stoneslab.add(<tconstruct:seared_slab>);
+stoneslab.add(<undergroundbiomes:igneous_stone_halfslab:*>);
+stoneslab.add(<undergroundbiomes:metamorphic_stone_halfslab:*>);
+stoneslab.add(<undergroundbiomes:sedimentary_stone_halfslab:*>);
 
 #Adding different stone brick slabs for tweaked recipes
 val stonebrickslabblock = <ore:slabBricksStoneUnique>;
@@ -376,6 +449,9 @@ stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_red>);
 stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_black>);
 stonebrickslab.add(<environmentalmaterials:basalt_tile_slab>);
 stonebrickslab.add(<environmentalmaterials:hardened_stone_tile_slab>);
+stonebrickslab.add(<botania:livingrock1slab>);
+stonebrickslab.add(<undergroundbiomes:igneous_brick_halfslab:*>);
+stonebrickslab.add(<undergroundbiomes:metamorphic_brick_halfslab:*>);
 
 #Adding different cobble slabs for tweaked recipes
 val cobbleslabUnique = <ore:slabCobblestoneUnique>;
@@ -421,6 +497,7 @@ stone.add(<bloodmagic:demon_extras:6>);
 stone.add(<bloodmagic:demon_extras:7>);
 stone.add(<bloodmagic:demon_extras:8>);
 stone.add(<bloodmagic:demon_extras:9>);
+stonebrick.add(<botania:livingrock:0>);
 stone.add(<botania:biomestonea:0>);
 stone.add(<botania:biomestonea:1>);
 stone.add(<botania:biomestonea:2>);
@@ -442,6 +519,114 @@ cobble.add(<botania:biomestonea:12>);
 cobble.add(<botania:biomestonea:13>);
 cobble.add(<botania:biomestonea:14>);
 cobble.add(<botania:biomestonea:15>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_8:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_8:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_8:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_9:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_9:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_9:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_10:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_10:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_10:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_11:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_11:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_11:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_12:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_12:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_12:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_13:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_13:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_13:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_14:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_14:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_14:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_15:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_15:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_15:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_0:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_0:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_0:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_1:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_1:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_1:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_2:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_2:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_2:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_3:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_3:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_3:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_4:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_4:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_4:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_5:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_5:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_5:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_6:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_6:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_6:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_7:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_7:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_7:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_0:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_0:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_0:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_1:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_1:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_1:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_2:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_2:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_2:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_3:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_3:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_3:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_4:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_4:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_4:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_5:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_5:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_5:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_6:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_6:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_6:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_7:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_7:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_7:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_abyssalcraft_cobblestone_0:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_abyssalcraft_cobblestone_0:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_abyssalcraft_cobblestone_0:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_abyssalcraft_cobblestone_1:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_abyssalcraft_cobblestone_1:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_abyssalcraft_cobblestone_1:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_abyssalcraft_cobblestone_2:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_abyssalcraft_cobblestone_2:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_abyssalcraft_cobblestone_2:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_abyssalcraft_cobblestone_3:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_abyssalcraft_cobblestone_3:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_abyssalcraft_cobblestone_3:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone_abyssalcraft_cobblestone_4:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone1_abyssalcraft_cobblestone_4:*>);
+cobble.add(<unlimitedchiselworks:chisel_cobblestone2_abyssalcraft_cobblestone_4:*>);
+cobble.add(<minecraft:mossy_cobblestone>);
+cobble.add(<chisel:cobblestonemossy:*>);
+cobble.add(<chisel:cobblestonemossy1:*>);
+cobble.add(<chisel:cobblestonemossy2:*>);
+cobble.add(<undergroundbiomes:metamorphic_cobble_mossy:*>);
+cobble.add(<undergroundbiomes:igneous_cobble_mossy:*>);
+
+val mossy = <ore:blockMossy>;
+mossy.add(<undergroundbiomes:metamorphic_cobble_mossy:*>);
+mossy.add(<undergroundbiomes:igneous_cobble_mossy:*>);
+mossy.add(<undergroundbiomes:sedimentary_stone_mossy:*>);
+mossy.add(<chisel:templemossy:*>);
+mossy.add(<botania:livingrock:2>);
+
+#More sandstone
+val sandstone = <ore:sandstone>;
+sandstone.add(<biomesoplenty:white_sandstone:1>);
+sandstone.add(<biomesoplenty:white_sandstone:2>);
+sandstone.add(<unlimitedchiselworks:chisel_sandstoneyellow_biomesoplenty_white_sandstone_0:*>);
+sandstone.add(<unlimitedchiselworks:chisel_sandstoneyellow1_biomesoplenty_white_sandstone_0:*>);
+sandstone.add(<unlimitedchiselworks:chisel_sandstoneyellow2_biomesoplenty_white_sandstone_0:*>);
 
 #More grass blocks
 val grass = <ore:grass>;
@@ -483,6 +668,106 @@ log.add(<botania:livingwood:0>);
 val planks = <ore:planksWood>;
 planks.add(<bloodarsenal:blood_infused_wooden_planks>);
 planks.add(<botania:livingwood:1>);
+planks.add(<immersiveengineering:treated_wood:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_immersiveengineering_treated_wood_0:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_botania_livingwood_1:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_techreborn_rubber_planks_0:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_0:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_1:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_2:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_3:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_4:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_5:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_6:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_7:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_8:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_nether_planks_0:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_nether_planks_1:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_nether_planks_2:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_nether_planks_3:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_plants2_planks_0:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_plants2_planks_1:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_plants2_planks_2:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_plants2_planks_3:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_plants2_planks_4:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_plants2_planks_5:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_0:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_1:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_2:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_3:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_4:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_5:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_6:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_7:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_8:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_9:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_10:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_11:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_12:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_13:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_14:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_15:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_0:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_1:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_2:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_3:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_4:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_5:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_6:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_7:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_8:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_9:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_10:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_11:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_12:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_13:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_14:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_15:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_0:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_1:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_2:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_3:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_4:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_5:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_6:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_7:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_8:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_9:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_10:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_11:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_12:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_0:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_1:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_2:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_3:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_4:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_5:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_6:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_7:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_8:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_9:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_10:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_11:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_12:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_13:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_14:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_15:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_0:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_1:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_2:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_3:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_4:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_5:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_6:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_7:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_8:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_9:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_10:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_11:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_12:*>);
+
+val planksTreated = <ore:planksTreatedWood>;
+planksTreated.add(<unlimitedchiselworks:chisel_planks_oak_immersiveengineering_treated_wood_0:*>);
 
 val stairsw = <ore:stairsWood>;
 stairsw.add(<bloodarsenal:blood_infused_wooden_stairs>);
@@ -499,6 +784,13 @@ fencewg.add(<bloodarsenal:blood_infused_wooden_fence_gate>);
 
 val stick = <ore:stickWood>;
 stick.add(<bloodarsenal:base_item:1>);
+stick.add(<immersiveengineering:material:0>);
+
+val drawer = <ore:drawerBasic>;
+drawer.add(<storagedrawers:customdrawers:*>);
+
+val trim = <ore:drawerTrim>;
+trim.add(<storagedrawers:customtrim>);
 
 print("Initialized 03_oredictionary.zs");
 

@@ -12,6 +12,16 @@ print("Initializing 04_replacing_ingredients.zs");
 
 //Replacing ingrendients in recipes
 
+#Replacing Machine Cases
+recipes.replaceAllOccurences(<teslacorelib:machine_case>, <ore:machineBlockBasic>);
+recipes.replaceAllOccurences(<thermalexpansion:frame>, <ore:machineBlockBasic>);
+recipes.replaceAllOccurences(<enderio:item_material:0>, <ore:machineBlockBasic>);
+recipes.replaceAllOccurences(<rftools:machine_frame>, <ore:machineBlockBasic>);
+recipes.replaceAllOccurences(<techreborn:machine_frame:0>, <ore:machineBlockBasic>);
+recipes.replaceAllOccurences(<mekanism:machineblock:8>, <ore:machineBlockAdvanced>);
+recipes.replaceAllOccurences(<nuclearcraft:part:10>, <ore:machineBlockAdvanced>);
+recipes.replaceAllOccurences(<techreborn:machine_frame:0>, <ore:machineBlockAdvanced>);
+
 #Fixing rubber
 recipes.replaceAllOccurences(<industrialforegoing:plastic>, <ore:itemRubber>);
 
