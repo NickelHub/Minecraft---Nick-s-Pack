@@ -35,7 +35,7 @@ simCase.add(<rftools:machine_frame>);
 
 #Adding Advanced Machine Case
 val advCase = <ore:machineBlockAdvanced>;
-advCase.add(<mekanism:machineblock:8>);
+advCase.add(<mekanism:basicblock:8>);
 advCase.add(<nuclearcraft:part:10>);
 
 #Unifying itemRubber
@@ -182,6 +182,7 @@ brickblock.add(<forestry:ash_brick>);
 brickblock.add(<unlimitedchiselworks:chisel_bricks_forestry_ash_brick_0:*>);
 brickblock.add(<unlimitedchiselworks:chisel_bricks1_forestry_ash_brick_0:*>);
 brickblock.add(<unlimitedchiselworks:chisel_bricks2_forestry_ash_brick_0:*>);
+brickblock.add(<immersivehempcraft:hempstone_bricks>);
 
 #Ordicting rabbit hide 
 val rabbithideitem = <ore:itemLeatherRabbit>; //This is for recipes like to craft leather, which cannot contain an alternative
@@ -189,24 +190,6 @@ rabbithideitem.add(<minecraft:rabbit_hide>);
 val rabbithide = <ore:leatherRabbit>;
 rabbithide.add(<minecraft:rabbit_hide>);
 rabbithide.add(<immersivehempcraft:fabric>);
-
-#More egg
-val egg = <ore:egg>;
-egg.add(<primitivemobs:dodo_egg>);
-
-#Ordicting bird meat
-val listallrawbird = <ore:listAllbirdraw>;
-listallrawbird.add(<exoticbirds:birdmeat:0>);
-listallrawbird.add(<primitivemobs:dodo>);
-val listallcookedbird = <ore:listAllbirdcooked>;
-listallcookedbird.add(<exoticbirds:cooked_birdmeat>);
-listallcookedbird.add(<primitivemobs:cooked_dodo>);
-val listallrawmeat = <ore:listAllmeatraw>;
-listallrawmeat.add(<exoticbirds:birdmeat>);
-listallrawmeat.add(<primitivemobs:dodo>);
-val listallcookedmeat = <ore:listAllmeatcooked>;
-listallcookedmeat.add(<exoticbirds:cooked_birdmeat>);
-listallcookedmeat.add(<primitivemobs:cooked_dodo>);
 
 #Adding more feathers
 val feather = <ore:feather>;
@@ -345,6 +328,8 @@ stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_ethaxiumbri
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_cstonebrick_0:*>);
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_cstonebrick_0:*>);
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_cstonebrick_0:*>);
+stonebrick.add(<nex:basalt:2>);
+stonebrick.add(<nex:basalt:3>);
 
 #Adding different stone slab for tweaked recipes
 val stoneslabblock = <ore:slabStoneUnique>;
@@ -497,7 +482,7 @@ stone.add(<bloodmagic:demon_extras:6>);
 stone.add(<bloodmagic:demon_extras:7>);
 stone.add(<bloodmagic:demon_extras:8>);
 stone.add(<bloodmagic:demon_extras:9>);
-stonebrick.add(<botania:livingrock:0>);
+stone.add(<botania:livingrock:0>);
 stone.add(<botania:biomestonea:0>);
 stone.add(<botania:biomestonea:1>);
 stone.add(<botania:biomestonea:2>);
@@ -509,6 +494,7 @@ stone.add(<botania:biomestonea:7>);
 stone.add(<environmentalmaterials:alabaster:*>);
 stone.add(<environmentalmaterials:basalt>);
 stone.add(<environmentalmaterials:hardened_stone>);
+stone.add(<nex:basalt:0>);
 
 val cobble = <ore:cobblestone>;
 cobble.add(<botania:biomestonea:8>);
@@ -791,6 +777,41 @@ drawer.add(<storagedrawers:customdrawers:*>);
 
 val trim = <ore:drawerTrim>;
 trim.add(<storagedrawers:customtrim>);
+
+val stonemeal = <ore:dustStonemeal>;
+stonemeal.add(<techreborn:dust:61>);
+stonemeal.add(<techreborn:dust:62>);
+stonemeal.add(<techreborn:dust:63>);
+
+val cokeblock = <ore:blockCoalCoke>;
+cokeblock.add(<immersiveengineering:stone_decoration:3>);
+
+//The following section contains additional registrations for food stuff
+
+#More egg
+val egg = <ore:egg>;
+egg.add(<primitivemobs:dodo_egg>);
+
+#Ordicting bird meat
+val listallrawbird = <ore:listAllbirdraw>;
+listallrawbird.add(<exoticbirds:birdmeat:0>);
+listallrawbird.add(<primitivemobs:dodo>);
+val listallcookedbird = <ore:listAllbirdcooked>;
+listallcookedbird.add(<exoticbirds:cooked_birdmeat>);
+listallcookedbird.add(<primitivemobs:cooked_dodo>);
+val listallrawmeat = <ore:listAllmeatraw>;
+listallrawmeat.add(<exoticbirds:birdmeat>);
+listallrawmeat.add(<primitivemobs:dodo>);
+val listallcookedmeat = <ore:listAllmeatcooked>;
+listallcookedmeat.add(<exoticbirds:cooked_birdmeat>);
+listallcookedmeat.add(<primitivemobs:cooked_dodo>);
+
+val seed = <ore:listAllseed>;
+seed.add(<immersiveengineering:seed>);
+seed.add(<actuallyadditions:item_rice_seed>);
+seed.add(<actuallyadditions:item_coffee_seed>);
+seed.add(<actuallyadditions:item_flax_seed>);
+seed.add(<actuallyadditions:item_canola_seed>);
 
 print("Initialized 03_oredictionary.zs");
 

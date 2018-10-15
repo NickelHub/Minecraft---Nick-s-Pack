@@ -18,12 +18,13 @@ recipes.replaceAllOccurences(<thermalexpansion:frame>, <ore:machineBlockBasic>);
 recipes.replaceAllOccurences(<enderio:item_material:0>, <ore:machineBlockBasic>);
 recipes.replaceAllOccurences(<rftools:machine_frame>, <ore:machineBlockBasic>);
 recipes.replaceAllOccurences(<techreborn:machine_frame:0>, <ore:machineBlockBasic>);
-recipes.replaceAllOccurences(<mekanism:machineblock:8>, <ore:machineBlockAdvanced>);
+recipes.replaceAllOccurences(<mekanism:basicblock:8>, <ore:machineBlockAdvanced>);
 recipes.replaceAllOccurences(<nuclearcraft:part:10>, <ore:machineBlockAdvanced>);
 recipes.replaceAllOccurences(<techreborn:machine_frame:0>, <ore:machineBlockAdvanced>);
 
 #Fixing rubber
 recipes.replaceAllOccurences(<industrialforegoing:plastic>, <ore:itemRubber>);
+recipes.replaceAllOccurences(<mekanism:polyethene:2>, <ore:itemRubber>);
 
 #Fixing sticks
 recipes.replaceAllOccurences(<minecraft:stick>, <ore:stickWood>);
@@ -74,8 +75,15 @@ recipes.replaceAllOccurences(<minecraft:vine>, <ore:vine>);
 #Just to be sure
 recipes.replaceAllOccurences(<bloodmagic:component:24>, <ore:dustSaltpeter>);
 
+#Fixing coffee beans
+recipes.replaceAllOccurences(<actuallyadditions:item_coffee_seed>, <ore:cropCoffee>);
+
 #Fixing sugar
 recipes.replaceAllOccurences(<minecraft:water_bucket>, <ore:listAllwater>);
+
+#Fixing egg
+recipes.replaceAllOccurences(<minecraft:egg>, <ore:egg>);
+recipes.replaceAllOccurences(<ore:listAllegg>, <ore:egg>);
 
 print("Initialized 04_replacing_ingredients.zs");
 

@@ -38,6 +38,43 @@ mods.mekanism.enrichment.removeRecipe(<minecraft:obsidian>);
 mods.mekanism.crusher.addRecipe(<minecraft:obsidian>, <thermalfoundation:material:770> * 2);
 mods.mekanism.enrichment.addRecipe(<minecraft:obsidian>, <thermalfoundation:material:770> * 4);
 
+#Adding Nuclearcraft's stuff
+recipes.addShaped(<nuclearcraft:decay_hastener_idle>, [[<ore:plateAdvanced>, <ore:pearlEnderEye>, <ore:plateAdvanced>],[<randomthings:stableenderpearl>, <ore:machineBlockAdvanced>, <randomthings:stableenderpearl>], [<ore:plateAdvanced>, <ore:solenoidCopper>, <ore:plateAdvanced>]]);
+
+#Adding Mystcraft's stuff
+recipes.addShaped(<mystcraft:blockinkmixer>, [[<ore:stone>, null, <ore:stone>],[<ore:stone>, <minecraft:glass_bottle>, <ore:stone>], [<ore:plankWood>, <ore:stone>, <ore:plankWood>]]);
+
+#Adding Immersive Engineering's stuff
+recipes.addShaped(<immersiveengineering:toolupgrade:8>, [[<ore:paneGlassColorless>, <ore:ingotCopper>, null],[<ore:ingotCopper>, null, <ore:ingotCopper>], [null, <ore:ingotCopper>, <ore:paneGlassColorless>]]);
+recipes.addShaped(<immersiveengineering:wooden_device1:3>, [[<ore:fenceTreatedWood>],[<ore:fenceTreatedWood>], [<ore:bricksStone>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:10> * 2, [[<ore:ingotBrick>, <ore:sandstone>], [<ore:sandstone>, <ore:ingotBrick>]]);
+recipes.addShaped(<immersiveengineering:stone_decoration:10> * 2, [[<ore:sandstone>, <ore:ingotBrick>], [<ore:ingotBrick>, <ore:sandstone>]]);
+recipes.addShaped(<immersiveengineering:wooden_device0>, [[<ore:planksTreatedWood>, <ore:slabTreatedWood>, <ore:planksTreatedWood>],[<immersiveengineering:treated_wood:*>, null, <ore:planksTreatedWood>], [<immersiveengineering:treated_wood:*>, <ore:planksTreatedWood>, <ore:planksTreatedWood>]]);
+
+#Adding Immersive Hempcraft's stuff
+//Granite dust
+mods.thermalexpansion.Pulverizer.addRecipe(<techreborn:dust:63>, <minecraft:stone:1>, 4000);
+Grinder.addRecipe(<techreborn:dust:63>, <minecraft:stone:1>, 10);
+mods.immersiveengineering.Crusher.addRecipe(<techreborn:dust:63>, <minecraft:stone:1>, 12000);
+mods.mekanism.crusher.addRecipe(<minecraft:stone:1>, <techreborn:dust:63>);
+mods.techreborn.grinder.addRecipe(<techreborn:dust:63>, <minecraft:stone:1>, 200, 5);
+//Diorite dust
+mods.thermalexpansion.Pulverizer.addRecipe(<techreborn:dust:62>, <minecraft:stone:3>, 4000);
+Grinder.addRecipe(<techreborn:dust:62>, <minecraft:stone:3>, 10);
+mods.immersiveengineering.Crusher.addRecipe(<techreborn:dust:62>, <minecraft:stone:3>, 12000);
+mods.mekanism.crusher.addRecipe(<minecraft:stone:3>, <techreborn:dust:62>);
+mods.techreborn.grinder.addRecipe(<techreborn:dust:62>, <minecraft:stone:3>, 200, 5);
+//Andesite dust
+mods.thermalexpansion.Pulverizer.addRecipe(<techreborn:dust:61>, <minecraft:stone:5>, 4000);
+Grinder.addRecipe(<techreborn:dust:61>, <minecraft:stone:5>, 10);
+mods.immersiveengineering.Crusher.addRecipe(<techreborn:dust:61>, <minecraft:stone:5>, 12000);
+mods.mekanism.crusher.addRecipe(<minecraft:stone:5>, <techreborn:dust:61>);
+mods.techreborn.grinder.addRecipe(<techreborn:dust:61>, <minecraft:stone:5>, 200, 5);
+//Dust to perlite
+furnace.addRecipe(<immersivehempcraft:perlite>, <techreborn:dust:62>, 1.05);
+furnace.addRecipe(<immersivehempcraft:perlite>, <techreborn:dust:63>, 1.05);
+furnace.addRecipe(<immersivehempcraft:perlite>, <techreborn:dust:61>, 1.05);
+
 #Adding Industrial Foregoing's stuff
 recipes.addShaped(<industrialforegoing:protein_reactor>, [[<ore:itemRubber>, <ore:listAllmeatraw>, <ore:itemRubber>],[<ore:egg>, <teslacorelib:machine_case>, <ore:egg>], [<ore:ingotBrick>, <ore:itemLeather>, <ore:ingotBrick>]]);
 recipes.addShaped(<industrialforegoing:spores_recreator>, [[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>],[<ore:listAllmushroom>, <teslacorelib:machine_case>, <ore:listAllmushroom>], [<ore:itemRubber>, <ore:gearIron>, <ore:itemRubber>]]);
@@ -170,11 +207,15 @@ recipes.addShaped(<environmentaltech:void_ore_miner_cont_1>, [[<ore:blockLitheri
 
 #Adding Mekanism's stuff
 mods.mekanism.crusher.addRecipe(<mekanism:ingot:0>, <mekanism:otherdust:5>);
-recipes.addShaped(<mekanism:teleportationcore>, [[<actuallyadditions:item_crystal:1>, <ore:alloyUltimate>, <actuallyadditions:item_crystal:1>],[<ore:ingotEnderium>, <ore:pearlEnderEye>, <ore:ingotEnderium>], [<actuallyadditions:item_crystal:1>, <ore:alloyUltimate>, <actuallyadditions:item_crystal:1>]]);
+recipes.addShaped(<mekanism:teleportationcore>, [[<actuallyadditions:item_crystal:1>, <ore:alloyUltimate>, <actuallyadditions:item_crystal:1>],[<ore:ingotEnderium>, <rftools:infused_enderpearl>, <ore:ingotEnderium>], [<actuallyadditions:item_crystal:1>, <ore:alloyUltimate>, <actuallyadditions:item_crystal:1>]]);
 recipes.addShaped(<mekanism:basicblock:7> * 9, [[<ore:circuitBasic>, <ore:ingotEnderium>, <ore:circuitBasic>],[<ore:ingotEnderium>, <ore:ingotRefinedObsidian>, <ore:ingotEnderium>], [<ore:circuitBasic>, <ore:ingotEnderium>, <ore:circuitBasic>]]);
 recipes.addShaped(<mekanism:machineblock:11>, [[<ore:circuitBasic>, <ore:ingotEnderium>, <ore:circuitBasic>],[<ore:ingotEnderium>, <mekanism:teleportationcore>, <ore:ingotEnderium>], [<ore:circuitBasic>, <ore:ingotEnderium>, <ore:circuitBasic>]]);
 recipes.addShapeless(<mekanism:nugget:3> * 9, [<mekanism:ingot:3>]);
 recipes.addShaped(<mekanism:ingot:3>, [[<mekanism:nugget:3>, <mekanism:nugget:3>, <mekanism:nugget:3>],[<mekanism:nugget:3>, <mekanism:nugget:3>, <mekanism:nugget:3>], [<mekanism:nugget:3>, <mekanism:nugget:3>, <mekanism:nugget:3>]]);
+recipes.addShaped(<mekanism:basicblock:8>, [[<ore:ingotSteel>, <ore:ingotLead>, <ore:ingotSteel>],[<ore:ingotLead>, <ore:ingotOsmium>, <ore:ingotLead>], [<ore:ingotSteel>, <ore:ingotLead>, <ore:ingotSteel>]]);
+recipes.addShaped(<mekanism:basicblock:2>, [[<mekanism:ingot>, <mekanism:ingot>, <mekanism:ingot>],[<mekanism:ingot>, <mekanism:ingot>, <mekanism:ingot>], [<mekanism:ingot>, <mekanism:ingot>, <mekanism:ingot>]]);
+recipes.addShaped(<mekanism:ingot>, [[<mekanism:nugget>, <mekanism:nugget>, <mekanism:nugget>],[<mekanism:nugget>, <mekanism:nugget>, <mekanism:nugget>], [<mekanism:nugget>, <mekanism:nugget>, <mekanism:nugget>]]);
+recipes.addShapeless(<mekanism:nugget> * 9, [<mekanism:ingot>]);
 
 #Adding Immersive Petroleum's stuff
 recipes.addShaped(<immersivepetroleum:stone_decoration> * 12, [[<ore:itemSlag>, <thermalfoundation:material:892>, <ore:itemSlag>],[<ore:gravel>, <minecraft:water_bucket>, <ore:gravel>], [<ore:itemSlag>, <thermalfoundation:material:892>, <ore:itemSlag>]]);

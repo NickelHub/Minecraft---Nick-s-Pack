@@ -8,8 +8,40 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemTransformer;
+import crafttweaker.recipes.IFurnaceRecipe;
 
 print("Initializing 01_remove_recipes.zs");
+
+#Removing Nuclearcraft's stuff
+mods.jei.JEI.removeAndHide(<nuclearcraft:ore:0>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:ore:1>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:ore:2>);
+mods.jei.JEI.removeAndHide(<nuclearcraft:ore:4>);
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.cooler.quartz");
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.cooler.quartz_1");
+recipes.remove(<nuclearcraft:decay_hastener_idle>);
+
+#Removing Mystcraft's stuff
+recipes.removeByRecipeName("mystcraft:inkmixer");
+
+#Removing Immersive Engineering stuff
+recipes.removeByRecipeName("immersiveengineering:toolupgrades/railgun_scope");
+recipes.removeByRecipeName("immersiveengineering:wood_devices/post");
+recipes.removeByRecipeName("immersiveengineering:wood_devices/crate");
+recipes.removeByRecipeName("immersiveengineering:wood_devices/alloybrick");
+mods.jei.JEI.removeAndHide(<immersiveengineering:ore:0>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:ore:1>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:ore:2>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:ore:3>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:ore:4>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:molten_constantan>);
+
+#Removing Immersive Hempcraft's stuff
+mods.jei.JEI.removeAndHide(<immersivehempcraft:granite_dust>);
+mods.jei.JEI.removeAndHide(<immersivehempcraft:diorite_dust>);
+mods.jei.JEI.removeAndHide(<immersivehempcraft:andesite_dust>);
+mods.jei.JEI.removeAndHide(<immersivehempcraft:apatite>);
+furnace.remove(<immersivehempcraft:perlite>);
 
 #Removing Industrial Foregoing's stuff
 recipes.remove(<industrialforegoing:enchantment_refiner>);
@@ -238,7 +270,7 @@ recipes.removeByRecipeName("conarm:travel_slowfall");
 recipes.removeByRecipeName("conarm:travel_sack");
 recipes.removeByRecipeName("conarm:invisible_ink");
 
-#Removing uneeded Chisel recipes
+#Removing Chisel's stuff
 recipes.removeByRecipeName("chisel:factory");
 recipes.removeByRecipeName("chisel:laboratory");
 recipes.removeByRecipeName("chisel:lavastone");
@@ -277,8 +309,14 @@ recipes.removeByRecipeName("plants2:recipe195");
 #Removing Mekanism's stuff
 recipes.removeByRecipeName("mekanism:teleportationcore");
 recipes.removeByRecipeName("mekanism:basicblock_7");
+recipes.removeByRecipeName("mekanism:basicblock_8");
 recipes.removeByRecipeName("mekanism:machineblock_11");
 recipes.removeByRecipeName("mekanism:ingot_3_alt");
+mods.jei.JEI.removeAndHide(<mekanism:oreblock:1>);
+mods.jei.JEI.removeAndHide(<mekanism:oreblock:2>);
+recipes.removeByRecipeName("undidict:blocksalt_x1_shape.aaaa");
+recipes.remove(<mekanism:ingot:0>);
+recipes.remove(<mekanism:nugget:0>);
 
 #Removing Natura's stuff
 recipes.removeByRecipeName("natura:common/wool");

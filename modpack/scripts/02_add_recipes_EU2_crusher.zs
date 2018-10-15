@@ -25,6 +25,11 @@ mods.extrautils2.Crusher.add(<thaumcraft:crystal_essence>.withTag({Aspects:[{amo
 mods.extrautils2.Crusher.add(<appliedenergistics2:material:2>, <appliedenergistics2:material:0>);
 mods.extrautils2.Crusher.add(<appliedenergistics2:material:8>, <appliedenergistics2:material:7>);
 
+#Adding Immersive Hempcraft's stuff
+mods.extrautils2.Crusher.add(<techreborn:dust:63>, <minecraft:stone:1>);
+mods.extrautils2.Crusher.add(<techreborn:dust:62>, <minecraft:stone:3>);
+mods.extrautils2.Crusher.add(<techreborn:dust:61>, <minecraft:stone:5>);
+
 print("Initialized 02_add_recipes_EU2_crusher.zs");
 
 //File End
