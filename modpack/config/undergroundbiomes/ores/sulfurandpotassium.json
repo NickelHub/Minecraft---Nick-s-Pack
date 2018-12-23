@@ -1,0 +1,20 @@
+[
+   {
+      "internalOreName":"mo:potassium_stone_block",
+      "meta":-1,
+      "overlay":"undergroundbiomes:blocks/overlays/baseminerals/niter",
+      "lightValue":-1,
+      "oreDirectories":[
+
+      ]
+   },
+   {
+      "internalOreName":"mo:sulfur_ore_block",
+      "meta":-1,
+      "overlay":"undergroundbiomes:blocks/overlays/baseminerals/sulfur",
+      "lightValue":-1,
+      "oreDirectories":[
+
+      ]
+   }
+]
