@@ -157,20 +157,6 @@ val berryChaos = <ore:berryShardChaos>;
 berryChaos.add(<oreberries:shardchaos_oreberry>);
 val berryADraconium = <ore:berryDraconiumAwakened>;
 berryADraconium.add(<oreberries:draconiumawakened_oreberry>);
-val berryLitherite = <ore:berryLitherite>;
-berryLitherite.add(<oreberries:crystallitherite_oreberry>);
-val berryErodium = <ore:berryErodium>;
-berryErodium.add(<oreberries:crystalerodium_oreberry>);
-val berryKyronite = <ore:berryKyronite>;
-berryKyronite.add(<oreberries:crystalkyronite_oreberry>);
-val berryPladium = <ore:berryPladium>;
-berryPladium.add(<oreberries:crystalpladium_oreberry>);
-val berryIonite = <ore:berryIonite>;
-berryIonite.add(<oreberries:crystalionite_oreberry>);
-val berryAethium = <ore:berryAethium>;
-berryAethium.add(<oreberries:crystalaethium_oreberry>);
-val berryLonsdaleite = <ore:berryLonsdaleite>;
-berryLonsdaleite.add(<oreberries:crystallonsdaleite_oreberry>);
 
 #Adding more bricks 
 val brickblock = <ore:blockBrick>; // This adds more bricks like the ones made of clay
@@ -272,47 +258,6 @@ stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_appliedenergistics2_sky_
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_darkstone_brick_0:*>);
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_darkstone_brick_0:*>);
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_darkstone_brick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_1:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_1:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_1:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_2:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_2:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_2:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_3:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_3:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_3:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_4:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_4:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_4:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_5:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_5:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_5:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_6:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_6:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_6:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_biomestoneb_7:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_biomestoneb_7:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_biomestoneb_7:*>);
-stonebrick.add(<botania:biomestoneb:*>);
-stonebrick.add(<botania:livingrock:1>);
-stonebrick.add(<botania:livingrock:2>);
-stonebrick.add(<botania:livingrock:3>);
-stonebrick.add(<botania:livingrock:4>);
-stonebrick.add(<environmentalmaterials:alabaster_paver:*>);
-stonebrick.add(<environmentalmaterials:alabaster_bricks:*>);
-stonebrick.add(<environmentalmaterials:alabaster_tiles:*>);
-stonebrick.add(<environmentalmaterials:basalt_paver>);
-stonebrick.add(<environmentalmaterials:basalt_bricks>);
-stonebrick.add(<environmentalmaterials:basalt_tiles>);
-stonebrick.add(<environmentalmaterials:hardened_stone_paver>);
-stonebrick.add(<environmentalmaterials:hardened_stone_bricks>);
-stonebrick.add(<environmentalmaterials:hardened_stone_tiles>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_botania_livingrock_1:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_botania_livingrock_1:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_botania_livingrock_1:*>);
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_dreadbrick_0:*>);
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_dreadbrick_0:*>);
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_dreadbrick_0:*>);
@@ -337,38 +282,11 @@ stoneslabblock.add(<minecraft:stone_slab>);
 
 #Adding more stone slabs
 val stoneslab = <ore:slabStone>;
-stoneslab.add(<environmentalmaterials:alabaster_slab_white>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_orange>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_magenta>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_light_blue>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_yellow>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_lime>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_pink>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_gray>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_silver>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_cyan>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_purple>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_blue>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_brown>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_green>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_red>);
-stoneslab.add(<environmentalmaterials:alabaster_slab_black>);
-stoneslab.add(<environmentalmaterials:basalt_slab>);
-stoneslab.add(<environmentalmaterials:hardened_stone_slab>);
 stoneslab.add(<abyssalcraft:darkstoneslab1>);
 stoneslab.add(<undergroundbiomes:igneous_stone_halfslab:*>);
 stoneslab.add(<undergroundbiomes:metamorphic_stone_halfslab:*>);
 stoneslab.add(<appliedenergistics2:sky_stone_slab>);
 stoneslab.add(<appliedenergistics2:smooth_sky_stone_slab>);
-stoneslab.add(<botania:livingrock0slab>);
-stoneslab.add(<botania:biomestonea0slab>);
-stoneslab.add(<botania:biomestonea1slab>);
-stoneslab.add(<botania:biomestonea2slab>);
-stoneslab.add(<botania:biomestonea3slab>);
-stoneslab.add(<botania:biomestonea4slab>);
-stoneslab.add(<botania:biomestonea5slab>);
-stoneslab.add(<botania:biomestonea6slab>);
-stoneslab.add(<botania:biomestonea7slab>);
 stoneslab.add(<tconstruct:seared_slab>);
 stoneslab.add(<undergroundbiomes:igneous_stone_halfslab:*>);
 stoneslab.add(<undergroundbiomes:metamorphic_stone_halfslab:*>);
@@ -380,61 +298,6 @@ stonebrickslabblock.add(<minecraft:stone_slab:5>);
 
 #Adding more stone brick slabs
 val stonebrickslab = <ore:slabBricksStone>;
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_white>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_orange>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_magenta>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_light_blue>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_yellow>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_lime>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_pink>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_gray>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_silver>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_cyan>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_purple>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_blue>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_brown>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_green>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_red>);
-stonebrickslab.add(<environmentalmaterials:alabaster_paver_slab_black>);
-stonebrickslab.add(<environmentalmaterials:basalt_paver_slab>);
-stonebrickslab.add(<environmentalmaterials:hardened_stone_paver_slab>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_white>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_orange>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_magenta>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_light_blue>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_yellow>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_lime>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_pink>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_gray>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_silver>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_cyan>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_purple>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_blue>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_brown>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_green>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_red>);
-stonebrickslab.add(<environmentalmaterials:alabaster_brick_slab_black>);
-stonebrickslab.add(<environmentalmaterials:basalt_brick_slab>);
-stonebrickslab.add(<environmentalmaterials:hardened_stone_brick_slab>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_white>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_orange>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_magenta>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_light_blue>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_yellow>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_lime>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_pink>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_gray>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_silver>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_cyan>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_purple>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_blue>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_brown>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_green>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_red>);
-stonebrickslab.add(<environmentalmaterials:alabaster_tile_slab_black>);
-stonebrickslab.add(<environmentalmaterials:basalt_tile_slab>);
-stonebrickslab.add(<environmentalmaterials:hardened_stone_tile_slab>);
-stonebrickslab.add(<botania:livingrock1slab>);
 stonebrickslab.add(<undergroundbiomes:igneous_brick_halfslab:*>);
 stonebrickslab.add(<undergroundbiomes:metamorphic_brick_halfslab:*>);
 
@@ -449,12 +312,6 @@ slabCobble.add(<abyssalcraft:abyssalcobblestoneslab1>);
 slabCobble.add(<abyssalcraft:dreadstonecobblestoneslab1>);
 slabCobble.add(<abyssalcraft:abyssalnitecobblestoneslab1>);
 slabCobble.add(<abyssalcraft:coraliumcobblestoneslab1>);
-slabCobble.add(<botania:biomestonea10slab>);
-slabCobble.add(<botania:biomestonea11slab>);
-slabCobble.add(<botania:biomestonea12slab>);
-slabCobble.add(<botania:biomestonea13slab>);
-slabCobble.add(<botania:biomestonea14slab>);
-slabCobble.add(<botania:biomestonea15slab>);
 slabCobble.add(<tconstruct:seared_slab:1>);
 slabCobble.add(<undergroundbiomes:igneous_cobble_halfslab:*>);
 slabCobble.add(<undergroundbiomes:metamorphic_cobble_halfslab:*>);
@@ -482,53 +339,9 @@ stone.add(<bloodmagic:demon_extras:6>);
 stone.add(<bloodmagic:demon_extras:7>);
 stone.add(<bloodmagic:demon_extras:8>);
 stone.add(<bloodmagic:demon_extras:9>);
-stone.add(<botania:livingrock:0>);
-stone.add(<botania:biomestonea:0>);
-stone.add(<botania:biomestonea:1>);
-stone.add(<botania:biomestonea:2>);
-stone.add(<botania:biomestonea:3>);
-stone.add(<botania:biomestonea:4>);
-stone.add(<botania:biomestonea:5>);
-stone.add(<botania:biomestonea:6>);
-stone.add(<botania:biomestonea:7>);
-stone.add(<environmentalmaterials:alabaster:*>);
-stone.add(<environmentalmaterials:basalt>);
-stone.add(<environmentalmaterials:hardened_stone>);
 stone.add(<nex:basalt:0>);
 
 val cobble = <ore:cobblestone>;
-cobble.add(<botania:biomestonea:8>);
-cobble.add(<botania:biomestonea:9>);
-cobble.add(<botania:biomestonea:10>);
-cobble.add(<botania:biomestonea:11>);
-cobble.add(<botania:biomestonea:12>);
-cobble.add(<botania:biomestonea:13>);
-cobble.add(<botania:biomestonea:14>);
-cobble.add(<botania:biomestonea:15>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_8:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_8:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_8:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_9:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_9:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_9:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_10:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_10:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_10:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_11:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_11:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_11:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_12:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_12:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_12:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_13:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_13:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_13:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_14:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_14:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_14:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_botania_biomestonea_15:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_botania_biomestonea_15:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_botania_biomestonea_15:*>);
 cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_0:*>);
 cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_0:*>);
 cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_0:*>);
@@ -604,7 +417,6 @@ mossy.add(<undergroundbiomes:metamorphic_cobble_mossy:*>);
 mossy.add(<undergroundbiomes:igneous_cobble_mossy:*>);
 mossy.add(<undergroundbiomes:sedimentary_stone_mossy:*>);
 mossy.add(<chisel:templemossy:*>);
-mossy.add(<botania:livingrock:2>);
 
 #More sandstone
 val sandstone = <ore:sandstone>;
@@ -625,7 +437,6 @@ grass.add(<biomesoplenty:grass:7>);
 grass.add(<tconstruct:slime_grass:*>);
 grass.add(<randomthings:coloredgrass:*>);
 grass.add(<natura:colored_grass:*>);
-grass.add(<botania:altgrass:*>);
 
 #More dirt
 val dirt = <ore:dirt>;
@@ -646,17 +457,13 @@ mushroom.add(<biomesoplenty:mushroom:2>);
 mushroom.add(<biomesoplenty:mushroom:3>);
 mushroom.add(<biomesoplenty:mushroom:4>);
 mushroom.add(<biomesoplenty:mushroom:5>);
+mushroom.add(<nuclearcraft:glowing_mushroom>);
 
 val log = <ore:logWood>;
-log.add(<bloodarsenal:blood_infused_wooden_log>);
-log.add(<botania:livingwood:0>);
 
 val planks = <ore:planksWood>;
-planks.add(<bloodarsenal:blood_infused_wooden_planks>);
-planks.add(<botania:livingwood:1>);
 planks.add(<immersiveengineering:treated_wood:*>);
 planks.add(<unlimitedchiselworks:chisel_planks_oak_immersiveengineering_treated_wood_0:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_botania_livingwood_1:*>);
 planks.add(<unlimitedchiselworks:chisel_planks_oak_techreborn_rubber_planks_0:*>);
 planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_0:*>);
 planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_1:*>);
@@ -756,20 +563,14 @@ val planksTreated = <ore:planksTreatedWood>;
 planksTreated.add(<unlimitedchiselworks:chisel_planks_oak_immersiveengineering_treated_wood_0:*>);
 
 val stairsw = <ore:stairsWood>;
-stairsw.add(<bloodarsenal:blood_infused_wooden_stairs>);
-stairsw.add(<botania:livingwood0stairs>);
 
 val slabw = <ore:slabWood>;
-slabw.add(<botania:livingwood0slab>);
 
 val fencew = <ore:fenceWood>;
-fencew.add(<bloodarsenal:blood_infused_wooden_fence>);
 
 val fencewg = <ore:fenceWoodGate>;
-fencewg.add(<bloodarsenal:blood_infused_wooden_fence_gate>);
 
 val stick = <ore:stickWood>;
-stick.add(<bloodarsenal:base_item:1>);
 stick.add(<immersiveengineering:material:0>);
 
 val drawer = <ore:drawerBasic>;
@@ -790,28 +591,28 @@ cokeblock.add(<immersiveengineering:stone_decoration:3>);
 
 #More egg
 val egg = <ore:egg>;
-egg.add(<primitivemobs:dodo_egg>);
 
 #Ordicting bird meat
 val listallrawbird = <ore:listAllbirdraw>;
 listallrawbird.add(<exoticbirds:birdmeat:0>);
-listallrawbird.add(<primitivemobs:dodo>);
 val listallcookedbird = <ore:listAllbirdcooked>;
 listallcookedbird.add(<exoticbirds:cooked_birdmeat>);
-listallcookedbird.add(<primitivemobs:cooked_dodo>);
 val listallrawmeat = <ore:listAllmeatraw>;
 listallrawmeat.add(<exoticbirds:birdmeat>);
-listallrawmeat.add(<primitivemobs:dodo>);
 val listallcookedmeat = <ore:listAllmeatcooked>;
 listallcookedmeat.add(<exoticbirds:cooked_birdmeat>);
-listallcookedmeat.add(<primitivemobs:cooked_dodo>);
 
+#Oredict seeds
 val seed = <ore:listAllseed>;
 seed.add(<immersiveengineering:seed>);
 seed.add(<actuallyadditions:item_rice_seed>);
 seed.add(<actuallyadditions:item_coffee_seed>);
 seed.add(<actuallyadditions:item_flax_seed>);
 seed.add(<actuallyadditions:item_canola_seed>);
+
+#Oredcit sulfur
+val sulf = <ore:dustSulfur>;
+sulf.add(<mo:sulfur>);
 
 print("Initialized 03_oredictionary.zs");
 
