@@ -12,6 +12,27 @@ import crafttweaker.recipes.IFurnaceRecipe;
 
 print("Initializing 01_remove_recipes.zs");
 
+#Removing Open Blocks' stuff
+mods.jei.JEI.removeAndHide(<openblocks:generic_unstackable>);
+recipes.remove(<openblocks:elevator:*>);
+recipes.removeByRecipeName("openblocks:elevator_rotating_0");
+recipes.removeByRecipeName("openblocks:elevator_rotating_2");
+recipes.removeByRecipeName("openblocks:elevator_rotating_4");
+recipes.removeByRecipeName("openblocks:elevator_rotating_6");
+recipes.removeByRecipeName("openblocks:elevator_rotating_8");
+recipes.removeByRecipeName("openblocks:elevator_rotating_10");
+recipes.removeByRecipeName("openblocks:elevator_rotating_12");
+recipes.removeByRecipeName("openblocks:elevator_rotating_14");
+recipes.removeByRecipeName("openblocks:elevator_rotating_16");
+recipes.removeByRecipeName("openblocks:elevator_rotating_18");
+recipes.removeByRecipeName("openblocks:elevator_rotating_20");
+recipes.removeByRecipeName("openblocks:elevator_rotating_22");
+recipes.removeByRecipeName("openblocks:elevator_rotating_24");
+recipes.removeByRecipeName("openblocks:elevator_rotating_26");
+recipes.removeByRecipeName("openblocks:elevator_rotating_28");
+recipes.removeByRecipeName("openblocks:elevator_rotating_30");
+recipes.removeByRecipeName("openblocks:luggage_0");
+
 #Removing Nuclearcraft's stuff
 mods.jei.JEI.removeAndHide(<nuclearcraft:ore:0>);
 mods.jei.JEI.removeAndHide(<nuclearcraft:ore:1>);
@@ -344,6 +365,16 @@ mods.jei.JEI.removeAndHide(<natura:nether_workbenches:0>);
 mods.jei.JEI.removeAndHide(<natura:nether_workbenches:1>);
 mods.jei.JEI.removeAndHide(<natura:nether_workbenches:2>);
 mods.jei.JEI.removeAndHide(<natura:nether_workbenches:3>);
+mods.jei.JEI.removeAndHide(<natura:empty_bowls:*>);
+mods.jei.JEI.removeAndHide(<natura:soups:0>);
+mods.jei.JEI.removeAndHide(<natura:soups:1>);
+mods.jei.JEI.removeAndHide(<natura:soups:2>);
+mods.jei.JEI.removeAndHide(<natura:soups:3>);
+mods.jei.JEI.removeAndHide(<natura:soups:4>);
+mods.jei.JEI.removeAndHide(<natura:soups:5>);
+mods.jei.JEI.removeAndHide(<natura:soups:6>);
+mods.jei.JEI.removeAndHide(<natura:soups:7>);
+mods.jei.JEI.removeAndHide(<natura:soups:8>);
 //Removing unnessecary flour
 mods.jei.JEI.removeAndHide(<natura:materials:1>);
 mods.jei.JEI.removeAndHide(<natura:materials:2>);

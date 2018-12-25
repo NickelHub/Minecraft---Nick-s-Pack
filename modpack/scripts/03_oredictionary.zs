@@ -176,6 +176,7 @@ rabbithideitem.add(<minecraft:rabbit_hide>);
 val rabbithide = <ore:leatherRabbit>;
 rabbithide.add(<minecraft:rabbit_hide>);
 rabbithide.add(<immersivehempcraft:fabric>);
+rabbithide.add(<natura:materials:6>);
 
 #Adding more feathers
 val feather = <ore:feather>;
@@ -458,6 +459,7 @@ mushroom.add(<biomesoplenty:mushroom:3>);
 mushroom.add(<biomesoplenty:mushroom:4>);
 mushroom.add(<biomesoplenty:mushroom:5>);
 mushroom.add(<nuclearcraft:glowing_mushroom>);
+mushroom.add(<natura:nether_glowshroom:*>);
 
 val log = <ore:logWood>;
 
@@ -579,6 +581,10 @@ drawer.add(<storagedrawers:customdrawers:*>);
 val trim = <ore:drawerTrim>;
 trim.add(<storagedrawers:customtrim>);
 
+val doorW = <ore:doorWood>;
+doorW.add(<natura:overworld_doors:*>);
+doorW.add(<natura:nether_doors:*>);
+
 val stonemeal = <ore:dustStonemeal>;
 stonemeal.add(<techreborn:dust:61>);
 stonemeal.add(<techreborn:dust:62>);
@@ -587,7 +593,74 @@ stonemeal.add(<techreborn:dust:63>);
 val cokeblock = <ore:blockCoalCoke>;
 cokeblock.add(<immersiveengineering:stone_decoration:3>);
 
+#Oredcit sulfur
+val sulf = <ore:dustSulfur>;
+sulf.add(<mo:sulfur>);
+
 //The following section contains additional registrations for food stuff
+
+#Adding more spice
+val spice = <ore:listAllspice>;
+spice.add(<plants2:saffron>);
+
+#Adding more veggie
+val veggie = <ore:listAllveggie>;
+veggie.add(<plants2:amaranthus_h>);
+veggie.add(<plants2:okra>);
+veggie.add(<plants2:daucus_c>);
+veggie.add(<plants2:plantago_m>);
+veggie.add(<plants2:alternanthera_f>);
+veggie.add(<plants2:tahitian_spinach>);
+
+#Adding more green veggie
+val veggieG = <ore:listAllgreenveggie>;
+veggieG.add(<plants2:okra>);
+veggieG.add(<plants2:plantago_m>);
+veggieG.add(<plants2:alternanthera_f>);
+veggieG.add(<plants2:tahitian_spinach>);
+
+#Adding more berries
+val berry = <ore:listAllberry>;
+berry.add(<natura:edibles:2>);
+berry.add(<natura:edibles:3>);
+berry.add(<natura:edibles:4>);
+berry.add(<natura:edibles:5>);
+berry.add(<natura:edibles:6>);
+berry.add(<natura:edibles:7>);
+berry.add(<natura:edibles:8>);
+berry.add(<plants2:phytolacca_a>);
+berry.add(<plants2:rubus_o>);
+berry.add(<plants2:rubus_p>);
+berry.add(<plants2:solanum_c>);
+berry.add(<plants2:solanum_d>);
+berry.add(<plants2:solanum_n>);
+berry.add(<plants2:alyxia_b>);
+berry.add(<plants2:actaea_p>);
+berry.add(<plants2:ampelopsis_a>);
+berry.add(<plants2:blackberry>);
+berry.add(<plants2:blueberry>);
+berry.add(<plants2:raspberry>);
+berry.add(<plants2:huckleberry>);
+berry.add(<plants2:fire_fruit>);
+
+#Addibf more fruits
+val fruit = <ore:listAllfruit>;
+fruit.add(<natura:saguaro_fruit_item>);
+fruit.add(<plants2:pineapple>);
+fruit.add(<plants2:phytolacca_a>);
+fruit.add(<plants2:rubus_o>);
+fruit.add(<plants2:rubus_p>);
+fruit.add(<plants2:solanum_c>);
+fruit.add(<plants2:solanum_d>);
+fruit.add(<plants2:solanum_n>);
+fruit.add(<plants2:alyxia_b>);
+fruit.add(<plants2:actaea_p>);
+fruit.add(<plants2:ampelopsis_a>);
+fruit.add(<plants2:blackberry>);
+fruit.add(<plants2:blueberry>);
+fruit.add(<plants2:raspberry>);
+fruit.add(<plants2:huckleberry>);
+fruit.add(<plants2:fire_fruit>);
 
 #More egg
 val egg = <ore:egg>;
@@ -609,10 +682,36 @@ seed.add(<actuallyadditions:item_rice_seed>);
 seed.add(<actuallyadditions:item_coffee_seed>);
 seed.add(<actuallyadditions:item_flax_seed>);
 seed.add(<actuallyadditions:item_canola_seed>);
+seed.add(<plants2:apocynum_c>);
+seed.add(<plants2:pineapple_seeds>);
+seed.add(<plants2:okra_seeds>);
+seed.add(<plants2:amaranthus_h_seeds>);
 
-#Oredcit sulfur
-val sulf = <ore:dustSulfur>;
-sulf.add(<mo:sulfur>);
+val okra = <ore:cropOkra>;
+okra.add(<plants2:okra>);
+
+val pineapple = <ore:cropPineapple>;
+pineapple.add(<plants2:pineapple>);
+
+val carrot = <ore:cropCarrot>;
+carrot.add(<plants2:daucus_c>);
+
+val raspberry = <ore:cropRaspberry>;
+raspberry.add(<plants2:rubus_o>);
+raspberry.add(<plants2:rubus_p>);
+raspberry.add(<plants2:raspberry>);
+
+val blackberry = <ore:cropBlackberry>;
+blackberry.add(<plants2:blackberry>);
+
+val huckleberry = <ore:cropHuckleberry>;
+huckleberry.add(<plants2:huckleberry>);
+
+val blueberry = <ore:cropBlueberry>;
+blueberry.add(<plants2:blueberry>);
+
+val spinach = <ore:cropSpinach>;
+spinach.add(<plants2:tahitian_spinach>);
 
 print("Initialized 03_oredictionary.zs");
 
