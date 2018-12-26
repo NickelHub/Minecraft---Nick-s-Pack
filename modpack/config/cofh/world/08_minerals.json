@@ -1,7 +1,8 @@
 {
    "dependencies":[
       "abyssalcraft",
-      "mekanism"
+      "mekanism",
+      "railcraft"
    ],
    "populate":{
       "niter":{
@@ -16,8 +17,58 @@
             "cluster-size":6
          },
          "cluster-count":6,
-         "min-height":16,
-         "max-height":50,
+         "min-height":0,
+         "max-height":30,
+         "retrogen":"true",
+         "biome":"all",
+         "dimension":{
+            "restriction":"whitelist",
+            "value":[
+               0,
+               -9999
+            ]
+         }
+      },
+      "sulphur":{
+         "distribution":"uniform",
+         "generator":{
+            "block":[
+               {
+                  "name":"railcraft:ore",
+                  "metadata":0
+               }
+            ],
+            "material":"stone",
+            "cluster-size":6
+         },
+         "cluster-count":6,
+         "min-height":0,
+         "max-height":30,
+         "retrogen":"true",
+         "biome":"all",
+         "dimension":{
+            "restriction":"whitelist",
+            "value":[
+               0,
+               -9999
+            ]
+         }
+      },
+      "zinc":{
+         "distribution":"uniform",
+         "generator":{
+            "block":[
+               {
+                  "name":"railcraft:ore_metal",
+                  "metadata":5
+               }
+            ],
+            "material":"stone",
+            "cluster-size":6
+         },
+         "cluster-count":6,
+         "min-height":12,
+         "max-height":45,
          "retrogen":"true",
          "biome":"all",
          "dimension":{
