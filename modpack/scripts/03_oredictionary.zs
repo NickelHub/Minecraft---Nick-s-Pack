@@ -599,10 +599,6 @@ stonemeal.add(<techreborn:dust:63>);
 val cokeblock = <ore:blockCoalCoke>;
 cokeblock.add(<immersiveengineering:stone_decoration:3>);
 
-#Oredcit sulfur
-val sulf = <ore:dustSulfur>;
-sulf.add(<mo:sulfur>);
-
 #
 //
 //The following section contains additional registrations for food stuff
