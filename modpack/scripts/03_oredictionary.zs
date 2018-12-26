@@ -26,6 +26,12 @@ val hardenedLeather = <ore:LeatherHardened>;
 hardenedLeather.add(<improvedbackpacks:tanned_leather>);
 hardenedLeather.add(<harvestcraft:hardenedleatheritem>);
 
+#Unifying circuits
+val cirU = <ore:circuitUltimate>;
+cirU.add(<techreborn:part:0>);
+val cirM = <ore:circuitMaster>;
+cirM.add(<mekanism:controlcircuit:3>);
+
 #Adding Simple Machine Case
 val simCase = <ore:machineBlockBasic>;
 simCase.add(<teslacorelib:machine_case>);
@@ -597,7 +603,11 @@ cokeblock.add(<immersiveengineering:stone_decoration:3>);
 val sulf = <ore:dustSulfur>;
 sulf.add(<mo:sulfur>);
 
+#
+//
 //The following section contains additional registrations for food stuff
+//
+#
 
 #Adding more spice
 val spice = <ore:listAllspice>;
@@ -687,6 +697,7 @@ seed.add(<plants2:pineapple_seeds>);
 seed.add(<plants2:okra_seeds>);
 seed.add(<plants2:amaranthus_h_seeds>);
 
+//The next section adds more crops
 val okra = <ore:cropOkra>;
 okra.add(<plants2:okra>);
 
@@ -712,6 +723,21 @@ blueberry.add(<plants2:blueberry>);
 
 val spinach = <ore:cropSpinach>;
 spinach.add(<plants2:tahitian_spinach>);
+
+val cotton = <ore:cropCotton>;
+cotton.add(<plants2:generic:0>);
+
+#
+//
+//The next section removes entries from OreDictionary
+//
+#
+
+val dustQ = <ore:dustQuartz>;
+dustQ.remove(<actuallyadditions:item_dust:5>);
+
+val dustE = <ore:dustEnder>;
+dustE.remove(<appliedenergistics2:material:46>);
 
 print("Initialized 03_oredictionary.zs");
 
