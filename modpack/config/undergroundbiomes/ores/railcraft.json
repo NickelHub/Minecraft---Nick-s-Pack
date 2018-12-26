@@ -1,0 +1,20 @@
+[
+   {
+      "internalOreName":"railcraft:ore_metal",
+      "meta":5,
+      "overlay":"undergroundbiomes:blocks/overlays/basemetals/zinc",
+      "lightValue":-1,
+      "oreDirectories":[
+
+      ]
+   },
+   {
+      "internalOreName":"railcraft:ore",
+      "meta":0,
+      "overlay":"undergroundbiomes:blocks/overlays/baseminerals/sulfur",
+      "lightValue":-1,
+      "oreDirectories":[
+
+      ]
+   }
+]
