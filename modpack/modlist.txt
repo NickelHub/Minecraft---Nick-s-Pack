@@ -8,7 +8,7 @@
 |   AmbientSounds_v2.3_mc1.12.2.jar
 |   AppleCore-mc1.12.2-3.1.4.jar
 |   AppleSkin-mc1.12-1.0.9.jar
-|   appliedenergistics2-rv6-stable-5.jar
+|   appliedenergistics2-rv6-stable-6.jar
 |   architecturecraft-1.12-3.80.jar
 |   armoryexpansion-0.2.0.jar
 |   AttributeFix-1.12.2-1.0.7.jar
@@ -98,18 +98,20 @@
 |   oreberries-1.12.x-0.5.0.jar
 |   OreExcavation-1.4.133.jar
 |   p455w0rdslib-1.12.2-2.0.36.jar
-|   Pam's+HarvestCraft+1.12.2zb.jar
+|   Pam_s+HarvestCraft+1.12.2zb.jar
 |   Pewter-1.4.3.jar
 |   Placebo-1.12.2-1.5.0.jar
 |   Plants-1.12.2-2.10.3.jar
-|   plustic-6.5.4.2.jar
+|   plustic-7.0.0.0.jar
 |   pmp-1.12.1.jar
 |   PTRLib-1.0.3.jar
+|   railcraft-12.0.0-beta-2.jar
 |   RandomThings-MC1.12.2-4.2.4.jar
 |   RebornCore-1.12.2-3.12.1.385-universal.jar
 |   RedstoneFlux-1.12-2.1.0.6-universal.jar
 |   redstonepaste-mc1.12-1.7.5.jar
 |   Reliquary-1.12.2-1.3.4.780.jar
+|   RetroBees_1.12.2-1.1.0-universal (1).jar
 |   rftools-1.12-7.59.jar
 |   rftoolsdim-1.12-5.63.jar
 |   secretroomsmod-1.12.2-5.6.4.jar
@@ -117,7 +119,6 @@
 |   SoundFilters-0.10_for_1.12.jar
 |   spatialservermod-1.3.jar
 |   StorageDrawers-1.12.2-5.3.8.jar
-|   sulfur-potassium-1.12-1.1.jar
 |   Surge-1.12.2-2.0.76.jar
 |   TConstruct-1.12.2-2.11.0.106.jar
 |   TechReborn-1.12.2-2.19.1.877-universal.jar
@@ -137,7 +138,7 @@
 |   topaddons-1.12.2-1.10.1.jar
 |   torchmaster_1.12.2-1.7.0.72.jar
 |   UndergroundBiomesConstructs-1.12-1.3.0.jar
-|   UniDict-1.12.2-2.9.1.jar
+|   UniDict-1.12.2-2.9.2.jar
 |   UnlimitedChiselWorks-0.2.0.jar
 |   VanillaFix-1.0.10-99.jar
 |   WanionLib-1.12.2-2.2.jar
