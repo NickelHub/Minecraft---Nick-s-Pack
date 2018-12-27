@@ -54,5 +54,24 @@
          "morebees:nether_starfragment",
          "morebees:nether_starfragment"
       ]
+   },
+   {
+      "mode":"ADD",
+      "result":"randomthings:stableenderpearl,40",
+      "catalyst":"actuallyadditions:block_misc:6",
+      "energy":8000000,
+      "tier":0,
+      "ingredients":[
+         "minecraft:obsidian",
+         "minecraft:obsidian",
+         "actuallyadditions:block_misc:6",
+         "actuallyadditions:block_misc:6",
+         "actuallyadditions:block_crystal:1",
+         "actuallyadditions:block_crystal:1",
+         "actuallyadditions:block_misc:6",
+         "actuallyadditions:block_misc:6",
+         "minecraft:obsidian",
+         "minecraft:obsidian"
+      ]
    }
 ]
