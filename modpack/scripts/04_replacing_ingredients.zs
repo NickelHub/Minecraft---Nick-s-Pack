@@ -81,6 +81,14 @@ recipes.replaceAllOccurences(<actuallyadditions:item_coffee_seed>, <ore:cropCoff
 #Fixing sugar
 recipes.replaceAllOccurences(<minecraft:water_bucket>, <ore:listAllwater>);
 
+#Replacing water lily pads
+recipes.replaceAllOccurences(<minecraft:waterlily>, <ore:lilypad>);
+
+#Unifying bat wings
+recipes.replaceAllOccurences(<gravestone-extended:gs_bat_wing>, <ore:wingBat>);
+recipes.replaceAllOccurences(<actuallyadditions:item_misc:15>, <ore:wingBat>);
+recipes.replaceAllOccurences(<xreliquary:mob_ingredient:5>, <ore:wingBat>);
+
 #Fixing egg
 recipes.replaceAllOccurences(<minecraft:egg>, <ore:egg>);
 recipes.replaceAllOccurences(<ore:listAllegg>, <ore:egg>);

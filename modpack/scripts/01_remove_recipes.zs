@@ -12,26 +12,85 @@ import crafttweaker.recipes.IFurnaceRecipe;
 
 print("Initializing 01_remove_recipes.zs");
 
-#Removing Open Blocks' stuff
-mods.jei.JEI.removeAndHide(<openblocks:generic_unstackable>);
-recipes.remove(<openblocks:elevator:*>);
-recipes.removeByRecipeName("openblocks:elevator_rotating_0");
-recipes.removeByRecipeName("openblocks:elevator_rotating_2");
-recipes.removeByRecipeName("openblocks:elevator_rotating_4");
-recipes.removeByRecipeName("openblocks:elevator_rotating_6");
-recipes.removeByRecipeName("openblocks:elevator_rotating_8");
-recipes.removeByRecipeName("openblocks:elevator_rotating_10");
-recipes.removeByRecipeName("openblocks:elevator_rotating_12");
-recipes.removeByRecipeName("openblocks:elevator_rotating_14");
-recipes.removeByRecipeName("openblocks:elevator_rotating_16");
-recipes.removeByRecipeName("openblocks:elevator_rotating_18");
-recipes.removeByRecipeName("openblocks:elevator_rotating_20");
-recipes.removeByRecipeName("openblocks:elevator_rotating_22");
-recipes.removeByRecipeName("openblocks:elevator_rotating_24");
-recipes.removeByRecipeName("openblocks:elevator_rotating_26");
-recipes.removeByRecipeName("openblocks:elevator_rotating_28");
-recipes.removeByRecipeName("openblocks:elevator_rotating_30");
-recipes.removeByRecipeName("openblocks:luggage_0");
+#Removing Minecraft's stuff
+recipes.removeByRecipeName("minecraft:chiseled_stonebrick");
+
+#Removing tweaked recipes
+recipes.removeByRecipeName("endercore:slabcobblestone_to_cobblestone");
+recipes.removeByRecipeName("endercore:slabstone_to_stone");
+recipes.removeByRecipeName("endercore:slabstonebrick_to_stonebrick");
+
+#Removing gears and plates recipes
+mods.unidict.removalByKind.get("Crafting").remove("gear");
+mods.unidict.removalByKind.get("Crafting").remove("plate");
+
+#
+//
+//The next section removes things from magic mods
+//
+#
+
+#Removing Reliquary's stuff
+recipes.remove(<xreliquary:lantern_of_paranoia>);
+
+#Removing Waystones' stuff
+recipes.removeByRecipeName("waystones:warp_stone");
+recipes.removeByRecipeName("waystones:warp_scroll");
+recipes.removeByRecipeName("waystones:bound_scroll");
+recipes.removeByRecipeName("waystones:return_scroll");
+recipes.removeByRecipeName("waystones:waystone");
+
+#Removing Blood Magic's stuff
+recipes.removeByRecipeName("bloodmagic:teleposer");
+mods.jei.JEI.removeAndHide(<bloodmagic:component:24>);
+
+#Removing Ender Storage's stuff
+recipes.remove(<enderstorage:ender_pouch>);
+recipes.remove(<enderstorage:ender_storage:1>);
+recipes.remove(<enderstorage:ender_storage>);
+
+#Removing Gravestone Mod's and Gravestone Mod Extended's stuff
+recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/gallows");
+recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/gibbets");
+recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/stocks");
+recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/burning_stake");
+recipes.removeByRecipeName("gravestone-extended:skeleton_spawner");
+recipes.removeByRecipeName("gravestone-extended:spider_spawner");
+recipes.removeByRecipeName("gravestone-extended:zombie_spawner");
+recipes.removeByRecipeName("gravestone-extended:wither_spawner");
+recipes.removeByRecipeName("gravestone-extended:nightstone");
+recipes.removeByRecipeName("gravestone-extended:thunderstone");
+recipes.removeByRecipeName("gravestone-extended:crafting/blocks/withered_glass");
+recipes.removeByRecipeName("gravestone-extended:crafting/blocks/candle");
+recipes.removeByRecipeName("gravestone-extended:gs_undertaker_backpack");
+
+#Removing Magic Bee's stuff
+recipes.removeByRecipeName("magicbees:essence_fl1");
+recipes.removeByRecipeName("magicbees:essence_fl2");
+recipes.removeByRecipeName("magicbees:essence_cg1");
+recipes.removeByRecipeName("magicbees:essence_cg2");
+recipes.removeByRecipeName("magicbees:essence_lt1");
+recipes.removeByRecipeName("magicbees:essence_lt2");
+recipes.removeByRecipeName("magicbees:essence_eld1");
+recipes.removeByRecipeName("magicbees:essence_eld2");
+recipes.remove(<magicbees:resource:12>);
+recipes.removeByRecipeName("magicbees:dimensionalsingularity");
+recipes.removeByRecipeName("magicbees:effectjar");
+recipes.remove(<magicbees:manasteelgrafter>);
+recipes.remove(<magicbees:manasteelscoop>);
+
+#
+//
+//The next section removes things from technical mods
+//
+#
+
+#Removing Thermal stuff
+recipes.remove(<thermalexpansion:machine:6>);
+recipes.remove(<thermalexpansion:augment:258>);
+recipes.remove(<thermalexpansion:augment:352>);
+recipes.removeByRecipeName("thermalexpansion:morb");
+recipes.removeByRecipeName("thermalexpansion:morb_2");
 
 #Removing Nuclearcraft's stuff
 mods.jei.JEI.removeAndHide(<nuclearcraft:ore:0>);
@@ -62,6 +121,17 @@ mods.jei.JEI.removeAndHide(<immersivehempcraft:andesite_dust>);
 mods.jei.JEI.removeAndHide(<immersivehempcraft:apatite>);
 furnace.remove(<immersivehempcraft:perlite>);
 
+#Removing Actually Additions' stuff
+recipes.removeByRecipeName("actuallyadditions:recipes114");
+recipes.removeByRecipeName("actuallyadditions:recipes123");
+recipes.removeByRecipeName("actuallyadditions:recipes6");
+recipes.removeByRecipeName("actuallyadditions:recipes49");
+recipes.removeByRecipeName("actuallyadditions:recipes70");
+
+#Removing Applied Energestics 2's stuff
+mods.jei.JEI.removeAndHide(<appliedenergistics2:material:4>);
+recipes.removeByRecipeName("appliedenergistics2:misc/fluixpearl");
+
 #Removing Industrial Foregoing's stuff
 recipes.remove(<industrialforegoing:enchantment_refiner>);
 recipes.remove(<industrialforegoing:enchantment_extractor>);
@@ -70,41 +140,18 @@ recipes.remove(<industrialforegoing:black_hole_tank>);
 recipes.remove(<industrialforegoing:spores_recreator>);
 recipes.remove(<industrialforegoing:protein_reactor>);
 
-#Removing Torchmaster's stuff
-recipes.removeByRecipeName("torchmaster:mega_torch");
-recipes.removeByRecipeName("torchmaster:terrain_lighter");
-recipes.removeByRecipeName("torchmaster:dread_lamp");
-
-#Removing Tinkers' Complement's stuff
-recipes.removeByRecipeName("tcomplement:feature/stone_bucket");
-
-#Removing Storage Drawers' stuff
-recipes.removeByRecipeName("storagedrawers:controller");
-recipes.removeByRecipeName("storagedrawers:controller_slave");
-recipes.removeByRecipeName("storagedrawers:compacting_drawer");
-
-#Removing Secret Rooms' stuff
-recipes.removeByRecipeName("secretroomsmod:secret_gate");
+#Removing Draconic Evolution's stuff
+recipes.removeByRecipeName("draconicevolution:diss_enchanter");
+recipes.removeByRecipeName("draconicevolution:energy_crystal_8");
+recipes.removeByRecipeName("draconicevolution:energy_crystal_9");
+recipes.removeByRecipeName("draconicevolution:energy_crystal_10");
+recipes.removeByRecipeName("draconicevolution:tool_upgrade_2");
+recipes.removeByRecipeName("draconicevolution:dislocator");
 
 #Removing Redstone Paste's stuff
 recipes.removeByRecipeName("redstonepaste:redstonepaste");
 recipes.removeByRecipeName("redstonepaste:stickyrepeater");
 recipes.removeByRecipeName("redstonepaste:stickycomparator");
-
-#Removing PlusTiC's stuff
-mods.jei.JEI.removeAndHide(<plustic:pipe_piece>);
-mods.jei.JEI.removeAndHide(<plustic:laser_medium>);
-mods.jei.JEI.removeAndHide(<plustic:battery_cell>);
-
-#Removing Zero Core's stuff
-mods.jei.JEI.removeAndHide(<zerocore:debugtool>);
-
-#Removing Waystones' stuff
-recipes.removeByRecipeName("waystones:warp_stone");
-recipes.removeByRecipeName("waystones:warp_scroll");
-recipes.removeByRecipeName("waystones:bound_scroll");
-recipes.removeByRecipeName("waystones:return_scroll");
-recipes.removeByRecipeName("waystones:waystone");
 
 #Removing Forestry stuff
 recipes.removeByRecipeName("forestry:wheat_to_compost");
@@ -133,17 +180,23 @@ mods.jei.JEI.removeAndHide(<forestry:climatiser:4>);
 mods.jei.JEI.removeAndHide(<forestry:greenhouse.window>);
 mods.jei.JEI.removeAndHide(<forestry:greenhouse.window_up>);
 
-#Removing Minecraft's stuff
-recipes.removeByRecipeName("minecraft:chiseled_stonebrick");
+#Removing Mekanism's stuff
+recipes.removeByRecipeName("mekanism:teleportationcore");
+recipes.removeByRecipeName("mekanism:basicblock_7");
+recipes.removeByRecipeName("mekanism:basicblock_8");
+recipes.removeByRecipeName("mekanism:machineblock_11");
+recipes.removeByRecipeName("mekanism:ingot_3_alt");
+mods.jei.JEI.removeAndHide(<mekanism:oreblock:1>);
+mods.jei.JEI.removeAndHide(<mekanism:oreblock:2>);
+recipes.removeByRecipeName("undidict:blocksalt_x1_shape.aaaa");
+recipes.remove(<mekanism:ingot:0>);
+recipes.remove(<mekanism:nugget:0>);
 
-#Removing tweaked recipes
-recipes.removeByRecipeName("endercore:slabcobblestone_to_cobblestone");
-recipes.removeByRecipeName("endercore:slabstone_to_stone");
-recipes.removeByRecipeName("endercore:slabstonebrick_to_stonebrick");
-
-#Removing Blood Magic's stuff
-recipes.removeByRecipeName("bloodmagic:teleposer");
-mods.jei.JEI.removeAndHide(<bloodmagic:component:24>);
+#
+//
+//The next section removes things from technical mods
+//
+#
 
 #Removing Biomes O'Plenty's stuff
 recipes.removeByRecipeName("biomesoplenty:terrestrial_artifact");
@@ -159,125 +212,6 @@ mods.jei.JEI.removeAndHide(<biomesoplenty:gem_block:1>);
 mods.jei.JEI.removeAndHide(<biomesoplenty:gem_block:2>);
 mods.jei.JEI.removeAndHide(<biomesoplenty:gem_block:6>);
 mods.jei.JEI.removeAndHide(<biomesoplenty:gem_block:7>);
-
-#Removing Applied Energestics 2's stuff
-mods.jei.JEI.removeAndHide(<appliedenergistics2:material:4>);
-recipes.removeByRecipeName("appliedenergistics2:misc/fluixpearl");
-
-#Removing Actually Additions' stuff
-recipes.removeByRecipeName("actuallyadditions:recipes114");
-recipes.removeByRecipeName("actuallyadditions:recipes123");
-recipes.removeByRecipeName("actuallyadditions:recipes6");
-recipes.removeByRecipeName("actuallyadditions:recipes49");
-recipes.removeByRecipeName("actuallyadditions:recipes70");
-
-#Removing Magic Bee's stuff
-recipes.removeByRecipeName("magicbees:essence_fl1");
-recipes.removeByRecipeName("magicbees:essence_fl2");
-recipes.removeByRecipeName("magicbees:essence_cg1");
-recipes.removeByRecipeName("magicbees:essence_cg2");
-recipes.removeByRecipeName("magicbees:essence_lt1");
-recipes.removeByRecipeName("magicbees:essence_lt2");
-recipes.removeByRecipeName("magicbees:essence_eld1");
-recipes.removeByRecipeName("magicbees:essence_eld2");
-recipes.remove(<magicbees:resource:12>);
-recipes.removeByRecipeName("magicbees:dimensionalsingularity");
-recipes.removeByRecipeName("magicbees:effectjar");
-recipes.remove(<magicbees:manasteelgrafter>);
-recipes.remove(<magicbees:manasteelscoop>);
-
-#Removing Gravestone Mod's and Gravestone Mod Extended's stuff
-recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/gallows");
-recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/gibbets");
-recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/stocks");
-recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/burning_stake");
-recipes.removeByRecipeName("gravestone-extended:skeleton_spawner");
-recipes.removeByRecipeName("gravestone-extended:spider_spawner");
-recipes.removeByRecipeName("gravestone-extended:zombie_spawner");
-recipes.removeByRecipeName("gravestone-extended:wither_spawner");
-recipes.removeByRecipeName("gravestone-extended:nightstone");
-recipes.removeByRecipeName("gravestone-extended:thunderstone");
-recipes.removeByRecipeName("gravestone-extended:crafting/blocks/withered_glass");
-recipes.removeByRecipeName("gravestone-extended:crafting/blocks/candle");
-recipes.removeByRecipeName("gravestone-extended:gs_undertaker_backpack");
-
-#Removing Extra Utilities 2's stuff
-recipes.removeByRecipeName("extrautils2:watering_can");
-recipes.removeByRecipeName("extrautils2:transfer_node_items_retrieve");
-recipes.removeByRecipeName("extrautils2:transfer_node_fluids_retrieve");
-recipes.removeByRecipeName("extrautils2:klein_flash");
-recipes.removeByRecipeName("extrautils2:generator_generator_ender");
-recipes.removeByRecipeName("extrautils2:terraformer_controller");
-recipes.removeByRecipeName("extrautils2:porcupine");
-recipes.removeByRecipeName("extrautils2:teleporter");
-
-#Removing Extra Bit Manipulation's stuff
-recipes.removeByRecipeName("extrabitmanipulation:bodypart_template");
-
-#Removing Exotic Birds' stuff
-recipes.remove(<exoticbirds:bird_book>);
-recipes.remove(<exoticbirds:egg_sorter>);
-recipes.remove(<exoticbirds:phoenix_egg>);
-recipes.remove(<exoticbirds:egg_incubator>);
-
-#Removing Ender Storage's stuff
-recipes.remove(<enderstorage:ender_pouch>);
-recipes.remove(<enderstorage:ender_storage:1>);
-recipes.remove(<enderstorage:ender_storage>);
-
-#Removing Draconic Evolution's stuff
-recipes.removeByRecipeName("draconicevolution:diss_enchanter");
-recipes.removeByRecipeName("draconicevolution:energy_crystal_8");
-recipes.removeByRecipeName("draconicevolution:energy_crystal_9");
-recipes.removeByRecipeName("draconicevolution:energy_crystal_10");
-recipes.removeByRecipeName("draconicevolution:tool_upgrade_2");
-recipes.removeByRecipeName("draconicevolution:dislocator");
-
-#Removing Decocraft stuff
-recipes.removeByRecipeName("props:clay_green");
-recipes.removeByRecipeName("props:clay_red");
-recipes.removeByRecipeName("props:clay_blue");
-recipes.removeByRecipeName("props:decowand");
-
-#Removing Constructers Armory's stuff
-recipes.removeByRecipeName("conarm:travel_slowfall");
-recipes.removeByRecipeName("conarm:travel_sack");
-recipes.removeByRecipeName("conarm:invisible_ink");
-
-#Removing Chisel's stuff
-recipes.removeByRecipeName("chisel:factory");
-recipes.removeByRecipeName("chisel:laboratory");
-recipes.removeByRecipeName("chisel:lavastone");
-recipes.removeByRecipeName("chisel:temple");
-recipes.removeByRecipeName("chisel:tyrian");
-recipes.removeByRecipeName("chisel:waterstone");
-recipes.removeByRecipeName("chisel:offsettool");
-
-#Removing Chicken Chunks' stuff
-recipes.removeByRecipeName("chickenchunks:chunk_loader");
-recipes.removeByRecipeName("chickenchunks:spot_loader");
-
-#Removing gears and plates recipes
-mods.unidict.removalByKind.get("Crafting").remove("gear");
-mods.unidict.removalByKind.get("Crafting").remove("plate");
-
-#Removing Harvestcraft's stuff
-recipes.removeByRecipeName("harvestcraft:string");
-
-#Removing Plants 2's stuff
-recipes.removeByRecipeName("plants2:recipe195");
-
-#Removing Mekanism's stuff
-recipes.removeByRecipeName("mekanism:teleportationcore");
-recipes.removeByRecipeName("mekanism:basicblock_7");
-recipes.removeByRecipeName("mekanism:basicblock_8");
-recipes.removeByRecipeName("mekanism:machineblock_11");
-recipes.removeByRecipeName("mekanism:ingot_3_alt");
-mods.jei.JEI.removeAndHide(<mekanism:oreblock:1>);
-mods.jei.JEI.removeAndHide(<mekanism:oreblock:2>);
-recipes.removeByRecipeName("undidict:blocksalt_x1_shape.aaaa");
-recipes.remove(<mekanism:ingot:0>);
-recipes.remove(<mekanism:nugget:0>);
 
 #Removing Natura's stuff
 recipes.removeByRecipeName("natura:common/wool");
@@ -379,9 +313,118 @@ mods.jei.JEI.removeAndHide(<natura:soups:8>);
 mods.jei.JEI.removeAndHide(<natura:materials:1>);
 mods.jei.JEI.removeAndHide(<natura:materials:2>);
 
+#Removing Exotic Birds' stuff
+recipes.remove(<exoticbirds:bird_book>);
+recipes.remove(<exoticbirds:egg_sorter>);
+recipes.remove(<exoticbirds:phoenix_egg>);
+recipes.remove(<exoticbirds:egg_incubator>);
+
+#Removing Plants 2's stuff
+recipes.removeByRecipeName("plants2:recipe195");
+
+#Removing Harvestcraft's stuff
+recipes.removeByRecipeName("harvestcraft:string");
+
+#
+//
+//The next section removes things from tinker mods
+//
+#
+
+#Removing Tinkers' Construct's stuff
+recipes.remove(<tconstruct:soil:5>);
+
+#Removing Tinkers' Complement's stuff
+recipes.removeByRecipeName("tcomplement:feature/stone_bucket");
+
+#Removing Constructers Armory's stuff
+recipes.removeByRecipeName("conarm:travel_slowfall");
+recipes.removeByRecipeName("conarm:travel_sack");
+recipes.removeByRecipeName("conarm:invisible_ink");
+
+#Removing PlusTiC's stuff
+mods.jei.JEI.removeAndHide(<plustic:pipe_piece>);
+mods.jei.JEI.removeAndHide(<plustic:laser_medium>);
+mods.jei.JEI.removeAndHide(<plustic:battery_cell>);
+
+#
+//
+//The next section removes things from random mods
+//
+#
+
 #Removing Improved Backpacks' stuff
 //Removing bound leather recipe, because hemp fabric cannot be melted; wax should be used instead
 recipes.removeByRecipeName("improvedbackpacks:item.bound_leather");
+
+#Removing Chicken Chunks' stuff
+recipes.removeByRecipeName("chickenchunks:chunk_loader");
+recipes.removeByRecipeName("chickenchunks:spot_loader");
+
+#Removing Chisel's stuff
+recipes.removeByRecipeName("chisel:factory");
+recipes.removeByRecipeName("chisel:laboratory");
+recipes.removeByRecipeName("chisel:lavastone");
+recipes.removeByRecipeName("chisel:temple");
+recipes.removeByRecipeName("chisel:tyrian");
+recipes.removeByRecipeName("chisel:waterstone");
+recipes.removeByRecipeName("chisel:offsettool");
+
+#Removing Secret Rooms' stuff
+recipes.removeByRecipeName("secretroomsmod:secret_gate");
+
+#Removing Decocraft stuff
+recipes.removeByRecipeName("props:clay_green");
+recipes.removeByRecipeName("props:clay_red");
+recipes.removeByRecipeName("props:clay_blue");
+recipes.removeByRecipeName("props:decowand");
+
+#Removing Extra Bit Manipulation's stuff
+recipes.removeByRecipeName("extrabitmanipulation:bodypart_template");
+
+#Removing Extra Utilities 2's stuff
+recipes.removeByRecipeName("extrautils2:watering_can");
+recipes.removeByRecipeName("extrautils2:transfer_node_items_retrieve");
+recipes.removeByRecipeName("extrautils2:transfer_node_fluids_retrieve");
+recipes.removeByRecipeName("extrautils2:klein_flash");
+recipes.removeByRecipeName("extrautils2:generator_generator_ender");
+recipes.removeByRecipeName("extrautils2:terraformer_controller");
+recipes.removeByRecipeName("extrautils2:porcupine");
+recipes.removeByRecipeName("extrautils2:teleporter");
+
+#Removing Open Blocks' stuff
+mods.jei.JEI.removeAndHide(<openblocks:generic_unstackable>);
+recipes.remove(<openblocks:elevator:*>);
+recipes.removeByRecipeName("openblocks:elevator_rotating_0");
+recipes.removeByRecipeName("openblocks:elevator_rotating_2");
+recipes.removeByRecipeName("openblocks:elevator_rotating_4");
+recipes.removeByRecipeName("openblocks:elevator_rotating_6");
+recipes.removeByRecipeName("openblocks:elevator_rotating_8");
+recipes.removeByRecipeName("openblocks:elevator_rotating_10");
+recipes.removeByRecipeName("openblocks:elevator_rotating_12");
+recipes.removeByRecipeName("openblocks:elevator_rotating_14");
+recipes.removeByRecipeName("openblocks:elevator_rotating_16");
+recipes.removeByRecipeName("openblocks:elevator_rotating_18");
+recipes.removeByRecipeName("openblocks:elevator_rotating_20");
+recipes.removeByRecipeName("openblocks:elevator_rotating_22");
+recipes.removeByRecipeName("openblocks:elevator_rotating_24");
+recipes.removeByRecipeName("openblocks:elevator_rotating_26");
+recipes.removeByRecipeName("openblocks:elevator_rotating_28");
+recipes.removeByRecipeName("openblocks:elevator_rotating_30");
+recipes.removeByRecipeName("openblocks:luggage_0");
+
+#Removing Storage Drawers' stuff
+recipes.removeByRecipeName("storagedrawers:controller");
+recipes.removeByRecipeName("storagedrawers:controller_slave");
+recipes.removeByRecipeName("storagedrawers:compacting_drawer");
+
+#Removing Torchmaster's stuff
+recipes.removeByRecipeName("torchmaster:mega_torch");
+recipes.removeByRecipeName("torchmaster:terrain_lighter");
+recipes.removeByRecipeName("torchmaster:dread_lamp");
+
+#Removing Zero Core's stuff
+mods.jei.JEI.removeAndHide(<zerocore:debugtool>);
 
 #Removing Undergroundbiomes' stuff
 mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.gem_ore.amber_ore:*>);

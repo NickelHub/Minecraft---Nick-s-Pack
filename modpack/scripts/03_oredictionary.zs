@@ -194,6 +194,7 @@ feather.add(<gravestone-extended:gs_raven_feather>);
 val batwing = <ore:wingBat>;
 batwing.add(<gravestone-extended:gs_bat_wing>);
 batwing.add(<actuallyadditions:item_misc:15>);
+batwing.add(<xreliquary:mob_ingredient:5>);
 
 #Ordicting Nether Bricks
 val netherbrick = <ore:bricksNether>;
