@@ -145,6 +145,11 @@ recipes.addShapedMirrored(<magicbees:manasteelgrafter>, [[null, null, <ore:ingot
 //
 #
 
+#Adding Tech Reborn's stuff
+recipes.addShaped(<techreborn:grinder>, [[<ore:itemFlint>, <ore:itemFlint>, <ore:itemFlint>],[<ore:cobblestone>, <ore:machineBasic>, <ore:cobblestone>], [null, <ore:circuitBasic>, null]]);
+Inscriber.addRecipe(<techreborn:part:29>, <ore:dustRedstone>, false, <techreborn:cable:5>, <techreborn:plates:34>);
+Inscriber.addRecipe(<techreborn:part:30>, <techreborn:part:29>, false, <ore:dustGlowstone>, <ore:plateLapis>);
+
 #Adding some Thermal tuff
 mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:26>, <ore:gemDiamond>, <immersiveengineering:mold:1>, 4000, 4);
 mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:27>, <ore:gemEmerald>, <immersiveengineering:mold:1>, 4000, 4);
@@ -376,6 +381,23 @@ recipes.addShapeless(<conarm:invisible_ink>, [<minecraft:potion>.withTag({Potion
 //The next section adds things to random mods
 //
 #
+
+#Adding Random Things' stuff
+recipes.addShaped(<randomthings:fertilizeddirt> * 2, [[<minecraft:rotten_flesh>, <ore:fertilizer>, <minecraft:rotten_flesh>],[<ore:fertilizer>, <ore:dirt>, <ore:fertilizer>], [<minecraft:rotten_flesh>, <ore:fertilizer>, <minecraft:rotten_flesh>]]);
+recipes.addShaped(<randomthings:endermailbox>, [[<randomthings:stableenderpearl>, <ore:pearlEnderEye>, <randomthings:stableenderpearl>],[<ore:ingotIron>, <ore:hopper>, <ore:ingotIron>], [null, <ore:fenceWood>, null]]);
+recipes.addShaped(<randomthings:rainshield>, [[null, <ore:itemFlint>, null],[null, <ore:itemBlazeRod>, null], [<ore:netherrack>, <ore:netherrack>, <ore:netherrack>]]);
+recipes.addShaped(<randomthings:igniter>, [[<ore:netherrack>, <ore:cobblestone>, <ore:cobblestone>],[<ore:netherrack>, <minecraft:flint_and_steel>, <ore:cobblestone>], [<ore:netherrack>, <ore:cobblestone>, <ore:cobblestone>]]);
+recipes.addShaped(<randomthings:inventorytester> * 2, [[null, <ore:stone>, null],[<ore:stone>, <minecraft:comparator>, <ore:stone>], [null, <ore:chest>, null]]);
+recipes.addShaped(<randomthings:notificationinterface>, [[<ore:stone>, <ore:paper>, <ore:stone>],[<ore:paper>, <ore:gemQuartz>, <ore:paper>], [<ore:stone>, <ore:paper>, <ore:stone>]]);
+recipes.addShaped(<randomthings:blockdestabilizer>, [[<ore:obsidian>, <ore:dustRedstone>, <ore:obsidian>],[<ore:sand>, <ore:gemDiamond>, <ore:sand>], [<ore:obsidian>, <ore:dustRedstone>, <ore:obsidian>]]);
+recipes.addShaped(<randomthings:superlubricentstone> * 8, [[<ore:stone>, <ore:stone>, <ore:stone>],[<ore:stone>, <randomthings:ingredient:6>, <ore:stone>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
+recipes.addShaped(<randomthings:diaphanousblock> * 4, [[null, <ore:blockGlassGreen>, null],[<ore:blockGlassRed>, <randomthings:quartzglass>, <ore:blockGlassBlue>], [null, <ore:blockGlassYellow>, null]]);
+recipes.addShaped(<randomthings:plate_bouncy> * 2, [[<randomthings:ingredient:8>, null, <randomthings:ingredient:8>],[null, <ore:slimeball>, null], [<randomthings:ingredient:8>, null, <randomthings:ingredient:8>]]);
+recipes.addShaped(<randomthings:itemcollector>, [[null, <ore:pearlEnderEye>, null],[null, <ore:hopper>, null], [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
+recipes.addShaped(<randomthings:enderletter>, [[<ore:paper>, <ore:pearlEnderEye>, <ore:paper>], [null, <ore:paper>, null]]);
+recipes.addShapeless(<randomthings:ingredient:7> * 16, [<ore:dustRedstone>,<ore:gunpowder>,<ore:dustEnderPearl>,<ore:cropBean>]);
+recipes.addShaped(<randomthings:escaperope>, [[<minecraft:string>, <ore:ingotGold>, <minecraft:ender_eye>],[<ore:ingotGold>, <ore:string>, <ore:ingotGold>], [<randomthings:stableenderpearl>, <ore:ingotGold>, <ore:string>]]);
+recipes.addShaped(<randomthings:enderbucket>, [[<ore:ingotIron>, <ore:pearlEnderEye>, <ore:ingotIron>], [null, <ore:ingotIron>, null]]);
 
 #Adding Improved Backpacks' stuff
 recipes.addShapedMirrored(<improvedbackpacks:bound_leather>, [[<ore:string>, <ore:itemLeather>, <ore:string>]]);

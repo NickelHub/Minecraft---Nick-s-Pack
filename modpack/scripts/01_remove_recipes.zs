@@ -30,6 +30,9 @@ mods.unidict.removalByKind.get("Crafting").remove("plate");
 //
 #
 
+#Removing Thaumcraft's stuff
+mods.jei.JEI.removeAndHide(<thaumcraft:ore_quartz>);
+
 #Removing Reliquary's stuff
 recipes.remove(<xreliquary:lantern_of_paranoia>);
 
@@ -84,6 +87,16 @@ recipes.remove(<magicbees:manasteelscoop>);
 //The next section removes things from technical mods
 //
 #
+
+#Removing Tech Reborn's stuff
+mods.jei.JEI.removeAndHide(<techreborn:ore:1>);
+mods.jei.JEI.removeAndHide(<techreborn:ore:12>);
+mods.jei.JEI.removeAndHide(<techreborn:ore:13>);
+mods.jei.JEI.removeAndHide(<techreborn:ore2:1>);
+mods.jei.JEI.removeAndHide(<techreborn:ore2:0>);
+recipes.remove(<techreborn:grinder>);
+recipes.remove(<techreborn:part:29>);
+recipes.remove(<techreborn:part:30>);
 
 #Removing Thermal stuff
 recipes.remove(<thermalexpansion:machine:6>);
@@ -194,7 +207,7 @@ recipes.remove(<mekanism:nugget:0>);
 
 #
 //
-//The next section removes things from technical mods
+//The next section removes things from nature and food mods
 //
 #
 
@@ -352,6 +365,25 @@ mods.jei.JEI.removeAndHide(<plustic:battery_cell>);
 //The next section removes things from random mods
 //
 #
+
+#Removing Random Things' stuff
+recipes.removeByRecipeName("randomthings:fertilizeddirt");
+recipes.removeByRecipeName("randomthings:endermailbox");
+recipes.removeByRecipeName("randomthings:rainshield");
+recipes.removeByRecipeName("randomthings:igniter");
+recipes.removeByRecipeName("randomthings:notificationinterface");
+recipes.removeByRecipeName("randomthings:inventorytester");
+recipes.removeByRecipeName("randomthings:superlubricentstone");
+recipes.removeByRecipeName("randomthings:blockdestabilizer");
+recipes.removeByRecipeName("randomthings:diaphanousblock");
+recipes.removeByRecipeName("randomthings:advancedredstonerepeater");
+recipes.removeByRecipeName("randomthings:itemcollector");
+recipes.removeByRecipeName("randomthings:plate_bouncy");
+recipes.removeByRecipeName("randomthings:stableenderpearl");
+recipes.removeByRecipeName("randomthings:enderletter");
+recipes.removeByRecipeName("randomthings:floopowder");
+recipes.removeByRecipeName("randomthings:escaperope");
+recipes.removeByRecipeName("randomthings:enderbucket");
 
 #Removing Improved Backpacks' stuff
 //Removing bound leather recipe, because hemp fabric cannot be melted; wax should be used instead

@@ -12,6 +12,17 @@ print("Initializing 04_replacing_ingredients.zs");
 
 //Replacing ingrendients in recipes
 
+#Replacing beans
+recipes.replaceAllOccurences(<randomthings:beans>, <ore:cropBean>);
+
+#Replacing Endstone
+recipes.replaceAllOccurences(<minecraft:end_stone>, <ore:endstone>);
+
+#Replacing fertilizer
+recipes.replaceAllOccurences(<ore:itemFertilizer>, <ore:fertilizer>);
+recipes.replaceAllOccurences(<ore:dustFertilizer>, <ore:fertilizer>);
+recipes.replaceAllOccurences(<ore:powderFertilizer>, <ore:fertilizer>);
+
 #Replacing Machine Cases
 recipes.replaceAllOccurences(<teslacorelib:machine_case>, <ore:machineBlockBasic>);
 recipes.replaceAllOccurences(<thermalexpansion:frame>, <ore:machineBlockBasic>);

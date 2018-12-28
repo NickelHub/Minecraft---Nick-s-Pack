@@ -12,6 +12,13 @@ print("Initializing 03_oredictionary.zs");
 
 //Adding additional oredictionary entries
 
+#Fertilizer
+val fert = <ore:fertilizer>;
+fert.add(<actuallyadditions:item_fertilizer>);
+fert.add(<forestry:fertilizer_compound>);
+fert.add(<pmp:plntpw_fer>);
+fert.add(<exoticbirds:eggshell>);
+
 #Royal Jelly
 val jellyr = <ore:dropRoyalJelly>;
 jellyr.add(<harvestcraft:royaljellyitem>);
