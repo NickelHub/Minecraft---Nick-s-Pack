@@ -13,6 +13,7 @@
 |   armoryexpansion-0.2.0.jar
 |   AttributeFix-1.12.2-1.0.7.jar
 |   Baubles-1.12-1.5.2.jar
+|   baubley-heart-canisters-1.12.2-1.2.1.jar
 |   bdlib-1.14.3.12-mc1.12.2.jar
 |   BetterPlacement-1.0.0-1.jar
 |   BiomesOPlenty-1.12.2-7.0.1.2422-universal.jar
@@ -20,6 +21,7 @@
 |   bloodtinker-1.0.5.jar
 |   Bookshelf-1.12.2-2.3.570.jar
 |   BrandonsCore-1.12.2-2.4.9.195-universal.jar
+|   BringMeTheRings-0.3.jar
 |   Chameleon-1.12-4.1.3.jar
 |   ChestTransporter-1.12.2-2.8.8.jar
 |   ChickenChunks-1.12.2-2.4.1.73-universal.jar
@@ -29,7 +31,7 @@
 |   CoFHCore-1.12.2-4.6.1.22-universal.jar
 |   CoFHWorld-1.12.2-1.3.0.6-universal.jar
 |   comforts-1.12.2-1.4.1.1.jar
-|   conarm-1.12.2-1.2.1.jar
+|   conarm-1.12.2-1.2.1.1.jar
 |   CosmeticArmorReworked-1.12.2-v3.jar
 |   CraftTweaker2-1.12-4.1.13.jar
 |   creeperconfetti-1.4.2.jar
@@ -49,7 +51,7 @@
 |   FamiliarFauna-1.12.2-1.0.11.jar
 |   FastLeafDecay-v14.jar
 |   foamfix-0.10.3-1.12.2.jar
-|   forestry_1.12.2-5.8.2.378.jar
+|   forestry_1.12.2-5.8.2.380.jar
 |   Forgelin-1.8.2.jar
 |   gendustry-1.6.5.8-mc1.12.2.jar
 |   GraveStone-1.12.2-Extended-1.3.5.1.jar
@@ -122,7 +124,6 @@
 |   SoundFilters-0.10_for_1.12.jar
 |   spatialservermod-1.3.jar
 |   StorageDrawers-1.12.2-5.3.8.jar
-|   Surge-1.12.2-2.0.76.jar
 |   TConstruct-1.12.2-2.11.0.106.jar
 |   TechReborn-1.12.2-2.19.1.877-universal.jar
 |   tesla-core-lib-1.12.2-1.0.15.jar
