@@ -21,6 +21,7 @@
 |   bloodtinker-1.0.5.jar
 |   Bookshelf-1.12.2-2.3.570.jar
 |   BrandonsCore-1.12.2-2.4.9.195-universal.jar
+|   BringMeTheRings-0.4.jar
 |   Chameleon-1.12-4.1.3.jar
 |   ChestTransporter-1.12.2-2.8.8.jar
 |   ChickenChunks-1.12.2-2.4.1.73-universal.jar
@@ -110,6 +111,7 @@
 |   pmp-1.12.1.jar
 |   PTRLib-1.0.3.jar
 |   railcraft-12.0.0-beta-2.jar
+|   randompatches-1.12.2-1.11.0.2.jar
 |   RandomThings-MC1.12.2-4.2.4.jar
 |   RebornCore-1.12.2-3.12.1.385-universal.jar
 |   RedstoneFlux-1.12-2.1.0.6-universal.jar
