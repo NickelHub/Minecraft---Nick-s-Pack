@@ -1,4 +1,4 @@
-#File name: 04_replacing_ingredients.zs
+#File name: 04_Replacing.zs
 
 #Imports
 import crafttweaker.item.IIngredient;

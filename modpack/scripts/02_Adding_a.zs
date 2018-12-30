@@ -1,4 +1,4 @@
-#File name: 02_add_recipes.zs
+#File name: 02_Adding_a.zs
 #Recipes added for Variety Revelations
 
 #Imports

@@ -1,4 +1,4 @@
-#File name: 01_remove_recipes.zs
+#File name: 01_Removing.zs
 #Recipes removed for Variety Revelations
 
 #Imports
@@ -87,6 +87,26 @@ recipes.remove(<magicbees:manasteelscoop>);
 //The next section removes things from technical mods
 //
 #
+
+#Removing Extra Cells' stuff
+//Removing unnessecary stuff because this funtionns are added by Applied Energistics itself now
+mods.jei.JEI.removeAndHide(<extracells:part.base:0>);
+mods.jei.JEI.removeAndHide(<extracells:part.base:1>);
+mods.jei.JEI.removeAndHide(<extracells:part.base:2>);
+mods.jei.JEI.removeAndHide(<extracells:part.base:3>);
+mods.jei.JEI.removeAndHide(<extracells:part.base:4>);
+mods.jei.JEI.removeAndHide(<extracells:part.base:5>);
+mods.jei.JEI.removeAndHide(<extracells:part.base:6>);
+mods.jei.JEI.removeAndHide(<extracells:part.base:9>);
+mods.jei.JEI.removeAndHide(<extracells:storage.fluid:0>);
+mods.jei.JEI.removeAndHide(<extracells:storage.fluid:1>);
+mods.jei.JEI.removeAndHide(<extracells:storage.fluid:2>);
+mods.jei.JEI.removeAndHide(<extracells:storage.fluid:3>);
+mods.jei.JEI.removeAndHide(<extracells:storage.component:4>);
+mods.jei.JEI.removeAndHide(<extracells:storage.component:5>);
+mods.jei.JEI.removeAndHide(<extracells:storage.component:6>);
+mods.jei.JEI.removeAndHide(<extracells:storage.component:7>);
+mods.jei.JEI.removeAndHide(<extracells:ecbaseblock:0>);
 
 #Removing Tech Reborn's stuff
 mods.jei.JEI.removeAndHide(<techreborn:ore:1>);

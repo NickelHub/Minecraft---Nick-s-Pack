@@ -1,4 +1,4 @@
-#File name: 05_mob_drops.zs
+#File name: 05_Drops.zs
 
 #imports
 import crafttweaker.item.IIngredient;

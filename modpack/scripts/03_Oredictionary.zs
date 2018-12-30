@@ -1,4 +1,4 @@
-#File name: 03_oredictionary.zs
+#File name: 03_Oredictionary.zs
 
 #Imports
 import crafttweaker.item.IIngredient;

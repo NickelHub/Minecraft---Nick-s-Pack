@@ -1,4 +1,4 @@
-#File name: 02_add_recipes_AA_crusher.zs
+#File name: 02_Adding_b.zs
 #Recipes added for Variety Revelations
 #This file was created, because of an error, that "Crusher" has already been defined
 
