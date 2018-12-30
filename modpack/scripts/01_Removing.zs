@@ -10,7 +10,7 @@ import crafttweaker.data.IData;
 import crafttweaker.item.IItemTransformer;
 import crafttweaker.recipes.IFurnaceRecipe;
 
-print("Initializing 01_remove_recipes.zs");
+print("Initializing 01_Removing.zs");
 
 #Removing Minecraft's stuff
 recipes.removeByRecipeName("minecraft:chiseled_stonebrick");
@@ -87,6 +87,55 @@ recipes.remove(<magicbees:manasteelscoop>);
 //The next section removes things from technical mods
 //
 #
+
+#Removing RFTools' stuff
+recipes.removeByRecipeName("rftoolsdim:time_absorber");
+recipes.removeByRecipeName("rftoolsdim:feature_absorber");
+recipes.removeByRecipeName("rftoolsdim:terrain_absorber");
+recipes.removeByRecipeName("rftoolsdim:biome_absorber");
+recipes.removeByRecipeName("rftoolsdim:liquid_absorber");
+recipes.removeByRecipeName("rftoolsdim:material_absorber");
+recipes.removeByRecipeName("rftoolsdim:energy_extractor");
+recipes.removeByRecipeName("rftoolsdim:activitiy_probe");
+recipes.removeByRecipeName("rftoolsdim:dimension_builder");
+recipes.removeByRecipeName("rftoolsdim:dimensional_pattern2_block");
+recipes.removeByRecipeName("rftoolsdim:dimensional_pattern1_block");
+recipes.removeByRecipeName("rftoolsdim:dimensional_blank_block");
+recipes.removeByRecipeName("rftoolsdim:dimension_module");
+recipes.removeByRecipeName("rftoolsdim:known_dimlet_2");
+recipes.removeByRecipeName("rftools:level_emitter");
+recipes.removeByRecipeName("rftools:storage_terminal");
+recipes.removeByRecipeName("rftools:elevator");
+recipes.removeByRecipeName("rftools:storage_scanner");
+recipes.removeByRecipeName("rftools:ender_monitor");
+recipes.remove(<rftools:endergenic>);
+recipes.remove(<rftools:spawner>);
+recipes.remove(<rftools:environmental_controller>);
+recipes.remove(<rftools:scanner>);
+recipes.remove(<rftools:projector>);
+recipes.remove(<rftools:locator>);
+recipes.remove(<rftools:builder>);
+recipes.removeByRecipeName("rftools:space_chamber");
+recipes.removeByRecipeName("rftools:space_chamber_controller");
+recipes.removeByRecipeName("rftools:digit_block");
+recipes.removeByRecipeName("rftools:redstone_receiver_block");
+recipes.removeByRecipeName("rftools:redstone_transmitter_block");
+recipes.remove(<rftools:screen_controller>);
+recipes.removeByRecipeName("rftools:screen");
+recipes.remove(<rftools:destination_analyzer>);
+recipes.remove(<rftools:matter_receiver>);
+recipes.remove(<rftools:matter_transmitter>);
+recipes.remove(<rftools:remote_storage>);
+recipes.remove(<rftools:machine_base>);
+recipes.removeByRecipeName("rftools:shape_card_pump_dirt");
+recipes.removeByRecipeName("rftools:shape_card_quarry_silk_dirt");
+recipes.removeByRecipeName("rftools:shape_card_quarry_dirt");
+recipes.removeByRecipeName("rftools:counterplus_module");
+recipes.removeByRecipeName("rftools:fluidplus_module");
+recipes.removeByRecipeName("rftools:energyplus_module");
+recipes.removeByRecipeName("rftools:inventoryplus_module");
+recipes.removeByRecipeName("rftools:storage_module_6");
+recipes.remove(<rftools:charged_porter>);
 
 #Removing Extra Cells' stuff
 //Removing unnessecary stuff because this functionns are added by Applied Energistics itself now
@@ -537,6 +586,6 @@ mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.for.resources.t
 mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.for.resources.tin:*>);
 mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.for.resources.tin:*>);
 
-print("Initialized 01_remove_recipes.zs");
+print("Initialized 01_Removing.zs");
 
 //File End

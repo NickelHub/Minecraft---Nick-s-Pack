@@ -20,7 +20,7 @@ import mods.techreborn.grinder;
 import mods.techreborn.compressor;
 
 
-print("Initializing 02_add_recipes.zs");
+print("Initializing 02_Adding_a.zs");
 
 #Adding Minecraft's stuff
 recipes.addShaped(<minecraft:stonebrick:3>, [[<ore:slabBricksStoneUnique>], [<ore:slabBricksStoneUnique>]]);
@@ -136,14 +136,62 @@ recipes.addShapedMirrored(<magicbees:resource:9>, [[<ore:blockGlass>, <magicbees
 recipes.addShapedMirrored(<magicbees:resource:8>, [[<ore:blockGlass>, <magicbees:wax:1>, <ore:blockGlass>],[<magicbees:wax:1>, <minecraft:rotten_flesh>, <magicbees:wax:1>], [<ore:blockGlass>, <magicbees:wax:1>, <ore:blockGlass>]]);
 recipes.addShapedMirrored(<magicbees:resource:7>, [[<ore:blockGlass>, <magicbees:wax:1>, <ore:blockGlass>],[<magicbees:wax:1>, <ore:plant>, <magicbees:wax:1>], [<ore:blockGlass>, <magicbees:wax:1>, <ore:blockGlass>]]);
 recipes.addShaped(<magicbees:effectjar>, [[<ore:blockGlass>, <ore:slabWood>, <ore:blockGlass>],[<ore:gemQuartz>, <magicbees:pollen>, <ore:gemQuartz>], [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]]);
-recipes.addShaped(<magicbees:manasteelscoop>, [[<ore:livingwoodTwig>, <ore:blockWool>, <ore:livingwoodTwig>],[<ore:livingwoodTwig>, <ore:ingotManasteel>, <ore:livingwoodTwig>], [null, <ore:livingwoodTwig>, null]]);
-recipes.addShapedMirrored(<magicbees:manasteelgrafter>, [[null, null, <ore:ingotManasteel>],[null, <ore:livingwoodTwig>, null], [<ore:livingwoodTwig>, null, null]]);
 
 #
 //
 //The next section adds things to technial mods
 //
 #
+
+#Adding RFTools' stuff
+recipes.addShaped(<rftoolsdim:time_absorber>, [[<minecraft:clock>, <ore:wool>, <minecraft:clock>],[<ore:wool>, <ore:machineBlockBasic>, <ore:wool>], [<minecraft:clock>, <ore:wool>, <minecraft:clock>]]);
+recipes.addShaped(<rftoolsdim:feature_absorber>, [[<ore:gemDiamond>, <ore:wool>, <ore:gemEmerald>],[<ore:wool>, <ore:machineBlockBasic>, <ore:wool>], [<ore:gemEmerald>, <ore:wool>, <ore:gemDiamond>]]);
+recipes.addShaped(<rftoolsdim:terrain_absorber>, [[<ore:stone>, <ore:wool>, <ore:dirt>],[<ore:wool>, <ore:machineBlockBasic>, <ore:wool>], [<ore:dirt>, <ore:wool>, <ore:stone>]]);
+recipes.addShaped(<rftoolsdim:biome_absorber>, [[<ore:dirt>, <ore:wool>, <ore:treeSapling>],[<ore:wool>, <ore:machineBlockBasic>, <ore:wool>], [<ore:treeSapling>, <ore:wool>, <ore:dirt>]]);
+recipes.addShaped(<rftoolsdim:liquid_absorber>, [[<minecraft:bucket>, <ore:wool>, <minecraft:bucket>],[<ore:wool>, <ore:machineBlockBasic>, <ore:wool>], [<minecraft:bucket>, <ore:wool>, <minecraft:bucket>]]);
+recipes.addShaped(<rftoolsdim:material_absorber>, [[<ore:dirt>, <ore:wool>, <ore:cobblestone>],[<ore:wool>, <ore:machineBlockBasic>, <ore:wool>], [<ore:sand>, <ore:wool>, <ore:gravel>]]);
+recipes.addShaped(<rftoolsdim:energy_extractor>, [[<ore:blockRedstone>, <randomthings:stableenderpearl>, <ore:blockRedstone>],[<ore:gemDimensionalShard>, <ore:machineBlockBasic>, <ore:gemDimensionalShard>], [<ore:blockRedstone>, <ore:gemDimensionalShard>, <ore:blockRedstone>]]);
+recipes.addShaped(<rftoolsdim:activity_probe>, [[<ore:gemDimensionalShard>, <ore:gemDimensionalShard>, <ore:gemDimensionalShard>],[<randomthings:stableenderpearl>, <ore:machineBlockBasic>, <randomthings:stableenderpearl>], [<ore:gemDimensionalShard>, <ore:gemDimensionalShard>, <ore:gemDimensionalShard>]]);
+recipes.addShaped(<rftoolsdim:dimension_builder>, [[<randomthings:stableenderpearl>, <ore:gemEmerald>, <randomthings:stableenderpearl>],[<ore:gemDiamond>, <ore:machineBlockBasic>, <ore:gemDiamond>], [<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>]]);
+recipes.addShaped(<rftoolsdim:dimensional_pattern2_block> * 7, [[<rftoolsdim:dimensional_blank_block>, <ore:dyeWhite>, <rftoolsdim:dimensional_blank_block>],[<rftoolsdim:dimensional_blank_block>, <rftoolsdim:dimensional_blank_block>, <rftoolsdim:dimensional_blank_block>], [<rftoolsdim:dimensional_blank_block>, <ore:dyeWhite>, <rftoolsdim:dimensional_blank_block>]]);
+recipes.addShaped(<rftoolsdim:dimensional_pattern1_block> * 7, [[<rftoolsdim:dimensional_blank_block>, <ore:dyeBlack>, <rftoolsdim:dimensional_blank_block>],[<rftoolsdim:dimensional_blank_block>, <rftoolsdim:dimensional_blank_block>, <rftoolsdim:dimensional_blank_block>], [<rftoolsdim:dimensional_blank_block>, <ore:dyeBlack>, <rftoolsdim:dimensional_blank_block>]]);
+recipes.addShaped(<rftoolsdim:dimensional_blank_block> * 8, [[<ore:stone>, <ore:stone>, <ore:stone>],[<ore:stone>, <ore:gemDimensionalShard>, <ore:stone>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
+recipes.addShaped(<rftoolsdim:dimension_module>, [[null, <randomthings:stableenderpearl>, null],[<ore:dustRedstone>, <ore:ingotIron>, <ore:dustRedstone>], [null, <ore:dyeBlack>, null]]);
+recipes.addShaped(<rftoolsdim:known_dimlet:2>.withTag({dkey: "minecraft:stone@0"}), [[null, <ore:dustRedstone>, null],[<ore:dustRedstone>, <ore:dirt>, <ore:dustRedstone>], [<ore:paper>, <ore:paper>, <ore:paper>]]);
+recipes.addShaped(<rftools:level_emitter>, [[<ore:paper>, <minecraft:comparator>, <randomthings:stableenderpearl>],[<ore:blockGlass>, <ore:machineBlockBasic>, <ore:blockGlass>], [<randomthings:stableenderpearl>, <ore:blockGlass>, <ore:paper>]]);
+recipes.addShaped(<rftools:storage_terminal>, [[<ore:paper>, <ore:blockGlass>, <randomthings:stableenderpearl>],[<ore:blockGlass>, <ore:machineBlockBasic>, <ore:blockGlass>], [<randomthings:stableenderpearl>, <ore:blockGlass>, <ore:paper>]]);
+recipes.addShaped(<rftools:elevator>, [[<ore:dustRedstone>, <randomthings:stableenderpearl>, <ore:dustRedstone>],[<ore:dustRedstone>, <ore:machineBlockBasic>, <ore:dustRedstone>], [<ore:dustRedstone>, <minecraft:redstone_torch>, <ore:dustRedstone>]]);
+recipes.addShaped(<rftools:storage_scanner>, [[<minecraft:redstone_torch>, <randomthings:stableenderpearl>, <minecraft:redstone_torch>],[<ore:ingotGold>, <ore:machineBlockBasic>, <ore:ingotGold>], [<minecraft:redstone_torch>, <randomthings:stableenderpearl>, <minecraft:redstone_torch>]]);
+recipes.addShaped(<rftools:ender_monitor>, [[<ore:dustRedstone>, <randomthings:stableenderpearl>, <ore:dustRedstone>],[<minecraft:redstone_torch>, <rftools:machine_base>, <minecraft:redstone_torch>], [<ore:dustRedstone>, <minecraft:redstone_torch>, <ore:dustRedstone>]]);
+recipes.addShaped(<rftools:endergenic>, [[<ore:gemDiamond>, <randomthings:stableenderpearl>, <ore:gemDiamond>],[<randomthings:stableenderpearl>, <ore:machineBlockBasic>, <randomthings:stableenderpearl>], [<ore:gemDiamond>, <randomthings:stableenderpearl>, <ore:gemDiamond>]]);
+recipes.addShaped(<rftools:spawner>, [[<ore:dustRedstone>, <minecraft:rotten_flesh>, <ore:dustRedstone>],[<randomthings:stableenderpearl>, <ore:machineBlockBasic>, <ore:itemBlazeRod>], [<ore:dustRedstone>, <ore:bone>, <ore:dustRedstone>]]);
+recipes.addShaped(<rftools:environmental_controller>, [[<randomthings:stableenderpearl>, <ore:blockDiamond>, <randomthings:stableenderpearl>],[<ore:blockGold>, <ore:machineBlockBasic>, <ore:blockIron>], [<randomthings:stableenderpearl>, <ore:blockEmerald>, <randomthings:stableenderpearl>]]);
+recipes.addShaped(<rftools:scanner>, [[<rftools:infused_diamond>, <randomthings:stableenderpearl>, <rftools:infused_diamond>],[<ore:gemQuartz>, <ore:machineBlockBasic>, <ore:gemQuartz>], [<rftools:infused_diamond>, <ore:dustRedstone>, <rftools:infused_diamond>]]);
+recipes.addShaped(<rftools:projector>, [[<rftools:infused_diamond>, <randomthings:stableenderpearl>, <rftools:infused_diamond>],[<ore:dustGlowstone>, <ore:machineBlockBasic>, <ore:dustGlowstone>], [<rftools:infused_diamond>, <ore:dustRedstone>, <rftools:infused_diamond>]]);
+recipes.addShaped(<rftools:locator>, [[<minecraft:comparator>, <randomthings:stableenderpearl>, <minecraft:comparator>],[<ore:gemQuartz>, <ore:machineBlockBasic>, <ore:gemQuartz>], [<rftools:infused_diamond>, <ore:dustRedstone>, <rftools:infused_diamond>]]);
+recipes.addShaped(<rftools:builder>, [[<ore:blockBrick>, <randomthings:stableenderpearl>, <ore:blockBrick>],[<ore:dustRedstone>, <ore:machineBlockBasic>, <ore:dustRedstone>], [<ore:blockBrick>, <ore:dustRedstone>, <ore:blockBrick>]]);
+recipes.addShaped(<rftools:space_chamber>, [[<ore:dyeBlue>, <ore:blockGlass>, <ore:dyeBlue>],[<ore:blockGlass>, <ore:machineBlockBasic>, <ore:blockGlass>], [<ore:dyeBlue>, <ore:blockGlass>, <ore:dyeBlue>]]);
+recipes.addShaped(<rftools:space_chamber_controller>, [[null, <randomthings:stableenderpearl>, null],[<minecraft:redstone_torch>, <rftools:space_chamber>, <minecraft:redstone_torch>], [null, <randomthings:stableenderpearl>, null]]);
+recipes.addShaped(<rftools:digit_block>, [[<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],[<ore:dustRedstone>, <rftools:machine_base>, <ore:dustRedstone>], [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>]]);
+recipes.addShaped(<rftools:redstone_receiver_block>, [[<ore:dustRedstone>, <randomthings:stableenderpearl>, <ore:dustRedstone>],[<minecraft:comparator>, <rftools:machine_base>, <minecraft:comparator>], [<ore:dustRedstone>, <ore:blockRedstone>, <ore:dustRedstone>]]);
+recipes.addShaped(<rftools:redstone_transmitter_block>, [[<ore:dustRedstone>, <randomthings:stableenderpearl>, <ore:dustRedstone>],[<minecraft:redstone_torch>, <rftools:machine_base>, <minecraft:redstone_torch>], [<ore:dustRedstone>, <ore:blockRedstone>, <ore:dustRedstone>]]);
+recipes.addShaped(<rftools:screen_controller>, [[<ore:dustRedstone>, <randomthings:stableenderpearl>, <ore:dustRedstone>],[<ore:blockGlass>, <ore:machineBlockBasic>, <ore:blockGlass>], [<ore:dustRedstone>, <ore:blockGlass>, <ore:dustRedstone>]]);
+recipes.addShaped(<rftools:screen>, [[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],[<ore:blockGlass>, <rftools:machine_base>, <ore:blockGlass>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+recipes.addShaped(<rftools:destination_analyzer>, [[<randomthings:stableenderpearl>, null, <randomthings:stableenderpearl>],[null, <ore:machineBlockBasic>, null], [<randomthings:stableenderpearl>, null, <randomthings:stableenderpearl>]]);
+recipes.addShaped(<rftools:matter_receiver>, [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],[<ore:dustRedstone>, <ore:machineBlockBasic>, <ore:dustRedstone>], [<randomthings:stableenderpearl>, <randomthings:stableenderpearl>, <randomthings:stableenderpearl>]]);
+recipes.addShaped(<rftools:matter_transmitter>, [[<randomthings:stableenderpearl>, <randomthings:stableenderpearl>, <randomthings:stableenderpearl>],[<ore:dustRedstone>, <ore:machineBlockBasic>, <ore:dustRedstone>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+recipes.addShaped(<rftools:remote_storage>, [[<randomthings:stableenderpearl>, <ore:chest>, <randomthings:stableenderpearl>],[<ore:gemQuartz>, <ore:machineBlockBasic>, <ore:gemQuartz>], [<randomthings:stableenderpearl>, <ore:gemQuartz>, <randomthings:stableenderpearl>]]);
+recipes.addShaped(<rftools:machine_base>, [[<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
+recipes.addShaped(<rftools:shape_card:8>, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>, <rftools:shape_card:9>, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
+recipes.addShaped(<rftools:storage_module:6>, [[<randomthings:stableenderpearl>, <ore:chest>, <randomthings:stableenderpearl>],[<ore:nuggetGold>, <ore:ingotIron>, <ore:nuggetGold>], [<ore:gemQuartz>, <ore:dustRedstone>, <ore:gemQuartz>]]);
+recipes.addShaped(<rftools:energyplus_module>, [[null, <randomthings:stableenderpearl>, null],[<ore:ingotGold>, <rftools:energy_module>, <ore:ingotGold>], [null, <randomthings:stableenderpearl>, null]]);
+recipes.addShaped(<rftools:inventoryplus_module>, [[null, <randomthings:stableenderpearl>, null],[<ore:ingotGold>, <rftools:inventory_module>, <ore:ingotGold>], [null, <randomthings:stableenderpearl>, null]]);
+recipes.addShaped(<rftools:charged_porter>, [[null, <randomthings:stableenderpearl>, null],[<randomthings:stableenderpearl>, <ore:blockRedstone>, <randomthings:stableenderpearl>], [<ore:ingotIron>, <randomthings:stableenderpearl>, <ore:ingotIron>]]);
+recipes.addShaped(<rftools:shape_card:4>, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>, <rftools:shape_card:7>, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
+recipes.addShaped(<rftools:shape_card:3>, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>, <rftools:shape_card:6>, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
+recipes.addShaped(<rftools:shape_card:2>, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<ore:dirt>, <rftools:shape_card:5>, <ore:dirt>], [<ore:dirt>, <ore:dirt>, <ore:dirt>]]);
+recipes.addShaped(<rftools:counterplus_module>, [[null, <randomthings:stableenderpearl>, null],[<ore:ingotGold>, <rftools:counter_module>, <ore:ingotGold>], [null, <randomthings:stableenderpearl>, null]]);
+recipes.addShaped(<rftools:fluidplus_module>, [[null, <randomthings:stableenderpearl>, null],[<ore:ingotGold>, <rftools:fluid_module>, <ore:ingotGold>], [null, <randomthings:stableenderpearl>, null]]);
 
 #Adding Tech Reborn's stuff
 recipes.addShaped(<techreborn:grinder>, [[<ore:itemFlint>, <ore:itemFlint>, <ore:itemFlint>],[<ore:cobblestone>, <ore:machineBasic>, <ore:cobblestone>], [null, <ore:circuitBasic>, null]]);
@@ -485,6 +533,6 @@ recipes.addShaped(<torchmaster:mega_torch>, [[<ore:torch>, <ore:torch>, <ore:tor
 recipes.addShaped(<torchmaster:dread_lamp>, [[<ore:obsidian>, <ore:obsidian>, <ore:obsidian>],[<ore:paneGlass>, <ore:glowstone>, <ore:paneGlass>], [<ore:obsidian>, <minecraft:dye>, <ore:obsidian>]]);
 recipes.addShaped(<torchmaster:terrain_lighter>, [[<ore:torch>, <ore:torch>, <ore:torch>],[<ore:logWood>, <ore:chest>, <ore:logWood>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
 
-print("Initialized 02_add_recipes");
+print("Initialized 02_Adding_a.zs");
 
 //File End

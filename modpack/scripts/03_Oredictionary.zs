@@ -8,30 +8,26 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemTransformer;
 
-print("Initializing 03_oredictionary.zs");
+print("Initializing 03_Oredictionary.zs");
 
 //Adding additional oredictionary entries
 
-#Fertilizer
-val fert = <ore:fertilizer>;
-fert.add(<actuallyadditions:item_fertilizer>);
-fert.add(<forestry:fertilizer_compound>);
-fert.add(<pmp:plntpw_fer>);
-fert.add(<exoticbirds:eggshell>);
-
-#Royal Jelly
-val jellyr = <ore:dropRoyalJelly>;
-jellyr.add(<harvestcraft:royaljellyitem>);
+#
+//
+//The following section contains additional registrations for fluids
+//
+#
 
 #Unifying crude oil
 val crudeOil = <ore:OilCrude>;
 crudeOil.add(<thermalfoundation:fluid_crude_oil>);
 crudeOil.add(<immersivepetroleum:fluid_crude_oil>);
 
-#Unifying leather
-val hardenedLeather = <ore:LeatherHardened>;
-hardenedLeather.add(<improvedbackpacks:tanned_leather>);
-hardenedLeather.add(<harvestcraft:hardenedleatheritem>);
+#
+//
+//The following section contains additional registrations for technical stuff
+//
+#
 
 #Unifying circuits
 val cirU = <ore:circuitUltimate>;
@@ -50,6 +46,55 @@ simCase.add(<rftools:machine_frame>);
 val advCase = <ore:machineBlockAdvanced>;
 advCase.add(<mekanism:basicblock:8>);
 advCase.add(<nuclearcraft:part:10>);
+
+#
+//
+//The following section contains additional registrations for interacting blocks
+//
+#
+
+val drawer = <ore:drawerBasic>;
+drawer.add(<storagedrawers:customdrawers:*>);
+
+val trim = <ore:drawerTrim>;
+trim.add(<storagedrawers:customtrim>);
+
+val doorW = <ore:doorWood>;
+doorW.add(<natura:overworld_doors:*>);
+doorW.add(<natura:nether_doors:*>);
+
+val chest = <ore:chest>;
+chest.add(<actuallyadditions:block_treasure_chest>);
+chest.add(<appliedenergistics2:sky_stone_chest>);
+chest.add(<appliedenergistics2:smooth_sky_stone_chest>);
+chest.add(<extrautils2:largishchest>);
+chest.add(<forestry:bee_chest>);
+chest.add(<forestry:butterfly_chest>);
+chest.add(<forestry:tree_chest>);
+chest.add(<metalchests:metal_chest:*>);
+chest.add(<randomthings:specialchest:*>);
+chest.add(<enderstorage:ender_storage:0>);
+
+val chestE = <ore:chestEnder>;
+chestE.add(<enderstorage:ender_storage:0>);
+
+#
+//
+//The following section contains additional registrations for items and crafting stuff
+//
+#
+
+#Fertilizer
+val fert = <ore:fertilizer>;
+fert.add(<actuallyadditions:item_fertilizer>);
+fert.add(<forestry:fertilizer_compound>);
+fert.add(<pmp:plntpw_fer>);
+fert.add(<exoticbirds:eggshell>);
+
+#Unifying leather
+val hardenedLeather = <ore:LeatherHardened>;
+hardenedLeather.add(<improvedbackpacks:tanned_leather>);
+hardenedLeather.add(<harvestcraft:hardenedleatheritem>);
 
 #Unifying itemRubber
 val rubber = <ore:itemRubber>;
@@ -171,18 +216,6 @@ berryChaos.add(<oreberries:shardchaos_oreberry>);
 val berryADraconium = <ore:berryDraconiumAwakened>;
 berryADraconium.add(<oreberries:draconiumawakened_oreberry>);
 
-#Adding more bricks 
-val brickblock = <ore:blockBrick>; // This adds more bricks like the ones made of clay
-brickblock.add(<minecraft:brick_block>);
-brickblock.add(<chisel:bricks:*>);
-brickblock.add(<chisel:bricks1:*>);
-brickblock.add(<chisel:bricks2:*>);
-brickblock.add(<forestry:ash_brick>);
-brickblock.add(<unlimitedchiselworks:chisel_bricks_forestry_ash_brick_0:*>);
-brickblock.add(<unlimitedchiselworks:chisel_bricks1_forestry_ash_brick_0:*>);
-brickblock.add(<unlimitedchiselworks:chisel_bricks2_forestry_ash_brick_0:*>);
-brickblock.add(<immersivehempcraft:hempstone_bricks>);
-
 #Ordicting rabbit hide 
 val rabbithideitem = <ore:itemLeatherRabbit>; //This is for recipes like to craft leather, which cannot contain an alternative
 rabbithideitem.add(<minecraft:rabbit_hide>);
@@ -202,6 +235,178 @@ val batwing = <ore:wingBat>;
 batwing.add(<gravestone-extended:gs_bat_wing>);
 batwing.add(<actuallyadditions:item_misc:15>);
 batwing.add(<xreliquary:mob_ingredient:5>);
+
+#Unifying wax
+val wax = <ore:itemWax>;
+wax.add(<forestry:beeswax>);
+wax.add(<harvestcraft:beeswaxitem>);
+
+val stick = <ore:stickWood>;
+stick.add(<immersiveengineering:material:0>);
+
+val stonemeal = <ore:dustStonemeal>;
+stonemeal.add(<techreborn:dust:61>);
+stonemeal.add(<techreborn:dust:62>);
+stonemeal.add(<techreborn:dust:63>);
+
+#
+//
+//The following section contains additional registrations for food stuff
+//
+#
+
+#Royal Jelly
+val jellyr = <ore:dropRoyalJelly>;
+jellyr.add(<harvestcraft:royaljellyitem>);
+
+#Adding more spice
+val spice = <ore:listAllspice>;
+spice.add(<plants2:saffron>);
+
+#Adding more veggie
+val veggie = <ore:listAllveggie>;
+veggie.add(<plants2:amaranthus_h>);
+veggie.add(<plants2:okra>);
+veggie.add(<plants2:daucus_c>);
+veggie.add(<plants2:plantago_m>);
+veggie.add(<plants2:alternanthera_f>);
+veggie.add(<plants2:tahitian_spinach>);
+
+#Adding more green veggie
+val veggieG = <ore:listAllgreenveggie>;
+veggieG.add(<plants2:okra>);
+veggieG.add(<plants2:plantago_m>);
+veggieG.add(<plants2:alternanthera_f>);
+veggieG.add(<plants2:tahitian_spinach>);
+
+#Adding more berries
+val berry = <ore:listAllberry>;
+berry.add(<natura:edibles:2>);
+berry.add(<natura:edibles:3>);
+berry.add(<natura:edibles:4>);
+berry.add(<natura:edibles:5>);
+berry.add(<natura:edibles:6>);
+berry.add(<natura:edibles:7>);
+berry.add(<natura:edibles:8>);
+berry.add(<plants2:phytolacca_a>);
+berry.add(<plants2:rubus_o>);
+berry.add(<plants2:rubus_p>);
+berry.add(<plants2:solanum_c>);
+berry.add(<plants2:solanum_d>);
+berry.add(<plants2:solanum_n>);
+berry.add(<plants2:alyxia_b>);
+berry.add(<plants2:actaea_p>);
+berry.add(<plants2:ampelopsis_a>);
+berry.add(<plants2:blackberry>);
+berry.add(<plants2:blueberry>);
+berry.add(<plants2:raspberry>);
+berry.add(<plants2:huckleberry>);
+berry.add(<plants2:fire_fruit>);
+
+#Addibf more fruits
+val fruit = <ore:listAllfruit>;
+fruit.add(<natura:saguaro_fruit_item>);
+fruit.add(<plants2:pineapple>);
+fruit.add(<plants2:phytolacca_a>);
+fruit.add(<plants2:rubus_o>);
+fruit.add(<plants2:rubus_p>);
+fruit.add(<plants2:solanum_c>);
+fruit.add(<plants2:solanum_d>);
+fruit.add(<plants2:solanum_n>);
+fruit.add(<plants2:alyxia_b>);
+fruit.add(<plants2:actaea_p>);
+fruit.add(<plants2:ampelopsis_a>);
+fruit.add(<plants2:blackberry>);
+fruit.add(<plants2:blueberry>);
+fruit.add(<plants2:raspberry>);
+fruit.add(<plants2:huckleberry>);
+fruit.add(<plants2:fire_fruit>);
+
+#More egg
+val egg = <ore:egg>;
+
+#Ordicting bird meat
+val listallrawbird = <ore:listAllbirdraw>;
+listallrawbird.add(<exoticbirds:birdmeat:0>);
+val listallcookedbird = <ore:listAllbirdcooked>;
+listallcookedbird.add(<exoticbirds:cooked_birdmeat>);
+val listallrawmeat = <ore:listAllmeatraw>;
+listallrawmeat.add(<exoticbirds:birdmeat>);
+val listallcookedmeat = <ore:listAllmeatcooked>;
+listallcookedmeat.add(<exoticbirds:cooked_birdmeat>);
+
+#Oredict seeds
+val seed = <ore:listAllseed>;
+seed.add(<immersiveengineering:seed>);
+seed.add(<actuallyadditions:item_rice_seed>);
+seed.add(<actuallyadditions:item_coffee_seed>);
+seed.add(<actuallyadditions:item_flax_seed>);
+seed.add(<actuallyadditions:item_canola_seed>);
+seed.add(<plants2:apocynum_c>);
+seed.add(<plants2:pineapple_seeds>);
+seed.add(<plants2:okra_seeds>);
+seed.add(<plants2:amaranthus_h_seeds>);
+
+val mushroom = <ore:listAllmushroom>;
+mushroom.add(<biomesoplenty:mushroom:0>);
+mushroom.add(<biomesoplenty:mushroom:1>);
+mushroom.add(<biomesoplenty:mushroom:2>);
+mushroom.add(<biomesoplenty:mushroom:3>);
+mushroom.add(<biomesoplenty:mushroom:4>);
+mushroom.add(<biomesoplenty:mushroom:5>);
+mushroom.add(<nuclearcraft:glowing_mushroom>);
+mushroom.add(<natura:nether_glowshroom:*>);
+
+//The next section adds more crops
+val okra = <ore:cropOkra>;
+okra.add(<plants2:okra>);
+
+val pineapple = <ore:cropPineapple>;
+pineapple.add(<plants2:pineapple>);
+
+val carrot = <ore:cropCarrot>;
+carrot.add(<plants2:daucus_c>);
+
+val raspberry = <ore:cropRaspberry>;
+raspberry.add(<plants2:rubus_o>);
+raspberry.add(<plants2:rubus_p>);
+raspberry.add(<plants2:raspberry>);
+
+val blackberry = <ore:cropBlackberry>;
+blackberry.add(<plants2:blackberry>);
+
+val huckleberry = <ore:cropHuckleberry>;
+huckleberry.add(<plants2:huckleberry>);
+
+val blueberry = <ore:cropBlueberry>;
+blueberry.add(<plants2:blueberry>);
+
+val spinach = <ore:cropSpinach>;
+spinach.add(<plants2:tahitian_spinach>);
+
+val cotton = <ore:cropCotton>;
+cotton.add(<plants2:generic:0>);
+
+#
+//
+//The following section contains additional registrations for blocks
+//
+#
+
+val cokeblock = <ore:blockCoalCoke>;
+cokeblock.add(<immersiveengineering:stone_decoration:3>);
+
+#Adding more bricks 
+val brickblock = <ore:blockBrick>; // This adds more bricks like the ones made of clay
+brickblock.add(<minecraft:brick_block>);
+brickblock.add(<chisel:bricks:*>);
+brickblock.add(<chisel:bricks1:*>);
+brickblock.add(<chisel:bricks2:*>);
+brickblock.add(<forestry:ash_brick>);
+brickblock.add(<unlimitedchiselworks:chisel_bricks_forestry_ash_brick_0:*>);
+brickblock.add(<unlimitedchiselworks:chisel_bricks1_forestry_ash_brick_0:*>);
+brickblock.add(<unlimitedchiselworks:chisel_bricks2_forestry_ash_brick_0:*>);
+brickblock.add(<immersivehempcraft:hempstone_bricks>);
 
 #Ordicting Nether Bricks
 val netherbrick = <ore:bricksNether>;
@@ -330,12 +535,6 @@ slabCobble.add(<abyssalcraft:coraliumcobblestoneslab1>);
 slabCobble.add(<tconstruct:seared_slab:1>);
 slabCobble.add(<undergroundbiomes:igneous_cobble_halfslab:*>);
 slabCobble.add(<undergroundbiomes:metamorphic_cobble_halfslab:*>);
-
-#Unifying wax
-val wax = <ore:itemWax>;
-wax.add(<forestry:beeswax>);
-wax.add(<harvestcraft:beeswaxitem>);
-
 #More Iron Bars
 val ibars = <ore:barsIron>;
 ibars.add(<chisel:ironpane:*>);
@@ -465,16 +664,6 @@ dirt.add(<unlimitedchiselworks:chisel_dirt_biomesoplenty_dirt_0:*>);
 dirt.add(<unlimitedchiselworks:chisel_dirt_biomesoplenty_dirt_1:*>);
 dirt.add(<unlimitedchiselworks:chisel_dirt_biomesoplenty_dirt_2:*>);
 
-val mushroom = <ore:listAllmushroom>;
-mushroom.add(<biomesoplenty:mushroom:0>);
-mushroom.add(<biomesoplenty:mushroom:1>);
-mushroom.add(<biomesoplenty:mushroom:2>);
-mushroom.add(<biomesoplenty:mushroom:3>);
-mushroom.add(<biomesoplenty:mushroom:4>);
-mushroom.add(<biomesoplenty:mushroom:5>);
-mushroom.add(<nuclearcraft:glowing_mushroom>);
-mushroom.add(<natura:nether_glowshroom:*>);
-
 val log = <ore:logWood>;
 
 val planks = <ore:planksWood>;
@@ -586,151 +775,6 @@ val fencew = <ore:fenceWood>;
 
 val fencewg = <ore:fenceWoodGate>;
 
-val stick = <ore:stickWood>;
-stick.add(<immersiveengineering:material:0>);
-
-val drawer = <ore:drawerBasic>;
-drawer.add(<storagedrawers:customdrawers:*>);
-
-val trim = <ore:drawerTrim>;
-trim.add(<storagedrawers:customtrim>);
-
-val doorW = <ore:doorWood>;
-doorW.add(<natura:overworld_doors:*>);
-doorW.add(<natura:nether_doors:*>);
-
-val stonemeal = <ore:dustStonemeal>;
-stonemeal.add(<techreborn:dust:61>);
-stonemeal.add(<techreborn:dust:62>);
-stonemeal.add(<techreborn:dust:63>);
-
-val cokeblock = <ore:blockCoalCoke>;
-cokeblock.add(<immersiveengineering:stone_decoration:3>);
-
-#
-//
-//The following section contains additional registrations for food stuff
-//
-#
-
-#Adding more spice
-val spice = <ore:listAllspice>;
-spice.add(<plants2:saffron>);
-
-#Adding more veggie
-val veggie = <ore:listAllveggie>;
-veggie.add(<plants2:amaranthus_h>);
-veggie.add(<plants2:okra>);
-veggie.add(<plants2:daucus_c>);
-veggie.add(<plants2:plantago_m>);
-veggie.add(<plants2:alternanthera_f>);
-veggie.add(<plants2:tahitian_spinach>);
-
-#Adding more green veggie
-val veggieG = <ore:listAllgreenveggie>;
-veggieG.add(<plants2:okra>);
-veggieG.add(<plants2:plantago_m>);
-veggieG.add(<plants2:alternanthera_f>);
-veggieG.add(<plants2:tahitian_spinach>);
-
-#Adding more berries
-val berry = <ore:listAllberry>;
-berry.add(<natura:edibles:2>);
-berry.add(<natura:edibles:3>);
-berry.add(<natura:edibles:4>);
-berry.add(<natura:edibles:5>);
-berry.add(<natura:edibles:6>);
-berry.add(<natura:edibles:7>);
-berry.add(<natura:edibles:8>);
-berry.add(<plants2:phytolacca_a>);
-berry.add(<plants2:rubus_o>);
-berry.add(<plants2:rubus_p>);
-berry.add(<plants2:solanum_c>);
-berry.add(<plants2:solanum_d>);
-berry.add(<plants2:solanum_n>);
-berry.add(<plants2:alyxia_b>);
-berry.add(<plants2:actaea_p>);
-berry.add(<plants2:ampelopsis_a>);
-berry.add(<plants2:blackberry>);
-berry.add(<plants2:blueberry>);
-berry.add(<plants2:raspberry>);
-berry.add(<plants2:huckleberry>);
-berry.add(<plants2:fire_fruit>);
-
-#Addibf more fruits
-val fruit = <ore:listAllfruit>;
-fruit.add(<natura:saguaro_fruit_item>);
-fruit.add(<plants2:pineapple>);
-fruit.add(<plants2:phytolacca_a>);
-fruit.add(<plants2:rubus_o>);
-fruit.add(<plants2:rubus_p>);
-fruit.add(<plants2:solanum_c>);
-fruit.add(<plants2:solanum_d>);
-fruit.add(<plants2:solanum_n>);
-fruit.add(<plants2:alyxia_b>);
-fruit.add(<plants2:actaea_p>);
-fruit.add(<plants2:ampelopsis_a>);
-fruit.add(<plants2:blackberry>);
-fruit.add(<plants2:blueberry>);
-fruit.add(<plants2:raspberry>);
-fruit.add(<plants2:huckleberry>);
-fruit.add(<plants2:fire_fruit>);
-
-#More egg
-val egg = <ore:egg>;
-
-#Ordicting bird meat
-val listallrawbird = <ore:listAllbirdraw>;
-listallrawbird.add(<exoticbirds:birdmeat:0>);
-val listallcookedbird = <ore:listAllbirdcooked>;
-listallcookedbird.add(<exoticbirds:cooked_birdmeat>);
-val listallrawmeat = <ore:listAllmeatraw>;
-listallrawmeat.add(<exoticbirds:birdmeat>);
-val listallcookedmeat = <ore:listAllmeatcooked>;
-listallcookedmeat.add(<exoticbirds:cooked_birdmeat>);
-
-#Oredict seeds
-val seed = <ore:listAllseed>;
-seed.add(<immersiveengineering:seed>);
-seed.add(<actuallyadditions:item_rice_seed>);
-seed.add(<actuallyadditions:item_coffee_seed>);
-seed.add(<actuallyadditions:item_flax_seed>);
-seed.add(<actuallyadditions:item_canola_seed>);
-seed.add(<plants2:apocynum_c>);
-seed.add(<plants2:pineapple_seeds>);
-seed.add(<plants2:okra_seeds>);
-seed.add(<plants2:amaranthus_h_seeds>);
-
-//The next section adds more crops
-val okra = <ore:cropOkra>;
-okra.add(<plants2:okra>);
-
-val pineapple = <ore:cropPineapple>;
-pineapple.add(<plants2:pineapple>);
-
-val carrot = <ore:cropCarrot>;
-carrot.add(<plants2:daucus_c>);
-
-val raspberry = <ore:cropRaspberry>;
-raspberry.add(<plants2:rubus_o>);
-raspberry.add(<plants2:rubus_p>);
-raspberry.add(<plants2:raspberry>);
-
-val blackberry = <ore:cropBlackberry>;
-blackberry.add(<plants2:blackberry>);
-
-val huckleberry = <ore:cropHuckleberry>;
-huckleberry.add(<plants2:huckleberry>);
-
-val blueberry = <ore:cropBlueberry>;
-blueberry.add(<plants2:blueberry>);
-
-val spinach = <ore:cropSpinach>;
-spinach.add(<plants2:tahitian_spinach>);
-
-val cotton = <ore:cropCotton>;
-cotton.add(<plants2:generic:0>);
-
 #
 //
 //The next section removes entries from OreDictionary
@@ -743,6 +787,6 @@ dustQ.remove(<actuallyadditions:item_dust:5>);
 val dustE = <ore:dustEnder>;
 dustE.remove(<appliedenergistics2:material:46>);
 
-print("Initialized 03_oredictionary.zs");
+print("Initialized 03_Oredictionary.zs");
 
 //File End

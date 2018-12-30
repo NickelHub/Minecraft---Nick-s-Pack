@@ -10,7 +10,7 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.actuallyadditions.Crusher;
 
-print("Initializing 02_add_recipes_AA_crusher.zs");
+print("Initializing 02_Adding_b.zs");
 
 #Adding Thaumcraft's stuff
 mods.actuallyadditions.Crusher.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aer"}]}) * 2, <thaumcraft:crystal_aer>);
@@ -26,6 +26,6 @@ mods.actuallyadditions.Crusher.addRecipe(<techreborn:dust:63>, <minecraft:stone:
 mods.actuallyadditions.Crusher.addRecipe(<techreborn:dust:62>, <minecraft:stone:3>);
 mods.actuallyadditions.Crusher.addRecipe(<techreborn:dust:61>, <minecraft:stone:5>);
 
-print("Initialized 02_add_recipes_AA_crusher.zs");
+print("Initialized 02_Adding_b.zs");
 
 //File End
