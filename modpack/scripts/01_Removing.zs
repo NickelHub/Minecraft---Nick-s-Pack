@@ -89,7 +89,7 @@ recipes.remove(<magicbees:manasteelscoop>);
 #
 
 #Removing Extra Cells' stuff
-//Removing unnessecary stuff because this funtionns are added by Applied Energistics itself now
+//Removing unnessecary stuff because this functionns are added by Applied Energistics itself now
 mods.jei.JEI.removeAndHide(<extracells:part.base:0>);
 mods.jei.JEI.removeAndHide(<extracells:part.base:1>);
 mods.jei.JEI.removeAndHide(<extracells:part.base:2>);
