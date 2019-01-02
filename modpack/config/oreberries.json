@@ -202,7 +202,7 @@
       "tooltip":"Draconic!",
       "smeltingResult":"draconicevolution:nugget",
       "rarity":12,
-      "maxHeight":16
+      "maxHeight":20
    },
    "DimensionalShard":{
       "bushName":"Dimensional Oreberry Bush",
@@ -211,7 +211,7 @@
       "tooltip":"Absolutely Dimensiona!",
       "smeltingResult":"jaopca:item_nuggetdimensionalshard",
       "rarity":12,
-      "maxHeight":16
+      "maxHeight":20
    },
    "Cobalt":{
       "color":"#0e48c1",
@@ -650,11 +650,29 @@
       "smeltingResult":"draconicevolution:nugget:1",
       "rarity":0
    },
-   "shardChaos":{
+   "ShardChaos":{
       "bushName":"Chaos Oreberry Bush",
       "berryName":"Chaos Oreberry",
       "color":"#000000",
       "smeltingResult":"draconicevolution:chaos_shard:3",
       "rarity":0
+   },
+   "Niter":{
+      "color":"#f1f2e8",
+      "smeltingResult":"jaopca:item_dusttinyniter",
+      "rarity":8,
+      "maxHeight":32
+   },
+   "Sulfur":{
+      "color":"#e5ed07",
+      "smeltingResult":"jaopca:item_dusttinysulfur",
+      "rarity":8,
+      "maxHeight":32
+   },
+   "Lapis":{
+      "color":"#014dc6",
+      "smeltingResult":"jaopca:item_dusttinylapis",
+      "rarity":8,
+      "maxHeight":24
    }
 }
