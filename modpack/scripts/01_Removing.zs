@@ -30,6 +30,9 @@ mods.unidict.removalByKind.get("Crafting").remove("plate");
 //
 #
 
+#Removing Mystcraft's stuff
+recipes.removeByRecipeName("mystcraft:inkmixer");
+
 #Removing Thaumcraft's stuff
 mods.jei.JEI.removeAndHide(<thaumcraft:ore_quartz>);
 
@@ -87,6 +90,34 @@ recipes.remove(<magicbees:manasteelscoop>);
 //The next section removes things from technical mods
 //
 #
+
+#Removing Railcraft's stuff
+recipes.removeByRecipeName("railcraft:brick_bloodstained+blood stained block#337");
+recipes.removeByRecipeName("railcraft:brick_bloodstained+blood stained block#338");
+recipes.remove(<railcraft:boiler_firebox_solid>);
+recipes.remove(<railcraft:circuit:*>);
+recipes.removeByRecipeName("railcraft:blast_furnace+blast furnace brick#118");
+recipes.removeByRecipeName("railcraft:coke_oven_red+tile.railcraft.coke.oven.red.name#117");
+recipes.removeByRecipeName("railcraft:coke_oven+coke oven brick#116");
+recipes.removeByRecipeName("railcraft:equipment+smoker#59");
+recipes.removeByRecipeName("railcraft:track_kit+embarking track kit#476");
+recipes.removeByRecipeName("railcraft:detector+cart detector - mob#48");
+recipes.removeByRecipeName("railcraft:detector+cart detector - mob#47");
+
+#Removing Extreme Reactors' stuff
+recipes.removeByRecipeName("bigreactors:turbinecontroller");
+recipes.removeByRecipeName("bigreactors:reactorcontroller");
+recipes.removeByRecipeName("bigreactors:reactorfuelrod");
+recipes.removeByRecipeName("bigreactors:turbinerotorshaft");
+recipes.removeByRecipeName("bigreactors:reactorcoolantport");
+recipes.removeByRecipeName("bigreactors:turbinefluidport");
+recipes.removeByRecipeName("bigreactors:reactorcasing");
+recipes.removeByRecipeName("bigreactors:turbinehousing");
+recipes.removeByRecipeName("bigreactors:turbinehousingcores");
+recipes.removeByRecipeName("bigreactors:reactorcasingcores");
+mods.jei.JEI.removeAndHide(<bigreactors:reactorrednetport>);
+mods.jei.JEI.removeAndHide(<bigreactors:reactorcomputerport>);
+mods.jei.JEI.removeAndHide(<bigreactors:turbinecomputerport>);
 
 #Removing RFTools' stuff
 recipes.removeByRecipeName("rftoolsdim:time_absorber");
@@ -179,9 +210,11 @@ mods.jei.JEI.removeAndHide(<nuclearcraft:ore:0>);
 mods.jei.JEI.removeAndHide(<nuclearcraft:ore:1>);
 mods.jei.JEI.removeAndHide(<nuclearcraft:ore:2>);
 mods.jei.JEI.removeAndHide(<nuclearcraft:ore:4>);
+recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.fission_controller_new_fixed_1");
 recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.cooler.quartz");
 recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.solar_panel_basic");
 recipes.removeByRecipeName("nuclearcraft:tile.nuclearcraft.cooler.quartz_1");
+recipes.removeByRecipeName("nuclearcraft:item.nuclearcraft.dominos");
 recipes.remove(<nuclearcraft:decay_hastener_idle>);
 recipes.remove(<nuclearcraft:irradiator_idle>);
 
@@ -270,15 +303,117 @@ recipes.removeByRecipeName("mekanism:machineblock_11");
 recipes.removeByRecipeName("mekanism:ingot_3_alt");
 mods.jei.JEI.removeAndHide(<mekanism:oreblock:1>);
 mods.jei.JEI.removeAndHide(<mekanism:oreblock:2>);
-recipes.removeByRecipeName("undidict:blocksalt_x1_shape.aaaa");
 recipes.remove(<mekanism:ingot:0>);
 recipes.remove(<mekanism:nugget:0>);
+mods.mekanism.infuser.removeRecipe(<mekanism:controlcircuit:0>);
+recipes.remove(<mekanism:controlcircuit:1>);
+recipes.remove(<mekanism:controlcircuit:2>);
+recipes.remove(<mekanism:controlcircuit:3>);
 
 #
 //
 //The next section removes things from nature and food mods
 //
 #
+
+#Removing Plant Mega Pack's stuff
+mods.jei.JEI.removeAndHide(<pmp:fruit_yelap>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_tange>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_plum>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_pear>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_peach>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_orang>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_olive>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_mango>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_lime>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_lemon>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_kiwi>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_grnap>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_grapf>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_cocon>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_cherr>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_banan>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_avoca>);
+mods.jei.JEI.removeAndHide(<pmp:fruit_apric>);
+mods.jei.JEI.removeAndHide(<pmp:berry_snow>);
+mods.jei.JEI.removeAndHide(<pmp:berry_porce>);
+mods.jei.JEI.removeAndHide(<pmp:berry_orang>);
+mods.jei.JEI.removeAndHide(<pmp:berry_mulbe>);
+mods.jei.JEI.removeAndHide(<pmp:berry_huckl>);
+mods.jei.JEI.removeAndHide(<pmp:berry_goose>);
+mods.jei.JEI.removeAndHide(<pmp:berry_elder>);
+mods.jei.JEI.removeAndHide(<pmp:berry_blue>);
+mods.jei.JEI.removeAndHide(<pmp:berry_black>);
+mods.jei.JEI.removeAndHide(<pmp:berry_beaut>);
+mods.jei.JEI.removeAndHide(<pmp:berry_acai>);
+recipes.removeByRecipeName("pmp:flower_wht_dye");
+recipes.removeByRecipeName("pmp:flower_blu_dye");
+recipes.removeByRecipeName("pmp:flower_grn_dye");
+mods.jei.JEI.removeAndHide(<pmp:doorw_frtwd>);
+mods.jei.JEI.removeAndHide(<pmp:gatew_frtwd>);
+mods.jei.JEI.removeAndHide(<pmp:fencw_frtwd>);
+mods.jei.JEI.removeAndHide(<pmp:laddr_frtwd>);
+mods.jei.JEI.removeAndHide(<pmp:slabw_frtwd>);
+mods.jei.JEI.removeAndHide(<pmp:staiw_frtwd>);
+mods.jei.JEI.removeAndHide(<pmp:plank_frtwd>);
+mods.jei.JEI.removeAndHide(<pmp:logst_frtwd>);
+mods.jei.JEI.removeAndHide(<pmp:log_frtwd>);
+mods.jei.JEI.removeAndHide(<pmp:bark_frtwd>);
+mods.jei.JEI.removeAndHide(<pmp:leave_nut_walnu>);
+mods.jei.JEI.removeAndHide(<pmp:leave_nut_pista>);
+mods.jei.JEI.removeAndHide(<pmp:leave_nut_pecan>);
+mods.jei.JEI.removeAndHide(<pmp:leave_nut_maya>);
+mods.jei.JEI.removeAndHide(<pmp:leave_nut_macad>);
+mods.jei.JEI.removeAndHide(<pmp:leave_nut_hazel>);
+mods.jei.JEI.removeAndHide(<pmp:leave_nut_gabon>);
+mods.jei.JEI.removeAndHide(<pmp:leave_nut_cashe>);
+mods.jei.JEI.removeAndHide(<pmp:leave_nut_candl>);
+mods.jei.JEI.removeAndHide(<pmp:leave_nut_butte>);
+mods.jei.JEI.removeAndHide(<pmp:leave_nut_brazi>);
+mods.jei.JEI.removeAndHide(<pmp:leave_nut_almon>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_yelap>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_tange>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_plum>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_pear>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_peach>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_orang>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_olive>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_mulbe>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_mango>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_lime>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_lemon>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_grnap>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_grapf>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_cherr>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_avoca>);
+mods.jei.JEI.removeAndHide(<pmp:leave_fruit_apric>);
+mods.jei.JEI.removeAndHide(<pmp:leave_spruc_red>);
+mods.jei.JEI.removeAndHide(<pmp:leave_spruc_norwa>);
+mods.jei.JEI.removeAndHide(<pmp:leave_spruc_marti>);
+mods.jei.JEI.removeAndHide(<pmp:leave_spruc_black>);
+mods.jei.JEI.removeAndHide(<pmp:leave_oak_japem>);
+mods.jei.JEI.removeAndHide(<pmp:leave_oak_gray>);
+mods.jei.JEI.removeAndHide(<pmp:leave_oak_engli>);
+mods.jei.JEI.removeAndHide(<pmp:leave_oak_blue>);
+mods.jei.JEI.removeAndHide(<pmp:leave_jungl_cocon>);
+mods.jei.JEI.removeAndHide(<pmp:leave_jungl_bombo>);
+mods.jei.JEI.removeAndHide(<pmp:leave_jungl_banan>);
+mods.jei.JEI.removeAndHide(<pmp:leave_jungl_acai>);
+mods.jei.JEI.removeAndHide(<pmp:leave_dkoak_sessi>);
+mods.jei.JEI.removeAndHide(<pmp:leave_dkoak_itali>);
+mods.jei.JEI.removeAndHide(<pmp:leave_dkoak_everg>);
+mods.jei.JEI.removeAndHide(<pmp:leave_dkoak_bur>);
+mods.jei.JEI.removeAndHide(<pmp:leave_birch_whtre>);
+mods.jei.JEI.removeAndHide(<pmp:leave_birch_whtor>);
+mods.jei.JEI.removeAndHide(<pmp:leave_birch_whtye>);
+mods.jei.JEI.removeAndHide(<pmp:leave_birch_whtgr>);
+mods.jei.JEI.removeAndHide(<pmp:leave_birch_water>);
+mods.jei.JEI.removeAndHide(<pmp:leave_birch_silve>);
+mods.jei.JEI.removeAndHide(<pmp:leave_birch_chdwa>);
+mods.jei.JEI.removeAndHide(<pmp:leave_acaci_whist>);
+mods.jei.JEI.removeAndHide(<pmp:leave_acaci_rivbu>);
+mods.jei.JEI.removeAndHide(<pmp:leave_acaci_cucum>);
+mods.jei.JEI.removeAndHide(<pmp:leave_acaci_baobo>);
 
 #Removing Biomes O'Plenty's stuff
 recipes.removeByRecipeName("biomesoplenty:terrestrial_artifact");

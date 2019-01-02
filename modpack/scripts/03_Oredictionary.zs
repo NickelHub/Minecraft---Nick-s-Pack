@@ -71,8 +71,14 @@ chest.add(<extrautils2:largishchest>);
 chest.add(<forestry:bee_chest>);
 chest.add(<forestry:butterfly_chest>);
 chest.add(<forestry:tree_chest>);
-chest.add(<metalchests:metal_chest:*>);
-chest.add(<randomthings:specialchest:*>);
+chest.add(<metalchests:metal_chest:0>);
+chest.add(<metalchests:metal_chest:1>);
+chest.add(<metalchests:metal_chest:2>);
+chest.add(<metalchests:metal_chest:3>);
+chest.add(<metalchests:metal_chest:4>);
+chest.add(<metalchests:metal_chest:5>);
+chest.add(<randomthings:specialchest:0>);
+chest.add(<randomthings:specialchest:1>);
 chest.add(<enderstorage:ender_storage:0>);
 
 val chestE = <ore:chestEnder>;
@@ -83,6 +89,9 @@ chestE.add(<enderstorage:ender_storage:0>);
 //The following section contains additional registrations for items and crafting stuff
 //
 #
+
+val dustEP = <ore:dustEnderPearl>;
+dustEP.add(<railcraft:dust:6>);
 
 #Fertilizer
 val fert = <ore:fertilizer>;
@@ -243,6 +252,15 @@ wax.add(<harvestcraft:beeswaxitem>);
 
 val stick = <ore:stickWood>;
 stick.add(<immersiveengineering:material:0>);
+stick.add(<pmp:bamb_asper>);
+stick.add(<pmp:bamb_farge>);
+stick.add(<pmp:bamb_gtimb>);
+stick.add(<pmp:bamb_gldba>);
+stick.add(<pmp:bamb_moso>);
+stick.add(<pmp:bamb_shtas>);
+stick.add(<pmp:bamb_timor>);
+stick.add(<pmp:bamb_tropb>);
+stick.add(<pmp:bamb_wetfo>);
 
 val stonemeal = <ore:dustStonemeal>;
 stonemeal.add(<techreborn:dust:61>);
@@ -251,10 +269,79 @@ stonemeal.add(<techreborn:dust:63>);
 
 #
 //
-//The following section contains additional registrations for food stuff
+//The following section contains additional registrations for food and nature stuff
 //
 #
 
+#Adding more lily pads
+val lilypad = <ore:lilypad>;
+lilypad.add(<pmp:float_arrll>);
+lilypad.add(<pmp:float_crflh>);
+lilypad.add(<pmp:float_duckw>);
+lilypad.add(<pmp:float_rerfl>);
+lilypad.add(<pmp:float_varpl>);
+lilypad.add(<pmp:float_wache>);
+lilypad.add(<pmp:float_wahya>);
+lilypad.add(<pmp:float_walet>);
+lilypad.add(<pmp:float_washi>);
+lilypad.add(<pmp:float_walil_red>);
+lilypad.add(<pmp:float_walil_ora>);
+lilypad.add(<pmp:float_walil_yel>);
+lilypad.add(<pmp:float_walil_grn>);
+lilypad.add(<pmp:float_walil_cya>);
+lilypad.add(<pmp:float_walil_blu>);
+lilypad.add(<pmp:float_walil_pur>);
+lilypad.add(<pmp:float_walil_pnk>);
+lilypad.add(<pmp:float_walil_wht>);
+
+//Adding more registration to plants
+#Vines
+val vine = <ore:vine>;
+vine.add(<pmp:climb_bluph>);
+vine.add(<pmp:climb_brcre>);
+vine.add(<pmp:climb_cgrpv>);
+vine.add(<pmp:climb_gldho>);
+vine.add(<pmp:climb_hyacb>);
+vine.add(<pmp:climb_japcr>);
+vine.add(<pmp:climb_kiwi>);
+vine.add(<pmp:climb_maidf>);
+vine.add(<pmp:climb_porce>);
+vine.add(<pmp:climb_swpea_red>);
+vine.add(<pmp:climb_swpea_ora>);
+vine.add(<pmp:climb_swpea_yel>);
+vine.add(<pmp:climb_swpea_grn>);
+vine.add(<pmp:climb_swpea_cya>);
+vine.add(<pmp:climb_swpea_blu>);
+vine.add(<pmp:climb_swpea_pur>);
+vine.add(<pmp:climb_swpea_pnk>);
+vine.add(<pmp:climb_swpea_wht>);
+vine.add(<pmp:vine_blsky>);
+vine.add(<pmp:vine_jadev>);
+vine.add(<pmp:vine_japiv>);
+vine.add(<pmp:vine_madev>);
+vine.add(<pmp:vine_mystr>);
+vine.add(<pmp:vine_silvc>);
+vine.add(<pmp:vine_spamo>);
+vine.add(<pmp:vine_sweiv>);
+vine.add(<pmp:vine_vpeiv>);
+vine.add(<pmp:vine_wiste_red>);
+vine.add(<pmp:vine_wiste_ora>);
+vine.add(<pmp:vine_wiste_yel>);
+vine.add(<pmp:vine_wiste_grn>);
+vine.add(<pmp:vine_wiste_cya>);
+vine.add(<pmp:vine_wiste_blu>);
+vine.add(<pmp:vine_wiste_pur>);
+vine.add(<pmp:vine_wiste_pnk>);
+vine.add(<pmp:vine_wiste_wht>);
+vine.add(<biomesoplenty:willow_vine>);
+vine.add(<natura:nether_thorn_vines>);
+vine.add(<plants2:adlumia_f>);
+vine.add(<plants2:afgekia_m>);
+vine.add(<plants2:androsace_a>);
+vine.add(<plants2:akebia_q_vine>);
+vine.add(<plants2:ampelopsis_a_vine>);
+
+//Adding more registration to food stuff
 #Royal Jelly
 val jellyr = <ore:dropRoyalJelly>;
 jellyr.add(<harvestcraft:royaljellyitem>);
@@ -302,6 +389,7 @@ berry.add(<plants2:blueberry>);
 berry.add(<plants2:raspberry>);
 berry.add(<plants2:huckleberry>);
 berry.add(<plants2:fire_fruit>);
+berry.add(<pmp:berry_straw>);
 
 #Addibf more fruits
 val fruit = <ore:listAllfruit>;
@@ -321,6 +409,10 @@ fruit.add(<plants2:blueberry>);
 fruit.add(<plants2:raspberry>);
 fruit.add(<plants2:huckleberry>);
 fruit.add(<plants2:fire_fruit>);
+fruit.add(<pmp:berry_straw>);
+fruit.add(<pmp:fruit_pinea>);
+fruit.add(<pmp:fruit_prpea>);
+fruit.add(<pmp:fruit_purgr>);
 
 #More egg
 val egg = <ore:egg>;
@@ -356,8 +448,21 @@ mushroom.add(<biomesoplenty:mushroom:4>);
 mushroom.add(<biomesoplenty:mushroom:5>);
 mushroom.add(<nuclearcraft:glowing_mushroom>);
 mushroom.add(<natura:nether_glowshroom:*>);
+mushroom.add(<pmp:epiph_artco>);
+mushroom.add(<pmp:epiph_sulsh>);
+mushroom.add(<pmp:epiph_turkt>);
+mushroom.add(<pmp:fungu_blpow>);
+mushroom.add(<pmp:fungu_chant>);
+mushroom.add(<pmp:fungu_gclub>);
+mushroom.add(<pmp:fungu_paras>);
+mushroom.add(<pmp:fungu_stnkh>);
+mushroom.add(<pmp:fungu_wemic>);
+mushroom.add(<pmp:fungu_woodb>);
 
 //The next section adds more crops
+val grape = <ore:cropGrape>;
+grape.add(<pmp:fruit_purgr>);
+
 val okra = <ore:cropOkra>;
 okra.add(<plants2:okra>);
 
@@ -763,6 +868,7 @@ planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_9
 planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_10:*>);
 planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_11:*>);
 planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_12:*>);
+planks.add(<unlimitedchiselworks:chisel_planks_oak_abyssalcraft_dltplank_0:*>);
 
 val planksTreated = <ore:planksTreatedWood>;
 planksTreated.add(<unlimitedchiselworks:chisel_planks_oak_immersiveengineering_treated_wood_0:*>);
@@ -786,6 +892,7 @@ dustQ.remove(<actuallyadditions:item_dust:5>);
 
 val dustE = <ore:dustEnder>;
 dustE.remove(<appliedenergistics2:material:46>);
+dustE.remove(<railcraft:dust:6>);
 
 print("Initialized 03_Oredictionary.zs");
 

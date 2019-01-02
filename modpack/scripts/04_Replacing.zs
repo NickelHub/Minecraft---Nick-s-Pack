@@ -16,6 +16,13 @@ print("Initializing 04_Replacing.zs");
 //
 #
 
+#mushroom
+recipes.replaceAllOccurences(<ore:foodMushroom>, <ore:listAllmushroom>);
+
+#Fixing ender pearl dustFertilizer
+recipes.replaceAllOccurences(<ore:dustEnder>, <ore:dustEnderPearl>);
+recipes.replaceAllOccurences(<railcraft:dust:6>, <ore:dustEnderPearl>);
+
 #Replacing beans
 recipes.replaceAllOccurences(<randomthings:beans>, <ore:cropBean>);
 
