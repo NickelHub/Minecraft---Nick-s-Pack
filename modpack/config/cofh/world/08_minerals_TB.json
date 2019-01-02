@@ -85,7 +85,7 @@
                }
             ],
             "material":"stone",
-            "cluster-size":6
+            "cluster-size":26
          },
          "cluster-count":18,
          "min-height":0,
