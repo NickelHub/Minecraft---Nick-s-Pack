@@ -363,16 +363,7 @@
    },
    "Glowstone":{
       "color":"#ffff00",
-      "smeltingResult":{
-         "name":"Glowstone Dust Nugget",
-         "color":"#ffff00",
-         "oredictNames":[
-            "nuggetDustGlowstone"
-         ],
-         "ingotNames":[
-            "minecraft:glowstone_dust"
-         ]
-      },
+      "smeltingResult":"techreborn:dustsmall:62",
       "maxHeight":52,
       "replaceBlocks":[
          "minecraft:netherrack",
