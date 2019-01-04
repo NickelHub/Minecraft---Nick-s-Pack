@@ -31,7 +31,7 @@
 |   CoFHCore-1.12.2-4.6.1.22-universal.jar
 |   CoFHWorld-1.12.2-1.3.0.6-universal.jar
 |   comforts-1.12.2-1.4.1.1.jar
-|   conarm-1.12.2-1.2.1.1.jar
+|   conarm-1.12.2-1.2.2.jar
 |   CosmeticArmorReworked-1.12.2-v3.jar
 |   CraftTweaker2-1.12-4.1.13.jar
 |   creeperconfetti-1.4.2.jar
@@ -50,6 +50,7 @@
 |   ExtremeReactors-1.12.2-0.4.5.50.jar
 |   FamiliarFauna-1.12.2-1.0.11.jar
 |   FastLeafDecay-v14.jar
+|   FastWorkbench-1.12.2-1.6.0.jar
 |   foamfix-0.10.3-1.12.2.jar
 |   forestry_1.12.2-5.8.2.380.jar
 |   Forgelin-1.8.2.jar
@@ -80,11 +81,10 @@
 |   Login_Shield-1.12.2-3-g7c6e7ac.jar
 |   MagicBees-1.12.2-3.1.10.jar
 |   Mantle-1.12-1.3.3.39.jar
-|   MatterOverdrive-1.12.2-0.6.2.207-universal (1).jar
+|   MatterOverdrive-1.12.2-0.6.3.10-universal.jar
 |   mcjtylib-1.12-3.0.7.jar
 |   Mekanism-1.12.2-9.4.13.349.jar
 |   MekanismGenerators-1.12.2-9.4.13.349.jar
-|   MekanismTools-1.12.2-9.4.13.349.jar
 |   MetalChests-v3.9.0.g9b0c79e.jar
 |   moartinkers-0.6.0.jar
 |   modtweaker-4.0.15.jar
@@ -113,9 +113,9 @@
 |   pmp-1.12.1.jar
 |   PTRLib-1.0.3.jar
 |   railcraft-12.0.0-beta-2.jar
-|   randompatches-1.12.2-1.11.0.2.jar
+|   randompatches-1.12.2-1.11.0.3.jar
 |   RandomThings-MC1.12.2-4.2.4.jar
-|   RebornCore-1.12.2-3.12.1.385-universal.jar
+|   RebornCore-1.12.2-3.13.0.400-universal.jar
 |   RedstoneFlux-1.12-2.1.0.6-universal.jar
 |   redstonepaste-mc1.12-1.7.5.jar
 |   Reliquary-1.12.2-1.3.4.780.jar
@@ -127,7 +127,7 @@
 |   spatialservermod-1.3.jar
 |   StorageDrawers-1.12.2-5.3.8.jar
 |   TConstruct-1.12.2-2.11.0.106.jar
-|   TechReborn-1.12.2-2.19.1.877-universal.jar
+|   TechReborn-1.12.2-2.20.0.888-universal.jar
 |   tesla-core-lib-1.12.2-1.0.15.jar
 |   TexFix+V-1.12-4.0.jar
 |   Thaumcraft-1.12.2-6.1.BETA26-Hotfix-1.jar
@@ -143,7 +143,7 @@
 |   ToMeTinkersMC1.12.2-1.1.jar
 |   topaddons-1.12.2-1.10.1.jar
 |   torchmaster_1.12.2-1.7.0.72.jar
-|   UndergroundBiomesConstructs-1.12-1.3.0.jar
+|   UndergroundBiomesConstructs-1.12-1.3.1.jar
 |   UniDict-1.12.2-2.9.2.jar
 |   UnlimitedChiselWorks-0.2.0.jar
 |   VanillaFix-1.0.10-99.jar
