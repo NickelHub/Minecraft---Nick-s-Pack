@@ -22,6 +22,7 @@
 |   Bookshelf-1.12.2-2.3.570.jar
 |   BrandonsCore-1.12.2-2.4.9.195-universal.jar
 |   BringMeTheRings-0.4.jar
+|   Cannibalism-5.2.0-1.12.2.jar
 |   Chameleon-1.12-4.1.3.jar
 |   ChestTransporter-1.12.2-2.8.8.jar
 |   ChickenChunks-1.12.2-2.4.1.73-universal.jar
@@ -54,6 +55,7 @@
 |   foamfix-0.10.3-1.12.2.jar
 |   forestry_1.12.2-5.8.2.380.jar
 |   Forgelin-1.8.2.jar
+|   GasConduits-1.12.2-1.0.0.jar
 |   gendustry-1.6.5.8-mc1.12.2.jar
 |   GraveStone-1.12.2-Extended-1.3.5.1.jar
 |   GraveStone-1.12.2-Graves-1.3.1.jar
@@ -70,6 +72,7 @@
 |   instantunify-1.12.2-1.1.2.jar
 |   IntegrationForegoing-1.12.2-1.8.2.jar
 |   InventoryTweaks-1.63.jar
+|   itemzoom_1.12.2-1.11.jar
 |   JAOPCA-1.12.2-2.2.8.100.jar
 |   JEHC-1.12.2-1.6.2.0.jar
 |   jeibees-0.9.0.5-mc1.12.2.jar
@@ -87,6 +90,7 @@
 |   MekanismGenerators-1.12.2-9.4.13.349.jar
 |   MetalChests-v3.9.0.g9b0c79e.jar
 |   moartinkers-0.6.0.jar
+|   modnametooltip_1.12.2-1.10.0.jar
 |   modtweaker-4.0.15.jar
 |   morebees-1.12.2-2.0.1.jar
 |   moremystcraft-1.12.2-0.4.3.jar
@@ -122,15 +126,16 @@
 |   rftools-1.12-7.59.jar
 |   rftoolsdim-1.12-5.63.jar
 |   secretroomsmod-1.12.2-5.6.4.jar
-|   SmoothFont-mc1.12.2-1.16.1.jar
+|   SmoothFont-mc1.12.2-1.16.2.jar
 |   SoundFilters-0.10_for_1.12.jar
 |   spatialservermod-1.3.jar
 |   StorageDrawers-1.12.2-5.3.8.jar
 |   TConstruct-1.12.2-2.11.0.106.jar
-|   TechReborn-1.12.2-2.20.0.888-universal.jar
+|   TechReborn-1.12.2-2.20.1.889-universal.jar
 |   tesla-core-lib-1.12.2-1.0.15.jar
 |   TexFix+V-1.12-4.0.jar
 |   Thaumcraft-1.12.2-6.1.BETA26-Hotfix-1.jar
+|   ThaumicJEI-1.12.2-1.5.5-23.jar
 |   ThaumicTerminal-1.0.10.jar
 |   The+Beneath-1.12.2-1.4.2.jar
 |   theoneprobe-1.12-1.4.25.jar
