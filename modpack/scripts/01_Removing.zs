@@ -8,7 +8,12 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemTransformer;
+import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.liquid.ILiquidDefinition;
+import crafttweaker.item.WeightedLiquidStack;
 import crafttweaker.recipes.IFurnaceRecipe;
+import mods.forestry.Squeezer;
+import mods.thermalexpansion.Transposer;
 
 print("Initializing 01_Removing.zs");
 
@@ -91,11 +96,43 @@ recipes.remove(<magicbees:manasteelscoop>);
 //
 #
 
+#Removing JAOPCA's stuff
+recipes.remove(<ore:gearAbyssalnite>);
+recipes.remove(<ore:gearArdite>);
+recipes.remove(<ore:gearBoron>);
+recipes.remove(<ore:gearCobalt>);
+recipes.remove(<ore:gearDraconium>);
+recipes.remove(<ore:gearLiquifiedCoralium>);
+recipes.remove(<ore:gearLithium>);
+recipes.remove(<ore:gearMagnesium>);
+recipes.remove(<ore:gearOsmium>);
+recipes.remove(<ore:gearThorium>);
+recipes.remove(<ore:gearTungsten>);
+recipes.remove(<ore:gearUranium>);
+recipes.remove(<ore:gearYellorium>);
+recipes.remove(<ore:gearZinc>);
+recipes.remove(<ore:gearAmber>);
+recipes.remove(<ore:gearAmethyst>);
+recipes.remove(<ore:gearApatite>);
+recipes.remove(<ore:gearCertusQuartz>);
+recipes.remove(<ore:gearChargedCertusQuartz>);
+recipes.remove(<ore:gearCoal>);
+recipes.remove(<ore:gearCoralium>);
+recipes.remove(<ore:gearDimensionalShard>);
+recipes.remove(<ore:gearLapis>);
+recipes.remove(<ore:gearMalachite>);
+recipes.remove(<ore:gearPeridot>);
+recipes.remove(<ore:gearQuartz>);
+recipes.remove(<ore:gearQuartzBlack>);
+recipes.remove(<ore:gearRuby>);
+recipes.remove(<ore:gearSapphire>);
+recipes.remove(<ore:gearTanzanite>);
+recipes.remove(<ore:gearTopaz>);
+
 #Removing Railcraft's stuff
 recipes.removeByRecipeName("railcraft:brick_bloodstained+blood stained block#337");
 recipes.removeByRecipeName("railcraft:brick_bloodstained+blood stained block#338");
 recipes.remove(<railcraft:boiler_firebox_solid>);
-recipes.remove(<railcraft:circuit:*>);
 recipes.removeByRecipeName("railcraft:blast_furnace+blast furnace brick#118");
 recipes.removeByRecipeName("railcraft:coke_oven_red+tile.railcraft.coke.oven.red.name#117");
 recipes.removeByRecipeName("railcraft:coke_oven+coke oven brick#116");
@@ -294,6 +331,20 @@ mods.jei.JEI.removeAndHide(<forestry:climatiser:3>);
 mods.jei.JEI.removeAndHide(<forestry:climatiser:4>);
 mods.jei.JEI.removeAndHide(<forestry:greenhouse.window>);
 mods.jei.JEI.removeAndHide(<forestry:greenhouse.window_up>);
+//This errored; look into this later
+/*
+mods.forestry.Squeezer.removeRecipe(<liquid:juice>);
+mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<minecraft:apple>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropChestnut>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropCherry>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropDate>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropWalnut>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropCarrot>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropLemon>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropPapaya>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropPlum>);
+*/
 
 #Removing Mekanism's stuff
 recipes.removeByRecipeName("mekanism:teleportationcore");
@@ -309,6 +360,9 @@ mods.mekanism.infuser.removeRecipe(<mekanism:controlcircuit:0>);
 recipes.remove(<mekanism:controlcircuit:1>);
 recipes.remove(<mekanism:controlcircuit:2>);
 recipes.remove(<mekanism:controlcircuit:3>);
+recipes.remove(<ore:dustSalt>);
+recipes.remove(<ore:itemSalt>);
+recipes.remove(<ore:foodSalt>);
 
 #
 //
@@ -550,6 +604,7 @@ recipes.removeByRecipeName("harvestcraft:string");
 
 #Removing Tinkers' Construct's stuff
 recipes.remove(<tconstruct:soil:5>);
+recipes.remove(<tconstruct:throwball:1>);
 
 #Removing Tinkers' Complement's stuff
 recipes.removeByRecipeName("tcomplement:feature/stone_bucket");
@@ -653,6 +708,9 @@ recipes.removeByRecipeName("openblocks:luggage_0");
 recipes.removeByRecipeName("storagedrawers:controller");
 recipes.removeByRecipeName("storagedrawers:controller_slave");
 recipes.removeByRecipeName("storagedrawers:compacting_drawer");
+
+#Removing Compact Drawers' stuff
+recipes.removeByRecipeName("compactdrawers:compact_drawer_2by1");
 
 #Removing Torchmaster's stuff
 recipes.removeByRecipeName("torchmaster:mega_torch");

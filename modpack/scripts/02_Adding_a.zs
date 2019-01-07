@@ -9,6 +9,9 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemTransformer;
 import crafttweaker.recipes.IFurnaceRecipe;
+import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.liquid.ILiquidDefinition;
+import crafttweaker.item.WeightedLiquidStack;
 import mods.appliedenergistics2.Grinder;
 import mods.appliedenergistics2.Inscriber;
 import mods.immersiveengineering.Crusher;
@@ -18,6 +21,8 @@ import mods.mekanism.enrichment;
 import mods.thermalexpansion.Pulverizer;
 import mods.techreborn.grinder;
 import mods.techreborn.compressor;
+import mods.forestry.Squeezer;
+import mods.thermalexpansion.Transposer;
 
 
 print("Initializing 02_Adding_a.zs");
@@ -65,55 +70,6 @@ recipes.addShaped(<bloodmagic:teleposer>, [[<ore:ingotGold>, <ore:ingotGold>, <o
 #Adding Thaumcraft's stuff
 furnace.addRecipe(<thaumcraft:quicksilver>, <thermalfoundation:material:866>, 1.2962962500751019);
 furnace.addRecipe(<thaumcraft:quicksilver>, <techreborn:ore:6>, 1.2962962500751019);
-furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aer"}]}), <thaumcraft:crystal_aer>, 0.0);
-furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ignis"}]}), <thaumcraft:crystal_ignis>, 0.0);
-furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aqua"}]}), <thaumcraft:crystal_aqua>, 0.0);
-furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"terra"}]}), <thaumcraft:crystal_terra>, 0.0);
-furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ordo"}]}), <thaumcraft:crystal_ordo>, 0.0);
-furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"perditio"}]}), <thaumcraft:crystal_perditio>, 0.0);
-furnace.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"vitium"}]}), <thaumcraft:crystal_vitium>, 0.0);
-mods.thermalexpansion.Pulverizer.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aer"}]}) * 2, <thaumcraft:crystal_aer>, 4000);
-mods.thermalexpansion.Pulverizer.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ignis"}]}) * 2, <thaumcraft:crystal_ignis>, 4000);
-mods.thermalexpansion.Pulverizer.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aqua"}]}) * 2, <thaumcraft:crystal_aqua>, 4000);
-mods.thermalexpansion.Pulverizer.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"terra"}]}) * 2, <thaumcraft:crystal_terra>, 4000);
-mods.thermalexpansion.Pulverizer.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ordo"}]}) * 2, <thaumcraft:crystal_ordo>, 4000);
-mods.thermalexpansion.Pulverizer.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"perditio"}]}) * 2, <thaumcraft:crystal_perditio>, 4000);
-mods.thermalexpansion.Pulverizer.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"vitium"}]}) * 2, <thaumcraft:crystal_vitium>, 4000);
-Grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aer"}]}) * 2, <thaumcraft:crystal_aer>, 10);
-Grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ignis"}]}) * 2, <thaumcraft:crystal_ignis>, 10);
-Grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aqua"}]}) * 2, <thaumcraft:crystal_aqua>, 10);
-Grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"terra"}]}) * 2, <thaumcraft:crystal_terra>, 10);
-Grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ordo"}]}) * 2, <thaumcraft:crystal_ordo>, 10);
-Grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"perditio"}]}) * 2, <thaumcraft:crystal_perditio>, 10);
-Grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"vitium"}]}) * 2, <thaumcraft:crystal_vitium>, 10);
-mods.immersiveengineering.Crusher.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aer"}]}) * 3, <thaumcraft:crystal_aer>, 12000);
-mods.immersiveengineering.Crusher.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ignis"}]}) * 3, <thaumcraft:crystal_ignis>, 12000);
-mods.immersiveengineering.Crusher.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aqua"}]}) * 3, <thaumcraft:crystal_aqua>, 12000);
-mods.immersiveengineering.Crusher.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"terra"}]}) * 3, <thaumcraft:crystal_terra>, 12000);
-mods.immersiveengineering.Crusher.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ordo"}]}) * 3, <thaumcraft:crystal_ordo>, 12000);
-mods.immersiveengineering.Crusher.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"perditio"}]}) * 3, <thaumcraft:crystal_perditio>, 12000);
-mods.immersiveengineering.Crusher.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"vitium"}]}) * 3, <thaumcraft:crystal_vitium>, 12000);
-mods.mekanism.crusher.addRecipe(<thaumcraft:crystal_aer>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aer"}]}) * 2);
-mods.mekanism.crusher.addRecipe(<thaumcraft:crystal_ignis>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ignis"}]}) * 2);
-mods.mekanism.crusher.addRecipe(<thaumcraft:crystal_aqua>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aqua"}]}) * 2);
-mods.mekanism.crusher.addRecipe(<thaumcraft:crystal_terra>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"terra"}]}) * 2);
-mods.mekanism.crusher.addRecipe(<thaumcraft:crystal_ordo>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ordo"}]}) * 2);
-mods.mekanism.crusher.addRecipe(<thaumcraft:crystal_perditio>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"perditio"}]}) * 2);
-mods.mekanism.crusher.addRecipe(<thaumcraft:crystal_vitium>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"vitium"}]}) * 2);
-mods.mekanism.enrichment.addRecipe(<thaumcraft:crystal_aer>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aer"}]}) * 5);
-mods.mekanism.enrichment.addRecipe(<thaumcraft:crystal_ignis>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ignis"}]}) * 5);
-mods.mekanism.enrichment.addRecipe(<thaumcraft:crystal_aqua>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aqua"}]}) * 5);
-mods.mekanism.enrichment.addRecipe(<thaumcraft:crystal_terra>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"terra"}]}) * 5);
-mods.mekanism.enrichment.addRecipe(<thaumcraft:crystal_ordo>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ordo"}]}) * 5);
-mods.mekanism.enrichment.addRecipe(<thaumcraft:crystal_perditio>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"perditio"}]}) * 5);
-mods.mekanism.enrichment.addRecipe(<thaumcraft:crystal_vitium>, <thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"vitium"}]}) * 5);
-mods.techreborn.grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aer"}]}) * 2, <thaumcraft:crystal_aer>, 200, 5);
-mods.techreborn.grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ignis"}]}) * 2, <thaumcraft:crystal_ignis>, 200, 5);
-mods.techreborn.grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"aqua"}]}) * 2, <thaumcraft:crystal_aqua>, 200, 5);
-mods.techreborn.grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"terra"}]}) * 2, <thaumcraft:crystal_terra>, 200, 5);
-mods.techreborn.grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"ordo"}]}) * 2, <thaumcraft:crystal_ordo>, 200, 5);
-mods.techreborn.grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"perditio"}]}) * 2, <thaumcraft:crystal_perditio>, 200, 5);
-mods.techreborn.grinder.addRecipe(<thaumcraft:crystal_essence>.withTag({Aspects:[{amount:1,key:"vitium"}]}) * 2, <thaumcraft:crystal_vitium>, 200, 5);
 
 #Adding Ender Storage's stuff
 recipes.addShaped(<enderstorage:ender_pouch>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:powderBlaze>, <ore:leather>, <ore:powderBlaze>],[<ore:leather>, <rftools:infused_enderpearl>, <ore:leather>], [<ore:powderBlaze>, <ore:blockWoolWhite>, <ore:powderBlaze>]]);
@@ -346,7 +302,17 @@ recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>
 recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
 recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <ore:listAllwater>, <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
 recipes.addShaped(<forestry:ffarm>, [[<ore:ingotCopper>, <ore:bricksStone>, <ore:ingotCopper>], [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]]);
-
+//this errored; look into this later
+/*
+//mods.forestry.Squeezer.addRecipe(<liquid:lava>, [<minecraft:redstone>], 120);
+mods.forestry.Squeezer.addRecipe(<liquid:seed.oil> * 50, [<ore:listAllseed>], 120, <forestry:mulch> % 15);
+mods.forestry.Squeezer.addRecipe(<liquid:seed.oil> * 250, [<ore:listAllnut>], 120, <forestry:mulch> % 35);
+mods.forestry.Squeezer.addRecipe(<liquid:juice> * 400, [<ore:lisAllfruit>], 120, <forestry:mulch> % 60);
+//mods.thermalexpansion.Transposer.addExtractRecipe(ILiquidStack output, IItemStack input, int energy, WeightedItemStack itemOut);
+mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:seed.oil> * 50, <ore:listAllseed>, 4800, <forestry:mulch> % 15);
+mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:seed.oil> * 250, <ore:listAllnut>, 4800, <forestry:mulch> % 35);
+mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:juice> * 400, <ore:listAllseed>, 4800, <forestry:mulch> % 60);
+*/
 #Adding Mekanism's stuff
 mods.mekanism.crusher.addRecipe(<mekanism:ingot:0>, <mekanism:otherdust:5>);
 recipes.addShaped(<mekanism:teleportationcore>, [[<actuallyadditions:item_crystal:1>, <ore:alloyUltimate>, <actuallyadditions:item_crystal:1>],[<ore:ingotEnderium>, <rftools:infused_enderpearl>, <ore:ingotEnderium>], [<actuallyadditions:item_crystal:1>, <ore:alloyUltimate>, <actuallyadditions:item_crystal:1>]]);
@@ -453,6 +419,9 @@ recipes.addShapeless(<exoticbirds:bird_book>, [<minecraft:book>,<ore:feather>]);
 #
 
 #Adding Tinkers' Construct's stuff
+recipes.addShaped(<tconstruct:throwball:1>, [[<ore:paper>, <ore:itemFlint>, <ore:paper>],[null, <ore:gunpowder>, null], [<ore:paper>, <ore:gunpowder>, <ore:paper>]]);
+recipes.addShaped(<tconstruct:throwball:1>, [[<ore:paper>, <ore:itemFlint>, <ore:paper>],[<ore:dustSulphur>, <ore:dustSaltpeter>, <ore:dustSulphur>], [<ore:paper>, <ore:dustCharcoal>, <ore:paper>]]);
+recipes.addShaped(<tconstruct:throwball:1>, [[<ore:paper>, <ore:itemFlint>, <ore:paper>],[<ore:dustSulphur>, <ore:dustSaltpeter>, <ore:dustSulphur>], [<ore:paper>, <ore:dustCoal>, <ore:paper>]]);
 recipes.addShaped(<tconstruct:stone_torch> * 4, [[<thermalfoundation:material:833>], [<ore:rodStone>]]);
 recipes.addShaped(<tconstruct:stone_torch> * 6, [[<railcraft:fluid_bottle_creosote>],[<ore:blockWool>,], [<ore:rodStone>]]);
 recipes.addShaped(<tconstruct:stone_torch> * 12, [[<ore:blockWool>, <forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}).onlyWithTag({FluidName: "creosote", Amount: 1000}), null], [<ore:rodStone>, <ore:rodStone>, <ore:rodStone>]]);
@@ -574,6 +543,9 @@ recipes.addShaped(<beneath:teleporterbeneath>, [[<ore:compressed4xCobblestone>, 
 recipes.addShaped(<storagedrawers:controllerslave>, [[<ore:stone>, <ore:stone>, <ore:stone>],[<minecraft:comparator>, <ore:drawerBasic>, <minecraft:comparator>], [<ore:stone>, <ore:ingotGold>, <ore:stone>]]);
 recipes.addShaped(<storagedrawers:controller>, [[<ore:stone>, <ore:stone>, <ore:stone>],[<minecraft:comparator>, <ore:drawerBasic>, <minecraft:comparator>], [<ore:stone>, <ore:craftingIndustrialDiamond>, <ore:stone>]]);
 recipes.addShaped(<storagedrawers:compdrawers>, [[<ore:stone>, <ore:stone>, <ore:stone>],[<ore:craftingPiston>, <ore:drawerBasic>, <ore:craftingPiston>], [<ore:stone>, <ore:ingotIron>, <ore:stone>]]);
+
+#Adding Compact Drawers' stuff
+recipes.addShaped(<compactdrawers:compact_drawer_2by1>, [[<ore:stone>, <ore:stone>, <ore:stone>],[<ore:stone>, <ore:drawerBasic>, <ore:stone>], [<ore:ingotIron>, <minecraft:piston>, <ore:ingotIron>]]);
 
 #Adding Torchmaster's stuff
 recipes.addShaped(<torchmaster:mega_torch>, [[<ore:torch>, <ore:torch>, <ore:torch>],[<ore:gemDiamond>, <ore:logWood>, <ore:gemDiamond>], [<ore:blockGold>, <ore:logWood>, <ore:blockGold>]]);

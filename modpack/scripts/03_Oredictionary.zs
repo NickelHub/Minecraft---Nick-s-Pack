@@ -422,10 +422,19 @@ val listallrawbird = <ore:listAllbirdraw>;
 listallrawbird.add(<exoticbirds:birdmeat:0>);
 val listallcookedbird = <ore:listAllbirdcooked>;
 listallcookedbird.add(<exoticbirds:cooked_birdmeat>);
+
+#More generic meat
 val listallrawmeat = <ore:listAllmeatraw>;
 listallrawmeat.add(<exoticbirds:birdmeat>);
+listallrawmeat.add(<cannibalism:playerflesh>);
+listallrawmeat.add(<cannibalism:villagerflesh>);
+listallrawmeat.add(<cannibalism:witchflesh>);
+
+#More cooked generic meat
 val listallcookedmeat = <ore:listAllmeatcooked>;
 listallcookedmeat.add(<exoticbirds:cooked_birdmeat>);
+listallcookedmeat.add(<cannibalism:playerfleshcooked>);
+listallcookedmeat.add(<cannibalism:villagerfleshcooked>);
 
 #Oredict seeds
 val seed = <ore:listAllseed>;
@@ -659,6 +668,25 @@ stone.add(<bloodmagic:demon_extras:7>);
 stone.add(<bloodmagic:demon_extras:8>);
 stone.add(<bloodmagic:demon_extras:9>);
 stone.add(<nex:basalt:0>);
+stone.add(<minecraft:stone:1>);
+stone.add(<minecraft:stone:3>);
+stone.add(<minecraft:stone:5>);
+stone.add(<chisel:granite:*>);
+stone.add(<chisel:granite1:*>);
+stone.add(<chisel:diorite:*>);
+stone.add(<chisel:diorite1:*>);
+stone.add(<chisel:andesite:*>);
+stone.add(<chisel:andesite1:*>);
+stone.add(<chisel:basalt:*>);
+stone.add(<chisel:basalt1:*>);
+stone.add(<chisel:basalt2:*>);
+stone.add(<chisel:limestone:*>);
+stone.add(<chisel:limestone1:*>);
+stone.add(<chisel:limestone2:*>);
+stone.add(<chisel:marble:*>);
+stone.add(<chisel:marble1:*>);
+stone.add(<chisel:marble2:*>);
+stone.add(<chisel:marblepillar:*>);
 
 val cobble = <ore:cobblestone>;
 cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_0:*>);

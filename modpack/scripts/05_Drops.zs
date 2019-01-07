@@ -11,9 +11,23 @@ import crafttweaker.entity.IEntityDrop;
 
 print("Initializing 05_Drops.zs");
 
-#Adding additional mob drops
+#
+//
+//The next section adds drops to entities
+//
+#
+
 val WSekelton = <entity:minecraft:wither_skeleton>;
 WSekelton.addDrop(<morebees:nether_starfragment> % 5);
+
+val Emerald = <entity:minecraft:villager>;
+Emerald.addDrop(<minecraft:emerald> % 10);
+
+#
+//
+//The next section removes drops from entities
+//
+#
 
 print("Initialized 05_Drops.zss");
 
