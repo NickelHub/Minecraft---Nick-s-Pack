@@ -90,6 +90,12 @@ chestE.add(<enderstorage:ender_storage:0>);
 //
 #
 
+#Bitumen
+val crystalCO = <ore:crystalCrudeOil>;
+crystalCO.add(<immersivepetroleum:material:0>);
+val clathrateO = <ore:clathrateOil>;
+clathrateO.add(<immersivepetroleum:material:0>);
+
 val dustEP = <ore:dustEnderPearl>;
 dustEP.add(<railcraft:dust:6>);
 
@@ -390,8 +396,9 @@ berry.add(<plants2:raspberry>);
 berry.add(<plants2:huckleberry>);
 berry.add(<plants2:fire_fruit>);
 berry.add(<pmp:berry_straw>);
+berry.add(<biomesoplenty:berries>);
 
-#Addibf more fruits
+#Adding more fruits
 val fruit = <ore:listAllfruit>;
 fruit.add(<natura:saguaro_fruit_item>);
 fruit.add(<plants2:pineapple>);
@@ -413,6 +420,18 @@ fruit.add(<pmp:berry_straw>);
 fruit.add(<pmp:fruit_pinea>);
 fruit.add(<pmp:fruit_prpea>);
 fruit.add(<pmp:fruit_purgr>);
+fruit.add(<biomesoplenty:berries>);
+fruit.add(<forestry:fruits:0>);
+fruit.add(<forestry:fruits:3>);
+fruit.add(<forestry:fruits:4>);
+fruit.add(<forestry:fruits:5>);
+fruit.add(<forestry:fruits:6>);
+
+#Adding more nuts
+val nut = <ore:listAllnut>;
+
+nut.add(<forestry:fruits:1>);
+nut.add(<forestry:fruits:2>);
 
 #More egg
 val egg = <ore:egg>;
@@ -507,8 +526,27 @@ cotton.add(<plants2:generic:0>);
 //
 #
 
-val cokeblock = <ore:blockCoalCoke>;
+val cokeblock = <ore:blockCoke>;
 cokeblock.add(<immersiveengineering:stone_decoration:3>);
+cokeblock.add(<thermalfoundation:storage_resource:1>);
+cokeblock.add(<railcraft:generic:6>);
+cokeblock.add(<chisel:block_coal_coke:*>);
+cokeblock.add(<chisel:block_coal_coke1:*>);
+cokeblock.add(<chisel:block_coal_coke2:*>);
+val cokeblockf = <ore:blockFuelCoke>;
+cokeblockf.add(<immersiveengineering:stone_decoration:3>);
+cokeblockf.add(<thermalfoundation:storage_resource:1>);
+cokeblockf.add(<railcraft:generic:6>);
+cokeblockf.add(<chisel:block_coal_coke:*>);
+cokeblockf.add(<chisel:block_coal_coke1:*>);
+cokeblockf.add(<chisel:block_coal_coke2:*>);
+val cokeblockc = <ore:blockCoalCoke>;
+cokeblockc.add(<immersiveengineering:stone_decoration:3>);
+cokeblockc.add(<thermalfoundation:storage_resource:1>);
+cokeblockc.add(<railcraft:generic:6>);
+cokeblockc.add(<chisel:block_coal_coke:*>);
+cokeblockc.add(<chisel:block_coal_coke1:*>);
+cokeblockc.add(<chisel:block_coal_coke2:*>);
 
 #Adding more bricks 
 val brickblock = <ore:blockBrick>; // This adds more bricks like the ones made of clay
@@ -609,6 +647,8 @@ stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_cstonebrick
 stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_cstonebrick_0:*>);
 stonebrick.add(<nex:basalt:2>);
 stonebrick.add(<nex:basalt:3>);
+stonebrick.add(<undergroundbiomes:igneous_brick:*>);
+stonebrick.add(<undergroundbiomes:metamorphic_brick:*>);
 
 #Adding different stone slab for tweaked recipes
 val stoneslabblock = <ore:slabStoneUnique>;
@@ -634,6 +674,7 @@ stonebrickslabblock.add(<minecraft:stone_slab:5>);
 val stonebrickslab = <ore:slabBricksStone>;
 stonebrickslab.add(<undergroundbiomes:igneous_brick_halfslab:*>);
 stonebrickslab.add(<undergroundbiomes:metamorphic_brick_halfslab:*>);
+stonebrickslab.add(<minecraft:stone_slab:5>);
 
 #Adding different cobble slabs for tweaked recipes
 val cobbleslabUnique = <ore:slabCobblestoneUnique>;

@@ -65,10 +65,6 @@ recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/gallow
 recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/gibbets");
 recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/stocks");
 recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/burning_stake");
-recipes.removeByRecipeName("gravestone-extended:skeleton_spawner");
-recipes.removeByRecipeName("gravestone-extended:spider_spawner");
-recipes.removeByRecipeName("gravestone-extended:zombie_spawner");
-recipes.removeByRecipeName("gravestone-extended:wither_spawner");
 recipes.removeByRecipeName("gravestone-extended:nightstone");
 recipes.removeByRecipeName("gravestone-extended:thunderstone");
 recipes.removeByRecipeName("gravestone-extended:crafting/blocks/withered_glass");
@@ -272,6 +268,9 @@ mods.jei.JEI.removeAndHide(<immersivehempcraft:diorite_dust>);
 mods.jei.JEI.removeAndHide(<immersivehempcraft:andesite_dust>);
 mods.jei.JEI.removeAndHide(<immersivehempcraft:apatite>);
 furnace.remove(<immersivehempcraft:perlite>);
+
+#Removing Immersive Petroleum's stuff
+recipes.remove(<immersivepetroleum:stone_decoration>);
 
 #Removing Actually Additions' stuff
 recipes.removeByRecipeName("actuallyadditions:recipes114");

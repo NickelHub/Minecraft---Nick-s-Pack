@@ -44,6 +44,11 @@ mods.mekanism.crusher.removeRecipe(<ore:dustObsidian>, <mekanism:otherdust:5>);
 mods.mekanism.enrichment.removeRecipe(<minecraft:obsidian>);
 mods.mekanism.crusher.addRecipe(<minecraft:obsidian>, <thermalfoundation:material:770> * 2);
 mods.mekanism.enrichment.addRecipe(<minecraft:obsidian>, <thermalfoundation:material:770> * 4);
+/*
+//Making endstone 
+val enderliquid = <liquid:ender>;
+mods.thermalexpansion.Transposer.addFillRecipe(<ore:endstone>.items, <ore:sandstone>.items, enderliquid * 250, 4000);
+*/
 
 #
 //
@@ -194,6 +199,8 @@ recipes.addShaped(<thermalexpansion:augment:258>, [[null, <ore:gearInvar>, null]
 recipes.addShaped(<thermalexpansion:machine:6>, [[null, <ore:blockGlassHardened>, null],[<ore:bricksNether>, <ore:machineBlockBasic>, <ore:bricksNether>], [<ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>]]);
 recipes.addShapeless(<thermalexpansion:morb> * 8, [<minecraft:soul_sand>,<thermalfoundation:material:832>,<ore:crystalSlag>,<randomthings:stableenderpearl>]);
 recipes.addShapeless(<thermalexpansion:morb> * 8, [<minecraft:soul_sand>,<ore:slimeball>,<ore:crystalSlag>,<randomthings:stableenderpearl>]);
+//This recipe was not available due to an unknown reason
+recipes.addShaped(<thermalexpansion:augment:352>, [[null, <ore:gearInvar>, null],[<minecraft:piston>, <thermalfoundation:material:515>, <minecraft:piston>], [null, <ore:bricksNether>, null]]);
 
 #Adding Nuclearcraft's stuff
 recipes.addShaped(<nuclearcraft:decay_hastener_idle>, [[<ore:plateAdvanced>, <ore:pearlEnderEye>, <ore:plateAdvanced>],[<randomthings:stableenderpearl>, <ore:machineBlockAdvanced>, <randomthings:stableenderpearl>], [<ore:plateAdvanced>, <ore:solenoidCopper>, <ore:plateAdvanced>]]);
@@ -233,6 +240,10 @@ mods.techreborn.grinder.addRecipe(<techreborn:dust:61>, <minecraft:stone:5>, 200
 furnace.addRecipe(<immersivehempcraft:perlite>, <techreborn:dust:62>, 1.05);
 furnace.addRecipe(<immersivehempcraft:perlite>, <techreborn:dust:63>, 1.05);
 furnace.addRecipe(<immersivehempcraft:perlite>, <techreborn:dust:61>, 1.05);
+
+#Adding Immersive Petroleum's stuff
+recipes.addShaped(<immersivepetroleum:stone_decoration> * 12, [[<ore:itemSlag>, <ore:clathrateOil>, <ore:itemSlag>],[<ore:gravel>, <ore:listAllwater>, <ore:gravel>], [<ore:itemSlag>, <ore:clathrateOil>, <ore:itemSlag>]]);
+recipes.addShaped(<immersivepetroleum:stone_decoration> * 8, [[<ore:sand>, <ore:clathrateOil>, <ore:sand>],[<ore:gravel>, <ore:listAllwater>, <ore:gravel>], [<ore:sand>, <ore:clathrateOil>, <ore:sand>]]);
 
 #Adding Extreme Reactor's stuff
 mods.mekanism.crusher.addRecipe(<bigreactors:ingotmetals:4>, <bigreactors:dustmetals:4>);
@@ -330,10 +341,6 @@ Inscriber.addRecipe(<mekanism:controlcircuit:0>, <ore:dustRedstone>, false, <app
 Inscriber.addRecipe(<mekanism:controlcircuit:1>, <mekanism:controlcircuit:0>, false, <mekanism:enrichedalloy>, <mekanism:enrichedalloy>);
 Inscriber.addRecipe(<mekanism:controlcircuit:2>, <mekanism:controlcircuit:1>, false, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>);
 Inscriber.addRecipe(<mekanism:controlcircuit:3>, <mekanism:controlcircuit:2>, false, <mekanism:atomicalloy>, <mekanism:atomicalloy>);
-
-#Adding Immersive Petroleum's stuff
-recipes.addShaped(<immersivepetroleum:stone_decoration> * 12, [[<ore:itemSlag>, <thermalfoundation:material:892>, <ore:itemSlag>],[<ore:gravel>, <minecraft:water_bucket>, <ore:gravel>], [<ore:itemSlag>, <thermalfoundation:material:892>, <ore:itemSlag>]]);
-recipes.addShaped(<immersivepetroleum:stone_decoration> * 8, [[<ore:sand>, <thermalfoundation:material:892>, <ore:sand>],[<ore:gravel>, <minecraft:water_bucket>, <ore:gravel>], [<ore:sand>, <thermalfoundation:material:892>, <ore:sand>]]);
 
 #
 //
@@ -550,7 +557,46 @@ recipes.addShaped(<compactdrawers:compact_drawer_2by1>, [[<ore:stone>, <ore:ston
 #Adding Torchmaster's stuff
 recipes.addShaped(<torchmaster:mega_torch>, [[<ore:torch>, <ore:torch>, <ore:torch>],[<ore:gemDiamond>, <ore:logWood>, <ore:gemDiamond>], [<ore:blockGold>, <ore:logWood>, <ore:blockGold>]]);
 recipes.addShaped(<torchmaster:dread_lamp>, [[<ore:obsidian>, <ore:obsidian>, <ore:obsidian>],[<ore:paneGlass>, <ore:glowstone>, <ore:paneGlass>], [<ore:obsidian>, <minecraft:dye>, <ore:obsidian>]]);
+
 recipes.addShaped(<torchmaster:terrain_lighter>, [[<ore:torch>, <ore:torch>, <ore:torch>],[<ore:logWood>, <ore:chest>, <ore:logWood>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
+#
+//
+//The next section adds things to random themes that match with any mod 
+//
+#
+
+#Adding recipes for overgrown stones
+recipes.addShaped(<undergroundbiomes:sedimentary_overgrown:7>, [[<ore:listAllseed>], [<undergroundbiomes:sedimentary_stone:7>]]);
+recipes.addShaped(<undergroundbiomes:sedimentary_overgrown:6>, [[<ore:listAllseed>], [<undergroundbiomes:sedimentary_stone:6>]]);
+recipes.addShaped(<undergroundbiomes:sedimentary_overgrown:5>, [[<ore:listAllseed>], [<undergroundbiomes:sedimentary_stone:5>]]);
+recipes.addShaped(<undergroundbiomes:sedimentary_overgrown:4>, [[<ore:listAllseed>], [<undergroundbiomes:sedimentary_stone:4>]]);
+recipes.addShaped(<undergroundbiomes:sedimentary_overgrown:3>, [[<ore:listAllseed>], [<undergroundbiomes:sedimentary_stone:3>]]);
+recipes.addShaped(<undergroundbiomes:sedimentary_overgrown:2>, [[<ore:listAllseed>], [<undergroundbiomes:sedimentary_stone:2>]]);
+recipes.addShaped(<undergroundbiomes:sedimentary_overgrown:1>, [[<ore:listAllseed>], [<undergroundbiomes:sedimentary_stone:1>]]);
+recipes.addShaped(<undergroundbiomes:sedimentary_overgrown>, [[<ore:listAllseed>], [<undergroundbiomes:sedimentary_stone>]]);
+recipes.addShaped(<undergroundbiomes:metamorphic_overgrown:7>, [[<ore:listAllseed>], [<undergroundbiomes:metamorphic_stone:7>]]);
+recipes.addShaped(<undergroundbiomes:metamorphic_overgrown:6>, [[<ore:listAllseed>], [<undergroundbiomes:metamorphic_stone:6>]]);
+recipes.addShaped(<undergroundbiomes:metamorphic_overgrown:5>, [[<ore:listAllseed>], [<undergroundbiomes:metamorphic_stone:5>]]);
+recipes.addShaped(<undergroundbiomes:metamorphic_overgrown:4>, [[<ore:listAllseed>], [<undergroundbiomes:metamorphic_stone:4>]]);
+recipes.addShaped(<undergroundbiomes:metamorphic_overgrown:3>, [[<ore:listAllseed>], [<undergroundbiomes:metamorphic_stone:3>]]);
+recipes.addShaped(<undergroundbiomes:metamorphic_overgrown:2>, [[<ore:listAllseed>], [<undergroundbiomes:metamorphic_stone:2>]]);
+recipes.addShaped(<undergroundbiomes:metamorphic_overgrown:1>, [[<ore:listAllseed>], [<undergroundbiomes:metamorphic_stone:1>]]);
+recipes.addShaped(<undergroundbiomes:metamorphic_overgrown>, [[<ore:listAllseed>], [<undergroundbiomes:metamorphic_stone>]]);
+recipes.addShaped(<undergroundbiomes:igneous_overgrown:7>, [[<ore:listAllseed>], [<undergroundbiomes:igneous_stone:7>]]);
+recipes.addShaped(<undergroundbiomes:igneous_overgrown:6>, [[<ore:listAllseed>], [<undergroundbiomes:igneous_stone:6>]]);
+recipes.addShaped(<undergroundbiomes:igneous_overgrown:5>, [[<ore:listAllseed>], [<undergroundbiomes:igneous_stone:5>]]);
+recipes.addShaped(<undergroundbiomes:igneous_overgrown:4>, [[<ore:listAllseed>], [<undergroundbiomes:igneous_stone:4>]]);
+recipes.addShaped(<undergroundbiomes:igneous_overgrown:3>, [[<ore:listAllseed>], [<undergroundbiomes:igneous_stone:3>]]);
+recipes.addShaped(<undergroundbiomes:igneous_overgrown:2>, [[<ore:listAllseed>], [<undergroundbiomes:igneous_stone:2>]]);
+recipes.addShaped(<undergroundbiomes:igneous_overgrown:1>, [[<ore:listAllseed>], [<undergroundbiomes:igneous_stone:1>]]);
+recipes.addShaped(<undergroundbiomes:igneous_overgrown>, [[<ore:listAllseed>], [<undergroundbiomes:igneous_stone>]]);
+recipes.addShaped(<biomesoplenty:grass:6>, [[<ore:listAllseed>], [<minecraft:netherrack>]]);
+recipes.addShaped(<biomesoplenty:grass:1>, [[<ore:listAllseed>], [<minecraft:stone>]]);
+
+#Fixing coke
+recipes.addShaped(<thermalfoundation:material:802> * 9, [[<ore:blockCoke>]]);
+recipes.addShaped(<thermalfoundation:material:802> * 9, [[<ore:blockFuelCoke>]]);
+recipes.addShaped(<thermalfoundation:material:802> * 9, [[<ore:blockCoalCoke>]]);
 
 print("Initialized 02_Adding_a.zs");
 
