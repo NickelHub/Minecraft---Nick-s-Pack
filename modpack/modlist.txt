@@ -81,6 +81,7 @@
 |   jeiintegration_1.12.2-1.5.1.36.jar
 |   jei_1.12.2-4.14.3.245.jar
 |   journeymap-1.12.2-5.5.3.jar
+|   JustEnoughEnergistics-1.12.2-1.0.2.jar
 |   JustEnoughIDs-1.0.2-26.jar
 |   LibEx-1.12.2-1.0.8.jar
 |   Login_Shield-1.12.2-3-g7c6e7ac.jar
@@ -95,7 +96,7 @@
 |   modnametooltip_1.12.2-1.10.0.jar
 |   modtweaker-4.0.15.jar
 |   morebees-1.12.2-2.0.1.jar
-|   moremystcraft-1.12.2-0.4.3.jar
+|   moremystcraft-1.12.2-0.4.4.jar
 |   Morpheus-1.12-3.3.2.jar
 |   MTLib-3.0.5.jar
 |   mystcraft-1.12.2-0.13.7.02.jar
@@ -103,7 +104,7 @@
 |   NetherEx-1.12.2-2.0.8.jar
 |   NetherPortalFix_1.12.1-5.3.17.jar
 |   NoMoreRecipeConflict-0.12(1.12.2).jar
-|   NuclearCraft-2.12k--1.12.2.jar
+|   NuclearCraft-2.13--1.12.2.jar
 |   oeintegration-2.3.4.jar
 |   OpenBlocks-1.12.2-1.8.jar
 |   OpenModsLib-1.12.2-0.12.1.jar
@@ -118,13 +119,14 @@
 |   plustic-7.0.0.0.jar
 |   pmp-1.12.1.jar
 |   PTRLib-1.0.3.jar
-|   railcraft-12.0.0-beta-2.jar
+|   railcraft-12.0.0-beta-3.jar
 |   randompatches-1.12.2-1.11.0.3.jar
-|   RandomThings-MC1.12.2-4.2.4.jar
+|   RandomThings-MC1.12.2-4.2.5.jar
 |   RebornCore-1.12.2-3.13.0.400-universal.jar
 |   RedstoneFlux-1.12-2.1.0.6-universal.jar
 |   redstonepaste-mc1.12-1.7.5.jar
 |   Reliquary-1.12.2-1.3.4.780.jar
+|   Rex's-Additional-Structures-1.12.x+-(v.2.0.0).jar
 |   rftools-1.12-7.59.jar
 |   rftoolsdim-1.12-5.63.jar
 |   secretroomsmod-1.12.2-5.6.4.jar
@@ -132,7 +134,7 @@
 |   SoundFilters-0.10_for_1.12.jar
 |   spatialservermod-1.3.jar
 |   StorageDrawers-1.12.2-5.3.8.jar
-|   TConstruct-1.12.2-2.11.0.106.jar
+|   TConstruct-1.12.2-2.12.0.113.jar
 |   TechReborn-1.12.2-2.20.1.889-universal.jar
 |   tesla-core-lib-1.12.2-1.0.15.jar
 |   TexFix+V-1.12-4.0.jar
@@ -144,7 +146,7 @@
 |   ThermalDynamics-1.12.2-2.5.3.16-universal.jar
 |   ThermalExpansion-1.12.2-5.5.2.39-universal.jar
 |   ThermalFoundation-1.12.2-2.6.1.22-universal.jar
-|   TinkersComplement-1.12.2-0.2.3b.jar
+|   TinkersComplement-1.12.2-0.3.0.jar
 |   Tinkers_ Addons-1.12.1-1.0.7.jar
 |   TinkerToolLeveling-1.12.2-1.1.0.jar
 |   ToMeTinkersMC1.12.2-1.1.jar
