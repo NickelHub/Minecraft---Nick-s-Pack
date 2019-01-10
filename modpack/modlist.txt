@@ -119,7 +119,7 @@
 |   plustic-7.0.0.0.jar
 |   pmp-1.12.1.jar
 |   PTRLib-1.0.3.jar
-|   railcraft-12.0.0-beta-3.jar
+|   railcraft-12.0.0-beta-2.jar
 |   randompatches-1.12.2-1.11.0.3.jar
 |   RandomThings-MC1.12.2-4.2.5.jar
 |   RebornCore-1.12.2-3.13.0.400-universal.jar
