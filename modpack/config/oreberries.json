@@ -277,7 +277,7 @@
    },
    "Coal":{
       "color":"#101111",
-      "smeltingResult":"actuallyadditions:item_misc:10",
+      "smeltingResult":"jaopca:item_dusttinycoal",
       "rarity":3,
       "density":5,
       "maxHeight":48,
@@ -522,7 +522,7 @@
    },
    "Emerald":{
       "color":"#0bb705",
-      "smeltingResult":"magicbees:orepart:1",
+      "smeltingResult":"thermalfoundation:material:17",
       "rarity":0
    },
    "Topaz":{
