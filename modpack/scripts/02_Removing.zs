@@ -20,6 +20,7 @@ import mods.mekanism.crusher;
 print("Initializing 01_Removing.zs");
 
 #Removing Minecraft's stuff
+recipes.remove(<minecraft:writable_book>);
 recipes.removeByRecipeName("minecraft:chiseled_stonebrick");
 /*
 //This is commented out until all sandstone can be inserted in the machine
@@ -135,6 +136,7 @@ recipes.remove(<ore:gearTanzanite>);
 recipes.remove(<ore:gearTopaz>);
 
 #Removing Railcraft's stuff
+recipes.remove(<railcraft:tool_notepad>);
 recipes.removeByRecipeName("railcraft:brick_bloodstained+blood stained block#337");
 recipes.removeByRecipeName("railcraft:brick_bloodstained+blood stained block#338");
 recipes.remove(<railcraft:boiler_firebox_solid>);
@@ -162,6 +164,7 @@ mods.jei.JEI.removeAndHide(<bigreactors:reactorcomputerport>);
 mods.jei.JEI.removeAndHide(<bigreactors:turbinecomputerport>);
 
 #Removing RFTools' stuff
+recipes.remove(<rftoolsdim:dimension_enscriber>);
 recipes.removeByRecipeName("rftoolsdim:time_absorber");
 recipes.removeByRecipeName("rftoolsdim:feature_absorber");
 recipes.removeByRecipeName("rftoolsdim:terrain_absorber");
@@ -651,6 +654,7 @@ mods.jei.JEI.removeAndHide(<plustic:battery_cell>);
 #
 
 #Removing Random Things' stuff
+recipes.remove(<randomthings:idcard>);
 recipes.removeByRecipeName("randomthings:fertilizeddirt");
 recipes.removeByRecipeName("randomthings:endermailbox");
 recipes.removeByRecipeName("randomthings:rainshield");

@@ -540,6 +540,19 @@ cotton.add(<plants2:generic:0>);
 //
 #
 
+#Ice
+val ice = <ore:blockIce>;
+ice.add(<minecraft:packed_ice>);
+ice.add(<nex:frostburn_ice>);
+ice.add(<biomesoplenty:hard_ice>);
+ice.add(<nuclearcraft:block_ice>);
+
+val pckice = <ore:blockPackedIce>;
+pckice.add(<nex:frostburn_ice>);
+pckice.add(<biomesoplenty:hard_ice>);
+pckice.add(<nuclearcraft:block_ice>);
+
+#Coke block
 val cokeblock = <ore:blockCoke>;
 cokeblock.add(<immersiveengineering:stone_decoration:3>);
 cokeblock.add(<thermalfoundation:storage_resource:1>);

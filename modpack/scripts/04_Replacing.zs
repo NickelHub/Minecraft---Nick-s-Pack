@@ -93,6 +93,10 @@ recipes.replaceAllOccurences(<minecraft:ender_chest>, <ore:chestEnder>);
 //
 #
 
+#Ice stuff
+recipes.replaceAllOccurences(<minecraft:ice>, <ore:blockIce>);
+recipes.replaceAllOccurences(<minecraft:packed_ice>, <ore:blockPackedIce>);
+
 #Unifying Iron Bars
 recipes.replaceAllOccurences(<minecraft:iron_bars>, <ore:barsIron>);
 

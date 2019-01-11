@@ -29,6 +29,7 @@ import mods.thermalexpansion.Sawmill;
 print("Initializing 02_Adding_a.zs");
 
 #Adding Minecraft's stuff
+recipes.addShapeless(<minecraft:writable_book>, [<mystcraft:vial>,<minecraft:book>,<ore:feather>]);
 recipes.addShaped(<minecraft:stonebrick:3>, [[<ore:slabBricksStoneUnique>], [<ore:slabBricksStoneUnique>]]);
 recipes.addShaped(<minecraft:stonebrick:0>, [[<ore:slabBricksStoneUnique>, <ore:slabBricksStoneUnique>]]);
 recipes.addShaped(<minecraft:stone>, [[<ore:slabStoneUnique>, <ore:slabStoneUnique>]]);
@@ -112,6 +113,7 @@ recipes.addShaped(<magicbees:effectjar>, [[<ore:blockGlass>, <ore:slabWood>, <or
 #
 
 #Adding Railcraft's stuff
+recipes.addShapeless(<railcraft:tool_notepad>, [<railcraft:tool_magnifying_glass>,<ore:feather>,<mystcraft:vial>,<ore:paper>]);
 recipes.addShaped(<railcraft:brick_bloodstained:2> * 8, [[<minecraft:sandstone:2>, <minecraft:sandstone:2>, <minecraft:sandstone:2>],[<minecraft:sandstone:2>, <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}).onlyWithTag({FluidName: "blood", Amount: 1000}), <minecraft:sandstone:2>], [<minecraft:sandstone:2>, <minecraft:sandstone:2>, <minecraft:sandstone:2>]]);
 recipes.addShaped(<railcraft:boiler_firebox_solid>, [[<ore:ingotBrickNether>, <ore:ingotBrickNether>, <ore:ingotBrickNether>],[<ore:ingotBrickNether>, <minecraft:fire_charge>, <ore:ingotBrickNether>], [<ore:ingotBrickNether>, <minecraft:furnace>, <ore:ingotBrickNether>]]);
 recipes.addShaped(<railcraft:blast_furnace> * 4, [[<minecraft:soul_sand>, <ore:bricksNether>, <minecraft:soul_sand>],[<ore:bricksNether>, <minecraft:magma_cream>, <ore:bricksNether>], [<minecraft:soul_sand>, <ore:bricksNether>, <minecraft:soul_sand>]]);
@@ -140,6 +142,7 @@ recipes.addShaped(<bigreactors:turbinehousingcores>, [[<ore:ingotLead>, <ore:ing
 recipes.addShaped(<bigreactors:reactorcasingcores>, [[<ore:ingotLead>, <ore:ingotGraphite>, <ore:ingotLead>],[<ore:ingotGold>, <ore:ingotLead>, <ore:ingotGold>], [<ore:ingotLead>, <ore:ingotGraphite>, <ore:ingotLead>]]);
 
 #Adding RFTools' stuff
+recipes.addShaped(<rftoolsdim:dimension_enscriber>, [[<ore:dustRedstone>, <ore:paper>, <ore:dustRedstone>],[<mystcraft:vial>, <ore:machineBlockBasic>, <mystcraft:vial>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
 recipes.addShaped(<rftoolsdim:time_absorber>, [[<minecraft:clock>, <ore:wool>, <minecraft:clock>],[<ore:wool>, <ore:machineBlockBasic>, <ore:wool>], [<minecraft:clock>, <ore:wool>, <minecraft:clock>]]);
 recipes.addShaped(<rftoolsdim:feature_absorber>, [[<ore:gemDiamond>, <ore:wool>, <ore:gemEmerald>],[<ore:wool>, <ore:machineBlockBasic>, <ore:wool>], [<ore:gemEmerald>, <ore:wool>, <ore:gemDiamond>]]);
 recipes.addShaped(<rftoolsdim:terrain_absorber>, [[<ore:stone>, <ore:wool>, <ore:dirt>],[<ore:wool>, <ore:machineBlockBasic>, <ore:wool>], [<ore:dirt>, <ore:wool>, <ore:stone>]]);
@@ -448,6 +451,7 @@ recipes.addShapeless(<conarm:invisible_ink>, [<minecraft:potion>.withTag({Potion
 #
 
 #Adding Random Things' stuff
+recipes.addShapeless(<randomthings:idcard>, [<mystcraft:vial>,<ore:paper>]);
 recipes.addShaped(<randomthings:fertilizeddirt> * 2, [[<minecraft:rotten_flesh>, <ore:fertilizer>, <minecraft:rotten_flesh>],[<ore:fertilizer>, <ore:dirt>, <ore:fertilizer>], [<minecraft:rotten_flesh>, <ore:fertilizer>, <minecraft:rotten_flesh>]]);
 recipes.addShaped(<randomthings:endermailbox>, [[<randomthings:stableenderpearl>, <ore:pearlEnderEye>, <randomthings:stableenderpearl>],[<ore:ingotIron>, <ore:hopper>, <ore:ingotIron>], [null, <ore:fenceWood>, null]]);
 recipes.addShaped(<randomthings:rainshield>, [[null, <ore:itemFlint>, null],[null, <ore:itemBlazeRod>, null], [<ore:netherrack>, <ore:netherrack>, <ore:netherrack>]]);
