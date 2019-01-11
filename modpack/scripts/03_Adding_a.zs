@@ -23,6 +23,7 @@ import mods.techreborn.grinder;
 import mods.techreborn.compressor;
 import mods.forestry.Squeezer;
 import mods.thermalexpansion.Transposer;
+import mods.thermalexpansion.Sawmill;
 
 
 print("Initializing 02_Adding_a.zs");
@@ -45,11 +46,14 @@ mods.mekanism.enrichment.removeRecipe(<minecraft:obsidian>);
 mods.mekanism.crusher.addRecipe(<minecraft:obsidian>, <thermalfoundation:material:770> * 2);
 mods.mekanism.enrichment.addRecipe(<minecraft:obsidian>, <thermalfoundation:material:770> * 4);
 /*
-//Making endstone 
-val enderliquid = <liquid:ender>;
-mods.thermalexpansion.Transposer.addFillRecipe(<ore:endstone>.items, <ore:sandstone>.items, enderliquid * 250, 4000);
+//This is commented out until all sandstone can be inserted in the machine
+//Adding endstone recipe to fluidtransposer 
+var sandstone = <ore:sandstone>;
+for item in sandstone.items{
+    Transposer.addFillRecipe( <minecraft:end_stone>, item, <liquid:ender> * 250, 4000);
+	}
 */
-
+	
 #
 //
 //The next section adds things to magic mods
@@ -313,17 +317,7 @@ recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>
 recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
 recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <ore:listAllwater>, <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
 recipes.addShaped(<forestry:ffarm>, [[<ore:ingotCopper>, <ore:bricksStone>, <ore:ingotCopper>], [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]]);
-//this errored; look into this later
-/*
-//mods.forestry.Squeezer.addRecipe(<liquid:lava>, [<minecraft:redstone>], 120);
-mods.forestry.Squeezer.addRecipe(<liquid:seed.oil> * 50, [<ore:listAllseed>], 120, <forestry:mulch> % 15);
-mods.forestry.Squeezer.addRecipe(<liquid:seed.oil> * 250, [<ore:listAllnut>], 120, <forestry:mulch> % 35);
-mods.forestry.Squeezer.addRecipe(<liquid:juice> * 400, [<ore:lisAllfruit>], 120, <forestry:mulch> % 60);
-//mods.thermalexpansion.Transposer.addExtractRecipe(ILiquidStack output, IItemStack input, int energy, WeightedItemStack itemOut);
-mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:seed.oil> * 50, <ore:listAllseed>, 4800, <forestry:mulch> % 15);
-mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:seed.oil> * 250, <ore:listAllnut>, 4800, <forestry:mulch> % 35);
-mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:juice> * 400, <ore:listAllseed>, 4800, <forestry:mulch> % 60);
-*/
+
 #Adding Mekanism's stuff
 mods.mekanism.crusher.addRecipe(<mekanism:ingot:0>, <mekanism:otherdust:5>);
 recipes.addShaped(<mekanism:teleportationcore>, [[<actuallyadditions:item_crystal:1>, <ore:alloyUltimate>, <actuallyadditions:item_crystal:1>],[<ore:ingotEnderium>, <rftools:infused_enderpearl>, <ore:ingotEnderium>], [<actuallyadditions:item_crystal:1>, <ore:alloyUltimate>, <actuallyadditions:item_crystal:1>]]);
@@ -597,6 +591,114 @@ recipes.addShaped(<biomesoplenty:grass:1>, [[<ore:listAllseed>], [<minecraft:sto
 recipes.addShaped(<thermalfoundation:material:802> * 9, [[<ore:blockCoke>]]);
 recipes.addShaped(<thermalfoundation:material:802> * 9, [[<ore:blockFuelCoke>]]);
 recipes.addShaped(<thermalfoundation:material:802> * 9, [[<ore:blockCoalCoke>]]);
+
+#Adding mass recipes with bio stuff 
+val plant = <ore:plant>;
+val vine = <ore:vine>;
+val lilypad = <ore:lilypad>;
+val fruit = <ore:listAllfruit>;
+val veggie = <ore:listAllveggie>;
+val nut = <ore:listAllnut>;
+val seed = <ore:listAllseed>;
+val sapling = <ore:treeSapling>;
+val mush = <ore:listAllmushroom>;
+val grain = <ore:listAllgrain>;
+val spice = <ore:listAllspice>;
+
+//Producing Mekanism' biofuel
+//mods.mekanism.crusher.addRecipe(IItemStack inputStack, IItemStack outputStack);
+for item in plant.items{
+		mods.mekanism.crusher.addRecipe(item, <mekanism:biofuel>);
+	}
+for item in vine.items{
+		mods.mekanism.crusher.addRecipe(item, <mekanism:biofuel>);
+	}
+for item in lilypad.items{
+for item in fruit.items{
+		mods.mekanism.crusher.addRecipe(item, <mekanism:biofuel> * 3);
+	}
+for item in veggie.items{
+		mods.mekanism.crusher.addRecipe(item, <mekanism:biofuel> * 4);
+	}
+for item in nut.items{
+		mods.mekanism.crusher.addRecipe(item, <mekanism:biofuel> * 4);
+	}
+for item in seed.items{
+		mods.mekanism.crusher.addRecipe(item, <mekanism:biofuel>);
+	}
+for item in sapling.items{
+		mods.mekanism.crusher.addRecipe(item, <mekanism:biofuel>);
+	}
+for item in mush.items{
+		mods.mekanism.crusher.addRecipe(item, <mekanism:biofuel> * 2);
+	}
+for item in grain.items{
+		mods.mekanism.crusher.addRecipe(item, <mekanism:biofuel> * 2);
+	}
+for item in spice.items{
+		mods.mekanism.crusher.addRecipe(item, <mekanism:biofuel>);
+	}
+
+		mods.mekanism.crusher.addRecipe(item, <mekanism:biofuel>);
+	}
+//Adding recipes for pulped biomass
+//mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+for item in plant.items{
+mods.thermalexpansion.Sawmill.addRecipe(<thermalfoundation:material:816> * 3, item, 1500);
+}
+for item in vine.items{
+mods.thermalexpansion.Sawmill.addRecipe(<thermalfoundation:material:816> * 3, item, 1500);
+}
+for item in lilypad.items{
+mods.thermalexpansion.Sawmill.addRecipe(<thermalfoundation:material:816> * 3, item, 1500);
+}
+for item in fruit.items{
+mods.thermalexpansion.Sawmill.addRecipe(<thermalfoundation:material:816> * 3, item, 1500);
+}
+for item in veggie.items{
+mods.thermalexpansion.Sawmill.addRecipe(<thermalfoundation:material:816> * 4, item, 1500);
+}
+for item in nut.items{
+mods.thermalexpansion.Sawmill.addRecipe(<thermalfoundation:material:816> * 4, item, 1500);
+}
+for item in seed.items{
+mods.thermalexpansion.Sawmill.addRecipe(<thermalfoundation:material:816>, item, 1500);
+}
+for item in sapling.items{
+mods.thermalexpansion.Sawmill.addRecipe(<thermalfoundation:material:816>, item, 1500);
+}
+for item in mush.items{
+mods.thermalexpansion.Sawmill.addRecipe(<thermalfoundation:material:816> * 2, item, 1500);
+}
+for item in grain.items{
+mods.thermalexpansion.Sawmill.addRecipe(<thermalfoundation:material:816> * 2, item, 1500);
+}
+for item in spice.items{
+mods.thermalexpansion.Sawmill.addRecipe(<thermalfoundation:material:816>, item, 1500);
+}
+
+//Adding recipes for Forestry's juice and seed oil
+//mods.forestry.Squeezer.addRecipe(<liquid:lava>, [<minecraft:redstone>], 120);
+for item in seed.items{
+mods.forestry.Squeezer.addRecipe(<liquid:seed.oil> * 50, [item], 120, <forestry:mulch> % 15);
+}
+for item in nut.items{
+mods.forestry.Squeezer.addRecipe(<liquid:seed.oil> * 250, [item], 120, <forestry:mulch> % 35);
+}
+for item in fruit.items{
+mods.forestry.Squeezer.addRecipe(<liquid:juice> *250, [item], 120, <forestry:mulch> % 60);
+}
+
+//mods.thermalexpansion.Transposer.addExtractRecipe(ILiquidStack output, IItemStack input, int energy, WeightedItemStack itemOut);
+for item in seed.items{
+mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:seed.oil> * 50, item, 4800, <forestry:mulch> % 15);
+}
+for item in nut.items{
+mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:seed.oil> * 250, item, 4800, <forestry:mulch> % 35);
+}
+for item in fruit.items{
+mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:juice> * 250, item, 4800, <forestry:mulch> % 60);
+}
 
 print("Initialized 02_Adding_a.zs");
 

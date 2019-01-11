@@ -14,11 +14,17 @@ import crafttweaker.item.WeightedLiquidStack;
 import crafttweaker.recipes.IFurnaceRecipe;
 import mods.forestry.Squeezer;
 import mods.thermalexpansion.Transposer;
+import mods.thermalexpansion.Sawmill;
+import mods.mekanism.crusher;
 
 print("Initializing 01_Removing.zs");
 
 #Removing Minecraft's stuff
 recipes.removeByRecipeName("minecraft:chiseled_stonebrick");
+/*
+//This is commented out until all sandstone can be inserted in the machine
+mods.thermalexpansion.Transposer.removeFillRecipe(<minecraft:end_stone>, <liquid:liquidcoralium>);
+*/
 
 #Removing tweaked recipes
 recipes.removeByRecipeName("endercore:slabcobblestone_to_cobblestone");
@@ -91,6 +97,9 @@ recipes.remove(<magicbees:manasteelscoop>);
 //The next section removes things from technical mods
 //
 #
+
+#Removing Wireless Crafting Terminal' stuff
+recipes.remove(<ae2wtlib:infinity_booster_card>);
 
 #Removing JAOPCA's stuff
 recipes.remove(<ore:gearAbyssalnite>);
@@ -237,6 +246,24 @@ recipes.remove(<thermalexpansion:augment:258>);
 recipes.remove(<thermalexpansion:augment:352>);
 recipes.removeByRecipeName("thermalexpansion:morb");
 recipes.removeByRecipeName("thermalexpansion:morb_2");
+//Removing Biomass out off saw mill
+//mods.thermalexpansion.Sawmill.removeRecipe(IItemStack input);
+mods.thermalexpansion.Sawmill.removeRecipe(<natura:saguaro>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:potato>);
+mods.thermalexpansion.Sawmill.removeRecipe(<harvestcraft:oatsitem>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:cactus>);
+mods.thermalexpansion.Sawmill.removeRecipe(<harvestcraft:ryeitem>);
+mods.thermalexpansion.Sawmill.removeRecipe(<harvestcraft:barleyitem>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:sapling:*>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:carrot>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:waterlily>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:pumpkin>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:melon_block>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:beetroot>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:vine>);
+mods.thermalexpansion.Sawmill.removeRecipe(<harvestcraft:riceitem>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:reeds>);
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:wheat>);
 
 #Removing Nuclearcraft's stuff
 mods.jei.JEI.removeAndHide(<nuclearcraft:ore:0>);
@@ -330,20 +357,18 @@ mods.jei.JEI.removeAndHide(<forestry:climatiser:3>);
 mods.jei.JEI.removeAndHide(<forestry:climatiser:4>);
 mods.jei.JEI.removeAndHide(<forestry:greenhouse.window>);
 mods.jei.JEI.removeAndHide(<forestry:greenhouse.window_up>);
-//This errored; look into this later
-/*
+//Removing juice and seed oil recipes to add them back with oredict
 mods.forestry.Squeezer.removeRecipe(<liquid:juice>);
 mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>);
 mods.thermalexpansion.Transposer.removeExtractRecipe(<minecraft:apple>);
-mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropChestnut>);
-mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropCherry>);
-mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropDate>);
-mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropWalnut>);
-mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropCarrot>);
-mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropLemon>);
-mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropPapaya>);
-mods.thermalexpansion.Transposer.removeExtractRecipe(<ore:cropPlum>);
-*/
+mods.thermalexpansion.Transposer.removeExtractRecipe(<minecraft:carrot>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<forestry:fruits:0>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<forestry:fruits:1>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<forestry:fruits:2>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<forestry:fruits:3>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<forestry:fruits:4>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<forestry:fruits:5>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<forestry:fruits:6>);
 
 #Removing Mekanism's stuff
 recipes.removeByRecipeName("mekanism:teleportationcore");
@@ -362,6 +387,7 @@ recipes.remove(<mekanism:controlcircuit:3>);
 recipes.remove(<ore:dustSalt>);
 recipes.remove(<ore:itemSalt>);
 recipes.remove(<ore:foodSalt>);
+mods.mekanism.crusher.removeRecipe(<mekanism:biofuel>);
 
 #
 //
