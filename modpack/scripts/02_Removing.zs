@@ -1,4 +1,4 @@
-#File name: 01_Removing.zs
+#File name: 02_Removing.zs
 #Recipes removed for Variety Revelations
 
 #Imports
@@ -13,11 +13,14 @@ import crafttweaker.liquid.ILiquidDefinition;
 import crafttweaker.item.WeightedLiquidStack;
 import crafttweaker.recipes.IFurnaceRecipe;
 import mods.forestry.Squeezer;
+import mods.forestry.Carpenter;
 import mods.thermalexpansion.Transposer;
 import mods.thermalexpansion.Sawmill;
 import mods.mekanism.crusher;
+import mods.immersiveengineering.Blueprint;
+import mods.immersiveengineering.Fermenter;
 
-print("Initializing 01_Removing.zs");
+print("Initializing 02_Removing.zs");
 
 #Removing Minecraft's stuff
 recipes.remove(<minecraft:writable_book>);
@@ -98,6 +101,9 @@ recipes.remove(<magicbees:manasteelscoop>);
 //The next section removes things from technical mods
 //
 #
+
+#Removing MatterOverdrive's stuff
+recipes.remove(<matteroverdrive:isolinear_circuit>);
 
 #Removing Wireless Crafting Terminal' stuff
 recipes.remove(<ae2wtlib:infinity_booster_card>);
@@ -291,6 +297,10 @@ mods.jei.JEI.removeAndHide(<immersiveengineering:ore:1>);
 mods.jei.JEI.removeAndHide(<immersiveengineering:ore:2>);
 mods.jei.JEI.removeAndHide(<immersiveengineering:ore:3>);
 mods.jei.JEI.removeAndHide(<immersiveengineering:ore:4>);
+//mods.immersiveengineering.Blueprint.removeRecipe(IItemStack output);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:material:27>);
+//mods.immersiveengineering.Fermenter.removeFluidRecipe(ILiquidStack fluid);
+mods.immersiveengineering.Fermenter.removeFluidRecipe(<liquid:ethanol>);
 
 #Removing Immersive Hempcraft's stuff
 mods.jei.JEI.removeAndHide(<immersivehempcraft:granite_dust>);
@@ -372,6 +382,12 @@ mods.thermalexpansion.Transposer.removeExtractRecipe(<forestry:fruits:3>);
 mods.thermalexpansion.Transposer.removeExtractRecipe(<forestry:fruits:4>);
 mods.thermalexpansion.Transposer.removeExtractRecipe(<forestry:fruits:5>);
 mods.thermalexpansion.Transposer.removeExtractRecipe(<forestry:fruits:6>);
+//Removing circuit recipes
+//mods.forestry.Carpenter.removeRecipe(IItemStack output, @Optional ILiquidStack fluidInput);
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:0>);
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:1>);
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:2>);
+mods.forestry.Carpenter.removeRecipe(<forestry:chipsets:3>);
 
 #Removing Mekanism's stuff
 recipes.removeByRecipeName("mekanism:teleportationcore");
@@ -808,6 +824,6 @@ mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.for.resources.t
 mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.for.resources.tin:*>);
 mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.for.resources.tin:*>);
 
-print("Initialized 01_Removing.zs");
+print("Initialized 02_Removing.zs");
 
 //File End

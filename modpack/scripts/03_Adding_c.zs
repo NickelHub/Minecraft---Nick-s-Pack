@@ -1,4 +1,4 @@
-#File name: 02_Adding_c.zs
+#File name: 03_Adding_c.zs
 #Recipes added for Variety Revelations
 #This file was created, because of an error, that "Crusher" has already been defined
 
@@ -10,7 +10,7 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.extrautils2.Crusher;
 
-print("Initializing 02_Adding_c.zs");
+print("Initializing 03_Adding_c.zs");
 
 #Adding Applied Energistics 2's stuff
 mods.extrautils2.Crusher.add(<appliedenergistics2:material:2>, <appliedenergistics2:material:0>);
@@ -21,6 +21,6 @@ mods.extrautils2.Crusher.add(<techreborn:dust:63>, <minecraft:stone:1>);
 mods.extrautils2.Crusher.add(<techreborn:dust:62>, <minecraft:stone:3>);
 mods.extrautils2.Crusher.add(<techreborn:dust:61>, <minecraft:stone:5>);
 
-print("Initialized 02_Adding_c.zs");
+print("Initialized 03_Adding_c.zs");
 
 //File End

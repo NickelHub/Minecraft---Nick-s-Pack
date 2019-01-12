@@ -1,4 +1,4 @@
-#File name: 03_Oredictionary.zs
+#File name: 01_Oredictionary.zs
 
 #Imports
 import crafttweaker.item.IIngredient;
@@ -8,7 +8,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemTransformer;
 
-print("Initializing 03_Oredictionary.zs");
+print("Initializing 01_Oredictionary.zs");
 
 //Adding additional oredictionary entries
 
@@ -539,6 +539,14 @@ cotton.add(<plants2:generic:0>);
 //The following section contains additional registrations for blocks
 //
 #
+
+#Glass
+val glassCoulerless = <ore:blockGlassColorless>;
+glassCoulerless.add(<tconstruct:clear_glass>);
+
+val glassHardened = <ore:blockGlassHardened>;
+glassHardened.add(<techreborn:reinforced_glass>);
+glassHardened.add(<railcraft:glass:*>);
 
 #Ice
 val ice = <ore:blockIce>;
@@ -1108,6 +1116,6 @@ nuggetSul2.remove(<oreberries:sulfur_oreberry>);
 val nuggetLapis = <ore:nuggetLapis>;
 nuggetLapis.remove(<oreberries:lapis_oreberry>);
 
-print("Initialized 03_Oredictionary.zs");
+print("Initialized 01_Oredictionary.zs");
 
 //File End

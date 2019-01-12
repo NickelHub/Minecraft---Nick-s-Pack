@@ -1,4 +1,4 @@
-#File name: 02_Adding_a.zs
+#File name: 03_Adding_a.zs
 #Recipes added for Variety Revelations
 
 #Imports
@@ -16,6 +16,7 @@ import mods.appliedenergistics2.Grinder;
 import mods.appliedenergistics2.Inscriber;
 import mods.immersiveengineering.Crusher;
 import mods.immersiveengineering.MetalPress;
+import mods.immersiveengineering.Fermenter;
 import mods.mekanism.crusher;
 import mods.mekanism.enrichment;
 import mods.thermalexpansion.Pulverizer;
@@ -26,7 +27,8 @@ import mods.thermalexpansion.Transposer;
 import mods.thermalexpansion.Sawmill;
 
 
-print("Initializing 02_Adding_a.zs");
+
+print("Initializing 03_Adding_a.zs");
 
 #Adding Minecraft's stuff
 recipes.addShapeless(<minecraft:writable_book>, [<mystcraft:vial>,<minecraft:book>,<ore:feather>]);
@@ -112,6 +114,9 @@ recipes.addShaped(<magicbees:effectjar>, [[<ore:blockGlass>, <ore:slabWood>, <or
 //
 #
 
+#Adding MatterOverdrive's stuff
+Inscriber.addRecipe(<matteroverdrive:isolinear_circuit:0>, <ore:dustRedstone>, false, <appliedenergistics2:material:16>, <ore:plateIron>);
+
 #Adding Railcraft's stuff
 recipes.addShapeless(<railcraft:tool_notepad>, [<railcraft:tool_magnifying_glass>,<ore:feather>,<mystcraft:vial>,<ore:paper>]);
 recipes.addShaped(<railcraft:brick_bloodstained:2> * 8, [[<minecraft:sandstone:2>, <minecraft:sandstone:2>, <minecraft:sandstone:2>],[<minecraft:sandstone:2>, <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}).onlyWithTag({FluidName: "blood", Amount: 1000}), <minecraft:sandstone:2>], [<minecraft:sandstone:2>, <minecraft:sandstone:2>, <minecraft:sandstone:2>]]);
@@ -194,7 +199,7 @@ recipes.addShaped(<rftools:fluidplus_module>, [[null, <randomthings:stableenderp
 
 #Adding Tech Reborn's stuff
 recipes.addShaped(<techreborn:grinder>, [[<ore:itemFlint>, <ore:itemFlint>, <ore:itemFlint>],[<ore:cobblestone>, <ore:machineBasic>, <ore:cobblestone>], [null, <ore:circuitBasic>, null]]);
-Inscriber.addRecipe(<techreborn:part:29>, <ore:dustRedstone>, false, <techreborn:cable:5>, <techreborn:plates:34>);
+Inscriber.addRecipe(<techreborn:part:29>, <ore:dustRedstone>, false, <techreborn:cable:5>, <ore:plateRefinedIron>);
 Inscriber.addRecipe(<techreborn:part:30>, <techreborn:part:29>, false, <ore:dustGlowstone>, <ore:plateLapis>);
 
 #Adding some Thermal tuff
@@ -223,6 +228,7 @@ recipes.addShaped(<immersiveengineering:wooden_device1:3>, [[<ore:fenceTreatedWo
 recipes.addShaped(<immersiveengineering:stone_decoration:10> * 2, [[<ore:ingotBrick>, <ore:sandstone>], [<ore:sandstone>, <ore:ingotBrick>]]);
 recipes.addShaped(<immersiveengineering:stone_decoration:10> * 2, [[<ore:sandstone>, <ore:ingotBrick>], [<ore:ingotBrick>, <ore:sandstone>]]);
 recipes.addShaped(<immersiveengineering:wooden_device0>, [[<ore:planksTreatedWood>, <ore:slabTreatedWood>, <ore:planksTreatedWood>],[<immersiveengineering:treated_wood:*>, null, <ore:planksTreatedWood>], [<immersiveengineering:treated_wood:*>, <ore:planksTreatedWood>, <ore:planksTreatedWood>]]);
+Inscriber.addRecipe(<immersiveengineering:material:27>, <appliedenergistics2:material:16>, false, <immersiveengineering:material:26>, <ore:plateCopper>);
 
 #Adding Immersive Hempcraft's stuff
 //Granite dust
@@ -320,6 +326,10 @@ recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>
 recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
 recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <ore:listAllwater>, <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
 recipes.addShaped(<forestry:ffarm>, [[<ore:ingotCopper>, <ore:bricksStone>, <ore:ingotCopper>], [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]]);
+Inscriber.addRecipe(<forestry:chipsets:0>.withTag({T: 0 as short}), <ore:dustApatite>, false, <appliedenergistics2:material:16>, <ore:plateTin>);
+Inscriber.addRecipe(<forestry:chipsets:1>.withTag({T: 1 as short}), <ore:dustApatite>, false, <appliedenergistics2:material:16>, <ore:plateBronze>);
+Inscriber.addRecipe(<forestry:chipsets:2>.withTag({T: 2 as short}), <ore:dustApatite>, false, <appliedenergistics2:material:16>, <ore:plateIron>);
+Inscriber.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), <ore:dustApatite>, false, <appliedenergistics2:material:16>, <ore:plateGold>);
 
 #Adding Mekanism's stuff
 mods.mekanism.crusher.addRecipe(<mekanism:ingot:0>, <mekanism:otherdust:5>);
@@ -704,6 +714,30 @@ for item in fruit.items{
 mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:juice> * 250, item, 4800, <forestry:mulch> % 60);
 }
 
-print("Initialized 02_Adding_a.zs");
+//Adding recipes for Ethanol with Immersive Engineering
+//mods.immersiveengineering.Fermenter.addRecipe(IItemStack output, ILiquidStack fluid, IIngredient input, int energy);
+
+val ethanol = <liquid:ethanol>;
+val fermenterOutput = null;
+
+for item in seed.items{
+mods.immersiveengineering.Fermenter.addRecipe(fermenterOutput, ethanol * 50, item, 2048);
+}
+for item in veggie.items{
+mods.immersiveengineering.Fermenter.addRecipe(fermenterOutput, ethanol * 100, item, 2048);
+}
+for item in fruit.items{
+mods.immersiveengineering.Fermenter.addRecipe(fermenterOutput, ethanol * 250, item, 2048);
+}
+for item in nut.items{
+mods.immersiveengineering.Fermenter.addRecipe(fermenterOutput, ethanol * 150, item, 2048);
+}
+for item in mush.items{
+mods.immersiveengineering.Fermenter.addRecipe(fermenterOutput, ethanol * 10, item, 2048);
+}
+for item in grain.items{
+mods.immersiveengineering.Fermenter.addRecipe(fermenterOutput, ethanol * 350, item, 2048);
+}
+print("Initialized 03_Adding_a.zs");
 
 //File End

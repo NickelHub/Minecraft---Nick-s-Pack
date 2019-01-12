@@ -93,6 +93,11 @@ recipes.replaceAllOccurences(<minecraft:ender_chest>, <ore:chestEnder>);
 //
 #
 
+#Netherrack
+recipes.replaceAllOccurences(<minecraft:netherrack>, <ore:netherrack>, <*>.only(function(item) {
+    return !isNull(item) & !<extrautils2:compressednetherrack>.matches(item);
+}));
+
 #Ice stuff
 recipes.replaceAllOccurences(<minecraft:ice>, <ore:blockIce>);
 recipes.replaceAllOccurences(<minecraft:packed_ice>, <ore:blockPackedIce>);
