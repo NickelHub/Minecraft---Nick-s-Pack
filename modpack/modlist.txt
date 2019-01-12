@@ -82,7 +82,8 @@
 |   JEHC-1.12.2-1.6.2.0.jar
 |   jeibees-0.9.0.5-mc1.12.2.jar
 |   jeiintegration_1.12.2-1.5.1.36.jar
-|   jei_1.12.2-4.14.3.248.jar
+|   jei_1.12.2-4.14.4.250.jar
+|   jetif-1.12.2-1.3.0.jar
 |   journeymap-1.12.2-5.5.3.jar
 |   JustEnoughEnergistics-1.12.2-1.0.3.jar
 |   JustEnoughIDs-1.0.2-26.jar
@@ -103,7 +104,7 @@
 |   Morpheus-1.12-3.3.2.jar
 |   MTLib-3.0.5.jar
 |   mystcraft-1.12.2-0.13.7.02.jar
-|   natura-1.12.2-4.3.2.65.jar
+|   natura-1.12.2-4.3.2.66.jar
 |   NetherEx-1.12.2-2.0.8.jar
 |   NetherPortalFix_1.12.1-5.3.17.jar
 |   NoMoreRecipeConflict-0.12(1.12.2).jar
@@ -125,7 +126,7 @@
 |   railcraft-12.0.0-beta-4.jar
 |   randompatches-1.12.2-1.11.0.3.jar
 |   RandomThings-MC1.12.2-4.2.5.jar
-|   RebornCore-1.12.2-3.13.0.400-universal.jar
+|   RebornCore-1.12.2-3.13.1.402-universal.jar
 |   RedstoneFlux-1.12-2.1.0.6-universal.jar
 |   redstonepaste-mc1.12-1.7.5.jar
 |   Reliquary-1.12.2-1.3.4.780.jar
