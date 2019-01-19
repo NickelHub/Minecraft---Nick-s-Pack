@@ -540,6 +540,10 @@ cotton.add(<plants2:generic:0>);
 //
 #
 
+#Soul sandstone
+val souls = <ore:soulSand>;
+souls.add(<minecraft:soul_sand>);
+
 #Glass
 val glassCoulerless = <ore:blockGlassColorless>;
 glassCoulerless.add(<tconstruct:clear_glass>);

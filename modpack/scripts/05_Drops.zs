@@ -29,6 +29,6 @@ Emerald.addDrop(<minecraft:emerald> % 10);
 //
 #
 
-print("Initialized 05_Drops.zss");
+print("Initialized 05_Drops.zs");
 
 //File End

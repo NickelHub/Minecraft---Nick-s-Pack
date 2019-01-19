@@ -114,6 +114,23 @@ recipes.addShaped(<magicbees:effectjar>, [[<ore:blockGlass>, <ore:slabWood>, <or
 //
 #
 
+#Adding Exchangers' stuff
+recipes.addShaped(<exchangers:eio_exchanger_core_tier3>, [[<ore:gemDiamond>, <ore:ingotEndSteel>, <ore:gemDiamond>],[<forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}).onlyWithTag({FluidName: "ender_distillation", Amount: 1000}), <randomthings:stableenderpearl>, <forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}).onlyWithTag({FluidName: "ender_distillation", Amount: 1000})], [<ore:gemDiamond>, <ore:ingotEndSteel>, <ore:gemDiamond>]]);
+recipes.addShaped(<exchangers:eio_exchanger_core_tier2>, [[<ore:itemPulsatingPowder>, <ore:ingotElectricalSteel>, <ore:itemPulsatingPowder>],[<forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}).onlyWithTag({FluidName: "ender_distillation", Amount: 1000}), <randomthings:stableenderpearl>, <forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}).onlyWithTag({FluidName: "ender_distillation", Amount: 1000})], [<ore:itemPulsatingPowder>, <ore:ingotElectricalSteel>, <ore:itemPulsatingPowder>]]);
+recipes.addShaped(<exchangers:eio_exchanger_core_tier1>, [[<ore:nuggetVibrantAlloy>, <ore:ingotConductiveIron>, <ore:nuggetVibrantAlloy>],[<ore:ingotConductiveIron>, <randomthings:stableenderpearl>, <ore:ingotConductiveIron>], [<ore:nuggetVibrantAlloy>, <ore:ingotConductiveIron>, <ore:nuggetVibrantAlloy>]]);
+recipes.addShaped(<exchangers:te_exchanger_core_tier3>, [[<ore:gearLumium>, <ore:gearSignalum>, <ore:gearLumium>],[<forge:bucketfilled>.withTag({FluidName: "cryotheum", Amount: 1000}).onlyWithTag({FluidName: "cryotheum", Amount: 1000}), <randomthings:stableenderpearl>, <forge:bucketfilled>.withTag({FluidName: "cryotheum", Amount: 1000}).onlyWithTag({FluidName: "cryotheum", Amount: 1000})], [<ore:gearLumium>, <ore:gearSignalum>, <ore:gearLumium>]]);
+recipes.addShaped(<exchangers:te_exchanger_core_tier2>, [[<ore:gearBronze>, <ore:gearInvar>, <ore:gearBronze>],[<forge:bucketfilled>.withTag({FluidName: "glowstone", Amount: 1000}).onlyWithTag({FluidName: "glowstone", Amount: 1000}), <randomthings:stableenderpearl>, <forge:bucketfilled>.withTag({FluidName: "glowstone", Amount: 1000}).onlyWithTag({FluidName: "glowstone", Amount: 1000})], [<ore:gearBronze>, <ore:gearInvar>, <ore:gearBronze>]]);
+recipes.addShaped(<exchangers:te_exchanger_core_tier1>, [[<ore:gearCopper>, <ore:ingotLead>, <ore:gearCopper>],[<ore:ingotLead>, <randomthings:stableenderpearl>, <ore:ingotLead>], [<ore:gearCopper>, <ore:ingotLead>, <ore:gearCopper>]]);
+recipes.addShaped(<exchangers:mekanism_exchanger_core_tier3>, [[<ore:ingotEnderium>, <ore:alloyUltimate>, <ore:ingotEnderium>],[<ore:alloyUltimate>, <randomthings:stableenderpearl>, <ore:alloyUltimate>], [<ore:ingotEnderium>, <ore:alloyUltimate>, <ore:ingotEnderium>]]);
+recipes.addShaped(<exchangers:mekanism_exchanger_core_tier2>, [[<ore:dustDiamond>, <ore:ingotRefinedGlowstone>, <ore:dustDiamond>],[<ore:alloyElite>, <randomthings:stableenderpearl>, <ore:alloyElite>], [<ore:dustDiamond>, <ore:ingotRefinedGlowstone>, <ore:dustDiamond>]]);
+recipes.addShaped(<exchangers:mekanism_exchanger_core_tier1>, [[<ore:ingotOsmium>, <ore:ingotSteel>, <ore:ingotOsmium>],[<ore:ingotSteel>, <randomthings:stableenderpearl>, <ore:ingotSteel>], [<ore:ingotOsmium>, <ore:ingotSteel>, <ore:ingotOsmium>]]);
+recipes.addShaped(<exchangers:ie_exchanger_core_tier3>, [[<immersiveengineering:wirecoil:2>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:wirecoil:2>],[<immersiveengineering:metal_decoration0:5>, <randomthings:stableenderpearl>, <immersiveengineering:metal_decoration0:5>], [<immersiveengineering:wirecoil:2>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:wirecoil:2>]]);
+recipes.addShaped(<exchangers:ie_exchanger_core_tier2>, [[<immersiveengineering:wirecoil:1>, <immersiveengineering:material:9>, <immersiveengineering:wirecoil:1>],[<immersiveengineering:material:9>, <randomthings:stableenderpearl>, <immersiveengineering:material:9>], [<immersiveengineering:wirecoil:1>, <immersiveengineering:material:9>, <immersiveengineering:wirecoil:1>]]);
+recipes.addShaped(<exchangers:ie_exchanger_core_tier1>, [[<immersiveengineering:wirecoil>, <immersiveengineering:material:8>, <immersiveengineering:wirecoil>],[<immersiveengineering:material:8>, <randomthings:stableenderpearl>, <immersiveengineering:material:8>], [<immersiveengineering:wirecoil>, <immersiveengineering:material:8>, <immersiveengineering:wirecoil>]]);
+
+#Adding Solar Flux Reborn's stuff
+recipes.addShaped(<solarflux:block_charging_upgrade>, [[<randomthings:stableenderpearl>, <ore:blockRedstone>, <randomthings:stableenderpearl>],[<ore:blockRedstone>, <solarflux:dispersive_upgrade>, <ore:blockRedstone>], [<randomthings:stableenderpearl>, <ore:blockRedstone>, <randomthings:stableenderpearl>]]);
+
 #Adding MatterOverdrive's stuff
 Inscriber.addRecipe(<matteroverdrive:isolinear_circuit:0>, <ore:dustRedstone>, false, <appliedenergistics2:material:16>, <ore:plateIron>);
 
@@ -738,6 +755,7 @@ mods.immersiveengineering.Fermenter.addRecipe(fermenterOutput, ethanol * 10, ite
 for item in grain.items{
 mods.immersiveengineering.Fermenter.addRecipe(fermenterOutput, ethanol * 350, item, 2048);
 }
+
 print("Initialized 03_Adding_a.zs");
 
 //File End

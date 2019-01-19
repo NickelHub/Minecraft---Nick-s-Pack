@@ -102,6 +102,23 @@ recipes.remove(<magicbees:manasteelscoop>);
 //
 #
 
+#Removing Exchangers' stuff
+recipes.remove(<exchangers:eio_exchanger_core_tier1>);
+recipes.remove(<exchangers:eio_exchanger_core_tier2>);
+recipes.remove(<exchangers:eio_exchanger_core_tier3>);
+recipes.remove(<exchangers:te_exchanger_core_tier1>);
+recipes.remove(<exchangers:te_exchanger_core_tier2>);
+recipes.remove(<exchangers:te_exchanger_core_tier3>);
+recipes.remove(<exchangers:mekanism_exchanger_core_tier1>);
+recipes.remove(<exchangers:mekanism_exchanger_core_tier2>);
+recipes.remove(<exchangers:mekanism_exchanger_core_tier3>);
+recipes.remove(<exchangers:ie_exchanger_core_tier1>);
+recipes.remove(<exchangers:ie_exchanger_core_tier2>);
+recipes.remove(<exchangers:ie_exchanger_core_tier3>);
+
+#Removing Solar Flux Reborn's stuff
+recipes.remove(<solarflux:block_charging_upgrade>);
+
 #Removing MatterOverdrive's stuff
 recipes.remove(<matteroverdrive:isolinear_circuit>);
 
