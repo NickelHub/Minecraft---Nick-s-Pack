@@ -15,6 +15,7 @@
 |   Baubles-1.12-1.5.2.jar
 |   baubley-heart-canisters-1.12.2-1.2.1.jar
 |   bdlib-1.14.3.12-mc1.12.2.jar
+|   bedpatch-2.2-1.12.2.jar
 |   BetterPlacement-1.0.0-1.jar
 |   BiomesOPlenty-1.12.2-7.0.1.2425-universal.jar
 |   BloodMagic-1.12.2-2.3.3-101.jar
@@ -36,8 +37,9 @@
 |   comforts-1.12.2-1.4.1.1.jar
 |   CompactDrawers-1.12.2-1.0.4.111.jar
 |   conarm-1.12.2-1.2.3.jar
+|   Controlling-3.0.6.jar
 |   CosmeticArmorReworked-1.12.2-v4.jar
-|   CraftTweaker2-1.12-4.1.13.jar
+|   CraftTweaker2-1.12-4.1.14.jar
 |   creeperconfetti-1.4.2.jar
 |   CTM-MC1.12.2-0.3.3.22.jar
 |   Decocraft-2.6.2_1.12.2.jar
@@ -58,7 +60,7 @@
 |   FastLeafDecay-v14.jar
 |   FastWorkbench-1.12.2-1.6.0.jar
 |   foamfix-0.10.3-1.12.2.jar
-|   forestry_1.12.2-5.8.2.380.jar
+|   forestry_1.12.2-5.8.2.382.jar
 |   Forgelin-1.8.2.jar
 |   GasConduits-1.12.2-1.0.0.jar
 |   gendustry-1.6.5.8-mc1.12.2.jar
@@ -82,7 +84,7 @@
 |   JEHC-1.12.2-1.6.2.0.jar
 |   jeibees-0.9.0.5-mc1.12.2.jar
 |   jeiintegration_1.12.2-1.5.1.36.jar
-|   jei_1.12.2-4.14.4.259.jar
+|   jei_1.12.2-4.14.4.260.jar
 |   jetif-1.12.2-1.3.0.jar
 |   journeymap-1.12.2-5.5.3.jar
 |   JustEnoughEnergistics-1.12.2-1.0.4.jar
@@ -95,7 +97,7 @@
 |   mcjtylib-1.12-3.1.1.jar
 |   Mekanism-1.12.2-9.4.13.349.jar
 |   MekanismGenerators-1.12.2-9.4.13.349.jar
-|   MetalChests-v3.9.0.g9b0c79e.jar
+|   MetalChests-v4.0.1.g01955d6.jar
 |   moartinkers-0.6.0.jar
 |   modnametooltip_1.12.2-1.10.0.jar
 |   modtweaker-4.0.15.jar
@@ -107,7 +109,7 @@
 |   natura-1.12.2-4.3.2.66.jar
 |   NetherEx-1.12.2-2.0.8.jar
 |   NoMoreRecipeConflict-0.12(1.12.2).jar
-|   NuclearCraft-2.13--1.12.2.jar
+|   NuclearCraft-2.13d--1.12.2.jar
 |   oeintegration-2.3.4.jar
 |   OpenBlocks-1.12.2-1.8.jar
 |   OpenModsLib-1.12.2-0.12.1.jar
@@ -123,7 +125,7 @@
 |   pmp-1.12.1.jar
 |   PTRLib-1.0.3.jar
 |   railcraft-12.0.0-beta-4.jar
-|   randompatches-1.12.2-1.12.0.1.jar
+|   randompatches-1.12.2-1.12.0.2.jar
 |   RandomThings-MC1.12.2-4.2.5.jar
 |   RebornCore-1.12.2-3.13.2.411-universal.jar
 |   RedstoneFlux-1.12-2.1.0.6-universal.jar
@@ -139,7 +141,7 @@
 |   SoundFilters-0.10_for_1.12.jar
 |   spatialservermod-1.3.jar
 |   StorageDrawers-1.12.2-5.3.8.jar
-|   TConstruct-1.12.2-2.12.0.113.jar
+|   TConstruct-1.12.2-2.12.0.115.jar
 |   TechReborn-1.12.2-2.20.3.899-universal.jar
 |   tesla-core-lib-1.12.2-1.0.15.jar
 |   TexFix+V-1.12-4.0.jar
