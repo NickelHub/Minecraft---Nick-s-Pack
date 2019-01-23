@@ -85,8 +85,8 @@ furnace.addRecipe(<thaumcraft:quicksilver>, <techreborn:ore:6>, 1.29629625007510
 
 #Adding Ender Storage's stuff
 recipes.addShaped(<enderstorage:ender_pouch>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:powderBlaze>, <ore:leather>, <ore:powderBlaze>],[<ore:leather>, <rftools:infused_enderpearl>, <ore:leather>], [<ore:powderBlaze>, <ore:blockWoolWhite>, <ore:powderBlaze>]]);
-recipes.addShaped(<enderstorage:ender_storage:1>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:ore:obsidian>, <ore:blockWoolWhite>, <ore:ore:obsidian>],[<ore:itemBlazeRod>, <minecraft:cauldron>, <ore:itemBlazeRod>], [<rftools:infused_enderpearl>, <ore:obsidian>, <rftools:infused_enderpearl>]]);
-recipes.addShaped(<enderstorage:ender_storage>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:ore:obsidian>, <ore:blockWoolWhite>, <ore:ore:obsidian>],[<ore:itemBlazeRod>, <ore:chestWood>, <ore:itemBlazeRod>], [<rftools:infused_enderpearl>, <ore:obsidian>, <rftools:infused_enderpearl>]]);
+recipes.addShaped(<enderstorage:ender_storage:1>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:obsidian>, <ore:blockWoolWhite>, <ore:obsidian>],[<ore:itemBlazeRod>, <minecraft:cauldron>, <ore:itemBlazeRod>], [<rftools:infused_enderpearl>, <ore:obsidian>, <rftools:infused_enderpearl>]]);
+recipes.addShaped(<enderstorage:ender_storage>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:obsidian>, <ore:blockWoolWhite>, <ore:obsidian>],[<ore:itemBlazeRod>, <ore:chestWood>, <ore:itemBlazeRod>], [<rftools:infused_enderpearl>, <ore:obsidian>, <rftools:infused_enderpearl>]]);
 
 #Adding Gravestone Mod's and Gravestone Mod Extended's stuff
 recipes.addShaped(<gravestone-extended:gsexecution:3>, [[null, <ore:plankWood>, null],[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<minecraft:hay_block>, <ore:plankWood>, <minecraft:hay_block>]]);
