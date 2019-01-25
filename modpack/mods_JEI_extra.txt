@@ -1,6 +1,4 @@
-    JEHC-1.12.2-1.6.2.0.jar
-    jeibees-0.9.0.5-mc1.12.2.jar
-    jetif-1.12.2-1.3.0.jar
-    mods_JEI_extra.txt
-    mod_JEI_extra.bat
-    ThaumicJEI-1.12.2-1.5.5-23.jar
+|    JEHC-1.12.2-1.6.2.0.jar
+|    jeibees-0.9.0.5-mc1.12.2.jar
+|    jetif-1.12.2-1.3.0.jar
+|    ThaumicJEI-1.12.2-1.5.5-23.jar
