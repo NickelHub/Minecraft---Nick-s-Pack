@@ -1,18 +1,22 @@
 [
-  {
-    "internalOreName": "matteroverdrive:tritanium_ore",
-    "meta": -1,
-    "overlay": "undergroundbiomes:blocks/overlays/custom/ore2_contrast3",
-	"color": "#307863",
-    "lightValue": -1,
-    "oreDirectories": [oreTritanium]
-  },
-  {
-    "internalOreName": "matteroverdrive:dilithium_ore",
-    "meta": -1,
-    "overlay": "undergroundbiomes:blocks/overlays/custom/ore2_contrast2",
-	"color": "#04e0bb",
-    "lightValue": -1,
-    "oreDirectories": [oreDilithium]
-  }
+   {
+      "internalOreName":"matteroverdrive:tritanium_ore",
+      "meta":-1,
+      "overlay":"undergroundbiomes:blocks/overlays/custom/ore2_contrast3",
+      "color":"#307863",
+      "lightValue":-1,
+      "oreDirectories":[
+         "oreTritanium"
+      ]
+   },
+   {
+      "internalOreName":"matteroverdrive:dilithium_ore",
+      "meta":-1,
+      "overlay":"undergroundbiomes:blocks/overlays/custom/ore2_contrast2",
+      "color":"#04e0bb",
+      "lightValue":-1,
+      "oreDirectories":[
+         "oreDilithium"
+      ]
+   }
 ]
