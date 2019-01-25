@@ -90,6 +90,10 @@ chestE.add(<enderstorage:ender_storage:0>);
 //
 #
 
+#Fixing MatterOverdrive's registration
+val plateT = <ore:plateTritanium>;
+plateT.add(<matteroverdrive:tritanium_plate>);
+
 #Graphite dust
 val dustGraphite = <ore:dustGraphite>;
 dustGraphite.add(<quantumflux:graphitedust>);
@@ -554,12 +558,15 @@ cotton.add(<plants2:generic:0>);
 val oreG = <ore:oreGraphite>;
 oreG.add(<quantumflux:graphiteore>);
 
-#Fixing MatterOverdrive#s registration
+#Fixing MatterOverdrive's registration
 val oreT = <ore:oreTritanium>;
 oreT.add(<matteroverdrive:tritanium_ore>);
 
 val oreD = <ore:oreDilithium>;
 oreD.add(<matteroverdrive:dilithium_ore>);
+
+val blockT = <ore:blockTritanium>;
+blockT.add(<matteroverdrive:tritanium_block>);
 
 #Soul sandstone
 val souls = <ore:soulSand>;
