@@ -45,6 +45,10 @@ mods.unidict.removalByKind.get("Crafting").remove("plate");
 //
 #
 
+#Removing Enchanting Plus' stuff
+recipes.removeByRecipeName("eplus:table");
+recipes.removeByRecipeName("eplus:upgrade");
+
 #Removing Infused Ring's stuff
 recipes.remove(<infusedring:magicalstone>);
 

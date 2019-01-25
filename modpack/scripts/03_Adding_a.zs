@@ -63,6 +63,10 @@ for item in sandstone.items{
 //
 #
 
+##Adding Enchanting Plus' stuff
+recipes.addShaped(<eplus:table_upgrade>, [[<ore:pearlEnderEye>, <minecraft:writable_book>, <ore:pearlEnderEye>],[<ore:ingotGold>, null, <ore:ingotGold>], [<ore:obsidian>, <ore:netherStar>, <ore:obsidian>]]);
+recipes.addShaped(<eplus:advanced_table>, [[<ore:pearlEnderEye>, <minecraft:writable_book>, <ore:pearlEnderEye>],[<ore:ingotGold>, <minecraft:enchanting_table>, <ore:ingotGold>], [<ore:obsidian>, <ore:netherStar>, <ore:obsidian>]]);
+
 #Adding Infused Ring's stuff
 recipes.addShaped(<infusedring:magicalstone>, [[<ore:dustMana>, <ore:dustBlaze>, <ore:dustMana>],[<ore:dustGlowstone>, <ore:gemDiamond>, <ore:dustGlowstone>], [<ore:dustMana>, <rftools:infused_enderpearl>, <ore:dustMana>]]);
 
