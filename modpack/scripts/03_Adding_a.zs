@@ -63,6 +63,15 @@ for item in sandstone.items{
 //
 #
 
+#Adding Infused Ring's stuff
+recipes.addShaped(<infusedring:magicalstone>, [[<ore:dustMana>, <ore:dustBlaze>, <ore:dustMana>],[<ore:dustGlowstone>, <ore:gemDiamond>, <ore:dustGlowstone>], [<ore:dustMana>, <rftools:infused_enderpearl>, <ore:dustMana>]]);
+
+#Adding Trinkets and Baubles' stuff
+recipes.addShaped(<xat:rubber_stone>, [[<randomthings:stableenderpearl>, <ore:blockSlime>, <randomthings:stableenderpearl>],[<ore:blockSlime>, <xat:glowing_ingot>, <ore:blockSlime>], [<randomthings:stableenderpearl>, <ore:blockSlime>, <randomthings:stableenderpearl>]]);
+recipes.addShaped(<xat:dragons_eye>, [[<xat:glow_ring>, <ore:pearlEnderEye>, <xat:glowing_ingot>],[<ore:pearlEnderEye>, <draconicevolution:dragon_heart>, <ore:pearlEnderEye>], [<xat:glowing_ingot>, <ore:pearlEnderEye>, <xat:glowing_ingot>]]);
+recipes.addShapeless(<xat:glowing_ingot>, [<ore:dustGlowstone>,<ore:dustMana>,<ore:dustGlowstone>,<ore:dustMana>,<ore:ingotMithril>,<ore:dustMana>,<ore:dustGlowstone>,<ore:dustMana>,<ore:dustGlowstone>]);
+recipes.addShapeless(<thermalfoundation:material:1028> * 2, [<ore:dustMithril>,<ore:dustMithril>,<ore:itemBlazePowder>,<ore:dustRedstone>]);
+
 #Adding Mystcraft's stuff
 recipes.addShaped(<mystcraft:blockinkmixer>, [[<ore:stone>, null, <ore:stone>],[<ore:stone>, <minecraft:glass_bottle>, <ore:stone>], [<ore:plankWood>, <ore:stone>, <ore:plankWood>]]);
 
@@ -113,6 +122,11 @@ recipes.addShaped(<magicbees:effectjar>, [[<ore:blockGlass>, <ore:slabWood>, <or
 //The next section adds things to technial mods
 //
 #
+
+#Adding QuantumFlux' stuff
+//Adding circuits back using AE2's inscriber
+//Inscriber.addRecipe(IItemStack output, IItemStack input, boolean inscribe, @Optional IItemStack topInput, @Optional IItemStack bottomInput);
+Inscriber.addRecipe(<quantumflux:craftingpiece:5>, <quantumflux:craftingpiece:6>, false, <quantumflux:craftingpiece:3>, <appliedenergistics2:material:23>);
 
 #Adding Exchangers' stuff
 recipes.addShaped(<exchangers:eio_exchanger_core_tier3>, [[<ore:gemDiamond>, <ore:ingotEndSteel>, <ore:gemDiamond>],[<forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}).onlyWithTag({FluidName: "ender_distillation", Amount: 1000}), <randomthings:stableenderpearl>, <forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}).onlyWithTag({FluidName: "ender_distillation", Amount: 1000})], [<ore:gemDiamond>, <ore:ingotEndSteel>, <ore:gemDiamond>]]);
@@ -510,9 +524,6 @@ recipes.addShaped(<chisel:temple> * 8, [[<ore:stone>, <ore:stone>, <ore:stone>],
 recipes.addShaped(<chisel:lavastone> * 8, [[<ore:stone>, <ore:stone>, <ore:stone>],[<ore:stone>, <minecraft:lava_bucket>, <ore:stone>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
 recipes.addShaped(<chisel:laboratory> * 8, [[<ore:stone>, <ore:stone>, <ore:stone>],[<ore:stone>, <minecraft:quartz>, <ore:stone>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
 recipes.addShaped(<chisel:factory> * 32, [[<ore:ingotIron>, <ore:stone>, <ore:ingotIron>],[<ore:stone>, null, <ore:stone>], [<ore:ingotIron>, <ore:stone>, <ore:ingotIron>]]);
-
-#Adding Secret Rooms' stuff
-recipes.addShaped(<secretroomsmod:secret_gate>, [[<ore:plankWood>, <secretroomsmod:camouflage_paste>, <ore:plankWood>],[<secretroomsmod:camouflage_paste>, <ore:dustEnderPearl>, <secretroomsmod:camouflage_paste>], [<ore:plankWood>, <ore:dustRedstone>, <ore:plankWood>]]);
 
 #Adding Decocraft's stuff
 recipes.addShaped(<props:tool>, [[<ore:blockWool>],[<props:props:508>], [<ore:stickWood>]]);

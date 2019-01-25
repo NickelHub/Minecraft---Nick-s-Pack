@@ -90,6 +90,16 @@ chestE.add(<enderstorage:ender_storage:0>);
 //
 #
 
+#Graphite dust
+val dustGraphite = <ore:dustGraphite>;
+dustGraphite.add(<quantumflux:graphitedust>);
+
+#ingotBrick
+val ingotBrick = <ore:ingotBrick>;
+ingotBrick.add(<tconstruct:materials:0>);
+ingotBrick.add(<tconstruct:materials:1>);
+ingotBrick.add(<tconstruct:materials:2>);
+
 #Bitumen
 val crystalCO = <ore:crystalCrudeOil>;
 crystalCO.add(<immersivepetroleum:material:0>);
@@ -539,6 +549,17 @@ cotton.add(<plants2:generic:0>);
 //The following section contains additional registrations for blocks
 //
 #
+
+#Graphite ore
+val oreG = <ore:oreGraphite>;
+oreG.add(<quantumflux:graphiteore>);
+
+#Fixing MatterOverdrive#s registration
+val oreT = <ore:oreTritanium>;
+oreT.add(<matteroverdrive:tritanium_ore>);
+
+val oreD = <ore:oreDilithium>;
+oreD.add(<matteroverdrive:dilithium_ore>);
 
 #Soul sandstone
 val souls = <ore:soulSand>;

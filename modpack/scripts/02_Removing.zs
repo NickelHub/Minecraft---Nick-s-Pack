@@ -45,6 +45,14 @@ mods.unidict.removalByKind.get("Crafting").remove("plate");
 //
 #
 
+#Removing Infused Ring's stuff
+recipes.remove(<infusedring:magicalstone>);
+
+#Removing Trinkts and Baubles stuff
+recipes.remove(<xat:glowing_ingot>);
+recipes.remove(<xat:dragons_eye>);
+recipes.remove(<xat:rubber_stone>);
+
 #Removing Mystcraft's stuff
 recipes.removeByRecipeName("mystcraft:inkmixer");
 
@@ -101,6 +109,9 @@ recipes.remove(<magicbees:manasteelscoop>);
 //The next section removes things from technical mods
 //
 #
+
+#Removing QuantumFlux' stuff
+recipes.remove(<quantumflux:craftingpiece:5>);
 
 #Removing Exchangers' stuff
 recipes.remove(<exchangers:eio_exchanger_core_tier1>);
@@ -722,9 +733,6 @@ recipes.removeByRecipeName("chisel:temple");
 recipes.removeByRecipeName("chisel:tyrian");
 recipes.removeByRecipeName("chisel:waterstone");
 recipes.removeByRecipeName("chisel:offsettool");
-
-#Removing Secret Rooms' stuff
-recipes.removeByRecipeName("secretroomsmod:secret_gate");
 
 #Removing Decocraft stuff
 recipes.removeByRecipeName("props:clay_green");
