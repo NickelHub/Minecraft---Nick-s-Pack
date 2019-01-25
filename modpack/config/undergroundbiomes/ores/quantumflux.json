@@ -1,10 +1,12 @@
 [
-  {
-    "internalOreName": "quantumflux:graphiteore",
-    "meta": -1,
-    "overlay": "undergroundbiomes:blocks/overlays/custom/ore_bright2",
-	"color": "#818489",
-    "lightValue": -1,
-    "oreDirectories": [oreGraphite]
-  }
+   {
+      "internalOreName":"quantumflux:graphiteore",
+      "meta":-1,
+      "overlay":"undergroundbiomes:blocks/overlays/custom/ore_bright2",
+      "color":"#818489",
+      "lightValue":-1,
+      "oreDirectories":[
+         "oreGraphite"
+      ]
+   }
 ]
