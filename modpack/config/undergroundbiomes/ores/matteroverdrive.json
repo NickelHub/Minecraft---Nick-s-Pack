@@ -5,7 +5,7 @@
     "overlay": "undergroundbiomes:blocks/overlays/custom/ore2_contrast3",
 	"color": "#307863",
     "lightValue": -1,
-    "oreDirectories": []
+    "oreDirectories": [oreTritanium]
   },
   {
     "internalOreName": "matteroverdrive:dilithium_ore",
@@ -13,6 +13,6 @@
     "overlay": "undergroundbiomes:blocks/overlays/custom/ore2_contrast2",
 	"color": "#04e0bb",
     "lightValue": -1,
-    "oreDirectories": []
+    "oreDirectories": [oreDilithium]
   }
 ]
