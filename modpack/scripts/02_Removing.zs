@@ -51,6 +51,7 @@ recipes.removeByRecipeName("eplus:upgrade");
 
 #Removing Infused Ring's stuff
 recipes.remove(<infusedring:magicalstone>);
+recipes.remove(<infusedring:infusingring>);
 
 #Removing Trinkts and Baubles stuff
 recipes.remove(<xat:glowing_ingot>);
