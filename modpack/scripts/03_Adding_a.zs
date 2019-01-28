@@ -74,7 +74,7 @@ recipes.addShaped(<infusedring:infusingring>, [[<ore:dustMana>, <ore:netherStar>
 #Adding Trinkets and Baubles' stuff
 recipes.addShaped(<xat:rubber_stone>, [[<randomthings:stableenderpearl>, <ore:blockSlime>, <randomthings:stableenderpearl>],[<ore:blockSlime>, <xat:glowing_ingot>, <ore:blockSlime>], [<randomthings:stableenderpearl>, <ore:blockSlime>, <randomthings:stableenderpearl>]]);
 recipes.addShaped(<xat:dragons_eye>, [[<xat:glow_ring>, <ore:pearlEnderEye>, <xat:glowing_ingot>],[<ore:pearlEnderEye>, <draconicevolution:dragon_heart>, <ore:pearlEnderEye>], [<xat:glowing_ingot>, <ore:pearlEnderEye>, <xat:glowing_ingot>]]);
-recipes.addShapeless(<xat:glowing_ingot>, [<ore:netherStar>,<ore:dustMana>,<ore:netherStar>,<ore:dustMana>,<ore:ingotMithril>,<ore:dustMana>,<ore:netherStar>,<ore:dustMana>,<ore:netherStar>]);
+recipes.addShapeless(<xat:glowing_ingot> * 5, [<ore:netherStar>,<ore:dustMana>,<ore:netherStar>,<ore:dustMana>,<ore:ingotMithril>,<ore:dustMana>,<ore:netherStar>,<ore:dustMana>,<ore:netherStar>]);
 recipes.addShapeless(<thermalfoundation:material:1028> * 2, [<ore:dustMithril>,<ore:dustMithril>,<ore:itemBlazePowder>,<ore:dustRedstone>]);
 
 #Adding Mystcraft's stuff

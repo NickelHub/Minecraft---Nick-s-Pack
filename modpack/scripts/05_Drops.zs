@@ -18,7 +18,8 @@ print("Initializing 05_Drops.zs");
 #
 
 val WSekelton = <entity:minecraft:wither_skeleton>;
-WSekelton.addDrop(<morebees:nether_starfragment> % 5);
+WSekelton.addDrop(<morebees:nether_starfragment> % 10);
+WSekelton.addDrop(<magicbees:resource:4> % 20);
 
 val Emerald = <entity:minecraft:villager>;
 Emerald.addDrop(<minecraft:emerald> % 10);
