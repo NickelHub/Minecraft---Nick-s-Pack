@@ -6,8 +6,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
-import crafttweaker.entity.IEntityDefinition;
-import crafttweaker.entity.IEntityDrop;
 
 print("Initializing 05_Hardness.zs");
 
