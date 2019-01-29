@@ -31,6 +31,8 @@ import mods.thermalexpansion.Sawmill;
 print("Initializing 03_Adding_a.zs");
 
 #Adding Minecraft's stuff
+#This recipe has disappeared
+recipes.addShapeless(<minecraft:stone_button> * 8, [<minecraft:stone>]);
 recipes.addShapeless(<minecraft:writable_book>, [<mystcraft:vial>,<minecraft:book>,<ore:feather>]);
 recipes.addShaped(<minecraft:stonebrick:3>, [[<ore:slabBricksStoneUnique>], [<ore:slabBricksStoneUnique>]]);
 recipes.addShaped(<minecraft:stonebrick:0>, [[<ore:slabBricksStoneUnique>, <ore:slabBricksStoneUnique>]]);

@@ -25,10 +25,6 @@ print("Initializing 02_Removing.zs");
 #Removing Minecraft's stuff
 recipes.remove(<minecraft:writable_book>);
 recipes.removeByRecipeName("minecraft:chiseled_stonebrick");
-/*
-//This is commented out until all sandstone can be inserted in the machine
-mods.thermalexpansion.Transposer.removeFillRecipe(<minecraft:end_stone>, <liquid:liquidcoralium>);
-*/
 
 #Removing tweaked recipes
 recipes.removeByRecipeName("endercore:slabcobblestone_to_cobblestone");
@@ -199,8 +195,6 @@ recipes.removeByRecipeName("bigreactors:turbinehousing");
 recipes.removeByRecipeName("bigreactors:turbinehousingcores");
 recipes.removeByRecipeName("bigreactors:reactorcasingcores");
 mods.jei.JEI.removeAndHide(<bigreactors:reactorrednetport>);
-mods.jei.JEI.removeAndHide(<bigreactors:reactorcomputerport>);
-mods.jei.JEI.removeAndHide(<bigreactors:turbinecomputerport>);
 
 #Removing RFTools' stuff
 recipes.remove(<rftoolsdim:dimension_enscriber>);

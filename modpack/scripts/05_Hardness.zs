@@ -19,6 +19,13 @@ print("Initializing 05_Hardness.zs");
 val ironDoor = <malisisdoors:big_door_iron_3x3>;
 ironDoor.hardness = 5.0;
 
+#Making netherrack less annoying
+<minecraft:netherrack>.hardness = 1.5;
+<biomesoplenty:grass:6>.hardness = 1.5;
+<biomesoplenty:grass:8>.hardness = 1.5;
+<chisel:netherrack:*>.hardness = 1.5;
+<nex:netherrack:*>.hardness = 1.5;
+<nex:netherrack_path:*>.hardness = 1.5;
 
 print("Initialized 05_Hardness.zs");
 
