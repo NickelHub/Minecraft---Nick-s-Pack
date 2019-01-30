@@ -158,7 +158,6 @@
 |   ThermalExpansion-1.12.2-5.5.2.39-universal.jar
 |   ThermalFoundation-1.12.2-2.6.1.22-universal.jar
 |   TinkersComplement-1.12.2-0.3.0.jar
-|   tinkersdefense-1.4.2.21.1.jar
 |   TinkersExtras-1.12.2-1.0.5.jar
 |   Tinkers_ Addons-1.12.1-1.0.7.jar
 |   TinkerToolLeveling-1.12.2-1.1.0.jar
