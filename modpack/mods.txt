@@ -24,12 +24,13 @@
 |   BrandonsCore-1.12.2-2.4.9.195-universal.jar
 |   BringMeTheRings-0.4.jar
 |   Cannibalism-5.2.0-1.12.2.jar
+|   Carpenter's Blocks v3.4.0-poc.5 - MC 1.12.2.jar
 |   Chameleon-1.12-4.1.3.jar
 |   ChestTransporter-1.12.2-2.8.8.jar
 |   ChickenChunks-1.12.2-2.4.1.73-universal.jar
 |   Chisel-MC1.12.2-0.2.1.35.jar
 |   chiselsandbits-14.30.jar
-|   Clumps-3.1.1.jar
+|   Clumps-3.1.2.jar
 |   CodeChickenLib-1.12.2-3.2.2.353-universal.jar
 |   CoFHCore-1.12.2-4.6.1.22-universal.jar
 |   CoFHWorld-1.12.2-1.3.0.6-universal.jar
@@ -44,10 +45,10 @@
 |   Decocraft-2.6.2_1.12.2.jar
 |   Draconic-Evolution-1.12.2-2.3.18.329-universal.jar
 |   EnchantingPlus-1.12.2-5.0.176.jar
-|   EnderCore-1.12.2-0.5.43.jar
-|   EnderIO-1.12.2-5.0.39.jar
-|   EnderIO-endergy-1.12.2-5.0.39.jar
-|   EnderIO-zoo-1.12.2-5.0.39.jar
+|   EnderCore-1.12.2-0.5.45.jar
+|   EnderIO-1.12.2-5.0.40.jar
+|   EnderIO-endergy-1.12.2-5.0.40.jar
+|   EnderIO-zoo-1.12.2-5.0.40.jar
 |   EnderStorage-1.12.2-2.4.5.135-universal.jar
 |   Engineered+Golems-1.0.jar
 |   Exchangers-1.12.2-2.8.jar
@@ -62,6 +63,7 @@
 |   foamfix-0.10.3-1.12.2.jar
 |   forestry_1.12.2-5.8.2.382.jar
 |   Forgelin-1.8.2.jar
+|   furniture-6.2.0-1.12.2.jar
 |   GasConduits-1.12.2-1.0.0.jar
 |   gendustry-1.6.5.8-mc1.12.2.jar
 |   GraveStone-1.12.2-Extended-1.3.5.1.jar
@@ -83,13 +85,17 @@
 |   itemzoom_1.12.2-1.11.jar
 |   JAOPCA-1.12.2-2.2.8.100.jar
 |   jeiintegration_1.12.2-1.5.1.36.jar
-|   jei_1.12.2-4.14.4.263.jar
+|   jei_1.12.2-4.14.4.264.jar
 |   journeymap-1.12.2-5.5.3.jar
 |   JustEnoughEnergistics-1.12.2-1.0.6.jar
 |   JustEnoughIDs-1.0.2-26.jar
 |   LibEx-1.12.2-1.0.8.jar
 |   Login_Shield-1.12.2-3-g7c6e7ac.jar
 |   MagicBees-1.12.2-3.1.10.jar
+|   malisisblocks-1.12.2-6.1.0.jar
+|   malisiscore-1.12.2-6.4.0.jar
+|   malisisdoors-1.12.2-7.3.0.jar
+|   malisisswitches-1.12.2-5.1.0.jar
 |   Mantle-1.12-1.3.3.39.jar
 |   MatterOverdrive-1.12.2-0.6.3.13-universal.jar
 |   mcjtylib-1.12-3.1.1.jar
@@ -98,7 +104,7 @@
 |   MetalChests-v4.0.1.g01955d6.jar
 |   moartinkers-0.6.0.jar
 |   modnametooltip_1.12.2-1.10.0.jar
-|   modtweaker-4.0.15.jar
+|   modtweaker-4.0.16.jar
 |   morebees-1.12.2-2.0.1.jar
 |   moremystcraft-1.12.2-0.4.5.jar
 |   Morpheus-1.12.2-3.5.106.jar
@@ -110,8 +116,8 @@
 |   NuclearCraft-2.13e--1.12.2.jar
 |   oeintegration-2.3.4.jar
 |   OpenBlocks-1.12.2-1.8.jar
+|   OpenComputers-MC1.12.2-1.7.3.146.jar
 |   OpenModsLib-1.12.2-0.12.1.jar
-|   OptiFine_1.12.2_HD_U_E3.jar
 |   oreberries-1.12.x-0.5.0.jar
 |   OreExcavation-1.4.133.jar
 |   p455w0rdslib-1.12.2-2.0.36.jar
@@ -119,12 +125,13 @@
 |   Pewter-1.4.3.jar
 |   Placebo-1.12.2-1.5.1.jar
 |   Plants-1.12.2-2.10.4.jar
-|   plustic-7.0.0.0.jar
+|   plustic-7.0.2.0.jar
 |   pmp-1.12.1.jar
+|   preview_OptiFine_1.12.2_HD_U_E4_pre1.jar
 |   PTRLib-1.0.3.jar
 |   quantumflux-1.12.2-2.0.17.jar
 |   railcraft-12.0.0-beta-4.jar
-|   randompatches-1.12.2-1.12.0.2.jar
+|   randompatches-1.12.2-1.12.1.0.jar
 |   RandomThings-MC1.12.2-4.2.5.jar
 |   RebornCore-1.12.2-3.13.2.411-universal.jar
 |   RedstoneFlux-1.12-2.1.0.6-universal.jar
@@ -138,8 +145,9 @@
 |   SolarFluxReborn_1.12.2-4.32r.jar
 |   spatialservermod-1.3.jar
 |   StorageDrawers-1.12.2-5.3.8.jar
+|   Surge-1.12.2-2.0.77.jar
 |   TConstruct-1.12.2-2.12.0.115.jar
-|   TechReborn-1.12.2-2.20.4.906-universal.jar
+|   TechReborn-1.12.2-2.20.5.909-universal.jar
 |   tesla-core-lib-1.12.2-1.0.15.jar
 |   TexFix+V-1.12-4.0.jar
 |   Thaumcraft-1.12.2-6.1.BETA26-Hotfix-1.jar
@@ -150,13 +158,14 @@
 |   ThermalExpansion-1.12.2-5.5.2.39-universal.jar
 |   ThermalFoundation-1.12.2-2.6.1.22-universal.jar
 |   TinkersComplement-1.12.2-0.3.0.jar
+|   tinkersdefense-1.4.2.21.1.jar
 |   TinkersExtras-1.12.2-1.0.5.jar
 |   Tinkers_ Addons-1.12.1-1.0.7.jar
 |   TinkerToolLeveling-1.12.2-1.1.0.jar
 |   ToMeTinkersMC1.12.2-1.1.jar
 |   topaddons-1.12.2-1.10.1.jar
 |   torchmaster_1.12.2-1.7.1.74.jar
-|   Trinkets-and-Baubles-1.12.2-0.21.jar
+|   Trinkets-and-Baubles-1.12.2-0.22.jar
 |   UndergroundBiomesConstructs-1.12-1.3.1.jar
 |   UniDict-1.12.2-2.9.2.jar
 |   UnlimitedChiselWorks-0.2.0.jar
@@ -164,6 +173,6 @@
 |   WanionLib-1.12.2-2.2.jar
 |   Waystones_1.12.2-4.0.67.jar
 |   WirelessCraftingTerminal-1.12.2-3.11.88.jar
-|   WitherSkeletonTweaks-1.12.2-2.6.3.jar
 |   WrapUp-1.12-1.1.3.jar
 |   zerocore-1.12-0.1.2.3.jar
+|   [1.12.2]+SecurityCraft+v1.8.10.jar
