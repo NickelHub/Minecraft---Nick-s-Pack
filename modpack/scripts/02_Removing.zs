@@ -696,6 +696,12 @@ mods.jei.JEI.removeAndHide(<plustic:battery_cell>);
 //
 #
 
+#Removing Malisis' mods' stuff
+recipes.remove(<malisisdoors:wood_sliding_door>);
+recipes.remove(<malisisdoors:shoji_door>);
+recipes.remove(<malisisdoors:saloon>);
+recipes.remove(<malisisdoors:garage_door>);
+
 #Removing Random Things' stuff
 recipes.remove(<randomthings:idcard>);
 recipes.removeByRecipeName("randomthings:fertilizeddirt");

@@ -16,6 +16,9 @@ print("Initializing 04_Replacing.zs");
 //
 #
 
+#Malisis Mods
+recipes.replaceAllOccurences(<minecraft:ender_pearl>, <randomthings:stableenderpearl>, <malisisblocks:vanishing_block:*>);
+
 #mushroom
 recipes.replaceAllOccurences(<ore:foodMushroom>, <ore:listAllmushroom>);
 
@@ -84,6 +87,16 @@ recipes.replaceAllOccurences(<ore:listAllegg>, <ore:egg>);
 //
 #
 
+#Stone buttons
+recipes.replaceAllOccurences(<minecraft:stone_button>, <ore:buttonStone>);
+
+#Wood buttons
+recipes.replaceAllOccurences(<minecraft:wooden_button>, <ore:buttonWooden>);
+
+#Workbenches
+recipes.replaceAllOccurences(<ore:crafterWood>, <ore:workbench>);
+recipes.replaceAllOccurences(<ore:craftingTableWood>, <ore:workbench>);
+
 #Ender chests
 recipes.replaceAllOccurences(<minecraft:ender_chest>, <ore:chestEnder>);
 
@@ -115,6 +128,7 @@ recipes.replaceAllOccurences(<minecraft:redstone_block>, <ore:blockRedstone>);
 recipes.replaceAllOccurences(<minecraft:lapis_block>, <ore:blockLapis>);
 recipes.replaceAllOccurences(<minecraft:quartz_block>, <ore:blockQuartz>);
 recipes.replaceAllOccurences(<minecraft:end_stone>, <ore:endstone>);
+recipes.replaceAllOccurences(<minecraft:iron_block>, <ore:blockIron>);
 
 #Stone Slabs
 recipes.replaceAllOccurences(<minecraft:stone_slab:0>, <ore:slabStone>);

@@ -53,6 +53,47 @@ advCase.add(<nuclearcraft:part:10>);
 //
 #
 
+#Stone Buttons
+val SButton = <ore:buttonStone>;
+SButton.add(<minecraft:stone_button>);
+SButton.add(<abyssalcraft:dsbutton>);
+SButton.add(<abyssalcraft:abybutton>);
+SButton.add(<abyssalcraft:cstonebutton>);
+SButton.add(<undergroundbiomes:igneous_stone_button:*>);
+SButton.add(<undergroundbiomes:metamorphic_stone_button:*>);
+SButton.add(<undergroundbiomes:sedimentary_stone_button:*>);
+
+#Cobblestone Buttons
+val CButton = <ore:buttonCobblestone>;
+CButton.add(<undergroundbiomes:igneous_cobble_button:*>);
+CButton.add(<undergroundbiomes:metamorphic_cobble_button:*>);
+
+#Wooden Button
+val WButton = <ore:buttonWooden>;
+WButton.add(<minecraft:wooden_button>);
+WButton.add(<abyssalcraft:dltbutton>);
+WButton.add(<natura:maple_button>);
+WButton.add(<natura:silverbell_button>);
+WButton.add(<natura:amaranth_button>);
+WButton.add(<natura:tiger_button>);
+WButton.add(<natura:willow_button>);
+WButton.add(<natura:eucalyptus_button>);
+WButton.add(<natura:hopseed_button>);
+WButton.add(<natura:sakura_button>);
+WButton.add(<natura:redwood_button>);
+WButton.add(<natura:ghostwood_button>);
+WButton.add(<natura:darkwood_button>);
+WButton.add(<natura:fusewood_button>);
+WButton.add(<natura:bloodwood_button>);
+
+#Netherrack button
+val NButton = <ore:buttonNetherrack>;
+NButton.add(<natura:nether_button>);
+
+#More crafting tables
+val craftingT = <ore:workbench>;
+craftingT.add(<randomthings:customworkbench>);
+
 val drawer = <ore:drawerBasic>;
 drawer.add(<storagedrawers:customdrawers:*>);
 
@@ -795,6 +836,8 @@ stone.add(<chisel:marble:*>);
 stone.add(<chisel:marble1:*>);
 stone.add(<chisel:marble2:*>);
 stone.add(<chisel:marblepillar:*>);
+stone.add(<abyssalcraft:stone:0>);
+stone.add(<abyssalcraft:stone:1>);
 
 val cobble = <ore:cobblestone>;
 cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_0:*>);

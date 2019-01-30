@@ -498,6 +498,12 @@ recipes.addShapeless(<conarm:invisible_ink>, [<minecraft:potion>.withTag({Potion
 //
 #
 
+#Adding Malisis' mods' stuff
+recipes.addShaped(<malisisdoors:garage_door>, [[<ore:plankWood>, <ore:blockGlassColorless>, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+recipes.addShaped(<malisisdoors:saloon> * 3, [[<ore:plankWood>, <ore:plankWood>],[<ore:stickWood>, <ore:stickWood>], [<ore:plankWood>, <ore:plankWood>]]);
+recipes.addShaped(<malisisdoors:shoji_door> * 3, [[<ore:plankWood>, <ore:paper>],[<ore:plankWood>, <ore:paper>], [<ore:plankWood>, <ore:paper>]]);
+recipes.addShaped(<malisisdoors:wood_sliding_door> * 3, [[<ore:plankWood>, <ore:blockGlassColorless>],[<ore:plankWood>, <ore:blockGlassColorless>], [<ore:plankWood>, <ore:blockGlassColorless>]]);
+
 #Adding Random Things' stuff
 recipes.addShapeless(<randomthings:idcard>, [<mystcraft:vial>,<ore:paper>]);
 recipes.addShaped(<randomthings:fertilizeddirt> * 2, [[<minecraft:rotten_flesh>, <ore:fertilizer>, <minecraft:rotten_flesh>],[<ore:fertilizer>, <ore:dirt>, <ore:fertilizer>], [<minecraft:rotten_flesh>, <ore:fertilizer>, <minecraft:rotten_flesh>]]);
