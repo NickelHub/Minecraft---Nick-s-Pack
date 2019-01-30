@@ -95,7 +95,6 @@
 |   malisisblocks-1.12.2-6.1.0.jar
 |   malisiscore-1.12.2-6.4.0.jar
 |   malisisdoors-1.12.2-7.3.0.jar
-|   malisisswitches-1.12.2-5.1.0.jar
 |   Mantle-1.12-1.3.3.39.jar
 |   MatterOverdrive-1.12.2-0.6.3.13-universal.jar
 |   mcjtylib-1.12-3.1.1.jar
