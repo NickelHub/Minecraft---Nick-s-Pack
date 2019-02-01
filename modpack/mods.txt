@@ -17,9 +17,9 @@
 |   bedpatch-2.2-1.12.2.jar
 |   BetterPlacement-1.0.0-1.jar
 |   BiomesOPlenty-1.12.2-7.0.1.2425-universal.jar
-|   BloodMagic-1.12.2-2.3.3-101.jar
+|   BloodMagic-1.12.2-2.4.0-102.jar
 |   bloodtinker-1.0.5.jar
-|   Bookshelf-1.12.2-2.3.570.jar
+|   Bookshelf-1.12.2-2.3.574.jar
 |   Born+In+A+Barn+V1.8-1.12-1.1.jar
 |   BrandonsCore-1.12.2-2.4.9.195-universal.jar
 |   BringMeTheRings-0.4.jar
@@ -42,6 +42,7 @@
 |   CraftTweaker2-1.12-4.1.14.jar
 |   creeperconfetti-1.4.2.jar
 |   CTM-MC1.12.2-0.3.3.22.jar
+|   Deadly+Monsters+1.71.jar
 |   Decocraft-2.6.2_1.12.2.jar
 |   Draconic-Evolution-1.12.2-2.3.18.329-universal.jar
 |   EnchantingPlus-1.12.2-5.0.176.jar
@@ -50,7 +51,7 @@
 |   EnderIO-endergy-1.12.2-5.0.40.jar
 |   EnderIO-zoo-1.12.2-5.0.40.jar
 |   EnderStorage-1.12.2-2.4.5.135-universal.jar
-|   Engineered+Golems-1.0.jar
+|   Engineered+Golems-1.1.jar
 |   Exchangers-1.12.2-2.8.jar
 |   Exotic+Birds+1.12.2-2.2.1.jar
 |   ExtraBitManipulation-1.12.2-3.4.1.jar
@@ -108,6 +109,7 @@
 |   moremystcraft-1.12.2-0.4.5.jar
 |   Morpheus-1.12.2-3.5.106.jar
 |   MTLib-3.0.5.jar
+|   multimob-1.0.5.jar
 |   mystcraft-1.12.2-0.13.7.02.jar
 |   natura-1.12.2-4.3.2.66.jar
 |   NetherEx-1.12.2-2.0.8.jar
@@ -124,14 +126,15 @@
 |   Pewter-1.4.3.jar
 |   Placebo-1.12.2-1.5.1.jar
 |   Plants-1.12.2-2.10.4.jar
-|   plustic-7.0.2.0.jar
+|   plustic-7.0.2.1.jar
 |   pmp-1.12.1.jar
 |   preview_OptiFine_1.12.2_HD_U_E4_pre1.jar
+|   primitivemobs-1.2.3a.jar
 |   PTRLib-1.0.3.jar
 |   quantumflux-1.12.2-2.0.17.jar
 |   railcraft-12.0.0-beta-4.jar
 |   randompatches-1.12.2-1.12.1.0.jar
-|   RandomThings-MC1.12.2-4.2.5.jar
+|   RandomThings-MC1.12.2-4.2.6.jar
 |   RebornCore-1.12.2-3.13.2.411-universal.jar
 |   RedstoneFlux-1.12-2.1.0.6-universal.jar
 |   redstonepaste-mc1.12-1.7.5.jar
@@ -152,7 +155,7 @@
 |   Thaumcraft-1.12.2-6.1.BETA26-Hotfix-1.jar
 |   ThaumicTerminal-1.0.10.jar
 |   The+Beneath-1.12.2-1.4.2.jar
-|   theoneprobe-1.12-1.4.27.jar
+|   theoneprobe-1.12-1.4.28.jar
 |   ThermalDynamics-1.12.2-2.5.3.16-universal.jar
 |   ThermalExpansion-1.12.2-5.5.2.39-universal.jar
 |   ThermalFoundation-1.12.2-2.6.1.22-universal.jar
