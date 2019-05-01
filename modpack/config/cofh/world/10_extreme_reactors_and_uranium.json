@@ -9,8 +9,7 @@
          "generator":{
             "block":[
                {
-                  "name":"bigreactors:brore",
-                  "metadata":0
+                  "name":"bigreactors:oreyellorite"
                }
             ],
             "material":"stone",
@@ -54,13 +53,12 @@
             ]
          }
       },
-      "benetoite":{
+      "benitoite":{
          "distribution":"uniform",
          "generator":{
             "block":[
                {
-                  "name":"bigreactors:brore",
-                  "metadata":2
+                  "name":"bigreactors:orebenitoite"
                }
             ],
             "material":[
@@ -91,8 +89,7 @@
          "generator":{
             "block":[
                {
-                  "name":"bigreactors:brore",
-                  "metadata":1
+                  "name":"bigreactors:oreanglesite"
                }
             ],
             "material":"minecraft:end_stone",
