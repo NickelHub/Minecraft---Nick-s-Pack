@@ -1,5 +1,0 @@
-|    AmbientSounds_v2.3_mc1.12.2.jar
-|    BetterFoliage-MC1.12-2.2.0.jar
-|    DynamicSurroundings-1.12.2-3.5.4.3.jar
-|    OreLib-1.12.2-3.5.2.2.jar
-|    SoundFilters-0.10_for_1.12.jar
