@@ -467,33 +467,6 @@
          1
       ]
    },
-   "Amethyst":{
-      "color":"#e58edb",
-      "smeltingResult":{
-         "color":"#e58edb",
-         "oredictNames":[
-            "nuggetAmethyst"
-         ],
-         "ingotNames":[
-            "nex:amethyst_crystal"
-         ]
-      },
-      "rarity":8,
-      "maxHeight":32,
-      "replaceBlocks":[
-         "minecraft:netherrack",
-         "biomesoplenty:grass:6",
-         "biomesoplenty:grass:8",
-         "nex:netherrack:0",
-         "nex:netherrack:1",
-         "nex:netherrack:2",
-         "nex:netherrack:3",
-         "nex:hyphae"
-      ],
-      "dimensions":[
-         -1
-      ]
-   },
    "Abyssalnite":{
       "color":"#4b028e",
       "smeltingResult":"abyssalcraft:ingotnugget",
@@ -520,119 +493,11 @@
          50
       ]
    },
-   "Emerald":{
-      "color":"#0bb705",
-      "smeltingResult":"thermalfoundation:material:17",
-      "rarity":0
-   },
-   "Topaz":{
-      "color":"#ea9009",
-      "smeltingResult":{
-         "color":"#ea9009",
-         "oredictNames":[
-            "nuggetTopaz"
-         ],
-         "ingotNames":[
-            "biomesoplenty:gem:3"
-         ]
-      },
-      "rarity":0
-   },
-   "Tanzanite":{
-      "color":"#7108a5",
-      "smeltingResult":{
-         "color":"#7108a5",
-         "oredictNames":[
-            "nuggetTanzanite"
-         ],
-         "ingotNames":[
-            "biomesoplenty:gem:4"
-         ]
-      },
-      "rarity":0
-   },
-   "Malachite":{
-      "color":"#5dad7e",
-      "smeltingResult":{
-         "color":"#5dad7e",
-         "oredictNames":[
-            "nuggetMalachite"
-         ],
-         "ingotNames":[
-            "biomesoplenty:gem:5"
-         ]
-      },
-      "rarity":0
-   },
-   "Apatite":{
-      "color":"#3491af",
-      "smeltingResult":{
-         "color":"#3491af",
-         "oredictNames":[
-            "nuggetApatite"
-         ],
-         "ingotNames":[
-            "forestry:apatite"
-         ]
-      },
-      "rarity":0
-   },
-   "Ruby":{
-      "color":"#960117",
-      "smeltingResult":{
-         "color":"#960117",
-         "oredictNames":[
-            "nuggetRuby"
-         ],
-         "ingotNames":[
-            "techreborn:gem:0"
-         ]
-      },
-      "rarity":0
-   },
-   "Sapphire":{
-      "color":"#013d96",
-      "smeltingResult":{
-         "color":"#013d96",
-         "oredictNames":[
-            "nuggetSapphire"
-         ],
-         "ingotNames":[
-            "techreborn:gem:1"
-         ]
-      },
-      "rarity":0
-   },
-   "Peridot":{
-      "color":"#179601",
-      "smeltingResult":{
-         "color":"#179601",
-         "oredictNames":[
-            "nuggetPeridot"
-         ],
-         "ingotNames":[
-            "techreborn:gem:2"
-         ]
-      },
-      "rarity":0
-   },
-   "Amber":{
-      "color":"#d19706",
-      "smeltingResult":{
-         "color":"#d19706",
-         "oredictNames":[
-            "nuggetAmber"
-         ],
-         "ingotNames":[
-            "thaumcraft:amber"
-         ]
-      },
-      "rarity":0
-   },
    "Diamond":{
       "color":"#59dbdb",
       "smeltingResult":"thermalfoundation:material:16",
-      "rarity":0
+      "rarity":12,
+      "maxHeight":12
    },
    "DraconiumAwakened":{
       "bushName":"Awakened Draconium Oreberry Bush",
