@@ -31,6 +31,7 @@
             "restriction":"whitelist",
             "value":[
                0,
+               28885,
                -9999
             ]
          }
@@ -87,6 +88,7 @@
             "restriction":"whitelist",
             "value":[
                0,
+               28885,
                -9999
             ]
          }
@@ -134,6 +136,7 @@
             "restriction":"whitelist",
             "value":[
                0,
+               28885,
                -9999
             ]
          }
@@ -173,6 +176,7 @@
             "restriction":"whitelist",
             "value":[
                0,
+               28885,
                -9999
             ]
          }

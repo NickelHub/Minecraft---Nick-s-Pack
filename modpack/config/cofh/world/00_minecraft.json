@@ -19,7 +19,8 @@
          "dimension":{
             "restriction":"whitelist",
             "value":[
-               0
+               0,
+               -9999
             ]
          }
       },
@@ -42,7 +43,8 @@
          "dimension":{
             "restriction":"whitelist",
             "value":[
-               0
+               0,
+               -9999
             ]
          }
       },
@@ -61,7 +63,8 @@
          "dimension":{
             "restriction":"whitelist",
             "value":[
-               0
+               0,
+               -9999
             ]
          }
       },
@@ -156,6 +159,7 @@
             "restriction":"whitelist",
             "value":[
                0,
+               28885,
                -9999
             ]
          }
@@ -176,6 +180,7 @@
             "restriction":"whitelist",
             "value":[
                0,
+               28885,
                -9999
             ]
          }
@@ -196,6 +201,7 @@
             "restriction":"whitelist",
             "value":[
                0,
+               28885,
                -9999
             ]
          }
@@ -216,6 +222,7 @@
             "restriction":"whitelist",
             "value":[
                0,
+               28885,
                -9999
             ]
          }
@@ -236,6 +243,7 @@
             "restriction":"whitelist",
             "value":[
                0,
+               28885,
                -9999
             ]
          }
@@ -256,6 +264,7 @@
             "restriction":"whitelist",
             "value":[
                0,
+               28885,
                -9999
             ]
          }
@@ -294,6 +303,7 @@
             "restriction":"whitelist",
             "value":[
                0,
+               28885,
                -9999
             ]
          }
@@ -342,6 +352,7 @@
             "restriction":"whitelist",
             "value":[
                0,
+               28885,
                -9999
             ]
          }
@@ -366,7 +377,9 @@
          "dimension":{
             "restriction":"whitelist",
             "value":[
-               0
+               0,
+               28885,
+               -9999
             ]
          }
       },
@@ -390,7 +403,9 @@
          "dimension":{
             "restriction":"whitelist",
             "value":[
-               0
+               0,
+               28885,
+               -9999
             ]
          }
       },
