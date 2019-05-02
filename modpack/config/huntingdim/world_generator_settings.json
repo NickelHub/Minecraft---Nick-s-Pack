@@ -18,7 +18,7 @@
 	"seaLevel": 63,
 	"useCaves": true,
 	"useDungeons": true,
-	"dungeonChance": 30,
+	"dungeonChance": 50,
 	"useStrongholds": false,
 	"useVillages": false,
 	"useMineShafts": true,
