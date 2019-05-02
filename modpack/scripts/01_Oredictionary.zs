@@ -488,8 +488,10 @@ val egg = <ore:egg>;
 #Ordicting bird meat
 val listallrawbird = <ore:listAllbirdraw>;
 listallrawbird.add(<exoticbirds:birdmeat:0>);
+listallrawbird.add(<betteranimalsplus:pheasantraw>);
 val listallcookedbird = <ore:listAllbirdcooked>;
 listallcookedbird.add(<exoticbirds:cooked_birdmeat>);
+listallcookedbird.add(<betteranimalsplus:pheasantcooked>);
 
 #More generic meat
 val listallrawmeat = <ore:listAllmeatraw>;
