@@ -129,6 +129,8 @@ recipes.replaceAllOccurences(<minecraft:lapis_block>, <ore:blockLapis>);
 recipes.replaceAllOccurences(<minecraft:quartz_block>, <ore:blockQuartz>);
 recipes.replaceAllOccurences(<minecraft:end_stone>, <ore:endstone>);
 recipes.replaceAllOccurences(<minecraft:iron_block>, <ore:blockIron>);
+recipes.replaceAllOccurences(<minecraft:gravel>, <ore:gravel>);
+recipes.replaceAllOccurences(<minecraft:sand>, <ore:sand>);
 
 #Stone Slabs
 recipes.replaceAllOccurences(<minecraft:stone_slab:0>, <ore:slabStone>);

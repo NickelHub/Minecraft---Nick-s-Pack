@@ -41,18 +41,9 @@ mods.unidict.removalByKind.get("Crafting").remove("plate");
 //
 #
 
-#Removing Enchanting Plus' stuff
-recipes.removeByRecipeName("eplus:table");
-recipes.removeByRecipeName("eplus:upgrade");
-
 #Removing Infused Ring's stuff
 recipes.remove(<infusedring:magicalstone>);
 recipes.remove(<infusedring:infusingring>);
-
-#Removing Trinkts and Baubles stuff
-recipes.remove(<xat:glowing_ingot>);
-recipes.remove(<xat:dragons_eye>);
-recipes.remove(<xat:rubber_stone>);
 
 #Removing Mystcraft's stuff
 recipes.removeByRecipeName("mystcraft:inkmixer");
@@ -127,9 +118,6 @@ recipes.remove(<exchangers:mekanism_exchanger_core_tier3>);
 recipes.remove(<exchangers:ie_exchanger_core_tier1>);
 recipes.remove(<exchangers:ie_exchanger_core_tier2>);
 recipes.remove(<exchangers:ie_exchanger_core_tier3>);
-
-#Removing Solar Flux Reborn's stuff
-recipes.remove(<solarflux:block_charging_upgrade>);
 
 #Removing MatterOverdrive's stuff
 recipes.remove(<matteroverdrive:isolinear_circuit>);
@@ -758,27 +746,6 @@ recipes.removeByRecipeName("extrautils2:terraformer_controller");
 recipes.removeByRecipeName("extrautils2:porcupine");
 recipes.removeByRecipeName("extrautils2:teleporter");
 
-#Removing Open Blocks' stuff
-mods.jei.JEI.removeAndHide(<openblocks:generic_unstackable>);
-recipes.remove(<openblocks:elevator:*>);
-recipes.removeByRecipeName("openblocks:elevator_rotating_0");
-recipes.removeByRecipeName("openblocks:elevator_rotating_2");
-recipes.removeByRecipeName("openblocks:elevator_rotating_4");
-recipes.removeByRecipeName("openblocks:elevator_rotating_6");
-recipes.removeByRecipeName("openblocks:elevator_rotating_8");
-recipes.removeByRecipeName("openblocks:elevator_rotating_10");
-recipes.removeByRecipeName("openblocks:elevator_rotating_12");
-recipes.removeByRecipeName("openblocks:elevator_rotating_14");
-recipes.removeByRecipeName("openblocks:elevator_rotating_16");
-recipes.removeByRecipeName("openblocks:elevator_rotating_18");
-recipes.removeByRecipeName("openblocks:elevator_rotating_20");
-recipes.removeByRecipeName("openblocks:elevator_rotating_22");
-recipes.removeByRecipeName("openblocks:elevator_rotating_24");
-recipes.removeByRecipeName("openblocks:elevator_rotating_26");
-recipes.removeByRecipeName("openblocks:elevator_rotating_28");
-recipes.removeByRecipeName("openblocks:elevator_rotating_30");
-recipes.removeByRecipeName("openblocks:luggage_0");
-
 #Removing Storage Drawers' stuff
 recipes.removeByRecipeName("storagedrawers:controller");
 recipes.removeByRecipeName("storagedrawers:controller_slave");
@@ -786,11 +753,6 @@ recipes.removeByRecipeName("storagedrawers:compacting_drawer");
 
 #Removing Compact Drawers' stuff
 recipes.removeByRecipeName("compactdrawers:compact_drawer_2by1");
-
-#Removing Torchmaster's stuff
-recipes.removeByRecipeName("torchmaster:mega_torch");
-recipes.removeByRecipeName("torchmaster:terrain_lighter");
-recipes.removeByRecipeName("torchmaster:dread_lamp");
 
 #Removing Zero Core's stuff
 mods.jei.JEI.removeAndHide(<zerocore:debugtool>);
