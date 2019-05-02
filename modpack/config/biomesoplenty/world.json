@@ -2,7 +2,7 @@
 
 {
     "landScheme": "CONTINENTS",
-    "tempScheme": "large_zones",
+    "tempScheme": "medium_zones",
     "rainScheme": "medium_zones",
     "biomeSize": "large",
     "amplitude": 1.0,
