@@ -57,25 +57,6 @@
    },
    {
       "mode":"ADD",
-      "result":"randomthings:stableenderpearl,40",
-      "catalyst":"actuallyadditions:block_misc,1,6",
-      "energy":80000,
-      "tier":0,
-      "ingredients":[
-         "ore:obsidian",
-         "ore:obsidian",
-         "actuallyadditions:block_misc,1,6",
-         "actuallyadditions:block_misc,1,6",
-         "actuallyadditions:block_crystal,1,1",
-         "actuallyadditions:block_crystal,1,1",
-         "actuallyadditions:block_misc,1,6",
-         "actuallyadditions:block_misc,1,6",
-         "ore:obsidian",
-         "ore:obsidian"
-      ]
-   },
-   {
-      "mode":"ADD",
       "result":"ae2wtlib:infinity_booster_card",
       "catalyst":"appliedenergistics2:material,1,47",
       "energy":80000000,
