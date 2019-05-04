@@ -74,6 +74,7 @@ for item in sandstone.items{
 #Adding Infused Ring's stuff
 recipes.addShaped(<infusedring:magicalstone>, [[<ore:dustMana>, <ore:dustBlaze>, <ore:dustMana>],[<ore:dustGlowstone>, <ore:gemDiamond>, <ore:dustGlowstone>], [<ore:dustMana>, <rftools:infused_enderpearl>, <ore:dustMana>]]);
 recipes.addShaped(<infusedring:infusingring>, [[<ore:dustMana>, <ore:netherStar>, <ore:dustMana>],[<ore:ingotGold>, <draconicevolution:dragon_heart>, <ore:ingotGold>], [<ore:dustMana>, <ore:ingotGold>, <ore:dustMana>]]);
+recipes.addShaped(<thermalfoundation:material:1028> * 4, [[<ore:dustPyrotheum>, <ore:dustMithril>, <ore:dustPyrotheum>],[<ore:dustMithril>, <ore:dustEnderPearl>, <ore:dustMithril>], [<ore:dustCryotheum>, <ore:dustMithril>, <ore:dustCryotheum>]]);
 
 #Adding Mystcraft's stuff
 recipes.addShaped(<mystcraft:blockinkmixer>, [[<ore:stone>, null, <ore:stone>],[<ore:stone>, <minecraft:glass_bottle>, <ore:stone>], [<ore:plankWood>, <ore:stone>, <ore:plankWood>]]);

@@ -131,6 +131,10 @@ chestE.add(<enderstorage:ender_storage:0>);
 //
 #
 
+#Dust Nitre
+val dustNitre = <ore:dustNitre>;
+dustNitre.add(<thermalfoundation:material:772>);
+
 #Fixing MatterOverdrive's registration
 val plateT = <ore:plateTritanium>;
 plateT.add(<matteroverdrive:tritanium_plate>);
