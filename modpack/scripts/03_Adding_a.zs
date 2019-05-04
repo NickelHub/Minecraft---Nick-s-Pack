@@ -359,6 +359,7 @@ Inscriber.addRecipe(<forestry:chipsets:0>.withTag({T: 0 as short}), <ore:dustApa
 Inscriber.addRecipe(<forestry:chipsets:1>.withTag({T: 1 as short}), <ore:dustApatite>, false, <appliedenergistics2:material:16>, <ore:plateBronze>);
 Inscriber.addRecipe(<forestry:chipsets:2>.withTag({T: 2 as short}), <ore:dustApatite>, false, <appliedenergistics2:material:16>, <ore:plateIron>);
 Inscriber.addRecipe(<forestry:chipsets:3>.withTag({T: 3 as short}), <ore:dustApatite>, false, <appliedenergistics2:material:16>, <ore:plateGold>);
+recipes.addShaped(<forestry:grafter_proven>, [[null, null, <ore:ingotMithril>],[null, <ore:stickWood>, null], [<ore:stickWood>, null, null]]);
 
 #Adding Mekanism's stuff
 mods.mekanism.crusher.addRecipe(<mekanism:ingot:0>, <mekanism:otherdust:5>);
