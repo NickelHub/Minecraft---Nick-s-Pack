@@ -43,6 +43,8 @@ recipes.addShaped(<minecraft:end_portal_frame>, [[<minecraft:ender_pearl>, null,
 recipes.addShaped(<minecraft:wool> * 2, [[<ore:cropCotton>, <ore:cropCotton>, <ore:cropCotton>],[<ore:cropCotton>, <ore:cropCotton>, <ore:cropCotton>], [<ore:cropCotton>, <ore:cropCotton>, <ore:cropCotton>]]);
 recipes.addShapeless(<minecraft:string> * 2, [<ore:cropCotton>,<ore:cropCotton>,<ore:cropCotton>]);
 recipes.addShaped(<minecraft:string> * 2, [[<ore:cropCotton>, <ore:cropCotton>, <ore:cropCotton>]]);
+recipes.addShaped(<randomthings:stableenderpearl> * 5, [[<ore:enderpearl>, <actuallyadditions:item_crystal:1>, <ore:enderpearl>],[<ore:gemDimensionalShard>, <ore:enderpearl>, <ore:gemDimensionalShard>], [<ore:enderpearl>, <actuallyadditions:item_crystal:1>, <ore:enderpearl>]]);
+recipes.addShaped(<randomthings:stableenderpearl> * 5, [[<ore:enderpearl>, <ore:gemDimensionalShard>, <ore:enderpearl>],[<actuallyadditions:item_crystal:1>, <ore:enderpearl>, <actuallyadditions:item_crystal:1>], [<ore:enderpearl>, <ore:gemDimensionalShard>, <ore:enderpearl>]]);
 
 /*
 //Fixing refined obsidian to dust in Mekanism
@@ -94,9 +96,9 @@ furnace.addRecipe(<thaumcraft:quicksilver>, <thermalfoundation:material:866>, 1.
 furnace.addRecipe(<thaumcraft:quicksilver>, <techreborn:ore:6>, 1.2962962500751019);
 
 #Adding Ender Storage's stuff
-recipes.addShaped(<enderstorage:ender_pouch>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:powderBlaze>, <ore:leather>, <ore:powderBlaze>],[<ore:leather>, <rftools:infused_enderpearl>, <ore:leather>], [<ore:powderBlaze>, <ore:blockWoolWhite>, <ore:powderBlaze>]]);
-recipes.addShaped(<enderstorage:ender_storage:1>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:obsidian>, <ore:blockWoolWhite>, <ore:obsidian>],[<ore:itemBlazeRod>, <minecraft:cauldron>, <ore:itemBlazeRod>], [<rftools:infused_enderpearl>, <ore:obsidian>, <rftools:infused_enderpearl>]]);
-recipes.addShaped(<enderstorage:ender_storage>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:obsidian>, <ore:blockWoolWhite>, <ore:obsidian>],[<ore:itemBlazeRod>, <ore:chestWood>, <ore:itemBlazeRod>], [<rftools:infused_enderpearl>, <ore:obsidian>, <rftools:infused_enderpearl>]]);
+recipes.addShaped(<enderstorage:ender_pouch>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:leather>, <ore:leather>, <ore:leather>],[<ore:itemBlazeRod>, <rftools:infused_enderpearl>, <ore:itemBlazeRod>], [<ore:leather>, <ore:blockWoolWhite>, <ore:leather>]]);
+recipes.addShaped(<enderstorage:ender_storage:1>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:obsidian>, <ore:blockWoolWhite>, <ore:obsidian>],[<ore:itemBlazeRod>, <minecraft:cauldron>, <ore:itemBlazeRod>], [<ore:obsidian>, <rftools:infused_enderpearl>, <ore:obsidian>]]);
+recipes.addShaped(<enderstorage:ender_storage>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:obsidian>, <ore:blockWoolWhite>, <ore:obsidian>],[<ore:itemBlazeRod>, <ore:chestWood>, <ore:itemBlazeRod>], [<ore:obsidian>, <rftools:infused_enderpearl>, <ore:obsidian>]]);
 
 #Adding Gravestone Mod's and Gravestone Mod Extended's stuff
 recipes.addShaped(<gravestone-extended:gsexecution:3>, [[null, <ore:plankWood>, null],[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<minecraft:hay_block>, <ore:plankWood>, <minecraft:hay_block>]]);
