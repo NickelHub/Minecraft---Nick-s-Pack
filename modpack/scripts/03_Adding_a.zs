@@ -45,6 +45,8 @@ recipes.addShapeless(<minecraft:string> * 2, [<ore:cropCotton>,<ore:cropCotton>,
 recipes.addShaped(<minecraft:string> * 2, [[<ore:cropCotton>, <ore:cropCotton>, <ore:cropCotton>]]);
 recipes.addShaped(<randomthings:stableenderpearl> * 5, [[<ore:enderpearl>, <actuallyadditions:item_crystal:1>, <ore:enderpearl>],[<ore:gemDimensionalShard>, <ore:enderpearl>, <ore:gemDimensionalShard>], [<ore:enderpearl>, <actuallyadditions:item_crystal:1>, <ore:enderpearl>]]);
 recipes.addShaped(<randomthings:stableenderpearl> * 5, [[<ore:enderpearl>, <ore:gemDimensionalShard>, <ore:enderpearl>],[<actuallyadditions:item_crystal:1>, <ore:enderpearl>, <actuallyadditions:item_crystal:1>], [<ore:enderpearl>, <ore:gemDimensionalShard>, <ore:enderpearl>]]);
+recipes.addShapeless(<minecraft:sand>, [<ore:sand>]);
+recipes.addShapeless(<minecraft:gravel>, [<ore:gravel>]);
 
 /*
 //Fixing refined obsidian to dust in Mekanism
