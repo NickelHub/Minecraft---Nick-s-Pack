@@ -73,6 +73,17 @@ for item in sandstone.items{
 //
 #
 
+#Adding Trinkets and Baubles' stuff
+recipes.addShaped(<xat:rubber_stone>, [[<randomthings:stableenderpearl>, <ore:blockSlime>, <randomthings:stableenderpearl>],[<ore:blockSlime>, <xat:glowing_ingot>, <ore:blockSlime>], [<randomthings:stableenderpearl>, <ore:blockSlime>, <randomthings:stableenderpearl>]]);
+recipes.addShaped(<xat:dragons_eye>, [[<xat:glow_ring>, <ore:pearlEnderEye>, <xat:glowing_ingot>],[<ore:pearlEnderEye>, <draconicevolution:dragon_heart>, <ore:pearlEnderEye>], [<xat:glowing_ingot>, <ore:pearlEnderEye>, <xat:glowing_ingot>]]);
+recipes.addShapeless(<xat:glowing_ingot> * 5, [<ore:netherStar>,<ore:dustMana>,<ore:netherStar>,<ore:dustMana>,<ore:ingotMithril>,<ore:dustMana>,<ore:netherStar>,<ore:dustMana>,<ore:netherStar>]);
+recipes.addShapeless(<thermalfoundation:material:1028> * 2, [<ore:dustMithril>,<ore:dustMithril>,<ore:itemBlazePowder>,<ore:dustRedstone>]);
+
+#Adding Torchmaster's stuff
+recipes.addShaped(<torchmaster:mega_torch>, [[<ore:torch>, <ore:torch>, <ore:torch>],[<ore:gemDiamond>, <ore:logWood>, <ore:gemDiamond>], [<ore:blockGold>, <ore:logWood>, <ore:blockGold>]]);
+recipes.addShaped(<torchmaster:dread_lamp>, [[<ore:obsidian>, <ore:obsidian>, <ore:obsidian>],[<ore:paneGlass>, <ore:glowstone>, <ore:paneGlass>], [<ore:obsidian>, <minecraft:dye>, <ore:obsidian>]]);
+recipes.addShaped(<torchmaster:terrain_lighter>, [[<ore:torch>, <ore:torch>, <ore:torch>],[<ore:logWood>, <ore:chest>, <ore:logWood>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
+
 #Adding Infused Ring's stuff
 recipes.addShaped(<infusedring:magicalstone>, [[<ore:dustMana>, <ore:dustBlaze>, <ore:dustMana>],[<ore:dustGlowstone>, <ore:gemDiamond>, <ore:dustGlowstone>], [<ore:dustMana>, <rftools:infused_enderpearl>, <ore:dustMana>]]);
 recipes.addShaped(<infusedring:infusingring>, [[<ore:dustMana>, <ore:netherStar>, <ore:dustMana>],[<ore:ingotGold>, <draconicevolution:dragon_heart>, <ore:ingotGold>], [<ore:dustMana>, <ore:ingotGold>, <ore:dustMana>]]);

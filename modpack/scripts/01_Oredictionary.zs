@@ -488,6 +488,8 @@ nut.add(<forestry:fruits:2>);
 
 #More egg
 val egg = <ore:egg>;
+egg.add(<harvestcraft:rawtofeegitem>);
+egg.add(<primitivemobs:spider_egg>);
 
 #Ordicting bird meat
 val listallrawbird = <ore:listAllbirdraw>;
