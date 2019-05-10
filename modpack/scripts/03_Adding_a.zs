@@ -43,8 +43,8 @@ recipes.addShaped(<minecraft:end_portal_frame>, [[<minecraft:ender_pearl>, null,
 recipes.addShaped(<minecraft:wool> * 2, [[<ore:cropCotton>, <ore:cropCotton>, <ore:cropCotton>],[<ore:cropCotton>, <ore:cropCotton>, <ore:cropCotton>], [<ore:cropCotton>, <ore:cropCotton>, <ore:cropCotton>]]);
 recipes.addShapeless(<minecraft:string> * 2, [<ore:cropCotton>,<ore:cropCotton>,<ore:cropCotton>]);
 recipes.addShaped(<minecraft:string> * 2, [[<ore:cropCotton>, <ore:cropCotton>, <ore:cropCotton>]]);
-recipes.addShaped(<randomthings:stableenderpearl> * 5, [[<ore:enderpearl>, <actuallyadditions:item_crystal:1>, <ore:enderpearl>],[<ore:gemDimensionalShard>, <ore:enderpearl>, <ore:gemDimensionalShard>], [<ore:enderpearl>, <actuallyadditions:item_crystal:1>, <ore:enderpearl>]]);
-recipes.addShaped(<randomthings:stableenderpearl> * 5, [[<ore:enderpearl>, <ore:gemDimensionalShard>, <ore:enderpearl>],[<actuallyadditions:item_crystal:1>, <ore:enderpearl>, <actuallyadditions:item_crystal:1>], [<ore:enderpearl>, <ore:gemDimensionalShard>, <ore:enderpearl>]]);
+recipes.addShaped(<randomthings:stableenderpearl> * 4, [[<ore:enderpearl>, <actuallyadditions:item_crystal:1>, <ore:enderpearl>],[<ore:gemDimensionalShard>, <enderio:block_enderman_skull>.reuse(), <ore:gemDimensionalShard>], [<ore:enderpearl>, <actuallyadditions:item_crystal:1>, <ore:enderpearl>]]);
+recipes.addShaped(<randomthings:stableenderpearl> * 4, [[<ore:enderpearl>, <ore:gemDimensionalShard>, <ore:enderpearl>],[<actuallyadditions:item_crystal:1>, <enderio:block_enderman_skull>.reuse(), <actuallyadditions:item_crystal:1>], [<ore:enderpearl>, <ore:gemDimensionalShard>, <ore:enderpearl>]]);
 recipes.addShapeless(<minecraft:sand>, [<ore:sand>]);
 recipes.addShapeless(<minecraft:gravel>, [<ore:gravel>]);
 
@@ -74,10 +74,8 @@ for item in sandstone.items{
 #
 
 #Adding Trinkets and Baubles' stuff
-recipes.addShaped(<xat:rubber_stone>, [[<randomthings:stableenderpearl>, <ore:blockSlime>, <randomthings:stableenderpearl>],[<ore:blockSlime>, <xat:glowing_ingot>, <ore:blockSlime>], [<randomthings:stableenderpearl>, <ore:blockSlime>, <randomthings:stableenderpearl>]]);
 recipes.addShaped(<xat:dragons_eye>, [[<xat:glow_ring>, <ore:pearlEnderEye>, <xat:glowing_ingot>],[<ore:pearlEnderEye>, <draconicevolution:dragon_heart>, <ore:pearlEnderEye>], [<xat:glowing_ingot>, <ore:pearlEnderEye>, <xat:glowing_ingot>]]);
 recipes.addShapeless(<xat:glowing_ingot> * 5, [<ore:netherStar>,<ore:dustMana>,<ore:netherStar>,<ore:dustMana>,<ore:ingotMithril>,<ore:dustMana>,<ore:netherStar>,<ore:dustMana>,<ore:netherStar>]);
-recipes.addShapeless(<thermalfoundation:material:1028> * 2, [<ore:dustMithril>,<ore:dustMithril>,<ore:itemBlazePowder>,<ore:dustRedstone>]);
 
 #Adding Torchmaster's stuff
 recipes.addShaped(<torchmaster:mega_torch>, [[<ore:torch>, <ore:torch>, <ore:torch>],[<ore:gemDiamond>, <ore:logWood>, <ore:gemDiamond>], [<ore:blockGold>, <ore:logWood>, <ore:blockGold>]]);

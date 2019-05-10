@@ -131,6 +131,12 @@ chestE.add(<enderstorage:ender_storage:0>);
 //
 #
 
+#Dust Ender
+val DustEnder = <ore:dustEnder>;
+DustEnder.add(<techreborn:dust:20>);
+val dustEP = <ore:dustEnderPearl>;
+dustEP.add(<railcraft:dust:6>);
+
 #Dust Nitre
 val dustNitre = <ore:dustNitre>;
 dustNitre.add(<thermalfoundation:material:772>);
@@ -154,9 +160,6 @@ val crystalCO = <ore:crystalCrudeOil>;
 crystalCO.add(<immersivepetroleum:material:0>);
 val clathrateO = <ore:clathrateOil>;
 clathrateO.add(<immersivepetroleum:material:0>);
-
-val dustEP = <ore:dustEnderPearl>;
-dustEP.add(<railcraft:dust:6>);
 
 #Fertilizer
 val fert = <ore:fertilizer>;
@@ -1056,10 +1059,6 @@ val fencewg = <ore:fenceWoodGate>;
 
 val dustQ = <ore:dustQuartz>;
 dustQ.remove(<actuallyadditions:item_dust:5>);
-
-val dustE = <ore:dustEnder>;
-dustE.remove(<appliedenergistics2:material:46>);
-dustE.remove(<railcraft:dust:6>);
 
 #Removing entries to Oreberry Bushes' berries
 val nuggetEssence = <ore:nuggetEssence>;

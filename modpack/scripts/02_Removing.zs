@@ -44,7 +44,6 @@ mods.unidict.removalByKind.get("Crafting").remove("plate");
 #Removing Trinkts and Baubles stuff
 recipes.remove(<xat:glowing_ingot>);
 recipes.remove(<xat:dragons_eye>);
-recipes.remove(<xat:rubber_stone>);
 
 #Removing Torchmaster's stuff
 recipes.removeByRecipeName("torchmaster:mega_torch");
