@@ -74,8 +74,8 @@ for item in sandstone.items{
 #
 
 #Adding Trinkets and Baubles' stuff
-recipes.addShaped(<xat:dragons_eye>, [[<xat:glow_ring>, <ore:pearlEnderEye>, <xat:glowing_ingot>],[<ore:pearlEnderEye>, <draconicevolution:dragon_heart>, <ore:pearlEnderEye>], [<xat:glowing_ingot>, <ore:pearlEnderEye>, <xat:glowing_ingot>]]);
-recipes.addShapeless(<xat:glowing_ingot> * 5, [<ore:netherStar>,<ore:dustMana>,<ore:netherStar>,<ore:dustMana>,<ore:ingotMithril>,<ore:dustMana>,<ore:netherStar>,<ore:dustMana>,<ore:netherStar>]);
+recipes.addShaped("TaB_dragons_eye", <xat:dragons_eye>, [[<xat:glow_ring>, <ore:pearlEnderEye>, <xat:glowing_ingot>],[<ore:pearlEnderEye>, <draconicevolution:dragon_heart>, <ore:pearlEnderEye>], [<xat:glowing_ingot>, <ore:pearlEnderEye>, <xat:glowing_ingot>]]);
+recipes.addShapeless("TaB_glowing_ingot", <xat:glowing_ingot> * 4, [<ore:dustDraconium>,<ore:dustMana>,<ore:dustDraconium>,<ore:dustMana>,<ore:ingotMithril>,<ore:dustMana>,<ore:dustDraconium>,<ore:dustMana>,<ore:dustDraconium>]);
 
 #Adding Torchmaster's stuff
 recipes.addShaped(<torchmaster:mega_torch>, [[<ore:torch>, <ore:torch>, <ore:torch>],[<ore:gemDiamond>, <ore:logWood>, <ore:gemDiamond>], [<ore:blockGold>, <ore:logWood>, <ore:blockGold>]]);
