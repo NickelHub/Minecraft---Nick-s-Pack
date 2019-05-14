@@ -40,10 +40,6 @@
 |   CompactDrawers-1.12.2-1.0.5.121.jar
 |   conarm-1.12.2-1.2.3.4.jar
 |   Controlling-3.0.6.jar
-|   corail_pillar-4.2.1-1.12.jar
-|   corail_pillar_extension_biomesoplenty-4.0.1-1.12.jar
-|   corail_pillar_extension_chisel-4.0.0-1.12.jar
-|   corail_pillar_extension_forestry-4.0.0-1.12.jar
 |   coroutil-1.12.1-1.2.31.jar
 |   CosmeticArmorReworked-1.12.2-v4a.jar
 |   CraftTweaker2-1.12-4.1.17.jar
