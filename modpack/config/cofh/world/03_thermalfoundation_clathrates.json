@@ -109,6 +109,35 @@
                1
             ]
          }
+      },
+      "redstone_clathrate_deep_dark":{
+         "distribution":"uniform",
+         "generator":{
+            "block":[
+               {
+                  "name":"thermalfoundation:ore_fluid",
+                  "metadata":2,
+                  "weight":90
+               },
+               {
+                  "name":"thermalfoundation:fluid_redstone",
+                  "weight":10
+               }
+            ],
+            "material":"minecraft:stone",
+            "cluster-size":16
+         },
+         "cluster-count":4,
+         "min-height":0,
+         "max-height":256,
+         "retrogen":"true",
+         "biome":"all",
+         "dimension":{
+            "restriction":"whitelist",
+            "value":[
+               -11325
+            ]
+         }
       }
    }
 }

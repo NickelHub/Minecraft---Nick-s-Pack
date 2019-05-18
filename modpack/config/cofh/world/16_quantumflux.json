@@ -15,8 +15,8 @@
             "cluster-size":6
          },
          "cluster-count":6,
-         "min-height":0,
-         "max-height":30,
+         "min-height":16,
+         "max-height":35,
          "retrogen":"true",
          "biome":"all",
          "dimension":{
@@ -25,6 +25,29 @@
                0,
                28885,
                -9999
+            ]
+         }
+      },
+      "graphite_deep_dark":{
+         "distribution":"uniform",
+         "generator":{
+            "block":[
+               {
+                  "name":"quantumflux:graphiteore"
+               }
+            ],
+            "material":"stone",
+            "cluster-size":6
+         },
+         "cluster-count":12,
+         "min-height":0,
+         "max-height":256,
+         "retrogen":"true",
+         "biome":"all",
+         "dimension":{
+            "restriction":"whitelist",
+            "value":[
+               -11325
             ]
          }
       }
