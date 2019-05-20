@@ -125,28 +125,37 @@
    },
    "specificTraits":{
       "EXTRA":[
-         "dense"
+         "dense",
+         "reinforced2"
       ],
       "HEAD":[
-         "dense"
+         "dense",
+         "reinforced2",
+         "established"
       ],
       "HANDLE":[
-         "dense"
+         "dense",
+         "reinforced2"
       ],
       "BOW":[
-         "dense"
+         "dense",
+         "reinforced2"
       ],
       "PROJECTILE":[
-         "dense"
+         "dense",
+         "reinforced2"
       ],
       "CORE":[
-         "dense"
+         "dense",
+         "reinforced2"
       ],
       "PLATES":[
-         "dense"
+         "dense",
+         "reinforced2"
       ],
       "TRIM":[
-         "dense"
+         "dense",
+         "reinforced2"
       ]
    }
 }
