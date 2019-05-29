@@ -12,64 +12,151 @@
       "tradeable":false,
       "preferredHeight":48,
       "maxHeight":32,
-      "sizeChance":8
+      "sizeChance":8,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Iron":{
       "color":"#FFC7A3",
       "tooltip":"Sweet Irony",
       "smeltingResult":"minecraft:iron_nugget",
-      "minHeight":16
+      "growsInLight":false,
+      "tradeable":true,
+      "minHeight":0,
+      "maxHeight":75,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Gold":{
       "color":"#FFCC33",
       "tooltip":"Pure Luster",
       "smeltingResult":"minecraft:gold_nugget",
+      "growsInLight":false,
+      "tradeable":true,
       "rarity":8,
-      "maxHeight":32
+      "minHeight":0,
+      "maxHeight":32,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Copper":{
       "color":"#FF8833",
       "tooltip":"Tastes like metal",
       "smeltingResult":"thermalfoundation:material:192",
-      "minHeight":16
+      "growsInLight":false,
+      "tradeable":true,
+      "minHeight":0,
+      "maxHeight":85,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Tin":{
       "color":"#cbd6d5",
       "tooltip":"Tin Man",
       "smeltingResult":"thermalfoundation:material:193",
-      "minHeight":16
+      "growsInLight":false,
+      "tradeable":true,
+      "minHeight":0,
+      "maxHeight":85,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Aluminum":{
       "color":"#EEFFFF",
       "tooltip":"White Chocolate",
       "smeltingResult":"thermalfoundation:material:196",
-      "minHeight":16
+      "growsInLight":false,
+      "tradeable":true,
+      "minHeight":0,
+      "maxHeight":60,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Osmium":{
       "color":"#ddf4fd",
       "tooltip":"Make it ism!",
       "smeltingResult":"mekanism:nugget:1",
-      "minHeight":16
+      "growsInLight":false,
+      "tradeable":true,
+      "minHeight":0,
+      "maxHeight":75,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Lead":{
       "color":"#5576d3",
       "tooltip":"Tastes toxic",
       "smeltingResult":"thermalfoundation:material:195",
-      "minHeight":16
+      "growsInLight":false,
+      "tradeable":true,
+      "minHeight":0,
+      "maxHeight":35,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Silver":{
       "color":"#eff2fb",
       "tooltip":"It is holy!",
       "smeltingResult":"thermalfoundation:material:194",
+      "growsInLight":false,
+      "tradeable":true,
       "rarity":8,
-      "maxHeight":30
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Nickel":{
       "color":"#f7faeb",
       "tooltip":"Nick-el",
       "smeltingResult":"thermalfoundation:material:197",
+      "growsInLight":false,
+      "tradeable":true,
       "rarity":10,
-      "maxHeight":25
+      "minHeight":0,
+      "maxHeight":35,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Yellorium":{
       "color":"#d0f335",
@@ -84,15 +171,33 @@
             "bigreactors:ingotmetals:0"
          ]
       },
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":10,
-      "maxHeight":25
+      "minHeight":0,
+      "maxHeight":32,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Uranium":{
       "color":"#17591d",
       "tooltip":"And it burns, burns, burns!",
       "smeltingResult":"immersiveengineering:metal:25",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":10,
-      "maxHeight":25
+      "minHeight":0,
+      "maxHeight":32,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Thorium":{
       "color":"#010232",
@@ -107,15 +212,33 @@
             "nuclearcraft:ingot:3"
          ]
       },
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":10,
-      "maxHeight":25
+      "minHeight":0,
+      "maxHeight":32,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Zinc":{
       "color":"#f1fafe",
       "tooltip":"Zinc Man",
       "smeltingResult":"techreborn:nuggets:18",
+      "growsInLight":false,
+      "tradeable":true,
       "rarity":8,
-      "minHeight":30
+      "minHeight":0,
+      "maxHeight":45,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Boron":{
       "color":"#757569",
@@ -130,7 +253,16 @@
             "nuclearcraft:ingot:5"
          ]
       },
-      "maxHeight":25
+      "growsInLight":false,
+      "tradeable":true,
+      "minHeight":0,
+      "maxHeight":28,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Magnesium":{
       "color":"#d69ed8",
@@ -144,7 +276,16 @@
             "nuclearcraft:ingot:7"
          ]
       },
-      "maxHeight":25
+      "growsInLight":false,
+      "tradeable":true,
+      "minHeight":0,
+      "maxHeight":24,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Lithium":{
       "color":"#efefe8",
@@ -158,28 +299,63 @@
             "nuclearcraft:ingot:6"
          ]
       },
-      "maxHeight":25
+      "growsInLight":false,
+      "tradeable":true,
+      "minHeight":0,
+      "maxHeight":28,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Chromium":{
       "color":"#e7f7f9",
       "tooltip":"Anticorrosion!",
       "smeltingResult":"techreborn:nuggets:3",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":10,
-      "maxHeight":25
+      "maxHeight":25,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Iridium":{
       "color":"#e1e2fe",
       "tooltip":"Irritating!",
       "smeltingResult":"thermalfoundation:material:199",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":10,
-      "maxHeight":25
+      "minHeight":0,
+      "maxHeight":35,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Platinum":{
       "color":"#41bafb",
       "tooltip":"Plated!",
       "smeltingResult":"thermalfoundation:material:198",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":10,
-      "maxHeight":25
+      "minHeight":0,
+      "maxHeight":35,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Mithril":{
       "bushName":"Mana Infused Oreberry Bush",
@@ -187,22 +363,49 @@
       "color":"#0597e6",
       "tooltip":"Mana!",
       "smeltingResult":"thermalfoundation:material:200",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":10,
-      "maxHeight":35
+      "minHeight":0,
+      "maxHeight":35,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Titanium":{
       "color":"#fbfefe",
       "tooltip":"Titt-tanium!",
       "smeltingResult":"techreborn:nuggets:14",
-      "rarity":25,
-      "maxHeight":25
+      "growsInLight":false,
+      "tradeable":false,
+      "rarity":12,
+      "maxHeight":25,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Draconium":{
       "color":"#b40dde",
       "tooltip":"Draconic!",
       "smeltingResult":"draconicevolution:nugget",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":12,
-      "maxHeight":20
+      "minHeight":0,
+      "maxHeight":16,
+      "dimensions":[
+         28885,
+         0,
+         -1,
+         -9999,
+         -11325
+      ]
    },
    "DimensionalShard":{
       "bushName":"Dimensional Oreberry Bush",
@@ -210,14 +413,26 @@
       "color":"#b9e8e5",
       "tooltip":"Absolutely Dimensional!",
       "smeltingResult":"jaopca:item_nuggetdimensionalshard",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":12,
-      "maxHeight":20
+      "minHeight":0,
+      "maxHeight":16,
+      "dimensions":[
+         28885,
+         0,
+         -1,
+         -9999,
+         -11325
+      ]
    },
    "Cobalt":{
       "color":"#0e48c1",
       "tooltip":"Very rare",
       "smeltingResult":"tconstruct:nuggets",
-      "maxHeight":32,
+      "growsInLight":false,
+      "tradeable":false,
+      "maxHeight":256,
       "replaceBlocks":[
          "minecraft:netherrack",
          "biomesoplenty:grass:6",
@@ -236,7 +451,9 @@
       "color":"#CC3939",
       "tooltip":"Very rare",
       "smeltingResult":"tconstruct:nuggets:1",
-      "maxHeight":32,
+      "maxHeight":256,
+      "growsInLight":false,
+      "tradeable":false,
       "replaceBlocks":[
          "minecraft:netherrack",
          "biomesoplenty:grass:6",
@@ -265,30 +482,59 @@
             "appliedenergistics2:material"
          ]
       },
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":8,
-      "maxHeight":35
+      "minHeight":0,
+      "maxHeight":45,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "QuartzBlack":{
       "bushName":"Black Quartz Oreberry Bush",
       "berryName":"Black Quartz Oreberry",
       "color":"#000000",
       "smeltingResult":"jaopca:item_nuggetquartzblack",
-      "minHeight":16
+      "growsInLight":false,
+      "tradeable":true,
+      "minHeight":0,
+      "maxHeight":70,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Coal":{
       "color":"#101111",
       "smeltingResult":"jaopca:item_dusttinycoal",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":3,
       "density":5,
-      "maxHeight":48,
-      "sizeChance":5
+      "minHeight":20,
+      "maxHeight":120,
+      "sizeChance":5,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Netherquartz":{
       "bushName":"Quartz Oreberry Bush",
       "berryName":"Quartz Oreberry",
       "color":"#f9f8f5",
       "smeltingResult":"thaumcraft:nugget:9",
-      "maxHeight":52,
+      "growsInLight":false,
+      "tradeable":true,
+      "maxHeight":256,
       "replaceBlocks":[
          "minecraft:netherrack",
          "biomesoplenty:grass:6",
@@ -317,8 +563,10 @@
             "thermalfoundation:material:894"
          ]
       },
+      "growsInLight":true,
+      "tradeable":false,
       "rarity":8,
-      "maxHeight":52,
+      "maxHeight":256,
       "replaceBlocks":[
          "minecraft:netherrack",
          "biomesoplenty:grass:6",
@@ -345,8 +593,10 @@
             "thermalfoundation:material:866"
          ]
       },
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":8,
-      "maxHeight":52,
+      "maxHeight":256,
       "replaceBlocks":[
          "minecraft:netherrack",
          "biomesoplenty:grass:6",
@@ -364,7 +614,9 @@
    "Glowstone":{
       "color":"#ffff00",
       "smeltingResult":"techreborn:dustsmall:62",
-      "maxHeight":52,
+      "growsInLight":true,
+      "tradeable":false,
+      "maxHeight":256,
       "replaceBlocks":[
          "minecraft:netherrack",
          "biomesoplenty:grass:6",
@@ -393,6 +645,8 @@
             "thermalfoundation:material:895"
          ]
       },
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":8,
       "maxHeight":256,
       "replaceBlocks":[
@@ -407,6 +661,8 @@
       "smeltingResult":"techreborn:nuggets:15",
       "rarity":10,
       "maxHeight":256,
+      "growsInLight":false,
+      "tradeable":false,
       "replaceBlocks":[
          "minecraft:end_stone"
       ],
@@ -428,6 +684,8 @@
             "thermalfoundation:material:893"
          ]
       },
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":8,
       "maxHeight":16,
       "replaceBlocks":[
@@ -441,16 +699,25 @@
          "nex:hyphae"
       ],
       "dimensions":[
-         0
+         28885,
+         0,
+         -9999,
+         -11325
       ]
    },
    "Redstone":{
       "color":"#f20420",
       "smeltingResult":"jaopca:item_dusttinyredstone",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":8,
-      "maxHeight":20,
+      "minHeight":0,
+      "maxHeight":16,
       "dimensions":[
-         0
+         28885,
+         0,
+         -9999,
+         -11325
       ]
    },
    "EnderPearl":{
@@ -458,6 +725,8 @@
       "bushName":"Ender Oreberry Bush",
       "berryName":"Ender Oreberry",
       "smeltingResult":"enderio:item_material:28",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":8,
       "maxHeight":256,
       "replaceBlocks":[
@@ -477,6 +746,8 @@
          "abyssalcraft:stone:2",
          "abyssalcraft:stone:3"
       ],
+      "growsInLight":false,
+      "tradeable":false,
       "dimensions":[
          51
       ]
@@ -489,6 +760,8 @@
       "replaceBlocks":[
          "abyssalcraft:stone:1"
       ],
+      "growsInLight":false,
+      "tradeable":false,
       "dimensions":[
          50
       ]
@@ -496,14 +769,22 @@
    "Diamond":{
       "color":"#59dbdb",
       "smeltingResult":"thermalfoundation:material:16",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":12,
-      "maxHeight":12
+      "minHeight":0,
+      "maxHeight":16,
+      "dimensions":[
+         -11325
+      ]
    },
    "DraconiumAwakened":{
       "bushName":"Awakened Draconium Oreberry Bush",
       "berryName":"Awakened Draconium Oreberry",
       "color":"#f26602",
       "smeltingResult":"draconicevolution:nugget:1",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":0
    },
    "ShardChaos":{
@@ -511,24 +792,213 @@
       "berryName":"Chaos Oreberry",
       "color":"#000000",
       "smeltingResult":"draconicevolution:chaos_shard:3",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":0
    },
    "Niter":{
       "color":"#f1f2e8",
       "smeltingResult":"jaopca:item_dusttinyniter",
+      "growsInLight":false,
+      "tradeable":true,
       "rarity":8,
-      "maxHeight":32
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Sulfur":{
       "color":"#e5ed07",
       "smeltingResult":"jaopca:item_dusttinysulfur",
+      "growsInLight":false,
+      "tradeable":true,
       "rarity":8,
-      "maxHeight":32
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
    },
    "Lapis":{
       "color":"#014dc6",
       "smeltingResult":"jaopca:item_dusttinylapis",
+      "growsInLight":false,
+      "tradeable":false,
       "rarity":8,
-      "maxHeight":24
+      "minHeight":0,
+      "maxHeight":24,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
+   },
+   "Tritanium":{
+      "color":"#446599",
+      "smeltingResult":"matteroverdrive:tritanium_nugget",
+      "growsInLight":false,
+      "tradeable":false,
+      "rarity":8,
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
+   },
+   "Dilithium":{
+      "color":"#75d8d2",
+      "smeltingResult":"jaopca:item_nuggetdilithium",
+      "growsInLight":false,
+      "tradeable":false,
+      "rarity":8,
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         28885,
+         0,
+         -9999,
+         -11325
+      ]
+   },
+   "Amethyst":{
+      "color":"#e58edb",
+      "smeltingResult":"jaopca:item_nuggetamethyst",
+      "growsInLight":false,
+      "tradeable":false,
+      "rarity":8,
+      "replaceBlocks":[
+         "minecraft:netherrack",
+         "biomesoplenty:grass:6",
+         "biomesoplenty:grass:8",
+         "nex:netherrack:0",
+         "nex:netherrack:1",
+         "nex:netherrack:2",
+         "nex:netherrack:3",
+         "nex:hyphae"
+      ],
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         -1
+      ]
+   },
+   "Emerald":{
+      "color":"#0bb705",
+      "smeltingResult":"thermalfoundation:material:17",
+      "growsInLight":false,
+      "tradeable":false,
+      "rarity":6,
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         -11325
+      ]
+   },
+   "Topaz":{
+      "color":"#ea9009",
+      "smeltingResult":"jaopca:item_nuggettopaz",
+      "growsInLight":false,
+      "tradeable":false,
+      "rarity":6,
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         -11325
+      ]
+   },
+   "Tanzanite":{
+      "color":"#7108a5",
+      "smeltingResult":"jaopca:item_nuggettanzanite",
+      "growsInLight":false,
+      "tradeable":false,
+      "rarity":6,
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         -11325
+      ]
+   },
+   "Malachite":{
+      "color":"#5dad7e",
+      "smeltingResult":"jaopca:item_nuggetmalachite",
+      "growsInLight":false,
+      "tradeable":false,
+      "rarity":6,
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         -11325
+      ]
+   },
+   "Apatite":{
+      "color":"#3491af",
+      "smeltingResult":"jaopca:item_nuggetapatite",
+      "growsInLight":false,
+      "tradeable":false,
+      "rarity":6,
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         -11325
+      ]
+   },
+   "Ruby":{
+      "color":"#960117",
+      "smeltingResult":"jaopca:item_nuggetruby",
+      "growsInLight":false,
+      "tradeable":false,
+      "rarity":6,
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         -11325
+      ]
+   },
+   "Sapphire":{
+      "color":"#013d96",
+      "smeltingResult":"jaopca:item_nuggetruby",
+      "growsInLight":false,
+      "tradeable":false,
+      "rarity":6,
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         -11325
+      ]
+   },
+   "Peridot":{
+      "color":"#179601",
+      "smeltingResult":"jaopca:item_nuggetperidot",
+      "growsInLight":false,
+      "tradeable":false,
+      "rarity":6,
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         -11325
+      ]
+   },
+   "Amber":{
+      "color":"#d19706",
+      "smeltingResult":"jaopca:item_nuggetamber",
+      "growsInLight":false,
+      "tradeable":false,
+      "rarity":6,
+      "minHeight":0,
+      "maxHeight":30,
+      "dimensions":[
+         -11325
+      ]
    }
 }
