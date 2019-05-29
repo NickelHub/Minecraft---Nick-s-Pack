@@ -688,16 +688,6 @@
       "tradeable":false,
       "rarity":8,
       "maxHeight":16,
-      "replaceBlocks":[
-         "minecraft:netherrack",
-         "biomesoplenty:grass:6",
-         "biomesoplenty:grass:8",
-         "nex:netherrack:0",
-         "nex:netherrack:1",
-         "nex:netherrack:2",
-         "nex:netherrack:3",
-         "nex:hyphae"
-      ],
       "dimensions":[
          28885,
          0,
