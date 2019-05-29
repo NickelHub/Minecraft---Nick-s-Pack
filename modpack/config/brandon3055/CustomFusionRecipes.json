@@ -1,10 +1,5 @@
 [
    {
-      "_comment":"This file was created by NickelCraft (@NickelHub on Github, @JonasCiss on CurseForge) for his modpack Minecraft Variety Revelations",
-      "_comment":"This file should never be modified",
-      "_comment":"If you found a bug, please go to repository and report it",
-      "_comment":"This file adds custom Fusion Recipes, which mostly works only with this modpack",
-      "_comment":"Selfmodification is not supported!",
       "mode":"ADD",
       "result":"oreberries:draconiumawakened_oreberry_bush,10",
       "catalyst":"oreberries:draconium_oreberry_bush,6",
