@@ -1,0 +1,602 @@
+{
+  "leatherfrosttroll": {
+    "name": "leatherfrosttroll",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "chitinjunglemyrmex": {
+    "name": "chitinjunglemyrmex",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scalebronzedragon": {
+    "name": "scalebronzedragon",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scaleblueseaserpent": {
+    "name": "scaleblueseaserpent",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scalewhitedragon": {
+    "name": "scalewhitedragon",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "chitinwhitedeathworm": {
+    "name": "chitinwhitedeathworm",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "chitinbrowndeathworm": {
+    "name": "chitinbrowndeathworm",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scalesapphiredragon": {
+    "name": "scalesapphiredragon",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scalebluedragon": {
+    "name": "scalebluedragon",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "leatherforesttroll": {
+    "name": "leatherforesttroll",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scalegreendragon": {
+    "name": "scalegreendragon",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scaledeepblueseaserpent": {
+    "name": "scaledeepblueseaserpent",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scaleredseaserpent": {
+    "name": "scaleredseaserpent",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scalegreenseaserpent": {
+    "name": "scalegreenseaserpent",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scalesilverdragon": {
+    "name": "scalesilverdragon",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "chitindesertmyrmex": {
+    "name": "chitindesertmyrmex",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "chitintandeathworm": {
+    "name": "chitintandeathworm",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scalepurpleseaserpent": {
+    "name": "scalepurpleseaserpent",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scalegraydragon": {
+    "name": "scalegraydragon",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scaletealseaserpent": {
+    "name": "scaletealseaserpent",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "bonedragon": {
+    "name": "bonedragon",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "leathermountaintroll": {
+    "name": "leathermountaintroll",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scalebronzeseaserpent": {
+    "name": "scalebronzeseaserpent",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  },
+  "scalereddragon": {
+    "name": "scalereddragon",
+    "material": false,
+    "fluid": false,
+    "traits": false,
+    "armorOptions": {
+      "enableArmor": false,
+      "enableCore": false,
+      "enablePlates": false,
+      "enableTrim": false
+    },
+    "toolOptions": {
+      "enableTool": false,
+      "enableHead": false,
+      "enableHandle": false,
+      "enableExtra": false
+    },
+    "rangedOptions": {
+      "enableRanged": false,
+      "enableBow": false,
+      "enableShaft": false,
+      "enableFletching": false,
+      "enableProjectile": false
+    }
+  }
+}
