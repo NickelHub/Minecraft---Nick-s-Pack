@@ -10,14 +10,6 @@ import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.entity.IEntityDrop;
 
 print("Initializing 05_Drops.zs");
-
-#
-//
-//The next section adds drops to blocks
-//
-#
-
-
 #
 //
 //The next section adds drops to entities

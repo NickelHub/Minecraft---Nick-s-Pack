@@ -549,9 +549,6 @@ recipes.addShapeless(<randomthings:ingredient:7> * 16, [<ore:dustRedstone>,<ore:
 recipes.addShaped(<randomthings:escaperope>, [[<minecraft:string>, <ore:ingotGold>, <minecraft:ender_eye>],[<ore:ingotGold>, <ore:string>, <ore:ingotGold>], [<randomthings:stableenderpearl>, <ore:ingotGold>, <ore:string>]]);
 recipes.addShaped(<randomthings:enderbucket>, [[<ore:ingotIron>, <ore:pearlEnderEye>, <ore:ingotIron>], [null, <ore:ingotIron>, null]]);
 
-#Adding Improved Backpacks' stuff
-recipes.addShapedMirrored(<improvedbackpacks:bound_leather>, [[<ore:string>, <ore:itemLeather>, <ore:string>]]);
-
 #Adding Chicken Chunks' stuff
 recipes.addShaped(<chickenchunks:chunk_loader:1> * 10, [[<randomthings:stableenderpearl>, <randomthings:stableenderpearl>, <randomthings:stableenderpearl>],[<randomthings:stableenderpearl>, <chickenchunks:chunk_loader>, <randomthings:stableenderpearl>], [<randomthings:stableenderpearl>, <randomthings:stableenderpearl>, <randomthings:stableenderpearl>]]);
 recipes.addShaped(<chickenchunks:chunk_loader>, [[null, <randomthings:stableenderpearl>, null],[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>], [<ore:ingotGold>, <minecraft:enchanting_table>, <ore:ingotGold>]]);

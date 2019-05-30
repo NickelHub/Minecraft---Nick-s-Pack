@@ -726,10 +726,6 @@ recipes.removeByRecipeName("randomthings:floopowder");
 recipes.removeByRecipeName("randomthings:escaperope");
 recipes.removeByRecipeName("randomthings:enderbucket");
 
-#Removing Improved Backpacks' stuff
-//Removing bound leather recipe, because hemp fabric cannot be melted; wax should be used instead
-recipes.removeByRecipeName("improvedbackpacks:item.bound_leather");
-
 #Removing Chicken Chunks' stuff
 recipes.removeByRecipeName("chickenchunks:chunk_loader");
 recipes.removeByRecipeName("chickenchunks:spot_loader");

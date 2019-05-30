@@ -172,7 +172,6 @@ fert.add(<exoticbirds:eggshell>);
 
 #Unifying leather
 val hardenedLeather = <ore:LeatherHardened>;
-hardenedLeather.add(<improvedbackpacks:tanned_leather>);
 hardenedLeather.add(<harvestcraft:hardenedleatheritem>);
 
 #Unifying itemRubber

@@ -38,7 +38,6 @@ recipes.replaceAllOccurences(<mekanism:polyethene:2>, <ore:itemRubber>);
 recipes.replaceAllOccurences(<minecraft:stick>, <ore:stickWood>);
 
 #Hardened Leather
-recipes.replaceAllOccurences(<improvedbackpacks:tanned_leather>, <ore:LeatherHardened>);
 recipes.replaceAllOccurences(<harvestcraft:hardenedleatheritem>, <ore:LeatherHardened>);
 
 #Fixing leather
