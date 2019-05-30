@@ -1,5 +1,5 @@
 #File name: 02_Removing.zs
-#Recipes removed for Variety Revelations
+#Recipes removed for Nick's Pack
 
 #Imports
 import crafttweaker.item.IIngredient;

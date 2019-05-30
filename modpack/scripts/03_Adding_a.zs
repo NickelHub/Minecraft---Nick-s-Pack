@@ -1,5 +1,5 @@
 #File name: 03_Adding_a.zs
-#Recipes added for Variety Revelations
+#Recipes added for Nick's Pack
 
 #Imports
 import crafttweaker.item.IIngredient;

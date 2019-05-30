@@ -1,4 +1,5 @@
 #File name: 05_Drops.zs
+#Drops for Nick's Pack
 
 #imports
 import crafttweaker.item.IIngredient;

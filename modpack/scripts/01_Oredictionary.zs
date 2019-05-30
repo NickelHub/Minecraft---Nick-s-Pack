@@ -1,4 +1,5 @@
 #File name: 01_Oredictionary.zs
+#OreDictionary for Nick's Pack
 
 #Imports
 import crafttweaker.item.IIngredient;

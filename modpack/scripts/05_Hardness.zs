@@ -1,4 +1,5 @@
 #File name: 05_Hardness.zs
+#Block Hardness for Nick's Pack
 
 #imports
 import crafttweaker.item.IIngredient;

@@ -1,4 +1,5 @@
 #File name: 06_Tooltips.zs
+#Tooltips for Nick's Pack
 
 #imports
 import crafttweaker.item.IIngredient;

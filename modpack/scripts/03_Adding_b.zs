@@ -1,6 +1,6 @@
 #File name: 03_Adding_b.zs
-#Recipes added for Variety Revelations
-#This file was created, because of an error, that "Crusher" has already been defined
+#Recipes added for Nick's Pack
+#This file was created because of an error. "Crusher" has already been defined.
 
 #Imports
 import crafttweaker.item.IIngredient;
