@@ -48,8 +48,8 @@ recipes.addShapeless("nickadditions_green_dye_blending_2", <biomesoplenty:green_
 recipes.addShaped("nickadditions_magic_mushroom", <toolprogression:magic_mushroom>, [[<ore:dustMana>, <ore:dustEmerald>, <ore:dustMana>],[<ore:dustMithril>, <ore:listAllmushroom>, <ore:dustMithril>], [<ore:dustMana>, <ore:dustEmerald>, <ore:dustMana>]]);
 recipes.addShaped("nickadditions_magical_apple", <extrautils2:magicapple>, [[<ore:dustMana>, <ore:ingotEnchantedMetal>, <ore:dustMana>],[<ore:ingotEnchantedMetal>, <ore:cropApple>, <ore:ingotEnchantedMetal>], [<ore:dustMana>, <ore:ingotEnchantedMetal>, <ore:dustMana>]]);
 recipes.addShaped("nickadditions_enchanted_golden_apple", <minecraft:golden_apple:1>, [[<ore:dustMana>, <ore:blockGold>, <ore:dustMana>],[<ore:blockGold>, <ore:cropApple>, <ore:blockGold>], [<ore:dustMana>, <ore:blockDiamond>, <ore:dustMana>]]);
-recipes.addShaped("nickadditions_enchanted_ingot_crafting", <extrautils2:ingredients:12>, [[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>],[<ore:ingotGold>, <ore:netherStar>, <ore:ingotGold>], [<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>]]);
-recipes.addShaped("nickadditions_evil_infused_ingot_crafting", <extrautils2:ingredients:12>, [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],[<ore:ingotIron>, <ore:netherStar>, <ore:ingotIron>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+recipes.addShaped("nickadditions_enchanted_ingot_crafting", <extrautils2:ingredients:12> * 8, [[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>],[<ore:ingotGold>, <ore:netherStar>, <ore:ingotGold>], [<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>]]);
+recipes.addShaped("nickadditions_evil_infused_ingot_crafting", <extrautils2:ingredients:17> * 8, [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],[<ore:ingotIron>, <ore:netherStar>, <ore:ingotIron>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
 
 #Some fixes
 recipes.addShapeless("pack_stone_button", <minecraft:stone_button> * 8, [<minecraft:stone>]); //this recipe has been disappeared
