@@ -4,7 +4,8 @@
       "berryName":"Concentrated Essence Berry",
       "tooltip":"Tastes like Creeper",
       "oredictNames":[
-
+         "berryEssence",
+         "oreberry"
       ],
       "smeltingResult":null,
       "special":"essence",
@@ -23,6 +24,10 @@
    "Iron":{
       "color":"#FFC7A3",
       "tooltip":"Sweet Irony",
+      "oredictNames":[
+         "berryIron",
+         "oreberry"
+      ],
       "smeltingResult":"minecraft:iron_nugget",
       "growsInLight":false,
       "tradeable":true,
@@ -38,6 +43,10 @@
    "Gold":{
       "color":"#FFCC33",
       "tooltip":"Pure Luster",
+      "oredictNames":[
+         "berryGold",
+         "oreberry"
+      ],
       "smeltingResult":"minecraft:gold_nugget",
       "growsInLight":false,
       "tradeable":true,
@@ -54,6 +63,10 @@
    "Copper":{
       "color":"#FF8833",
       "tooltip":"Tastes like metal",
+      "oredictNames":[
+         "berryCopper",
+         "oreberry"
+      ],
       "smeltingResult":"thermalfoundation:material:192",
       "growsInLight":false,
       "tradeable":true,
@@ -69,6 +82,10 @@
    "Tin":{
       "color":"#cbd6d5",
       "tooltip":"Tin Man",
+      "oredictNames":[
+         "berryTin",
+         "oreberry"
+      ],
       "smeltingResult":"thermalfoundation:material:193",
       "growsInLight":false,
       "tradeable":true,
@@ -84,6 +101,10 @@
    "Aluminum":{
       "color":"#EEFFFF",
       "tooltip":"White Chocolate",
+      "oredictNames":[
+         "berryAluminum",
+         "oreberry"
+      ],
       "smeltingResult":"thermalfoundation:material:196",
       "growsInLight":false,
       "tradeable":true,
@@ -98,7 +119,11 @@
    },
    "Osmium":{
       "color":"#ddf4fd",
-      "tooltip":"Make it ism!",
+      "tooltip":"Make it izzm!",
+      "oredictNames":[
+         "berryOsmium",
+         "oreberry"
+      ],
       "smeltingResult":"mekanism:nugget:1",
       "growsInLight":false,
       "tradeable":true,
@@ -113,7 +138,11 @@
    },
    "Lead":{
       "color":"#5576d3",
-      "tooltip":"Tastes toxic",
+      "tooltip":"Tastes toxic and heavy!",
+      "oredictNames":[
+         "berryLead",
+         "oreberry"
+      ],
       "smeltingResult":"thermalfoundation:material:195",
       "growsInLight":false,
       "tradeable":true,
@@ -129,6 +158,10 @@
    "Silver":{
       "color":"#eff2fb",
       "tooltip":"It is holy!",
+      "oredictNames":[
+         "berrySilver",
+         "oreberry"
+      ],
       "smeltingResult":"thermalfoundation:material:194",
       "growsInLight":false,
       "tradeable":true,
@@ -144,7 +177,11 @@
    },
    "Nickel":{
       "color":"#f7faeb",
-      "tooltip":"Nick-el",
+      "tooltip":"Nickelcraft's desired metal!",
+      "oredictNames":[
+         "berryEssence",
+         "oreberry"
+      ],
       "smeltingResult":"thermalfoundation:material:197",
       "growsInLight":false,
       "tradeable":true,
@@ -160,7 +197,11 @@
    },
    "Yellorium":{
       "color":"#d0f335",
-      "tooltip":"And it burns, burns, burns!",
+      "tooltip":"Somehow radioactive!!",
+      "oredictNames":[
+         "berryYellorium",
+         "oreberry"
+      ],
       "smeltingResult":{
          "name":"Yellorium Nugget",
          "color":"#d0f335",
@@ -186,6 +227,10 @@
    "Uranium":{
       "color":"#17591d",
       "tooltip":"And it burns, burns, burns!",
+      "oredictNames":[
+         "berryUranium",
+         "oreberry"
+      ],
       "smeltingResult":"immersiveengineering:metal:25",
       "growsInLight":false,
       "tradeable":false,
@@ -201,7 +246,11 @@
    },
    "Thorium":{
       "color":"#010232",
-      "tooltip":"And it burns, burns, burns!",
+      "tooltip":"Named after a God!",
+      "oredictNames":[
+         "berryThorium",
+         "oreberry"
+      ],
       "smeltingResult":{
          "name":"Thorium Nugget",
          "color":"#010232",
@@ -226,7 +275,11 @@
    },
    "Zinc":{
       "color":"#f1fafe",
-      "tooltip":"Zinc Man",
+      "tooltip":"Zinc, Man!",
+      "oredictNames":[
+         "berryZinc",
+         "oreberry"
+      ],
       "smeltingResult":"techreborn:nuggets:18",
       "growsInLight":false,
       "tradeable":true,
@@ -243,6 +296,10 @@
    "Boron":{
       "color":"#757569",
       "tooltip":"The Borons fight back!",
+      "oredictNames":[
+         "berryBoron",
+         "oreberry"
+      ],
       "smeltingResult":{
          "name":"Boron Nugget",
          "color":"#757569",
@@ -266,6 +323,11 @@
    },
    "Magnesium":{
       "color":"#d69ed8",
+      "tooltip":"Good for nutrition!",
+      "oredictNames":[
+         "berryMagnesium",
+         "oreberry"
+      ],
       "smeltingResult":{
          "name":"Magnesium Nugget",
          "color":"#d69ed8",
@@ -289,6 +351,11 @@
    },
    "Lithium":{
       "color":"#efefe8",
+      "tooltip":"Soft silver-white!",
+      "oredictNames":[
+         "berryLithium",
+         "oreberry"
+      ],
       "smeltingResult":{
          "name":"Lithium Nugget",
          "color":"#efefe8",
@@ -313,6 +380,10 @@
    "Chromium":{
       "color":"#e7f7f9",
       "tooltip":"Anticorrosion!",
+      "oredictNames":[
+         "berryChromium",
+         "oreberry"
+      ],
       "smeltingResult":"techreborn:nuggets:3",
       "growsInLight":false,
       "tradeable":false,
@@ -328,6 +399,10 @@
    "Iridium":{
       "color":"#e1e2fe",
       "tooltip":"Irritating!",
+      "oredictNames":[
+         "berryIridium",
+         "oreberry"
+      ],
       "smeltingResult":"thermalfoundation:material:199",
       "growsInLight":false,
       "tradeable":false,
@@ -343,7 +418,11 @@
    },
    "Platinum":{
       "color":"#41bafb",
-      "tooltip":"Plated!",
+      "tooltip":"Devine!",
+      "oredictNames":[
+         "berryPlatinum",
+         "oreberry"
+      ],
       "smeltingResult":"thermalfoundation:material:198",
       "growsInLight":false,
       "tradeable":false,
@@ -361,7 +440,11 @@
       "bushName":"Mana Infused Oreberry Bush",
       "berryName":"Mana Infused Oreberry",
       "color":"#0597e6",
-      "tooltip":"Mana!",
+      "tooltip":"This metal is magical!",
+      "oredictNames":[
+         "berryMithril",
+         "oreberry"
+      ],
       "smeltingResult":"thermalfoundation:material:200",
       "growsInLight":false,
       "tradeable":false,
@@ -378,6 +461,10 @@
    "Titanium":{
       "color":"#fbfefe",
       "tooltip":"Titt-tanium!",
+      "oredictNames":[
+         "berryTitanium",
+         "oreberry"
+      ],
       "smeltingResult":"techreborn:nuggets:14",
       "growsInLight":false,
       "tradeable":false,
@@ -392,7 +479,11 @@
    },
    "Draconium":{
       "color":"#b40dde",
-      "tooltip":"Draconic!",
+      "tooltip":"You can smell the Dragon!",
+      "oredictNames":[
+         "berryDraconium",
+         "oreberry"
+      ],
       "smeltingResult":"draconicevolution:nugget",
       "growsInLight":false,
       "tradeable":false,
@@ -411,7 +502,11 @@
       "bushName":"Dimensional Oreberry Bush",
       "berryName":"Dimensional Oreberry",
       "color":"#b9e8e5",
-      "tooltip":"Absolutely Dimensional!",
+      "tooltip":"Changes the World!",
+      "oredictNames":[
+         "berryDimensionalShard",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_nuggetdimensionalshard",
       "growsInLight":false,
       "tradeable":false,
@@ -428,7 +523,11 @@
    },
    "Cobalt":{
       "color":"#0e48c1",
-      "tooltip":"Very rare",
+      "tooltip":"Very light and fast!",
+      "oredictNames":[
+         "berryCobalt",
+         "oreberry"
+      ],
       "smeltingResult":"tconstruct:nuggets",
       "growsInLight":false,
       "tradeable":false,
@@ -449,7 +548,11 @@
    },
    "Ardite":{
       "color":"#CC3939",
-      "tooltip":"Very rare",
+      "tooltip":"It is hot!",
+      "oredictNames":[
+         "berryArdite",
+         "oreberry"
+      ],
       "smeltingResult":"tconstruct:nuggets:1",
       "maxHeight":256,
       "growsInLight":false,
@@ -472,6 +575,11 @@
       "bushName":"Certus Quartz Oreberry Bush",
       "berryName":"Certus Quartz Oreberry",
       "color":"#a0bebe",
+      "tooltip":"Good for computers!",
+      "oredictNames":[
+         "berryCertusQuartz",
+         "oreberry"
+      ],
       "smeltingResult":{
          "name":"Certus Quartz Nugget",
          "color":"#a0bebe",
@@ -498,6 +606,11 @@
       "bushName":"Black Quartz Oreberry Bush",
       "berryName":"Black Quartz Oreberry",
       "color":"#000000",
+      "tooltip":"Bright black!",
+      "oredictNames":[
+         "berryQuartzBlack",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_nuggetquartzblack",
       "growsInLight":false,
       "tradeable":true,
@@ -512,6 +625,11 @@
    },
    "Coal":{
       "color":"#101111",
+      "tooltip":"Renewable ressources!",
+      "oredictNames":[
+         "berryCoal",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_dusttinycoal",
       "growsInLight":false,
       "tradeable":false,
@@ -531,6 +649,11 @@
       "bushName":"Quartz Oreberry Bush",
       "berryName":"Quartz Oreberry",
       "color":"#f9f8f5",
+      "tooltip":"Comes from the deep hell!",
+      "oredictNames":[
+         "berryNetherquartz",
+         "oreberry"
+      ],
       "smeltingResult":"thaumcraft:nugget:9",
       "growsInLight":false,
       "tradeable":true,
@@ -553,6 +676,11 @@
       "bushName":"Energized Oreberry Bush",
       "berryName":"Energized Oreberry",
       "color":"#d1d100",
+      "tooltip":"Contains liquid Glowstone!",
+      "oredictNames":[
+         "berryClathrateGlowstone",
+         "oreberry"
+      ],
       "smeltingResult":{
          "name":"Energized Nugget",
          "color":"#d1d100",
@@ -583,6 +711,11 @@
    },
    "Cinnabar":{
       "color":"#ed286d",
+      "tooltip":"Can increase your ingots!",
+      "oredictNames":[
+         "berryCinnabar",
+         "oreberry"
+      ],
       "smeltingResult":{
          "name":"Cinnabar Nugget",
          "color":"#ed286d",
@@ -613,6 +746,11 @@
    },
    "Glowstone":{
       "color":"#ffff00",
+      "tooltip":"It glows!",
+      "oredictNames":[
+         "berryGlowstone",
+         "oreberry"
+      ],
       "smeltingResult":"techreborn:dustsmall:62",
       "growsInLight":true,
       "tradeable":false,
@@ -635,6 +773,11 @@
       "bushName":"Resonant Oreberry Bush",
       "berryName":"Resonant Oreberry",
       "color":"#278c5b",
+      "tooltip":"Contains liquid Ender!",
+      "oredictNames":[
+         "berryClathrateEnder",
+         "oreberry"
+      ],
       "smeltingResult":{
          "name":"Resonant Nugget",
          "color":"#278c5b",
@@ -658,6 +801,11 @@
    },
    "Tungsten":{
       "color":"#4a4f4e",
+      "tooltip":"From The End!",
+      "oredictNames":[
+         "berryTungsten",
+         "oreberry"
+      ],
       "smeltingResult":"techreborn:nuggets:15",
       "rarity":10,
       "maxHeight":256,
@@ -674,6 +822,11 @@
       "bushName":"Destabilized Oreberry Bush",
       "berryName":"Destabilized Oreberry",
       "color":"#a80518",
+      "tooltip":"Contains liquid Redstone!",
+      "oredictNames":[
+         "berryClathrateRedstone",
+         "oreberry"
+      ],
       "smeltingResult":{
          "name":"Redstone Nugget",
          "color":"#a80518",
@@ -697,6 +850,11 @@
    },
    "Redstone":{
       "color":"#f20420",
+      "tooltip":"Power!",
+      "oredictNames":[
+         "berryRedstone",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_dusttinyredstone",
       "growsInLight":false,
       "tradeable":false,
@@ -711,9 +869,14 @@
       ]
    },
    "EnderPearl":{
-      "color":"#047744",
       "bushName":"Ender Oreberry Bush",
       "berryName":"Ender Oreberry",
+      "color":"#047744",
+      "tooltip":"Beware of teleportion!",
+      "oredictNames":[
+         "berryEnderPearl",
+         "oreberry"
+      ],
       "smeltingResult":"enderio:item_material:28",
       "growsInLight":false,
       "tradeable":false,
@@ -728,6 +891,11 @@
    },
    "Abyssalnite":{
       "color":"#4b028e",
+      "tooltip":"Absolutely abyssal!",
+      "oredictNames":[
+         "berryAbyssalnite",
+         "oreberry"
+      ],
       "smeltingResult":"abyssalcraft:ingotnugget",
       "rarity":8,
       "maxHeight":60,
@@ -744,6 +912,11 @@
    },
    "Coralium":{
       "color":"#0a7755",
+      "tooltip":"Plague!",
+      "oredictNames":[
+         "berryCoralium",
+         "oreberry"
+      ],
       "smeltingResult":"abyssalcraft:coralium",
       "rarity":8,
       "maxHeight":60,
@@ -758,6 +931,11 @@
    },
    "Diamond":{
       "color":"#59dbdb",
+      "tooltip":"Hard!",
+      "oredictNames":[
+         "berryDiamond",
+         "oreberry"
+      ],
       "smeltingResult":"thermalfoundation:material:16",
       "growsInLight":false,
       "tradeable":false,
@@ -772,6 +950,11 @@
       "bushName":"Awakened Draconium Oreberry Bush",
       "berryName":"Awakened Draconium Oreberry",
       "color":"#f26602",
+      "tooltip":"You can hear it beating!",
+      "oredictNames":[
+         "berryDraconiumAwakened",
+         "oreberry"
+      ],
       "smeltingResult":"draconicevolution:nugget:1",
       "growsInLight":false,
       "tradeable":false,
@@ -781,6 +964,11 @@
       "bushName":"Chaos Oreberry Bush",
       "berryName":"Chaos Oreberry",
       "color":"#000000",
+      "tooltip":"Chaos!",
+      "oredictNames":[
+         "berryShardChaos",
+         "oreberry"
+      ],
       "smeltingResult":"draconicevolution:chaos_shard:3",
       "growsInLight":false,
       "tradeable":false,
@@ -788,6 +976,11 @@
    },
    "Niter":{
       "color":"#f1f2e8",
+      "tooltip":"Good for explosions!",
+      "oredictNames":[
+         "berryNiter",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_dusttinyniter",
       "growsInLight":false,
       "tradeable":true,
@@ -803,6 +996,11 @@
    },
    "Sulfur":{
       "color":"#e5ed07",
+      "tooltip":"Good for explosions!",
+      "oredictNames":[
+         "berrySulfur",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_dusttinysulfur",
       "growsInLight":false,
       "tradeable":true,
@@ -818,6 +1016,11 @@
    },
    "Lapis":{
       "color":"#014dc6",
+      "tooltip":"Good for enchanting!",
+      "oredictNames":[
+         "berryLapis",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_dusttinylapis",
       "growsInLight":false,
       "tradeable":false,
@@ -833,6 +1036,11 @@
    },
    "Tritanium":{
       "color":"#446599",
+      "tooltip":"Feels like an Android!",
+      "oredictNames":[
+         "berryTritanium",
+         "oreberry"
+      ],
       "smeltingResult":"matteroverdrive:tritanium_nugget",
       "growsInLight":false,
       "tradeable":false,
@@ -848,6 +1056,11 @@
    },
    "Dilithium":{
       "color":"#75d8d2",
+      "tooltip":"Something is strange with these crystals!",
+      "oredictNames":[
+         "berryDilithium",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_nuggetdilithium",
       "growsInLight":false,
       "tradeable":false,
@@ -863,6 +1076,11 @@
    },
    "Amethyst":{
       "color":"#e58edb",
+      "tooltip":"Apocalypse!",
+      "oredictNames":[
+         "berryAmethyst",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_nuggetamethyst",
       "growsInLight":false,
       "tradeable":false,
@@ -885,6 +1103,11 @@
    },
    "Emerald":{
       "color":"#0bb705",
+      "tooltip":"Good for Villagers!",
+      "oredictNames":[
+         "berryEmerald",
+         "oreberry"
+      ],
       "smeltingResult":"thermalfoundation:material:17",
       "growsInLight":false,
       "tradeable":false,
@@ -897,6 +1120,11 @@
    },
    "Topaz":{
       "color":"#ea9009",
+      "tooltip":"Good for tools!",
+      "oredictNames":[
+         "berryTopaz",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_nuggettopaz",
       "growsInLight":false,
       "tradeable":false,
@@ -909,6 +1137,11 @@
    },
    "Tanzanite":{
       "color":"#7108a5",
+      "tooltip":"Good for tools!",
+      "oredictNames":[
+         "berryTanzanite",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_nuggettanzanite",
       "growsInLight":false,
       "tradeable":false,
@@ -921,6 +1154,11 @@
    },
    "Malachite":{
       "color":"#5dad7e",
+      "tooltip":"Good for tools!",
+      "oredictNames":[
+         "berryMalachite",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_nuggetmalachite",
       "growsInLight":false,
       "tradeable":false,
@@ -933,6 +1171,11 @@
    },
    "Apatite":{
       "color":"#3491af",
+      "tooltip":"Good for harvest!",
+      "oredictNames":[
+         "berryTApatite",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_nuggetapatite",
       "growsInLight":false,
       "tradeable":false,
@@ -945,6 +1188,11 @@
    },
    "Ruby":{
       "color":"#960117",
+      "tooltip":"Good for tools!",
+      "oredictNames":[
+         "berryRuby",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_nuggetruby",
       "growsInLight":false,
       "tradeable":false,
@@ -957,6 +1205,11 @@
    },
    "Sapphire":{
       "color":"#013d96",
+      "tooltip":"Good for underwater-building!",
+      "oredictNames":[
+         "berrySapphire",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_nuggetruby",
       "growsInLight":false,
       "tradeable":false,
@@ -969,6 +1222,11 @@
    },
    "Peridot":{
       "color":"#179601",
+      "tooltip":"Good for tools!",
+      "oredictNames":[
+         "berryPeridot",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_nuggetperidot",
       "growsInLight":false,
       "tradeable":false,
@@ -981,6 +1239,11 @@
    },
    "Amber":{
       "color":"#d19706",
+      "tooltip":"You can see something in there!",
+      "oredictNames":[
+         "berryAmber",
+         "oreberry"
+      ],
       "smeltingResult":"jaopca:item_nuggetamber",
       "growsInLight":false,
       "tradeable":false,
