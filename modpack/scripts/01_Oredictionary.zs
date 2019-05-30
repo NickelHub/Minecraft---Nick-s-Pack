@@ -55,36 +55,28 @@ advCase.add(<nuclearcraft:part:10>);
 
 #Stone Buttons
 val SButton = <ore:buttonStone>;
+for item in itemUtils.getItemsByRegexRegistryName("undergroundbiomes:.*_stone_button"){
+SButton.add(item.withDamage(32767));
+}
 SButton.add(<minecraft:stone_button>);
 SButton.add(<abyssalcraft:dsbutton>);
 SButton.add(<abyssalcraft:abybutton>);
 SButton.add(<abyssalcraft:cstonebutton>);
-SButton.add(<undergroundbiomes:igneous_stone_button:*>);
-SButton.add(<undergroundbiomes:metamorphic_stone_button:*>);
-SButton.add(<undergroundbiomes:sedimentary_stone_button:*>);
+
 
 #Cobblestone Buttons
 val CButton = <ore:buttonCobblestone>;
-CButton.add(<undergroundbiomes:igneous_cobble_button:*>);
-CButton.add(<undergroundbiomes:metamorphic_cobble_button:*>);
+for item in itemUtils.getItemsByRegexRegistryName("undergroundbiomes:.*_cobble_button"){
+CButton.add(item.withDamage(32767));
+}
 
 #Wooden Button
 val WButton = <ore:buttonWooden>;
 WButton.add(<minecraft:wooden_button>);
 WButton.add(<abyssalcraft:dltbutton>);
-WButton.add(<natura:maple_button>);
-WButton.add(<natura:silverbell_button>);
-WButton.add(<natura:amaranth_button>);
-WButton.add(<natura:tiger_button>);
-WButton.add(<natura:willow_button>);
-WButton.add(<natura:eucalyptus_button>);
-WButton.add(<natura:hopseed_button>);
-WButton.add(<natura:sakura_button>);
-WButton.add(<natura:redwood_button>);
-WButton.add(<natura:ghostwood_button>);
-WButton.add(<natura:darkwood_button>);
-WButton.add(<natura:fusewood_button>);
-WButton.add(<natura:bloodwood_button>);
+for item in itemUtils.getItemsByRegexRegistryName("natura:.*_button"){
+WButton.add(item.withDamage(32767));
+}
 
 #Netherrack button
 val NButton = <ore:buttonNetherrack>;
@@ -131,6 +123,15 @@ chestE.add(<enderstorage:ender_storage:0>);
 //
 #
 
+#Skull
+val skull = <ore:itemSkull>;
+for item in itemUtils.getItemsByRegexRegistryName("betteranimalsplus:.*head.*"){
+skull.add(item.withDamage(32767));
+}
+for item in itemUtils.getItemsByRegexRegistryName("betteranimalsplus:.*skull.*"){
+skull.add(item.withDamage(32767));
+}
+
 #Dust Ender
 val DustEnder = <ore:dustEnder>;
 DustEnder.add(<techreborn:dust:20>);
@@ -154,6 +155,7 @@ val ingotBrick = <ore:ingotBrick>;
 ingotBrick.add(<tconstruct:materials:0>);
 ingotBrick.add(<tconstruct:materials:1>);
 ingotBrick.add(<tconstruct:materials:2>);
+ingotBrick.add(<ceramics:unfired_clay:5>);
 
 #Bitumen
 val crystalCO = <ore:crystalCrudeOil>;
@@ -187,106 +189,6 @@ csLarge.add(<draconicevolution:chaos_shard:1>);
 val csComplete = <ore:shardChaos>;
 csComplete.add(<draconicevolution:chaos_shard:0>);
 
-#Adding additional entries to Oreberry Bushes' berries
-val berryEssence = <ore:berryEssence>;
-berryEssence.add(<oreberries:essence_oreberry>);
-val berryIron = <ore:berryIron>;
-berryIron.add(<oreberries:iron_oreberry>);
-val berryGold = <ore:berryGold>;
-berryGold.add(<oreberries:gold_oreberry>);
-val berryCopper = <ore:berryCopper>;
-berryCopper.add(<oreberries:copper_oreberry>);
-val berryTin = <ore:berryTin>;
-berryTin.add(<oreberries:tin_oreberry>);
-val berryAluminum = <ore:berryAluminum>;
-berryAluminum.add(<oreberries:aluminum_oreberry>);
-val berryOsmium = <ore:berryOsmium>;
-berryOsmium.add(<oreberries:osmium_oreberry>);
-val berryLead = <ore:berryLead>;
-berryLead.add(<oreberries:lead_oreberry>);
-val berrySilver = <ore:berrySilver>;
-berrySilver.add(<oreberries:silver_oreberry>);
-val berryNickel = <ore:berryNickel>;
-berryNickel.add(<oreberries:nickel_oreberry>);
-val berryYellorium = <ore:berryYellorium>;
-berryYellorium.add(<oreberries:yellorium_oreberry>);
-val berryUranium = <ore:berryUranium>;
-berryUranium.add(<oreberries:uranium_oreberry>);
-val berryThorium = <ore:berryThorium>;
-berryThorium.add(<oreberries:thorium_oreberry>);
-val berryZinc = <ore:berryZinc>;
-berryZinc.add(<oreberries:zinc_oreberry>);
-val berryBoron = <ore:berryBoron>;
-berryBoron.add(<oreberries:boron_oreberry>);
-val berryMagnesium = <ore:berryMagnesium>;
-berryMagnesium.add(<oreberries:magnesium_oreberry>);
-val berryLithium = <ore:berryLithium>;
-berryLithium.add(<oreberries:lithium_oreberry>);
-val berryChromium = <ore:berryChromium>;
-berryChromium.add(<oreberries:chromium_oreberry>);
-val berryChrome = <ore:berryChrome>;
-berryChrome.add(<oreberries:chromium_oreberry>);
-val berryIridium = <ore:berryIridium>;
-berryIridium.add(<oreberries:iridium_oreberry>);
-val berryPlatinum = <ore:berryPlatinum>;
-berryPlatinum.add(<oreberries:platinum_oreberry>);
-val berryMithril = <ore:berryMithril>;
-berryMithril.add(<oreberries:mithril_oreberry>);
-val berryTitanium = <ore:berryTitanium>;
-berryTitanium.add(<oreberries:titanium_oreberry>);
-val berryDraconium = <ore:berryDraconium>;
-berryDraconium.add(<oreberries:draconium_oreberry>);
-val berryDShard = <ore:berryDimensionalShard>;
-berryDShard.add(<oreberries:dimensionalshard_oreberry>);
-val berryCobalt = <ore:berryCobalt>;
-berryCobalt.add(<oreberries:cobalt_oreberry>);
-val berryArdite = <ore:berryArdite>;
-berryArdite.add(<oreberries:ardite_oreberry>);
-val berryCQuartz = <ore:berryCertusQuartz>;
-berryCQuartz.add(<oreberries:certusquartz_oreberry>);
-val berryBQuartz = <ore:berryQuartzBlack>;
-berryBQuartz.add(<oreberries:quartzblack_oreberry>);
-val berryCoal = <ore:berryCoal>;
-berryCoal.add(<oreberries:coal_oreberry>);
-val berryQuartz = <ore:berryNetherQuartz>;
-berryQuartz.add(<oreberries:netherquartz_oreberry>);
-val berryEnergised = <ore:berryClathrateGlowstone>;
-berryEnergised.add(<oreberries:clathrateglowstone_oreberry>);
-val berryCinnabar = <ore:berryCinnabar>;
-berryCinnabar.add(<oreberries:cinnabar_oreberry>);
-val berryResonant = <ore:berryClathrateEnder>;
-berryResonant.add(<oreberries:clathrateender_oreberry>);
-val berryTungsten = <ore:berryTungsten>;
-berryTungsten.add(<oreberries:tungsten_oreberry>);
-val berryDestabilized = <ore:berryClathrateRedstone>;
-berryDestabilized.add(<oreberries:clathrateredstone_oreberry>);
-val berryRedstone = <ore:berryRedstone>;
-berryRedstone.add(<oreberries:redstone_oreberry>);
-val berryEPearl = <ore:berryEnderPearl>;
-berryEPearl.add(<oreberries:enderpearl_oreberry>);
-val berryAbyssalnite = <ore:berryAbyssalnite>;
-berryAbyssalnite.add(<oreberries:abyssalnite_oreberry>);
-val berryCoralium = <ore:berryCoralium>;
-berryCoralium.add(<oreberries:coralium_oreberry>);
-val berryDiamond = <ore:berryDiamond>;
-berryDiamond.add(<oreberries:diamond_oreberry>);
-val berryChaos = <ore:berryShardChaos>;
-berryChaos.add(<oreberries:shardchaos_oreberry>);
-val berryADraconium = <ore:berryDraconiumAwakened>;
-berryADraconium.add(<oreberries:draconiumawakened_oreberry>);
-val berryNiter = <ore:berryNiter>;
-berryNiter.add(<oreberries:niter_oreberry>);
-val berryNiter2 = <ore:berryNitre>;
-berryNiter2.add(<oreberries:niter_oreberry>);
-val berryNiter3 = <ore:berrySaltpeter>;
-berryNiter3.add(<oreberries:niter_oreberry>);
-val berrySul = <ore:berrySulfur>;
-berrySul.add(<oreberries:sulfur_oreberry>);
-val berrySul2 = <ore:berrySulphur>;
-berrySul2.add(<oreberries:sulfur_oreberry>);
-val berrylapis = <ore:berryLapis>;
-berrylapis.add(<oreberries:lapis_oreberry>);
-
 #Ordicting rabbit hide 
 val rabbithideitem = <ore:itemLeatherRabbit>; //This is for recipes like to craft leather, which cannot contain an alternative
 rabbithideitem.add(<minecraft:rabbit_hide>);
@@ -314,15 +216,7 @@ wax.add(<harvestcraft:beeswaxitem>);
 
 val stick = <ore:stickWood>;
 stick.add(<immersiveengineering:material:0>);
-stick.add(<pmp:bamb_asper>);
-stick.add(<pmp:bamb_farge>);
-stick.add(<pmp:bamb_gtimb>);
-stick.add(<pmp:bamb_gldba>);
-stick.add(<pmp:bamb_moso>);
-stick.add(<pmp:bamb_shtas>);
-stick.add(<pmp:bamb_timor>);
-stick.add(<pmp:bamb_tropb>);
-stick.add(<pmp:bamb_wetfo>);
+stick.addItems(itemUtils.getItemsByRegexRegistryName("pmp:bamb_.*"));
 
 val stonemeal = <ore:dustStonemeal>;
 stonemeal.add(<techreborn:dust:61>);
@@ -337,64 +231,20 @@ stonemeal.add(<techreborn:dust:63>);
 
 #Adding more lily pads
 val lilypad = <ore:lilypad>;
-lilypad.add(<pmp:float_arrll>);
-lilypad.add(<pmp:float_crflh>);
-lilypad.add(<pmp:float_duckw>);
-lilypad.add(<pmp:float_rerfl>);
-lilypad.add(<pmp:float_varpl>);
-lilypad.add(<pmp:float_wache>);
-lilypad.add(<pmp:float_wahya>);
-lilypad.add(<pmp:float_walet>);
-lilypad.add(<pmp:float_washi>);
-lilypad.add(<pmp:float_walil_red>);
-lilypad.add(<pmp:float_walil_ora>);
-lilypad.add(<pmp:float_walil_yel>);
-lilypad.add(<pmp:float_walil_grn>);
-lilypad.add(<pmp:float_walil_cya>);
-lilypad.add(<pmp:float_walil_blu>);
-lilypad.add(<pmp:float_walil_pur>);
-lilypad.add(<pmp:float_walil_pnk>);
-lilypad.add(<pmp:float_walil_wht>);
+for item in itemUtils.getItemsByRegexRegistryName("pmp:float_.*"){
+lilypad.add(item.withDamage(32767));
+}
+
 
 //Adding more registration to plants
 #Vines
 val vine = <ore:vine>;
-vine.add(<pmp:climb_bluph>);
-vine.add(<pmp:climb_brcre>);
-vine.add(<pmp:climb_cgrpv>);
-vine.add(<pmp:climb_gldho>);
-vine.add(<pmp:climb_hyacb>);
-vine.add(<pmp:climb_japcr>);
-vine.add(<pmp:climb_kiwi>);
-vine.add(<pmp:climb_maidf>);
-vine.add(<pmp:climb_porce>);
-vine.add(<pmp:climb_swpea_red>);
-vine.add(<pmp:climb_swpea_ora>);
-vine.add(<pmp:climb_swpea_yel>);
-vine.add(<pmp:climb_swpea_grn>);
-vine.add(<pmp:climb_swpea_cya>);
-vine.add(<pmp:climb_swpea_blu>);
-vine.add(<pmp:climb_swpea_pur>);
-vine.add(<pmp:climb_swpea_pnk>);
-vine.add(<pmp:climb_swpea_wht>);
-vine.add(<pmp:vine_blsky>);
-vine.add(<pmp:vine_jadev>);
-vine.add(<pmp:vine_japiv>);
-vine.add(<pmp:vine_madev>);
-vine.add(<pmp:vine_mystr>);
-vine.add(<pmp:vine_silvc>);
-vine.add(<pmp:vine_spamo>);
-vine.add(<pmp:vine_sweiv>);
-vine.add(<pmp:vine_vpeiv>);
-vine.add(<pmp:vine_wiste_red>);
-vine.add(<pmp:vine_wiste_ora>);
-vine.add(<pmp:vine_wiste_yel>);
-vine.add(<pmp:vine_wiste_grn>);
-vine.add(<pmp:vine_wiste_cya>);
-vine.add(<pmp:vine_wiste_blu>);
-vine.add(<pmp:vine_wiste_pur>);
-vine.add(<pmp:vine_wiste_pnk>);
-vine.add(<pmp:vine_wiste_wht>);
+for item in itemUtils.getItemsByRegexRegistryName("pmp:climb_.*"){
+vine.add(item.withDamage(32767));
+}
+for item in itemUtils.getItemsByRegexRegistryName("pmp:vine_.*"){
+vine.add(item.withDamage(32767));
+}
 vine.add(<biomesoplenty:willow_vine>);
 vine.add(<natura:nether_thorn_vines>);
 vine.add(<plants2:adlumia_f>);
@@ -547,6 +397,14 @@ mushroom.add(<pmp:fungu_stnkh>);
 mushroom.add(<pmp:fungu_wemic>);
 mushroom.add(<pmp:fungu_woodb>);
 
+#Cheese
+val cheese = <ore:foodCheese>;
+cheese.add(<actuallyadditions:item_food:0>);
+
+#Milk 
+val milk = <ore:listAllmilk>;
+milk.add(<betteranimalsplus:goatmilk>);
+
 //The next section adds more crops
 val grape = <ore:cropGrape>;
 grape.add(<pmp:fruit_purgr>);
@@ -629,23 +487,23 @@ val cokeblock = <ore:blockCoke>;
 cokeblock.add(<immersiveengineering:stone_decoration:3>);
 cokeblock.add(<thermalfoundation:storage_resource:1>);
 cokeblock.add(<railcraft:generic:6>);
-cokeblock.add(<chisel:block_coal_coke:*>);
-cokeblock.add(<chisel:block_coal_coke1:*>);
-cokeblock.add(<chisel:block_coal_coke2:*>);
-val cokeblockf = <ore:blockFuelCoke>;
-cokeblockf.add(<immersiveengineering:stone_decoration:3>);
-cokeblockf.add(<thermalfoundation:storage_resource:1>);
-cokeblockf.add(<railcraft:generic:6>);
-cokeblockf.add(<chisel:block_coal_coke:*>);
-cokeblockf.add(<chisel:block_coal_coke1:*>);
-cokeblockf.add(<chisel:block_coal_coke2:*>);
-val cokeblockc = <ore:blockCoalCoke>;
-cokeblockc.add(<immersiveengineering:stone_decoration:3>);
-cokeblockc.add(<thermalfoundation:storage_resource:1>);
-cokeblockc.add(<railcraft:generic:6>);
-cokeblockc.add(<chisel:block_coal_coke:*>);
-cokeblockc.add(<chisel:block_coal_coke1:*>);
-cokeblockc.add(<chisel:block_coal_coke2:*>);
+for item in itemUtils.getItemsByRegexRegistryName("chisel:block_coal_co.*"){
+cokeblock.add(item.withDamage(32767));
+}
+val cokeblockF = <ore:blockFuelCoke>;
+cokeblockF.add(<immersiveengineering:stone_decoration:3>);
+cokeblockF.add(<thermalfoundation:storage_resource:1>);
+cokeblockF.add(<railcraft:generic:6>);
+for item in itemUtils.getItemsByRegexRegistryName("chisel:block_coal_co.*"){
+cokeblockF.add(item.withDamage(32767));
+}
+val cokeblockC = <ore:blockCoalCoke>;
+cokeblockC.add(<immersiveengineering:stone_decoration:3>);
+cokeblockC.add(<thermalfoundation:storage_resource:1>);
+cokeblockC.add(<railcraft:generic:6>);
+for item in itemUtils.getItemsByRegexRegistryName("chisel:block_coal_co.*"){
+cokeblockC.add(item.withDamage(32767));
+}
 
 #Adding more bricks 
 val brickblock = <ore:blockBrick>; // This adds more bricks like the ones made of clay
@@ -658,6 +516,7 @@ brickblock.add(<unlimitedchiselworks:chisel_bricks_forestry_ash_brick_0:*>);
 brickblock.add(<unlimitedchiselworks:chisel_bricks1_forestry_ash_brick_0:*>);
 brickblock.add(<unlimitedchiselworks:chisel_bricks2_forestry_ash_brick_0:*>);
 brickblock.add(<immersivehempcraft:hempstone_bricks>);
+brickblock.add(<ceramics:clay_hard:*>);
 
 #Ordicting Nether Bricks
 val netherbrick = <ore:bricksNether>;
@@ -675,75 +534,9 @@ stonebrick.add(<abyssalcraft:darkstone_brick:0>);
 stonebrick.add(<abyssalcraft:darkstone_brick:1>);
 stonebrick.add(<abyssalcraft:darkstone_brick:2>);
 stonebrick.add(<appliedenergistics2:sky_stone_brick:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_igneous_brick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_igneous_brick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_igneous_brick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_igneous_brick_1:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_igneous_brick_1:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_igneous_brick_1:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_igneous_brick_2:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_igneous_brick_2:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_igneous_brick_2:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_igneous_brick_3:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_igneous_brick_3:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_igneous_brick_3:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_igneous_brick_4:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_igneous_brick_4:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_igneous_brick_4:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_igneous_brick_5:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_igneous_brick_5:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_igneous_brick_5:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_igneous_brick_6:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_igneous_brick_6:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_igneous_brick_6:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_igneous_brick_7:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_igneous_brick_7:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_igneous_brick_7:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_metamorphic_brick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_metamorphic_brick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_metamorphic_brick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_metamorphic_brick_1:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_metamorphic_brick_1:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_metamorphic_brick_1:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_metamorphic_brick_2:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_metamorphic_brick_2:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_metamorphic_brick_2:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_metamorphic_brick_3:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_metamorphic_brick_3:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_metamorphic_brick_3:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_metamorphic_brick_4:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_metamorphic_brick_4:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_metamorphic_brick_4:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_metamorphic_brick_5:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_metamorphic_brick_5:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_metamorphic_brick_5:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_metamorphic_brick_6:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_metamorphic_brick_6:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_metamorphic_brick_6:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_undergroundbiomes_metamorphic_brick_7:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_undergroundbiomes_metamorphic_brick_7:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_undergroundbiomes_metamorphic_brick_7:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_appliedenergistics2_sky_stone_brick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_appliedenergistics2_sky_stone_brick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_appliedenergistics2_sky_stone_brick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_darkstone_brick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_darkstone_brick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_darkstone_brick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_dreadbrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_dreadbrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_dreadbrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_abybrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_abybrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_abybrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_abydreadbrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_abydreadbrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_abydreadbrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_ethaxiumbrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_ethaxiumbrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_ethaxiumbrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick_abyssalcraft_cstonebrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick1_abyssalcraft_cstonebrick_0:*>);
-stonebrick.add(<unlimitedchiselworks:chisel_stonebrick2_abyssalcraft_cstonebrick_0:*>);
+for item in itemUtils.getItemsByRegexRegistryName("unlimitedchiselworks:chisel_stonebrick.*"){
+stonebrick.add(item.withDamage(32767));
+}
 stonebrick.add(<nex:basalt:2>);
 stonebrick.add(<nex:basalt:3>);
 stonebrick.add(<undergroundbiomes:igneous_brick:*>);
@@ -831,69 +624,9 @@ stone.add(<abyssalcraft:stone:0>);
 stone.add(<abyssalcraft:stone:1>);
 
 val cobble = <ore:cobblestone>;
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_0:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_0:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_0:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_1:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_1:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_1:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_2:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_2:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_2:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_3:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_3:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_3:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_4:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_4:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_4:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_5:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_5:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_5:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_6:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_6:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_6:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_igneous_cobble_7:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_igneous_cobble_7:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_igneous_cobble_7:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_0:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_0:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_0:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_1:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_1:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_1:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_2:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_2:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_2:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_3:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_3:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_3:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_4:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_4:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_4:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_5:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_5:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_5:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_6:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_6:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_6:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_undergroundbiomes_metamorphic_cobble_7:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_undergroundbiomes_metamorphic_cobble_7:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_undergroundbiomes_metamorphic_cobble_7:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_abyssalcraft_cobblestone_0:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_abyssalcraft_cobblestone_0:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_abyssalcraft_cobblestone_0:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_abyssalcraft_cobblestone_1:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_abyssalcraft_cobblestone_1:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_abyssalcraft_cobblestone_1:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_abyssalcraft_cobblestone_2:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_abyssalcraft_cobblestone_2:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_abyssalcraft_cobblestone_2:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_abyssalcraft_cobblestone_3:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_abyssalcraft_cobblestone_3:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_abyssalcraft_cobblestone_3:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone_abyssalcraft_cobblestone_4:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone1_abyssalcraft_cobblestone_4:*>);
-cobble.add(<unlimitedchiselworks:chisel_cobblestone2_abyssalcraft_cobblestone_4:*>);
+for item in itemUtils.getItemsByRegexRegistryName("unlimitedchiselworks:chisel_cobblestone.*"){
+cobble.add(item.withDamage(32767));
+}
 cobble.add(<minecraft:mossy_cobblestone>);
 cobble.add(<chisel:cobblestonemossy:*>);
 cobble.add(<chisel:cobblestonemossy1:*>);
@@ -943,102 +676,9 @@ val log = <ore:logWood>;
 
 val planks = <ore:planksWood>;
 planks.add(<immersiveengineering:treated_wood:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_immersiveengineering_treated_wood_0:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_techreborn_rubber_planks_0:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_0:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_1:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_2:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_3:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_4:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_5:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_6:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_7:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_overworld_planks_8:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_nether_planks_0:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_nether_planks_1:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_nether_planks_2:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_natura_nether_planks_3:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_plants2_planks_0:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_plants2_planks_1:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_plants2_planks_2:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_plants2_planks_3:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_plants2_planks_4:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_plants2_planks_5:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_0:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_1:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_2:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_3:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_4:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_5:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_6:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_7:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_8:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_9:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_10:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_11:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_12:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_13:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_14:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_biomesoplenty_planks_0_15:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_0:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_1:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_2:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_3:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_4:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_5:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_6:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_7:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_8:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_9:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_10:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_11:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_12:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_13:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_14:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_0_15:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_0:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_1:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_2:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_3:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_4:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_5:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_6:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_7:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_8:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_9:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_10:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_11:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_1_12:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_0:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_1:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_2:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_3:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_4:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_5:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_6:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_7:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_8:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_9:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_10:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_11:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_12:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_13:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_14:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_0_15:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_0:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_1:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_2:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_3:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_4:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_5:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_6:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_7:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_8:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_9:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_10:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_11:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_forestry_planks_fireproof_1_12:*>);
-planks.add(<unlimitedchiselworks:chisel_planks_oak_abyssalcraft_dltplank_0:*>);
+for item in itemUtils.getItemsByRegexRegistryName("unlimitedchiselworks:chisel_planks.*"){
+planks.add(item.withDamage(32767));
+}
 
 val planksTreated = <ore:planksTreatedWood>;
 planksTreated.add(<unlimitedchiselworks:chisel_planks_oak_immersiveengineering_treated_wood_0:*>);
@@ -1059,104 +699,6 @@ val fencewg = <ore:fenceWoodGate>;
 
 val dustQ = <ore:dustQuartz>;
 dustQ.remove(<actuallyadditions:item_dust:5>);
-
-#Removing entries to Oreberry Bushes' berries
-val nuggetEssence = <ore:nuggetEssence>;
-nuggetEssence.remove(<oreberries:essence_oreberry>);
-val nuggetIron = <ore:nuggetIron>;
-nuggetIron.remove(<oreberries:iron_oreberry>);
-val nuggetGold = <ore:nuggetGold>;
-nuggetGold.remove(<oreberries:gold_oreberry>);
-val nuggetCopper = <ore:nuggetCopper>;
-nuggetCopper.remove(<oreberries:copper_oreberry>);
-val nuggetTin = <ore:nuggetTin>;
-nuggetTin.remove(<oreberries:tin_oreberry>);
-val nuggetAluminum = <ore:nuggetAluminum>;
-nuggetAluminum.remove(<oreberries:aluminum_oreberry>);
-val nuggetOsmium = <ore:nuggetOsmium>;
-nuggetOsmium.remove(<oreberries:osmium_oreberry>);
-val nuggetLead = <ore:nuggetLead>;
-nuggetLead.remove(<oreberries:lead_oreberry>);
-val nuggetSilver = <ore:nuggetSilver>;
-nuggetSilver.remove(<oreberries:silver_oreberry>);
-val nuggetNickel = <ore:nuggetNickel>;
-nuggetNickel.remove(<oreberries:nickel_oreberry>);
-val nuggetYellorium = <ore:nuggetYellorium>;
-nuggetYellorium.remove(<oreberries:yellorium_oreberry>);
-val nuggetUranium = <ore:nuggetUranium>;
-nuggetUranium.remove(<oreberries:uranium_oreberry>);
-val nuggetThorium = <ore:nuggetThorium>;
-nuggetThorium.remove(<oreberries:thorium_oreberry>);
-val nuggetZinc = <ore:nuggetZinc>;
-nuggetZinc.remove(<oreberries:zinc_oreberry>);
-val nuggetBoron = <ore:nuggetBoron>;
-nuggetBoron.remove(<oreberries:boron_oreberry>);
-val nuggetMagnesium = <ore:nuggetMagnesium>;
-nuggetMagnesium.remove(<oreberries:magnesium_oreberry>);
-val nuggetLithium = <ore:nuggetLithium>;
-nuggetLithium.remove(<oreberries:lithium_oreberry>);
-val nuggetChromium = <ore:nuggetChromium>;
-nuggetChromium.remove(<oreberries:chromium_oreberry>);
-val nuggetChrome = <ore:nuggetChrome>;
-nuggetChrome.remove(<oreberries:chromium_oreberry>);
-val nuggetIridium = <ore:nuggetIridium>;
-nuggetIridium.remove(<oreberries:iridium_oreberry>);
-val nuggetPlatinum = <ore:nuggetPlatinum>;
-nuggetPlatinum.remove(<oreberries:platinum_oreberry>);
-val nuggetMithril = <ore:nuggetMithril>;
-nuggetMithril.remove(<oreberries:mithril_oreberry>);
-val nuggetTitanium = <ore:nuggetTitanium>;
-nuggetTitanium.remove(<oreberries:titanium_oreberry>);
-val nuggetDraconium = <ore:nuggetDraconium>;
-nuggetDraconium.remove(<oreberries:draconium_oreberry>);
-val nuggetDShard = <ore:nuggetDimensionalshard>;
-nuggetDShard.remove(<oreberries:dimensionalshard_oreberry>);
-val nuggetCobalt = <ore:nuggetCobalt>;
-nuggetCobalt.remove(<oreberries:cobalt_oreberry>);
-val nuggetArdite = <ore:nuggetArdite>;
-nuggetArdite.remove(<oreberries:ardite_oreberry>);
-val nuggetCQuartz = <ore:nuggetCertusquartz>;
-nuggetCQuartz.remove(<oreberries:certusquartz_oreberry>);
-val nuggetBQuartz = <ore:nuggetQuartzblack>;
-nuggetBQuartz.remove(<oreberries:quartzblack_oreberry>);
-val nuggetCoal = <ore:nuggetCoal>;
-nuggetCoal.remove(<oreberries:coal_oreberry>);
-val nuggetQuartz = <ore:nuggetNetherquartz>;
-nuggetQuartz.remove(<oreberries:netherquartz_oreberry>);
-val nuggetEnergised = <ore:nuggetClathrateglowstone>;
-nuggetEnergised.remove(<oreberries:clathrateglowstone_oreberry>);
-val nuggetCinnabar = <ore:nuggetCinnabar>;
-nuggetCinnabar.remove(<oreberries:cinnabar_oreberry>);
-val nuggetResonant = <ore:nuggetClathrateender>;
-nuggetResonant.remove(<oreberries:clathrateender_oreberry>);
-val nuggetTungsten = <ore:nuggetTungsten>;
-nuggetTungsten.remove(<oreberries:tungsten_oreberry>);
-val nuggetDestabilized = <ore:nuggetClathrateredstone>;
-nuggetDestabilized.remove(<oreberries:clathrateredstone_oreberry>);
-val nuggetRedstone = <ore:nuggetRedstone>;
-nuggetRedstone.remove(<oreberries:redstone_oreberry>);
-val nuggetEPearl = <ore:nuggetEnderpearl>;
-nuggetEPearl.remove(<oreberries:enderpearl_oreberry>);
-val nuggetAbyssalnite = <ore:nuggetAbyssalnite>;
-nuggetAbyssalnite.remove(<oreberries:abyssalnite_oreberry>);
-val nuggetCoralium = <ore:nuggetCoralium>;
-nuggetCoralium.remove(<oreberries:coralium_oreberry>);
-val nuggetDiamond = <ore:nuggetDiamond>;
-nuggetDiamond.remove(<oreberries:diamond_oreberry>);
-val nuggetChaos = <ore:nuggetShardchaos>;
-nuggetChaos.remove(<oreberries:shardchaos_oreberry>);
-val nuggetADraconium = <ore:nuggetDraconiumawakened>;
-nuggetADraconium.remove(<oreberries:draconiumawakened_oreberry>);
-val nuggetNiter = <ore:nuggetNiter>;
-nuggetNiter.remove(<oreberries:niter_oreberry>);
-val nuggetNiter3 = <ore:nuggetSaltpeter>;
-nuggetNiter3.remove(<oreberries:niter_oreberry>);
-val nuggetSul = <ore:nuggetSulfur>;
-nuggetSul.remove(<oreberries:sulfur_oreberry>);
-val nuggetSul2 = <ore:nuggetSulphur>;
-nuggetSul2.remove(<oreberries:sulfur_oreberry>);
-val nuggetLapis = <ore:nuggetLapis>;
-nuggetLapis.remove(<oreberries:lapis_oreberry>);
 
 print("Initialized 01_Oredictionary.zs");
 

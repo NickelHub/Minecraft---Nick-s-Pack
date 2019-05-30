@@ -41,6 +41,10 @@ mods.unidict.removalByKind.get("Crafting").remove("plate");
 //
 #
 
+#Removing Enchanting Plus' stuff
+recipes.removeByRecipeName("eplus:table");
+recipes.removeByRecipeName("eplus:upgrade");
+
 #Removing Trinkts and Baubles stuff
 recipes.remove(<xat:glowing_ingot>);
 recipes.remove(<xat:dragons_eye>);
@@ -110,6 +114,9 @@ recipes.remove(<magicbees:manasteelscoop>);
 //The next section removes things from technical mods
 //
 #
+
+#Removing Elevators Mod's stuff 
+recipes.removeByRegex("elevatorid:elevator_.*");
 
 #Removing QuantumFlux' stuff
 recipes.remove(<quantumflux:craftingpiece:5>);

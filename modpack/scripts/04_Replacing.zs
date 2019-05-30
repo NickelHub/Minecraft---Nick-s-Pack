@@ -68,6 +68,9 @@ recipes.replaceAllOccurences(<actuallyadditions:item_coffee_seed>, <ore:cropCoff
 #Fixing water
 recipes.replaceAllOccurences(<minecraft:water_bucket>, <ore:listAllwater>);
 
+#Fixing milk
+recipes.replaceAllOccurences(<minecraft:milk_bucket>, <ore:listAllmilk>);
+
 #Unifying bat wings
 recipes.replaceAllOccurences(<gravestone-extended:gs_bat_wing>, <ore:wingBat>);
 recipes.replaceAllOccurences(<actuallyadditions:item_misc:15>, <ore:wingBat>);
@@ -117,7 +120,7 @@ recipes.replaceAllOccurences(<minecraft:iron_bars>, <ore:barsIron>);
 #Fixing Bricks
 recipes.replaceAllOccurences(<minecraft:brick_block>, <ore:blockBrick>);
 
-#Fixing obsidian, redstone and glowstone etc. in recipes
+#Fixing Vanilla Stuff
 recipes.replaceAllOccurences(<minecraft:glowstone>, <ore:glowstone>);
 recipes.replaceAllOccurences(<ore:blockGlowstone>, <ore:glowstone>);
 recipes.replaceAllOccurences(<minecraft:redstone_block>, <ore:blockRedstone>);
@@ -127,6 +130,7 @@ recipes.replaceAllOccurences(<minecraft:end_stone>, <ore:endstone>);
 recipes.replaceAllOccurences(<minecraft:iron_block>, <ore:blockIron>);
 recipes.replaceAllOccurences(<minecraft:gravel>, <ore:gravel>);
 recipes.replaceAllOccurences(<minecraft:sand>, <ore:sand>);
+recipes.replaceAllOccurences(<minecraft:coal_block>, <ore:blockCoal>);
 
 #Stone Slabs
 recipes.replaceAllOccurences(<minecraft:stone_slab:0>, <ore:slabStone>);
