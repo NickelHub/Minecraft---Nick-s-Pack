@@ -21,4 +21,4 @@ Installation Server:
 			x ModNameTooltip
 			x Optifine
 			x SmoothFont
-	x Start server with 8GB+ of RAM
+	x Start server with at least 8GB+ of RAM
