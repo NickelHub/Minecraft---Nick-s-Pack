@@ -179,7 +179,7 @@
       "color":"#f7faeb",
       "tooltip":"Nickelcraft's desired metal!",
       "oredictNames":[
-         "berryEssence",
+         "berryNickel",
          "oreberry"
       ],
       "smeltingResult":"thermalfoundation:material:197",
