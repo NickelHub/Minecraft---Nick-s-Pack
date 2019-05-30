@@ -216,7 +216,9 @@ wax.add(<harvestcraft:beeswaxitem>);
 
 val stick = <ore:stickWood>;
 stick.add(<immersiveengineering:material:0>);
-stick.addItems(itemUtils.getItemsByRegexRegistryName("pmp:bamb_.*"));
+for item in itemUtils.getItemsByRegexRegistryName("pmp:bamb_.*"){
+stick.add(item.withDamage(32767));
+}
 
 val stonemeal = <ore:dustStonemeal>;
 stonemeal.add(<techreborn:dust:61>);
