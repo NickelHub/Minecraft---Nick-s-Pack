@@ -123,8 +123,6 @@
 |   moartinkers-0.6.0.jar
 |   MoCreatures_12_0_5.jar
 |   modnametooltip_1.12.2-1.10.0.jar
-|   mods.bat
-|   mods.txt
 |   modtweaker-4.0.17.jar
 |   morebees-1.12.2-2.0.1.jar
 |   moremystcraft-1.12.2-0.5.6.jar
