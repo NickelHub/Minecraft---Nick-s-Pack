@@ -32,7 +32,7 @@
       "growsInLight":false,
       "tradeable":true,
       "minHeight":0,
-      "maxHeight":75,
+      "maxHeight":63,
       "dimensions":[
          28885,
          0,
@@ -71,7 +71,7 @@
       "growsInLight":false,
       "tradeable":true,
       "minHeight":0,
-      "maxHeight":85,
+      "maxHeight":63,
       "dimensions":[
          28885,
          0,
@@ -90,7 +90,7 @@
       "growsInLight":false,
       "tradeable":true,
       "minHeight":0,
-      "maxHeight":85,
+      "maxHeight":63,
       "dimensions":[
          28885,
          0,
@@ -128,7 +128,7 @@
       "growsInLight":false,
       "tradeable":true,
       "minHeight":0,
-      "maxHeight":75,
+      "maxHeight":63,
       "dimensions":[
          28885,
          0,
@@ -531,7 +531,7 @@
       "smeltingResult":"tconstruct:nuggets",
       "growsInLight":false,
       "tradeable":false,
-      "maxHeight":256,
+      "maxHeight":120,
       "replaceBlocks":[
          "minecraft:netherrack",
          "biomesoplenty:grass:6",
@@ -554,7 +554,7 @@
          "oreberry"
       ],
       "smeltingResult":"tconstruct:nuggets:1",
-      "maxHeight":256,
+      "maxHeight":120,
       "growsInLight":false,
       "tradeable":false,
       "replaceBlocks":[
@@ -615,7 +615,7 @@
       "growsInLight":false,
       "tradeable":true,
       "minHeight":0,
-      "maxHeight":70,
+      "maxHeight":63,
       "dimensions":[
          28885,
          0,
@@ -636,7 +636,7 @@
       "rarity":3,
       "density":5,
       "minHeight":20,
-      "maxHeight":120,
+      "maxHeight":63,
       "sizeChance":5,
       "dimensions":[
          28885,
@@ -657,7 +657,7 @@
       "smeltingResult":"thaumcraft:nugget:9",
       "growsInLight":false,
       "tradeable":true,
-      "maxHeight":256,
+      "maxHeight":120,
       "replaceBlocks":[
          "minecraft:netherrack",
          "biomesoplenty:grass:6",
@@ -694,7 +694,7 @@
       "growsInLight":true,
       "tradeable":false,
       "rarity":8,
-      "maxHeight":256,
+      "maxHeight":120,
       "replaceBlocks":[
          "minecraft:netherrack",
          "biomesoplenty:grass:6",
@@ -729,7 +729,7 @@
       "growsInLight":false,
       "tradeable":false,
       "rarity":8,
-      "maxHeight":256,
+      "maxHeight":120,
       "replaceBlocks":[
          "minecraft:netherrack",
          "biomesoplenty:grass:6",
@@ -754,7 +754,7 @@
       "smeltingResult":"techreborn:dustsmall:62",
       "growsInLight":true,
       "tradeable":false,
-      "maxHeight":256,
+      "maxHeight":120,
       "replaceBlocks":[
          "minecraft:netherrack",
          "biomesoplenty:grass:6",
@@ -898,7 +898,7 @@
       ],
       "smeltingResult":"abyssalcraft:ingotnugget",
       "rarity":8,
-      "maxHeight":60,
+      "maxHeight":63,
       "sizeChance":14,
       "replaceBlocks":[
          "abyssalcraft:stone:2",
@@ -919,7 +919,7 @@
       ],
       "smeltingResult":"abyssalcraft:coralium",
       "rarity":8,
-      "maxHeight":60,
+      "maxHeight":63,
       "replaceBlocks":[
          "abyssalcraft:stone:1"
       ],
@@ -1096,7 +1096,7 @@
          "nex:hyphae"
       ],
       "minHeight":0,
-      "maxHeight":30,
+      "maxHeight":120,
       "dimensions":[
          -1
       ]
