@@ -1,0 +1,9 @@
+[
+  {
+    "internalOreName": "scalinghealth:crystalore",
+    "meta": 0,
+    "overlay": "undergroundbiomes:blocks/overlays/projectred/ruby_ore",
+    "lightValue": -1,
+    "oreDirectories": ["oreCrystalHeart"]
+  }
+]
