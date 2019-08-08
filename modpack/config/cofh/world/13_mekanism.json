@@ -1,6 +1,5 @@
 {
    "dependencies":[
-      "techreborn",
       "mekanism"
    ],
    "populate":{
@@ -28,100 +27,6 @@
             ]
          }
       },
-      "galena":{
-         "distribution":"uniform",
-         "generator":{
-            "block":{
-               "name":"techreborn:ore",
-               "metadata":0
-            },
-            "material":"minecraft:stone",
-            "cluster-size":6
-         },
-         "cluster-count":6,
-         "min-height":0,
-         "max-height":40,
-         "retrogen":"true",
-         "biome":{
-            "restriction":"whitelist",
-            "value":[
-               {
-                  "type":"id",
-                  "entry":[
-                     "extreme_hills",
-                     "smaller_extreme_hills",
-                     "extreme_hills_with_trees",
-                     "mutated_extreme_hills",
-                     "mutated_extreme_hills_with_trees",
-                     "abyssalcraft:darklands_hills",
-                     "abyssalcraft:darklands_mountains",
-                     "biomesoplenty:alps_foothills",
-                     "biomesoplenty:mountain",
-                     "biomesoplenty:highland",
-                     "biomesoplenty:mountain_foothills",
-                     "biomesoplenty:alps",
-                     "biomesoplenty:crag",
-                     "biomesoplenty:overgrown_cliffs"
-                  ]
-               }
-            ]
-         },
-         "dimension":{
-            "restriction":"whitelist",
-            "value":[
-               0,
-               28885,
-               -9999
-            ]
-         }
-      },
-      "bauxite":{
-         "distribution":"uniform",
-         "generator":{
-            "block":{
-               "name":"techreborn:ore",
-               "metadata":4
-            },
-            "material":"minecraft:stone",
-            "cluster-size":6
-         },
-         "cluster-count":6,
-         "min-height":0,
-         "max-height":40,
-         "retrogen":"true",
-         "biome":{
-            "restriction":"whitelist",
-            "value":[
-               {
-                  "type":"id",
-                  "entry":[
-                     "extreme_hills",
-                     "smaller_extreme_hills",
-                     "extreme_hills_with_trees",
-                     "mutated_extreme_hills",
-                     "mutated_extreme_hills_with_trees",
-                     "abyssalcraft:darklands_hills",
-                     "abyssalcraft:darklands_mountains",
-                     "biomesoplenty:alps_foothills",
-                     "biomesoplenty:mountain",
-                     "biomesoplenty:highland",
-                     "biomesoplenty:mountain_foothills",
-                     "biomesoplenty:alps",
-                     "biomesoplenty:crag",
-                     "biomesoplenty:overgrown_cliffs"
-                  ]
-               }
-            ]
-         },
-         "dimension":{
-            "restriction":"whitelist",
-            "value":[
-               0,
-               28885,
-               -9999
-            ]
-         }
-      },
       "osmium_deep_dark":{
          "distribution":"uniform",
          "generator":{
@@ -133,50 +38,6 @@
             "cluster-size":8
          },
          "cluster-count":24,
-         "min-height":0,
-         "max-height":256,
-         "retrogen":"true",
-         "biome":"all",
-         "dimension":{
-            "restriction":"whitelist",
-            "value":[
-               -11325
-            ]
-         }
-      },
-      "galena_deep_dark":{
-         "distribution":"uniform",
-         "generator":{
-            "block":{
-               "name":"techreborn:ore",
-               "metadata":0
-            },
-            "material":"minecraft:stone",
-            "cluster-size":6
-         },
-         "cluster-count":12,
-         "min-height":0,
-         "max-height":256,
-         "retrogen":"true",
-         "biome":"all",
-         "dimension":{
-            "restriction":"whitelist",
-            "value":[
-               -11325
-            ]
-         }
-      },
-      "bauxite_deep_dark":{
-         "distribution":"uniform",
-         "generator":{
-            "block":{
-               "name":"techreborn:ore",
-               "metadata":4
-            },
-            "material":"minecraft:stone",
-            "cluster-size":6
-         },
-         "cluster-count":12,
          "min-height":0,
          "max-height":256,
          "retrogen":"true",

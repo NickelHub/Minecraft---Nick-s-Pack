@@ -52,7 +52,19 @@
                   "name":"minecraft:netherrack"
                },
                {
-                  "name":"nex:netherrack",
+                  "name":"netherex:gloomy_netherrack",
+                  "metadata":-1
+               },
+               {
+                  "name":"netherex:fiery_netherrack",
+                  "metadata":-1
+               },
+               {
+                  "name":"netherex:ice_netherrack",
+                  "metadata":-1
+               },
+               {
+                  "name":"netherex:lively_netherrack",
                   "metadata":-1
                }
             ],

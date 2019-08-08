@@ -1,8 +1,7 @@
 {
    "dependencies":[
       "abyssalcraft",
-      "mekanism",
-      "railcraft"
+      "mekanism"
    ],
    "populate":{
       "niter":{
@@ -19,58 +18,6 @@
          "cluster-count":6,
          "min-height":0,
          "max-height":30,
-         "retrogen":"true",
-         "biome":"all",
-         "dimension":{
-            "restriction":"whitelist",
-            "value":[
-               0,
-               28885,
-               -9999
-            ]
-         }
-      },
-      "sulphur":{
-         "distribution":"uniform",
-         "generator":{
-            "block":[
-               {
-                  "name":"railcraft:ore",
-                  "metadata":0
-               }
-            ],
-            "material":"stone",
-            "cluster-size":6
-         },
-         "cluster-count":6,
-         "min-height":0,
-         "max-height":30,
-         "retrogen":"true",
-         "biome":"all",
-         "dimension":{
-            "restriction":"whitelist",
-            "value":[
-               0,
-               28885,
-               -9999
-            ]
-         }
-      },
-      "zinc":{
-         "distribution":"uniform",
-         "generator":{
-            "block":[
-               {
-                  "name":"railcraft:ore_metal",
-                  "metadata":5
-               }
-            ],
-            "material":"stone",
-            "cluster-size":6
-         },
-         "cluster-count":6,
-         "min-height":0,
-         "max-height":45,
          "retrogen":"true",
          "biome":"all",
          "dimension":{
@@ -113,53 +60,6 @@
             "block":[
                {
                   "name":"abyssalcraft:nitreore"
-               }
-            ],
-            "material":"stone",
-            "cluster-size":6
-         },
-         "cluster-count":12,
-         "min-height":0,
-         "max-height":256,
-         "retrogen":"true",
-         "biome":"all",
-         "dimension":{
-            "restriction":"whitelist",
-            "value":[
-               -11325
-            ]
-         }
-      },
-      "sulfur_deep_dark":{
-         "distribution":"uniform",
-         "generator":{
-            "block":[
-               {
-                  "name":"railcraft:ore",
-                  "metadata":0
-               }
-            ],
-            "material":"stone",
-            "cluster-size":6
-         },
-         "cluster-count":12,
-         "min-height":0,
-         "max-height":256,
-         "retrogen":"true",
-         "biome":"all",
-         "dimension":{
-            "restriction":"whitelist",
-            "value":[
-               -11325
-            ]
-         }
-      },
-      "zinc_deep_dark":{
-         "distribution":"uniform",
-         "generator":{
-            "block":[
-               {
-                  "name":"railcraft:ore_metal"
                }
             ],
             "material":"stone",
