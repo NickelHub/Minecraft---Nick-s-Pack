@@ -105,7 +105,7 @@
          "generator":{
             "block":{
                "name":"biomesoplenty:gem_ore",
-               "metadata":1
+               "metadata":6
             },
             "material":"stone",
             "cluster-size":1
@@ -144,8 +144,8 @@
          "distribution":"uniform",
          "generator":{
             "block":{
-               "name":"birch_forest:gem_ore",
-               "metadata":6
+               "name":"biomesoplenty:gem_ore",
+               "metadata":1
             },
             "material":"stone",
             "cluster-size":1
@@ -452,7 +452,7 @@
          "generator":{
             "block":{
                "name":"biomesoplenty:gem_ore",
-               "metadata":1
+               "metadata":6
             },
             "material":"stone",
             "cluster-size":1
@@ -474,7 +474,7 @@
          "generator":{
             "block":{
                "name":"biomesoplenty:gem_ore",
-               "metadata":6
+               "metadata":1
             },
             "material":"stone",
             "cluster-size":1
