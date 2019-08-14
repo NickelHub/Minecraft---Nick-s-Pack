@@ -1,0 +1,106 @@
+{
+   "name":"Draconic",
+   "make":[
+      "fluid"
+   ],
+   "textColor":"#6913af",
+   "whitelist":{
+      "oredict":[
+
+      ],
+      "ingots":[
+         "draconicevolution:draconium_ingot"
+      ],
+      "nuggets":[
+         "draconicevolution:nugget:0"
+      ],
+      "dusts":[
+         "draconicevolution:draconium_dust"
+      ],
+      "gems":[
+
+      ],
+      "blocks":[
+         "draconicevolution:draconium_block"
+      ],
+      "ores":[
+         "draconicevolution:draconium_ore:0",
+         "draconicevolution:draconium_ore:1",
+         "draconicevolution:draconium_ore:2"
+      ]
+   },
+   "blacklist":{
+      "oredict":[
+
+      ],
+      "ores":[
+
+      ]
+   },
+   "fluidData":{
+      "color":"#6913af",
+      "density":2000,
+      "viscosity":10000,
+      "temperature":1000,
+      "luminosity":10,
+      "rarity":"RARE"
+   },
+   "canCraftToolForge":true,
+   "toolData":{
+      "durability":750,
+      "harvestLevel":4,
+      "extraDurability":350,
+      "miningSpeed":9.0,
+      "attack":8.0,
+      "handleModifier":1.4,
+      "handleDurability":300,
+      "color":"#6913af",
+      "temperature":900,
+      "projectiles":true,
+      "drawSpeed":1.0,
+      "range":1.0,
+      "bonusDamage":0.0,
+      "stringModifier":0.0,
+      "shaftModifier":0.0,
+      "bonusAmmo":0.0,
+      "accuracy":0.0,
+      "fletchingModifier":0.0,
+      "traits":[
+         "dense",
+         "established",
+         "lightweight"
+      ],
+      "headTraits":[
+
+      ],
+      "handleTraits":[
+
+      ],
+      "extraTraits":[
+
+      ],
+      "bowTraits":[
+
+      ],
+      "stringTraits":[
+
+      ],
+      "projectileTraits":[
+
+      ],
+      "shaftTraits":[
+
+      ],
+      "fletchingTraits":[
+
+      ]
+   },
+   "localizations":[
+      {
+         "locale":"en_US",
+         "solid":"Draconium",
+         "liquid":"Molten Draconium",
+         "bucket":"Draconium Bucket"
+      }
+   ]
+}
