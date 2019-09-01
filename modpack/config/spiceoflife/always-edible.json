@@ -1,0 +1,19 @@
+{
+   "food":{
+      "oredict":[
+
+      ],
+      "items":[
+         "tconstruct:moms_spaghetti"
+      ]
+   },
+   "exclude":{
+      "items":[
+
+      ]
+   },
+   "name":"Always Edible without Diminishing",
+   "blacklist":true,
+   "hidden":false,
+   "color":"gold"
+}
