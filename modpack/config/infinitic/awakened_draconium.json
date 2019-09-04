@@ -1,32 +1,30 @@
 {
-   "name":"Draconic",
+   "name":"DraconiumAwakened",
    "make":[
       "fluid"
    ],
-   "textColor":"#6913af",
+   "textColor":"#ea8a04",
    "whitelist":{
       "oredict":[
-         "Draconium"
+
       ],
       "ingots":[
-         "draconicevolution:draconium_ingot"
+         "draconicevolution:draconic_ingot"
       ],
       "nuggets":[
-         "draconicevolution:nugget:0"
+         "draconicevolution:nugget:1"
       ],
       "dusts":[
-         "draconicevolution:draconium_dust"
+
       ],
       "gems":[
 
       ],
       "blocks":[
-         "draconicevolution:draconium_block"
+         "draconicevolution:draconic_block"
       ],
       "ores":[
-         "draconicevolution:draconium_ore:0",
-         "draconicevolution:draconium_ore:1",
-         "draconicevolution:draconium_ore:2"
+
       ]
    },
    "blacklist":{
@@ -38,7 +36,7 @@
       ]
    },
    "fluidData":{
-      "color":"#6913af",
+      "color":"#ea8a04",
       "density":2000,
       "viscosity":10000,
       "temperature":1000,
@@ -47,37 +45,36 @@
    },
    "canCraftToolForge":true,
    "toolData":{
-      "durability":750,
-      "harvestLevel":4,
+      "durability":1750,
+      "harvestLevel":9,
       "extraDurability":350,
-      "miningSpeed":9.0,
-      "attack":8.0,
-      "handleModifier":1.4,
-      "handleDurability":300,
-      "color":"#6913af",
+      "miningSpeed":10.5,
+      "attack":15.0,
+      "handleModifier":1.6,
+      "handleDurability":250,
+      "color":"#ea8a04",
       "temperature":900,
       "projectiles":true,
-      "drawSpeed":1.0,
-      "range":1.0,
-      "bonusDamage":0.0,
+      "drawSpeed":0.3,
+      "range":2.5,
+      "bonusDamage":5.0,
       "stringModifier":0.0,
       "shaftModifier":0.0,
       "bonusAmmo":0.0,
       "accuracy":0.0,
       "fletchingModifier":0.0,
       "traits":[
-         "dense",
-         "established",
-         "lightweight"
+         "fiery",
+         "established"
       ],
       "headTraits":[
 
       ],
       "handleTraits":[
-
+         "autosmelt"
       ],
       "extraTraits":[
-
+         "autosmelt"
       ],
       "bowTraits":[
 
@@ -98,9 +95,9 @@
    "localizations":[
       {
          "locale":"en_US",
-         "solid":"Draconic Metal",
-         "liquid":"Molten Draconic Metal",
-         "bucket":"Draconic Metal Bucket"
+         "solid":"Awakened Draconic Metal",
+         "liquid":"Awakened Molten Draconic Metal",
+         "bucket":"Awakened Draconic Metal Bucket"
       }
    ]
 }
