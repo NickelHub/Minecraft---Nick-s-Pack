@@ -1,0 +1,105 @@
+{
+   "name":"Ethaxium",
+   "make":[
+      "fluid"
+   ],
+   "textColor":"#d0d2d6",
+   "whitelist":{
+      "oredict":[
+
+      ],
+      "ingots":[
+         "abyssalcraft:ethaxiumingot"
+      ],
+      "nuggets":[
+         "abyssalcraft:ingotnugget:3"
+      ],
+      "dusts":[
+
+      ],
+      "gems":[
+
+      ],
+      "blocks":[
+         "abyssalcraft:ingotblock:3"
+      ],
+      "ores":[
+
+      ]
+   },
+   "blacklist":{
+      "oredict":[
+
+      ],
+      "ores":[
+
+      ]
+   },
+   "fluidData":{
+      "color":"#d0d2d6",
+      "density":2000,
+      "viscosity":10000,
+      "temperature":1000,
+      "luminosity":10,
+      "rarity":"RARE"
+   },
+   "canCraftToolForge":true,
+   "toolData":{
+      "durability":2300,
+      "harvestLevel":8,
+      "extraDurability":200,
+      "miningSpeed":12.0,
+      "attack":12.0,
+      "handleModifier":0.5,
+      "handleDurability":325,
+      "color":"#d0d2d6",
+      "temperature":900,
+      "projectiles":true,
+      "drawSpeed":0.2,
+      "range":2.9,
+      "bonusDamage":7.5,
+      "stringModifier":0.0,
+      "shaftModifier":0.0,
+      "bonusAmmo":0.0,
+      "accuracy":0.0,
+      "fletchingModifier":0.0,
+      "traits":[
+         "heavy",
+         "darkness",
+         "holy",
+         "established"
+      ],
+      "headTraits":[
+
+      ],
+      "handleTraits":[
+
+      ],
+      "extraTraits":[
+
+      ],
+      "bowTraits":[
+
+      ],
+      "stringTraits":[
+
+      ],
+      "projectileTraits":[
+
+      ],
+      "shaftTraits":[
+
+      ],
+      "fletchingTraits":[
+
+      ]
+   },
+   "localizations":[
+      {
+         "locale":"en_US",
+         "solid":"Ethaxium",
+         "liquid":"Molten Ethaxium",
+         "bucket":"Molten Ethaxium Bucket"
+      }
+   ]
+}
