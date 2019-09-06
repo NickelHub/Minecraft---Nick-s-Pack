@@ -3,7 +3,8 @@
       "minecraft",
       "biomesoplenty",
       "thaumcraft",
-      "forestry"
+      "forestry",
+      "techreborn"
    ],
    "populate":{
       "emerald":{
@@ -104,8 +105,8 @@
          "distribution":"uniform",
          "generator":{
             "block":{
-               "name":"biomesoplenty:gem_ore",
-               "metadata":6
+               "name":"techreborn:ore",
+               "metadata":3
             },
             "material":"stone",
             "cluster-size":1
@@ -144,8 +145,8 @@
          "distribution":"uniform",
          "generator":{
             "block":{
-               "name":"biomesoplenty:gem_ore",
-               "metadata":1
+               "name":"techreborn:ore",
+               "metadata":2
             },
             "material":"stone",
             "cluster-size":1
@@ -451,8 +452,8 @@
          "distribution":"uniform",
          "generator":{
             "block":{
-               "name":"biomesoplenty:gem_ore",
-               "metadata":6
+               "name":"techreborn:ore",
+               "metadata":3
             },
             "material":"stone",
             "cluster-size":1
@@ -473,8 +474,8 @@
          "distribution":"uniform",
          "generator":{
             "block":{
-               "name":"biomesoplenty:gem_ore",
-               "metadata":1
+               "name":"techreborn:ore",
+               "metadata":2
             },
             "material":"stone",
             "cluster-size":1
