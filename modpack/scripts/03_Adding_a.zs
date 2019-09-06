@@ -26,6 +26,7 @@ import mods.thermalexpansion.Transposer;
 import mods.thermalexpansion.Sawmill;
 import mods.thermalexpansion.RedstoneFurnace;
 import mods.industrialforegoing.Extractor;
+import mods.techreborn.compressor;
 
 print("Initializing 03_Adding_a.zs");
 
@@ -123,6 +124,14 @@ recipes.addShaped(<magicbees:effectjar>, [[<ore:blockGlass>, <ore:slabWood>, <or
 //The next section adds things to technial mods
 //
 #
+
+#Adding Tech Reborn's stuff
+recipes.addShaped(<techreborn:grinder>, [[<ore:itemFlint>, <ore:itemFlint>, <ore:itemFlint>],[<ore:cobblestone>, <ore:machineBasic>, <ore:cobblestone>], [null, <ore:circuitBasic>, null]]);
+Inscriber.addRecipe(<techreborn:part:29>, <ore:dustRedstone>, false, <techreborn:cable:5>, <ore:plateRefinedIron>);
+Inscriber.addRecipe(<techreborn:part:30>, <techreborn:part:29>, false, <ore:dustGlowstone>, <ore:plateLapis>);
+
+#Adding MatterOverdrive's stuff
+Inscriber.addRecipe(<matteroverdrive:isolinear_circuit:0>, <ore:dustRedstone>, false, <appliedenergistics2:material:16>, <ore:plateIron>);
 
 #Adding Elevators Mod's stuff
 recipes.addShaped("elevators_mod_elevator_white", <elevatorid:elevator_white>, [[<mekanism:plasticblock:15>, <mekanism:plasticblock:15>, <mekanism:plasticblock:15>],[<mekanism:plasticblock:15>, <appliedenergistics2:material:22>, <mekanism:plasticblock:15>], [<mekanism:plasticblock:15>, <randomthings:stableenderpearl>, <mekanism:plasticblock:15>]]);
@@ -230,6 +239,8 @@ recipes.addShapeless(<thermalexpansion:morb> * 8, [<minecraft:soul_sand>,<ore:sl
 //This recipe was not available due to an unknown reason
 recipes.addShaped(<thermalexpansion:augment:352>, [[null, <ore:gearInvar>, null],[<minecraft:piston>, <thermalfoundation:material:515>, <minecraft:piston>], [null, <ore:bricksNether>, null]]);
 mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<thermalfoundation:material:802>, <minecraft:coal:1>, 2000, 250);
+mods.techreborn.compressor.addRecipe(<thermalfoundation:material:327>, <thermalfoundation:material:135>, 200, 20);
+mods.techreborn.compressor.addRecipe(<thermalfoundation:material:327> * 9, <thermalfoundation:storage:7>, 200, 20);
 
 #Adding Nuclearcraft's stuff
 recipes.addShaped(<nuclearcraft:decay_hastener_idle>, [[<ore:plateAdvanced>, <ore:pearlEnderEye>, <ore:plateAdvanced>],[<randomthings:stableenderpearl>, <ore:machineBlockAdvanced>, <randomthings:stableenderpearl>], [<ore:plateAdvanced>, <ore:solenoidCopper>, <ore:plateAdvanced>]]);
@@ -321,7 +332,8 @@ recipes.addShaped(<forestry:humus> * 8, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<
 recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <forestry:capsule:1>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
 recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <forestry:refractory:1>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
 recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <forestry:can:1>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
-recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <ore:listAllwater>, <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
+recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
+recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <ore:listAllwater>, <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <ore:listAllwater>, <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
 recipes.addShaped(<forestry:ffarm>, [[<ore:ingotCopper>, <ore:bricksStone>, <ore:ingotCopper>], [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]]);
 Inscriber.addRecipe(<forestry:chipsets:0>.withTag({T: 0 as short}), <ore:dustApatite>, false, <appliedenergistics2:material:16>, <ore:plateTin>);
 Inscriber.addRecipe(<forestry:chipsets:1>.withTag({T: 1 as short}), <ore:dustApatite>, false, <appliedenergistics2:material:16>, <ore:plateBronze>);

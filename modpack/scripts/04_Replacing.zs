@@ -157,8 +157,10 @@ recipes.replaceAllOccurences(<teslacorelib:machine_case>, <ore:machineBlockBasic
 recipes.replaceAllOccurences(<thermalexpansion:frame>, <ore:machineBlockBasic>);
 recipes.replaceAllOccurences(<enderio:item_material:0>, <ore:machineBlockBasic>);
 recipes.replaceAllOccurences(<rftools:machine_frame>, <ore:machineBlockBasic>);
+recipes.replaceAllOccurences(<techreborn:machine_frame:0>, <ore:machineBlockBasic>);
 recipes.replaceAllOccurences(<mekanism:basicblock:8>, <ore:machineBlockAdvanced>);
 recipes.replaceAllOccurences(<nuclearcraft:part:10>, <ore:machineBlockAdvanced>);
+recipes.replaceAllOccurences(<techreborn:machine_frame:0>, <ore:machineBlockAdvanced>);
 
 print("Initialized 04_Replacing.zs");
 

@@ -106,6 +106,14 @@ recipes.remove(<magicbees:manasteelscoop>);
 //
 #
 
+#Removing Tech Reborn's stuff
+recipes.remove(<techreborn:grinder>);
+recipes.remove(<techreborn:part:29>);
+recipes.remove(<techreborn:part:30>);
+
+#Removing MatterOverdrive's stuff
+recipes.remove(<matteroverdrive:isolinear_circuit>);
+
 #Removing Elevators Mod's stuff 
 recipes.removeByRegex("elevatorid:elevator_.*");
 
@@ -749,56 +757,6 @@ recipes.remove(<ironchest:diamond_obsidian_shulker_upgrade>);
 
 #Removing Zero Core's stuff
 mods.jei.JEI.removeAndHide(<zerocore:debugtool>);
-
-#Removing Undergroundbiomes' stuff
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.gem_ore.amber_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.gem_ore.amber_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.gem_ore.amber_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.gem_ore.ruby_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.gem_ore.ruby_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.gem_ore.ruby_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.gem_ore.sapphire_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.gem_ore.sapphire_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.gem_ore.sapphire_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_immersiveengineering_ore_4:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_4:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_4:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_immersiveengineering_ore_2:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_2:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_2:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_immersiveengineering_ore_1:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_1:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_1:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_immersiveengineering_ore_3:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_3:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_3:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_immersiveengineering_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_immersiveengineering_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_immersiveengineering_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_nuclearcraft_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_nuclearcraft_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_nuclearcraft_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.nuclearcraft.ore.lead:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.nuclearcraft.ore.lead:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.nuclearcraft.ore.lead:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.nuclearcraft.ore.uranium:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.nuclearcraft.ore.uranium:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.nuclearcraft.ore.uranium:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.nuclearcraft.ore.tin:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.nuclearcraft.ore.tin:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.nuclearcraft.ore.tin:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_mekanism_oreblock_1:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_mekanism_oreblock_1:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_mekanism_oreblock_1:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_mekanism_oreblock_2:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_mekanism_oreblock_2:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_mekanism_oreblock_2:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.for.resources.copper:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.for.resources.copper:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.for.resources.copper:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.for.resources.tin:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.for.resources.tin:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.for.resources.tin:*>);
 
 print("Initialized 02_Removing.zs");
 

@@ -32,6 +32,7 @@ crudeOil.add(<immersivepetroleum:fluid_crude_oil>);
 
 #Unifying circuits
 val cirU = <ore:circuitUltimate>;
+cirU.add(<techreborn:part:0>);
 val cirM = <ore:circuitMaster>;
 cirM.add(<mekanism:controlcircuit:3>);
 
@@ -119,6 +120,21 @@ chestE.add(<enderstorage:ender_storage:0>);
 
 #Skull
 val skull = <ore:itemSkull>;
+
+#Dust Ender
+val DustEnder = <ore:dustEnder>;
+DustEnder.add(<techreborn:dust:20>);
+val dustEP = <ore:dustEnderPearl>;
+dustEP.add(<railcraft:dust:6>);
+
+#Fixing MatterOverdrive's registration
+val plateT = <ore:plateTritanium>;
+plateT.add(<matteroverdrive:tritanium_plate>);
+
+val stonemeal = <ore:dustStonemeal>;
+stonemeal.add(<techreborn:dust:61>);
+stonemeal.add(<techreborn:dust:62>);
+stonemeal.add(<techreborn:dust:63>);
 
 #Dust Nitre
 val dustNitre = <ore:dustNitre>;
@@ -395,6 +411,16 @@ val cotton = <ore:cropCotton>;
 //
 #
 
+#Fixing MatterOverdrive's registration
+val oreT = <ore:oreTritanium>;
+oreT.add(<matteroverdrive:tritanium_ore>);
+
+val oreD = <ore:oreDilithium>;
+oreD.add(<matteroverdrive:dilithium_ore>);
+
+val blockT = <ore:blockTritanium>;
+blockT.add(<matteroverdrive:tritanium_block>);
+
 #Soul sandstone
 val souls = <ore:soulSand>;
 souls.add(<minecraft:soul_sand>);
@@ -406,6 +432,7 @@ glassCoulerless.add(<tconstruct:clear_glass>);
 val glassHardened = <ore:blockGlassHardened>;
 glassHardened.add(<enderio:block_enlightened_fused_quartz>);
 glassHardened.add(<enderio:block_dark_fused_quartz>);
+glassHardened.add(<techreborn:reinforced_glass>);
 
 val quartzglass = <ore:glassQuartz>;
 quartzglass.add(<enderio:block_fused_quartz>);
