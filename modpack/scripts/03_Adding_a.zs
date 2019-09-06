@@ -17,16 +17,15 @@ import mods.appliedenergistics2.Inscriber;
 import mods.immersiveengineering.Crusher;
 import mods.immersiveengineering.MetalPress;
 import mods.immersiveengineering.Fermenter;
+import mods.immersiveengineering.CokeOven;
 import mods.mekanism.crusher;
 import mods.mekanism.enrichment;
 import mods.thermalexpansion.Pulverizer;
-import mods.techreborn.grinder;
-import mods.techreborn.compressor;
 import mods.forestry.Squeezer;
 import mods.thermalexpansion.Transposer;
 import mods.thermalexpansion.Sawmill;
-
-
+import mods.thermalexpansion.RedstoneFurnace;
+import mods.industrialforegoing.Extractor;
 
 print("Initializing 03_Adding_a.zs");
 
@@ -47,14 +46,16 @@ recipes.addShapeless("nickadditions_green_dye_blending_1", <biomesoplenty:green_
 recipes.addShapeless("nickadditions_green_dye_blending_2", <biomesoplenty:green_dye> * 2, [<ore:dyeBlack>, <ore:dyeLime>]);
 recipes.addShaped("nickadditions_magic_mushroom", <toolprogression:magic_mushroom>, [[<ore:dustMana>, <ore:dustEmerald>, <ore:dustMana>],[<ore:dustMithril>, <ore:listAllmushroom>, <ore:dustMithril>], [<ore:dustMana>, <ore:dustEmerald>, <ore:dustMana>]]);
 recipes.addShaped("nickadditions_magical_apple", <extrautils2:magicapple>, [[<ore:dustMana>, <ore:ingotEnchantedMetal>, <ore:dustMana>],[<ore:ingotEnchantedMetal>, <ore:cropApple>, <ore:ingotEnchantedMetal>], [<ore:dustMana>, <ore:ingotEnchantedMetal>, <ore:dustMana>]]);
-recipes.addShaped("nickadditions_enchanted_golden_apple", <minecraft:golden_apple:1>, [[<ore:dustMana>, <ore:blockGold>, <ore:dustMana>],[<ore:blockGold>, <ore:cropApple>, <ore:blockGold>], [<ore:dustMana>, <ore:blockDiamond>, <ore:dustMana>]]);
+recipes.addShaped("nickadditions_enchanted_golden_apple", <minecraft:golden_apple:1>, [[<ore:dustMana>, <ore:blockGold>, <ore:dustMana>],[<ore:blockGold>, <minecraft:golden_apple:0>, <ore:blockGold>], [<ore:dustMana>, <ore:blockDiamond>, <ore:dustMana>]]);
 recipes.addShaped("nickadditions_enchanted_ingot_crafting", <extrautils2:ingredients:12> * 8, [[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>],[<ore:ingotGold>, <ore:netherStar>, <ore:ingotGold>], [<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>]]);
 recipes.addShaped("nickadditions_evil_infused_ingot_crafting", <extrautils2:ingredients:17> * 8, [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],[<ore:ingotIron>, <ore:netherStar>, <ore:ingotIron>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+recipes.addShapeless("nickadditions_hemp_seed_from_crop", <immersiveengineering:seed>, [<immersivehempcraft:crop>]);
+recipes.addShapeless("nickadditions_hemp_fiber_from_two_crops", <immersiveengineering:material:4> * 4, [<immersivehempcraft:crop>, <immersivehempcraft:crop>]);
+recipes.addShapeless("nickadditions_certus_quartz_seed", <appliedenergistics2:crystal_seed> * 2, [<ore:sand>, <ore:dustChargedCertusQuartz>]);
+recipes.addShaped("nickadditions_proven_frame", <forestry:frame_proven>, [[<ore:dustMithril>, <forestry:frame_impregnated>, <ore:dustMithril>]]);
 
 #Some fixes
 recipes.addShapeless("pack_stone_button", <minecraft:stone_button> * 8, [<minecraft:stone>]); //this recipe has been disappeared
-recipes.addShapeless("pack_sand_conversion", <minecraft:sand>, [<ore:sand>]);
-recipes.addShapeless("pack_gravel_conversion", <minecraft:gravel>, [<ore:gravel>]);
 recipes.addShaped(<minecraft:stonebrick:3>, [[<ore:slabBricksStoneUnique>], [<ore:slabBricksStoneUnique>]]);
 recipes.addShaped(<minecraft:stonebrick:0>, [[<ore:slabBricksStoneUnique>, <ore:slabBricksStoneUnique>]]);
 recipes.addShaped(<minecraft:stone>, [[<ore:slabStoneUnique>, <ore:slabStoneUnique>]]);
@@ -66,7 +67,11 @@ recipes.addShaped(<minecraft:cobblestone>, [[<ore:slabCobblestoneUnique>, <ore:s
 //
 #
 
-##Adding Enchanting Plus' stuff
+#Adding Abyssalcraft's stuff
+recipes.addShaped("coraliumstone", <abyssalcraft:coraliumstone>, [[<ore:stone>,<ore:stone>,<ore:stone>],[<ore:stone>,<abyssalcraft:ccluster9>,<ore:stone>],[<ore:stone>,<ore:stone>,<ore:stone>]]);
+recipes.addShaped("coraliumstone_alternative", <abyssalcraft:coraliumstone>, [[<ore:stone>,<ore:stone>,<ore:stone>],[<abyssalcraft:ccluster3>,<abyssalcraft:ccluster3>,<abyssalcraft:ccluster3>],[<ore:stone>,<ore:stone>,<ore:stone>]]);
+
+#Adding Enchanting Plus' stuff
 recipes.addShaped("enchanting_plus_enchanting_table_upgrade", <eplus:table_upgrade>, [[<ore:pearlEnderEye>, <minecraft:writable_book>, <ore:pearlEnderEye>],[<ore:ingotGold>, null, <ore:ingotGold>], [<ore:obsidian>, <ore:netherStar>, <ore:obsidian>]]);
 recipes.addShaped("enchanting_plus_advanced_enchanting_table", <eplus:advanced_table>, [[<ore:pearlEnderEye>, <minecraft:writable_book>, <ore:pearlEnderEye>],[<ore:ingotGold>, <minecraft:enchanting_table>, <ore:ingotGold>], [<ore:obsidian>, <ore:netherStar>, <ore:obsidian>]]);
 
@@ -78,10 +83,6 @@ recipes.addShapeless("trinkets_and_baubles_glowing_ingot", <xat:glowing_ingot> *
 recipes.addShaped("torchmaster_mega_torch", <torchmaster:mega_torch>, [[<ore:torch>, <ore:torch>, <ore:torch>],[<ore:gemDiamond>, <ore:logWood>, <ore:gemDiamond>], [<ore:blockGold>, <ore:logWood>, <ore:blockGold>]]);
 recipes.addShaped("torchmaster_dread_lamp", <torchmaster:dread_lamp>, [[<ore:obsidian>, <ore:obsidian>, <ore:obsidian>],[<ore:paneGlass>, <ore:glowstone>, <ore:paneGlass>], [<ore:obsidian>, <minecraft:dye>, <ore:obsidian>]]);
 recipes.addShaped("torchmaster_terrain_lighter", <torchmaster:terrain_lighter>, [[<ore:torch>, <ore:torch>, <ore:torch>],[<ore:logWood>, <ore:chest>, <ore:logWood>], [<ore:stone>, <ore:stone>, <ore:stone>]]);
-
-#Adding Infused Ring's stuff
-recipes.addShaped("infused_ring_magical_stone", <infusedring:magicalstone>, [[<ore:dustMana>, <ore:dustBlaze>, <ore:dustMana>],[<ore:dustGlowstone>, <ore:gemDiamond>, <ore:dustGlowstone>], [<ore:dustMana>, <rftools:infused_enderpearl>, <ore:dustMana>]]);
-recipes.addShaped("infused_ring_infusing_ring", <infusedring:infusingring>, [[<ore:dustMana>, <ore:netherStar>, <ore:dustMana>],[<ore:ingotGold>, <draconicevolution:dragon_heart>, <ore:ingotGold>], [<ore:dustMana>, <ore:ingotGold>, <ore:dustMana>]]);
 
 #Adding Mystcraft's stuff
 recipes.addShaped("mystcraft_ink_mixer",<mystcraft:blockinkmixer>, [[<ore:stone>, null, <ore:stone>],[<ore:stone>, <minecraft:glass_bottle>, <ore:stone>], [<ore:plankWood>, <ore:stone>, <ore:plankWood>]]);
@@ -102,23 +103,11 @@ recipes.addShaped("blood_magic_teleposer", <bloodmagic:teleposer>, [[<ore:ingotG
 
 #Adding Thaumcraft's stuff
 furnace.addRecipe(<thaumcraft:quicksilver>, <thermalfoundation:material:866>, 1.1); //This recipes was made due to more Cinnabar
-furnace.addRecipe(<thaumcraft:quicksilver>, <techreborn:ore:6>, 1.1); //This recipes was made due to more Cinnabar
 
 #Adding Ender Storage's stuff
 recipes.addShaped("ender_storage_ender_pounch", <enderstorage:ender_pouch>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:leather>, <ore:leather>, <ore:leather>],[<ore:itemBlazeRod>, <rftools:infused_enderpearl>, <ore:itemBlazeRod>], [<ore:leather>, <ore:blockWoolWhite>, <ore:leather>]]);
 recipes.addShaped("ender_storage_ender_tank", <enderstorage:ender_storage:1>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:obsidian>, <ore:blockWoolWhite>, <ore:obsidian>],[<ore:itemBlazeRod>, <minecraft:cauldron>, <ore:itemBlazeRod>], [<ore:obsidian>, <rftools:infused_enderpearl>, <ore:obsidian>]]);
 recipes.addShaped("ender_storage_ender_chest", <enderstorage:ender_storage>.withTag({Frequency: {middle: 0, left: 0, right: 0}}), [[<ore:obsidian>, <ore:blockWoolWhite>, <ore:obsidian>],[<ore:itemBlazeRod>, <ore:chestWood>, <ore:itemBlazeRod>], [<ore:obsidian>, <rftools:infused_enderpearl>, <ore:obsidian>]]);
-
-#Adding Gravestone Mod's and Gravestone Mod Extended's stuff
-recipes.addShaped(<gravestone-extended:gsexecution:3>, [[null, <ore:plankWood>, null],[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], [<minecraft:hay_block>, <ore:plankWood>, <minecraft:hay_block>]]);
-recipes.addShaped(<gravestone-extended:gsexecution:2>, [[<ore:plankWood>, <ore:slabWood>, <ore:plankWood>], [<ore:plankWood>, null, <ore:plankWood>]]);
-recipes.addShaped(<gravestone-extended:gsexecution:1>, [[<ore:plankWood>, <ore:plankWood>],[<ore:plankWood>, <minecraft:lead>], [<ore:plankWood>, <ore:blockIron>]]);
-recipes.addShaped(<gravestone-extended:gsexecution>, [[<ore:plankWood>, <ore:plankWood>],[<ore:plankWood>, <minecraft:lead>], [<ore:plankWood>, null]]);
-recipes.addShaped(<gravestone-extended:gstrap>, [[null, <minecraft:stone_pressure_plate>, null],[<ore:dustRedstone>, <ore:bricksNether>, <ore:dustRedstone>], [null, <ore:soulSand>, null]]);
-recipes.addShaped(<gravestone-extended:gs_withered_glass>, [[<ore:blockGlass>, <ore:blockGlass>, <minecraft:glass>],[<ore:soulSand>, <ore:obsidian>, <ore:soulSand>], [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>]]);
-recipes.addShaped(<gravestone-extended:gstrap:1>, [[null, <minecraft:stone_pressure_plate>, null],[<ore:dustRedstone>, <ore:bricksStone>, <ore:dustRedstone>], [null, <ore:soulSand>, null]]);
-recipes.addShaped(<gravestone-extended:gs_undertaker_backpack>, [[<ore:string>, <ore:blockWool>, <ore:string>],[<minecraft:tripwire_hook>, <ore:chestWood>, <minecraft:tripwire_hook>], [<ore:string>, <ore:blockWool>, <ore:string>]]);
-recipes.addShaped(<gravestone-extended:gscandle>, [[<ore:string>],[<ore:dyeWhite>], [<ore:itemWax>]]);
 
 #Adding Magic Bee's stuff
 recipes.addShapedMirrored(<magicbees:resource:13>, [[null, <ore:blockGold>, null],[<ore:blockQuartz>, <ore:pearlEnderEye>, <ore:blockQuartz>], [null, <ore:endstone>, null]]);
@@ -153,11 +142,6 @@ recipes.addShaped("elevators_mod_elevator_green", <elevatorid:elevator_green>, [
 recipes.addShaped("elevators_mod_elevator_red", <elevatorid:elevator_red>, [[<mekanism:plasticblock:1>, <mekanism:plasticblock:1>, <mekanism:plasticblock:1>],[<mekanism:plasticblock:1>, <appliedenergistics2:material:22>, <mekanism:plasticblock:1>], [<mekanism:plasticblock:1>, <randomthings:stableenderpearl>, <mekanism:plasticblock:1>]]);
 recipes.addShaped("elevators_mod_elevator_black", <elevatorid:elevator_black>, [[<mekanism:plasticblock>, <mekanism:plasticblock>, <mekanism:plasticblock>],[<mekanism:plasticblock>, <appliedenergistics2:material:22>, <mekanism:plasticblock>], [<mekanism:plasticblock>, <randomthings:stableenderpearl>, <mekanism:plasticblock>]]);
 
-#Adding QuantumFlux' stuff
-//Adding circuits back using AE2's inscriber
-//Inscriber.addRecipe(IItemStack output, IItemStack input, boolean inscribe, @Optional IItemStack topInput, @Optional IItemStack bottomInput);
-Inscriber.addRecipe(<quantumflux:craftingpiece:5>, <quantumflux:craftingpiece:6>, false, <quantumflux:craftingpiece:3>, <appliedenergistics2:material:23>);
-
 #Adding Exchangers' stuff
 recipes.addShaped(<exchangers:eio_exchanger_core_tier3>, [[<ore:gemDiamond>, <ore:ingotEndSteel>, <ore:gemDiamond>],[<forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}).onlyWithTag({FluidName: "ender_distillation", Amount: 1000}), <randomthings:stableenderpearl>, <forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}).onlyWithTag({FluidName: "ender_distillation", Amount: 1000})], [<ore:gemDiamond>, <ore:ingotEndSteel>, <ore:gemDiamond>]]);
 recipes.addShaped(<exchangers:eio_exchanger_core_tier2>, [[<ore:itemPulsatingPowder>, <ore:ingotElectricalSteel>, <ore:itemPulsatingPowder>],[<forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}).onlyWithTag({FluidName: "ender_distillation", Amount: 1000}), <randomthings:stableenderpearl>, <forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}).onlyWithTag({FluidName: "ender_distillation", Amount: 1000})], [<ore:itemPulsatingPowder>, <ore:ingotElectricalSteel>, <ore:itemPulsatingPowder>]]);
@@ -171,26 +155,6 @@ recipes.addShaped(<exchangers:mekanism_exchanger_core_tier1>, [[<ore:ingotOsmium
 recipes.addShaped(<exchangers:ie_exchanger_core_tier3>, [[<immersiveengineering:wirecoil:2>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:wirecoil:2>],[<immersiveengineering:metal_decoration0:5>, <randomthings:stableenderpearl>, <immersiveengineering:metal_decoration0:5>], [<immersiveengineering:wirecoil:2>, <immersiveengineering:metal_decoration0:5>, <immersiveengineering:wirecoil:2>]]);
 recipes.addShaped(<exchangers:ie_exchanger_core_tier2>, [[<immersiveengineering:wirecoil:1>, <immersiveengineering:material:9>, <immersiveengineering:wirecoil:1>],[<immersiveengineering:material:9>, <randomthings:stableenderpearl>, <immersiveengineering:material:9>], [<immersiveengineering:wirecoil:1>, <immersiveengineering:material:9>, <immersiveengineering:wirecoil:1>]]);
 recipes.addShaped(<exchangers:ie_exchanger_core_tier1>, [[<immersiveengineering:wirecoil>, <immersiveengineering:material:8>, <immersiveengineering:wirecoil>],[<immersiveengineering:material:8>, <randomthings:stableenderpearl>, <immersiveengineering:material:8>], [<immersiveengineering:wirecoil>, <immersiveengineering:material:8>, <immersiveengineering:wirecoil>]]);
-
-#Adding MatterOverdrive's stuff
-Inscriber.addRecipe(<matteroverdrive:isolinear_circuit:0>, <ore:dustRedstone>, false, <appliedenergistics2:material:16>, <ore:plateIron>);
-
-#Adding Railcraft's stuff
-recipes.addShapeless(<railcraft:tool_notepad>, [<railcraft:tool_magnifying_glass>,<ore:feather>,<mystcraft:vial>,<ore:paper>]);
-recipes.addShaped(<railcraft:brick_bloodstained:2> * 8, [[<minecraft:sandstone:2>, <minecraft:sandstone:2>, <minecraft:sandstone:2>],[<minecraft:sandstone:2>, <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}).onlyWithTag({FluidName: "blood", Amount: 1000}), <minecraft:sandstone:2>], [<minecraft:sandstone:2>, <minecraft:sandstone:2>, <minecraft:sandstone:2>]]);
-recipes.addShaped(<railcraft:boiler_firebox_solid>, [[<ore:ingotBrickNether>, <ore:ingotBrickNether>, <ore:ingotBrickNether>],[<ore:ingotBrickNether>, <minecraft:fire_charge>, <ore:ingotBrickNether>], [<ore:ingotBrickNether>, <minecraft:furnace>, <ore:ingotBrickNether>]]);
-recipes.addShaped(<railcraft:blast_furnace> * 4, [[<minecraft:soul_sand>, <ore:bricksNether>, <minecraft:soul_sand>],[<ore:bricksNether>, <minecraft:magma_cream>, <ore:bricksNether>], [<minecraft:soul_sand>, <ore:bricksNether>, <minecraft:soul_sand>]]);
-recipes.addShaped(<railcraft:coke_oven_red>, [[<ore:sand>, <ore:ingotBrick>, <ore:sand>],[<ore:ingotBrick>, <ore:dyeRed>, <ore:ingotBrick>], [<ore:sand>, <ore:ingotBrick>, <ore:sand>]]);
-recipes.addShaped(<railcraft:coke_oven>, [[<ore:sand>, <ore:ingotBrick>, <ore:sand>],[<ore:ingotBrick>, <ore:dyeYellow>, <ore:ingotBrick>], [<ore:sand>, <ore:ingotBrick>, <ore:sand>]]);
-recipes.addShaped(<railcraft:equipment:3>, [[null, <ore:netherrack>, null], [<ore:dustRedstone>, <minecraft:cauldron>, <ore:dustRedstone>]]);
-recipes.addShapeless(<railcraft:track_kit:8> * 4, [<ore:plankWood>,<railcraft:track_parts>,<randomthings:stableenderpearl>,<minecraft:lead>,<ore:dustRedstone>]);
-recipes.addShaped(<railcraft:detector:3>, [[<ore:blockMossy>, <ore:blockMossy>, <ore:blockMossy>],[<ore:blockMossy>, <minecraft:stone_pressure_plate>, <ore:blockMossy>], [<ore:blockMossy>, <ore:blockMossy>, <ore:blockMossy>]]);
-//Adding circuits back using AE2's inscriber
-//Inscriber.addRecipe(IItemStack output, IItemStack input, boolean inscribe, @Optional IItemStack topInput, @Optional IItemStack bottomInput);
-Inscriber.addRecipe(<railcraft:circuit:0>, <ore:dustRedstone>, false, <appliedenergistics2:material:16>, <ore:plateGold>);
-Inscriber.addRecipe(<railcraft:circuit:1>, <ore:slimecrystalGreen>, false, <appliedenergistics2:material:16>, <ore:plateGold>);
-Inscriber.addRecipe(<railcraft:circuit:2>, <ore:dustGold>, false, <appliedenergistics2:material:16>, <ore:plateGold>);
-Inscriber.addRecipe(<railcraft:circuit:3>, <ore:dustLapis>, false, <appliedenergistics2:material:16>, <ore:plateGold>);
 
 #Adding Extreme Reactors' stuff
 recipes.addShaped(<bigreactors:reactorcontroller>, [[<bigreactors:reactorcasing>, <appliedenergistics2:material:22>, <bigreactors:reactorcasing>],[<ore:ingotYellorium>, <appliedenergistics2:material:23>, <ore:ingotYellorium>], [<bigreactors:reactorcasing>, <ore:dustRedstone>, <bigreactors:reactorcasing>]]);
@@ -256,22 +220,16 @@ recipes.addShaped(<rftools:shape_card:2>, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],
 recipes.addShaped(<rftools:counterplus_module>, [[null, <randomthings:stableenderpearl>, null],[<ore:ingotGold>, <rftools:counter_module>, <ore:ingotGold>], [null, <randomthings:stableenderpearl>, null]]);
 recipes.addShaped(<rftools:fluidplus_module>, [[null, <randomthings:stableenderpearl>, null],[<ore:ingotGold>, <rftools:fluid_module>, <ore:ingotGold>], [null, <randomthings:stableenderpearl>, null]]);
 
-#Adding Tech Reborn's stuff
-recipes.addShaped(<techreborn:grinder>, [[<ore:itemFlint>, <ore:itemFlint>, <ore:itemFlint>],[<ore:cobblestone>, <ore:machineBasic>, <ore:cobblestone>], [null, <ore:circuitBasic>, null]]);
-Inscriber.addRecipe(<techreborn:part:29>, <ore:dustRedstone>, false, <techreborn:cable:5>, <ore:plateRefinedIron>);
-Inscriber.addRecipe(<techreborn:part:30>, <techreborn:part:29>, false, <ore:dustGlowstone>, <ore:plateLapis>);
-
 #Adding some Thermal tuff
 mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:26>, <ore:gemDiamond>, <immersiveengineering:mold:1>, 4000, 4);
 mods.immersiveengineering.MetalPress.addRecipe(<thermalfoundation:material:27>, <ore:gemEmerald>, <immersiveengineering:mold:1>, 4000, 4);
-mods.techreborn.compressor.addRecipe(<thermalfoundation:material:327>, <thermalfoundation:material:135>, 200, 20);
-mods.techreborn.compressor.addRecipe(<thermalfoundation:material:327> * 9, <thermalfoundation:storage:7>, 200, 20);
 recipes.addShaped(<thermalexpansion:augment:258>, [[null, <ore:gearInvar>, null],[<ore:plateCopper>, <thermalfoundation:material:512>, <ore:plateCopper>], [null, <ore:bricksNether>, null]]);
 recipes.addShaped(<thermalexpansion:machine:6>, [[null, <ore:blockGlassHardened>, null],[<ore:bricksNether>, <ore:machineBlockBasic>, <ore:bricksNether>], [<ore:gearCopper>, <thermalfoundation:material:513>, <ore:gearCopper>]]);
 recipes.addShapeless(<thermalexpansion:morb> * 8, [<minecraft:soul_sand>,<thermalfoundation:material:832>,<ore:crystalSlag>,<randomthings:stableenderpearl>]);
 recipes.addShapeless(<thermalexpansion:morb> * 8, [<minecraft:soul_sand>,<ore:slimeball>,<ore:crystalSlag>,<randomthings:stableenderpearl>]);
 //This recipe was not available due to an unknown reason
 recipes.addShaped(<thermalexpansion:augment:352>, [[null, <ore:gearInvar>, null],[<minecraft:piston>, <thermalfoundation:material:515>, <minecraft:piston>], [null, <ore:bricksNether>, null]]);
+mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<thermalfoundation:material:802>, <minecraft:coal:1>, 2000, 250);
 
 #Adding Nuclearcraft's stuff
 recipes.addShaped(<nuclearcraft:decay_hastener_idle>, [[<ore:plateAdvanced>, <ore:pearlEnderEye>, <ore:plateAdvanced>],[<randomthings:stableenderpearl>, <ore:machineBlockAdvanced>, <randomthings:stableenderpearl>], [<ore:plateAdvanced>, <ore:solenoidCopper>, <ore:plateAdvanced>]]);
@@ -288,31 +246,8 @@ recipes.addShaped(<immersiveengineering:stone_decoration:10> * 2, [[<ore:ingotBr
 recipes.addShaped(<immersiveengineering:stone_decoration:10> * 2, [[<ore:sandstone>, <ore:ingotBrick>], [<ore:ingotBrick>, <ore:sandstone>]]);
 recipes.addShaped(<immersiveengineering:wooden_device0>, [[<ore:planksTreatedWood>, <ore:slabTreatedWood>, <ore:planksTreatedWood>],[<immersiveengineering:treated_wood:*>, null, <ore:planksTreatedWood>], [<immersiveengineering:treated_wood:*>, <ore:planksTreatedWood>, <ore:planksTreatedWood>]]);
 Inscriber.addRecipe(<immersiveengineering:material:27>, <appliedenergistics2:material:16>, false, <immersiveengineering:material:26>, <ore:plateCopper>);
-
-#Adding Immersive Hempcraft's stuff
-
-//Granite dust
-mods.thermalexpansion.Pulverizer.addRecipe(<techreborn:dust:63>, <minecraft:stone:1>, 4000);
-Grinder.addRecipe(<techreborn:dust:63>, <minecraft:stone:1>, 10);
-mods.immersiveengineering.Crusher.addRecipe(<techreborn:dust:63>, <minecraft:stone:1>, 12000);
-mods.mekanism.crusher.addRecipe(<minecraft:stone:1>, <techreborn:dust:63>);
-mods.techreborn.grinder.addRecipe(<techreborn:dust:63>, <minecraft:stone:1>, 200, 5);
-//Diorite dust
-mods.thermalexpansion.Pulverizer.addRecipe(<techreborn:dust:62>, <minecraft:stone:3>, 4000);
-Grinder.addRecipe(<techreborn:dust:62>, <minecraft:stone:3>, 10);
-mods.immersiveengineering.Crusher.addRecipe(<techreborn:dust:62>, <minecraft:stone:3>, 12000);
-mods.mekanism.crusher.addRecipe(<minecraft:stone:3>, <techreborn:dust:62>);
-mods.techreborn.grinder.addRecipe(<techreborn:dust:62>, <minecraft:stone:3>, 200, 5);
-//Andesite dust
-mods.thermalexpansion.Pulverizer.addRecipe(<techreborn:dust:61>, <minecraft:stone:5>, 4000);
-Grinder.addRecipe(<techreborn:dust:61>, <minecraft:stone:5>, 10);
-mods.immersiveengineering.Crusher.addRecipe(<techreborn:dust:61>, <minecraft:stone:5>, 12000);
-mods.mekanism.crusher.addRecipe(<minecraft:stone:5>, <techreborn:dust:61>);
-mods.techreborn.grinder.addRecipe(<techreborn:dust:61>, <minecraft:stone:5>, 200, 5);
-//Dust to perlite
-furnace.addRecipe(<immersivehempcraft:perlite>, <techreborn:dust:62>, 1.05);
-furnace.addRecipe(<immersivehempcraft:perlite>, <techreborn:dust:63>, 1.05);
-furnace.addRecipe(<immersivehempcraft:perlite>, <techreborn:dust:61>, 1.05);
+mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal:1>, 250, <ore:logWood>, 2000);
+mods.immersiveengineering.CokeOven.addRecipe(<immersiveengineering:material:6>, 250, <ore:charcoal>, 2000);
 
 #Adding Immersive Petroleum's stuff
 recipes.addShaped(<immersivepetroleum:stone_decoration> * 12, [[<ore:itemSlag>, <ore:clathrateOil>, <ore:itemSlag>],[<ore:gravel>, <ore:listAllwater>, <ore:gravel>], [<ore:itemSlag>, <ore:clathrateOil>, <ore:itemSlag>]]);
@@ -324,20 +259,26 @@ recipes.addShaped(<actuallyadditions:block_misc:8>, [[<randomthings:stableenderp
 recipes.addShaped(<actuallyadditions:block_ranged_collector>, [[null, <actuallyadditions:item_crystal:3>, null],[<randomthings:stableenderpearl>, <ore:blockHopper>, <randomthings:stableenderpearl>], [null, <actuallyadditions:block_misc:9>, null]]);
 recipes.addShaped(<actuallyadditions:item_potion_ring:5>, [[<ore:slimeball>, <ore:slimeball>, <ore:slimeball>],[<ore:slimeball>, <actuallyadditions:block_crystal:2>, <ore:cropNetherWart>], [<minecraft:potion>.withTag({Potion: "minecraft:water"}).onlyWithTag({Potion: "minecraft:water"}), <actuallyadditions:item_misc:6>, null]]);
 recipes.addShaped(<actuallyadditions:item_phantom_connector>, [[<ore:pearlEnderEye>, <randomthings:stableenderpearl>],[<randomthings:stableenderpearl>, <ore:pearlEnderEye>], [<ore:stickWood>, null]]);
+recipes.addShaped("actually_additions_wood_casing", <actuallyadditions:block_misc:4>, [[<ore:plankWood>, <ore:stickWood>, <ore:plankWood>],[<ore:stickWood>, <ore:logWood>, <ore:stickWood>], [<ore:plankWood>, <ore:stickWood>, <ore:plankWood>]]);
 
 #Adding Applied Energistics 2's stuff
 recipes.addShaped(<appliedenergistics2:material:9>, [[<ore:dustFluix>, <ore:crystalPureFluix>, <ore:dustFluix>],[<ore:crystalPureFluix>, <randomthings:stableenderpearl>, <ore:crystalPureFluix>], [<ore:dustFluix>, <ore:crystalPureFluix>, <ore:dustFluix>]]);
 recipes.addShaped(<appliedenergistics2:material:9>, [[<ore:dustFluix>, <ore:crystalFluix>, <ore:dustFluix>],[<ore:crystalFluix>, <randomthings:stableenderpearl>, <ore:crystalFluix>], [<ore:dustFluix>, <ore:crystalFluix>, <ore:dustFluix>]]);
 
 #Adding Industrial Foregoing's stuff
-recipes.addShaped(<industrialforegoing:protein_reactor>, [[<ore:itemRubber>, <ore:listAllmeatraw>, <ore:itemRubber>],[<ore:egg>, <teslacorelib:machine_case>, <ore:egg>], [<ore:ingotBrick>, <ore:itemLeather>, <ore:ingotBrick>]]);
-recipes.addShaped(<industrialforegoing:spores_recreator>, [[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>],[<ore:listAllmushroom>, <teslacorelib:machine_case>, <ore:listAllmushroom>], [<ore:itemRubber>, <ore:gearIron>, <ore:itemRubber>]]);
+recipes.addShaped("industrialforegoing_protein_reactor", <industrialforegoing:protein_reactor>, [[<ore:itemPlastic>, <ore:listAllmeatraw>, <ore:itemPlastic>],[<ore:egg>, <ore:machineBlockBasic>, <ore:egg>], [<ore:ingotBrick>, <ore:leather>, <ore:ingotBrick>]]);
+recipes.addShaped(<industrialforegoing:spores_recreator>, [[<ore:itemPlastic>, <ore:itemPlastic>, <ore:itemPlastic>],[<ore:listAllmushroom>, <ore:machineBlockBasic>, <ore:listAllmushroom>], [<ore:itemPlastic>, <ore:gearIron>, <ore:itemPlastic>]]);
 recipes.addShapeless(<industrialforegoing:black_hole_tank>, [<industrialforegoing:black_hole_tank>]);
-recipes.addShaped(<industrialforegoing:black_hole_tank>, [[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>],[<ore:pearlEnderEye>, <rftools:infused_enderpearl>, <ore:pearlEnderEye>], [<minecraft:bucket>, <teslacorelib:machine_case>, <minecraft:bucket>]]);
-recipes.addShaped(<industrialforegoing:black_hole_unit>, [[<ore:itemRubber>, <ore:itemRubber>, <ore:itemRubber>],[<ore:pearlEnderEye>, <rftools:infused_enderpearl>, <ore:pearlEnderEye>], [<ore:chestWood>, <teslacorelib:machine_case>, <ore:chestWood>]]);
+recipes.addShaped(<industrialforegoing:black_hole_tank>, [[<ore:itemPlastic>, <ore:itemPlastic>, <ore:itemPlastic>],[<ore:pearlEnderEye>, <rftools:infused_enderpearl>, <ore:pearlEnderEye>], [<minecraft:bucket>, <ore:machineBlockBasic>, <minecraft:bucket>]]);
+recipes.addShaped(<industrialforegoing:black_hole_unit>, [[<ore:itemPlastic>, <ore:itemPlastic>, <ore:itemPlastic>],[<ore:pearlEnderEye>, <rftools:infused_enderpearl>, <ore:pearlEnderEye>], [<ore:chestWood>, <ore:machineBlockBasic>, <ore:chestWood>]]);
 recipes.addShapeless(<industrialforegoing:black_hole_unit>, [<industrialforegoing:black_hole_unit>]);
-recipes.addShaped(<industrialforegoing:enchantment_extractor>, [[<ore:itemRubber>, <ore:bricksNether>, <ore:itemRubber>],[<minecraft:book>, <teslacorelib:machine_case>, <minecraft:book>], [<ore:gemDiamond>, <ore:gearGold>, <ore:gemDiamond>]]);
-recipes.addShaped(<industrialforegoing:enchantment_refiner>, [[<ore:itemRubber>, <ore:pearlEnderEye>, <ore:itemRubber>],[<minecraft:book>, <teslacorelib:machine_case>, <minecraft:enchanted_book>], [<ore:itemRubber>, <ore:gearDiamond>, <ore:itemRubber>]]);
+recipes.addShaped(<industrialforegoing:enchantment_extractor>, [[<ore:itemPlastic>, <ore:bricksNether>, <ore:itemPlastic>],[<minecraft:book>, <ore:machineBlockBasic>, <minecraft:book>], [<ore:gemDiamond>, <ore:gearGold>, <ore:gemDiamond>]]);
+recipes.addShaped("industrialforegoing_enchantment_refiner", <industrialforegoing:enchantment_refiner>, [[<ore:itemPlastic>, <ore:pearlEnderEye>, <ore:itemPlastic>],[<minecraft:book>, <ore:machineBlockBasic>, <minecraft:enchanted_book>], [<ore:itemPlastic>, <ore:gearDiamond>, <ore:itemPlastic>]]);
+val logWood = <ore:logWood>;
+for item in logWood.items{
+Extractor.add(item, <liquid:latex> * 1);
+}
+recipes.replaceAllOccurences(<minecraft:stone>, <ore:stone>, <industrialforegoing:tree_fluid_extractor>);
 
 #Adding Draconic Evolution's stuff
 recipes.addShaped(<draconicevolution:dislocator>, [[<ore:powderBlaze>, <ore:dustDraconium>, <ore:powderBlaze>],[<ore:dustDraconium>, <randomthings:stableenderpearl>, <ore:dustDraconium>], [<ore:powderBlaze>, <ore:dustDraconium>, <ore:powderBlaze>]]);
@@ -380,7 +321,6 @@ recipes.addShaped(<forestry:humus> * 8, [[<ore:dirt>, <ore:dirt>, <ore:dirt>],[<
 recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <forestry:capsule:1>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
 recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <forestry:refractory:1>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
 recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <forestry:can:1>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
-recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <techreborn:dynamiccell>.withTag({Fluid: {FluidName: "water", Amount: 1000}}).onlyWithTag({Fluid: {FluidName: "water", Amount: 1000}}), <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
 recipes.addShaped(<forestry:bog_earth> * 8, [[<ore:dirt>, <ore:sand>, <ore:dirt>],[<ore:sand>, <ore:listAllwater>, <ore:sand>], [<ore:dirt>, <ore:sand>, <ore:dirt>]]);
 recipes.addShaped(<forestry:ffarm>, [[<ore:ingotCopper>, <ore:bricksStone>, <ore:ingotCopper>], [<ore:slabWood>, <forestry:thermionic_tubes:1>, <ore:slabWood>]]);
 Inscriber.addRecipe(<forestry:chipsets:0>.withTag({T: 0 as short}), <ore:dustApatite>, false, <appliedenergistics2:material:16>, <ore:plateTin>);
@@ -391,7 +331,7 @@ recipes.addShaped(<forestry:grafter_proven>, [[null, null, <ore:ingotMithril>],[
 
 #Adding Mekanism's stuff
 mods.mekanism.crusher.addRecipe(<mekanism:ingot:0>, <mekanism:otherdust:5>);
-recipes.addShaped(<mekanism:teleportationcore>, [[<actuallyadditions:item_crystal:1>, <ore:alloyUltimate>, <actuallyadditions:item_crystal:1>],[<ore:ingotEnderium>, <rftools:infused_enderpearl>, <ore:ingotEnderium>], [<actuallyadditions:item_crystal:1>, <ore:alloyUltimate>, <actuallyadditions:item_crystal:1>]]);
+recipes.addShaped("mekanism_teleportation_core", <mekanism:teleportationcore>, [[<actuallyadditions:item_crystal:1>, <ore:alloyUltimate>, <actuallyadditions:item_crystal:1>],[<ore:ingotEnderium>, <randomthings:stableenderpearl>, <ore:ingotEnderium>], [<actuallyadditions:item_crystal:1>, <ore:alloyUltimate>, <actuallyadditions:item_crystal:1>]]);
 recipes.addShaped(<mekanism:basicblock:7> * 9, [[<ore:circuitBasic>, <ore:ingotEnderium>, <ore:circuitBasic>],[<ore:ingotEnderium>, <ore:ingotRefinedObsidian>, <ore:ingotEnderium>], [<ore:circuitBasic>, <ore:ingotEnderium>, <ore:circuitBasic>]]);
 recipes.addShaped(<mekanism:machineblock:11>, [[<ore:circuitBasic>, <ore:ingotEnderium>, <ore:circuitBasic>],[<ore:ingotEnderium>, <mekanism:teleportationcore>, <ore:ingotEnderium>], [<ore:circuitBasic>, <ore:ingotEnderium>, <ore:circuitBasic>]]);
 recipes.addShapeless(<mekanism:nugget:3> * 9, [<mekanism:ingot:3>]);
@@ -416,6 +356,12 @@ mods.mekanism.enrichment.addRecipe(<thermalfoundation:material:770> * 4, <minecr
 //The next section adds things to nature and food mods
 //
 #
+
+#Adding Harvestcraft's stuff
+recipes.addShapeless("harvestcraft_kale_seed", <harvestcraft:kaleseeditem>, [<harvestcraft:kaleitem>]);
+recipes.addShapeless("harvestcraft_gigapickle_seed", <harvestcraft:gigapickleseeditem>, [<harvestcraft:gigapickleitem>]);
+recipes.addShapeless("harvestcraft_tomatillo_seed", <harvestcraft:tomatilloseeditem>, [<harvestcraft:tomatilloitem>]);
+recipes.addShapeless("harvestcraft_flour_from_grain", <harvestcraft:flouritem>, [<harvestcraft:mortarandpestleitem>.reuse(), <ore:listAllgrain>]);
 
 #Adding Plant Mega Pack's stuff
 recipes.addShapeless(<biomesoplenty:white_dye>, [<pmp:flower_wht>]);
@@ -499,7 +445,6 @@ recipes.addShaped(<tconstruct:throwball:1>, [[<ore:paper>, <ore:itemFlint>, <ore
 recipes.addShaped(<tconstruct:throwball:1>, [[<ore:paper>, <ore:itemFlint>, <ore:paper>],[<ore:dustSulphur>, <ore:dustSaltpeter>, <ore:dustSulphur>], [<ore:paper>, <ore:dustCharcoal>, <ore:paper>]]);
 recipes.addShaped(<tconstruct:throwball:1>, [[<ore:paper>, <ore:itemFlint>, <ore:paper>],[<ore:dustSulphur>, <ore:dustSaltpeter>, <ore:dustSulphur>], [<ore:paper>, <ore:dustCoal>, <ore:paper>]]);
 recipes.addShaped(<tconstruct:stone_torch> * 4, [[<thermalfoundation:material:833>], [<ore:rodStone>]]);
-recipes.addShaped(<tconstruct:stone_torch> * 6, [[<railcraft:fluid_bottle_creosote>],[<ore:blockWool>,], [<ore:rodStone>]]);
 recipes.addShaped(<tconstruct:stone_torch> * 12, [[<ore:blockWool>, <forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}).onlyWithTag({FluidName: "creosote", Amount: 1000}), null], [<ore:rodStone>, <ore:rodStone>, <ore:rodStone>]]);
 recipes.addShaped(<tconstruct:stone_torch> * 8, [[ <ore:fuelCoke>], [<ore:rodStone>]]);
 recipes.addShaped(<tconstruct:stone_torch> * 4, [[ <thermalfoundation:material:832>], [<ore:rodStone>]]);
@@ -522,14 +467,13 @@ recipes.addShapeless(<conarm:invisible_ink>, [<minecraft:potion>.withTag({Potion
 //
 #
 
-#Adding Extra Bit Manipulation's stuff
-recipes.addShapeless("bodypart_template", <extrabitmanipulation:bodypart_template>, [<ore:cobblestone>]);
-
+/*
 #Adding Malisis' mods' stuff
 recipes.addShaped(<malisisdoors:garage_door>, [[<ore:plankWood>, <ore:blockGlassColorless>, <ore:plankWood>], [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
 recipes.addShaped(<malisisdoors:saloon> * 3, [[<ore:plankWood>, <ore:plankWood>],[<ore:stickWood>, <ore:stickWood>], [<ore:plankWood>, <ore:plankWood>]]);
 recipes.addShaped(<malisisdoors:shoji_door> * 3, [[<ore:plankWood>, <ore:paper>],[<ore:plankWood>, <ore:paper>], [<ore:plankWood>, <ore:paper>]]);
 recipes.addShaped(<malisisdoors:wood_sliding_door> * 3, [[<ore:plankWood>, <ore:blockGlassColorless>],[<ore:plankWood>, <ore:blockGlassColorless>], [<ore:plankWood>, <ore:blockGlassColorless>]]);
+*/
 
 #Adding Random Things' stuff
 recipes.addShapeless(<randomthings:idcard>, [<mystcraft:vial>,<ore:paper>]);
@@ -583,6 +527,21 @@ recipes.addShaped(<storagedrawers:compdrawers>, [[<ore:stone>, <ore:stone>, <ore
 
 #Adding Compact Drawers' stuff
 recipes.addShaped(<compactdrawers:compact_drawer_2by1>, [[<ore:stone>, <ore:stone>, <ore:stone>],[<ore:stone>, <ore:drawerBasic>, <ore:stone>], [<ore:ingotIron>, <minecraft:piston>, <ore:ingotIron>]]);
+
+#Iron Chests' stuff
+recipes.addShaped("iron_chest_gold_chest", <ironchest:iron_chest:1>, [[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>],[<ore:ingotGold>, <ironchest:iron_chest:4>, <ore:ingotGold>], [<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>]]);
+recipes.addShaped("iron_chest_silver_chest", <ironchest:iron_chest:4>, [[<ore:ingotSilver>, <ore:ingotSilver>, <ore:ingotSilver>],[<ore:ingotSilver>, <ironchest:iron_chest>, <ore:ingotSilver>], [<ore:ingotSilver>, <ore:ingotSilver>, <ore:ingotSilver>]]);
+recipes.addShaped("iron_chest_iron_chest", <ironchest:iron_chest>, [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],[<ore:ingotIron>, <ironchest:iron_chest:3>, <ore:ingotIron>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+recipes.addShapeless("iron_chest_crystal_to_diamond", <ironchest:iron_chest:2>, [<ironchest:iron_chest:5>]);
+recipes.addShaped("iron_chest_silver_to_gold_upgrade", <ironchest:silver_gold_chest_upgrade>, [[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>],[<ore:ingotGold>, <ore:ingotSilver>, <ore:ingotGold>], [<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>]]);
+recipes.addShaped("iron_chest_diamond_to_crystal_upgrade", <ironchest:diamond_crystal_chest_upgrade>, [[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>],[<ore:blockGlassColorless>, <ore:gemDiamond>, <ore:blockGlassColorless>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>]]);
+recipes.addShaped("iron_chest_diamond_to_obsidian_upgrade", <ironchest:diamond_obsidian_chest_upgrade>, [[<ore:obsidian>, <ore:obsidian>, <ore:obsidian>],[<ore:obsidian>, <ore:gemDiamond>, <ore:obsidian>], [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
+recipes.addShaped("iron_chest_copper_to_iron_upgrade", <ironchest:copper_iron_chest_upgrade>, [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],[<ore:ingotIron>, <ore:ingotCopper>, <ore:ingotIron>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+recipes.addShaped("iron_chest_diamond_to_obsidian_upgrade_shulker", <ironchest:diamond_obsidian_shulker_upgrade>, [[<ore:obsidian>, <ore:gemDiamond>, <ore:obsidian>],[<ore:obsidian>, <ore:obsidian>, <ore:obsidian>], [<ore:obsidian>, <ore:obsidian>, <ore:obsidian>]]);
+recipes.addShaped("iron_chest_diamond_to_crystal_upgrade_shulker", <ironchest:diamond_crystal_shulker_upgrade>, [[<ore:blockGlassColorless>, <ore:gemDiamond>, <ore:blockGlassColorless>],[<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>], [<ore:blockGlassColorless>, <ore:blockGlassColorless>, <ore:blockGlassColorless>]]);
+recipes.addShaped("iron_chest_copper_to_iron_upgrade_shulker", <ironchest:copper_iron_shulker_upgrade>, [[<ore:ingotIron>, <ore:ingotCopper>, <ore:ingotIron>],[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>], [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+recipes.addShaped("iron_chest_silver_to_gold_upgrade_shulker", <ironchest:silver_gold_shulker_upgrade>, [[<ore:ingotGold>, <ore:ingotSilver>, <ore:ingotGold>],[<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>], [<ore:ingotGold>, <ore:ingotGold>, <ore:ingotGold>]]);
+
 
 #
 //
@@ -756,7 +715,7 @@ for item in grain.items{
 mods.immersiveengineering.Fermenter.addRecipe(fermenterOutput, ethanol * 350, item, 2048);
 }
 
-//Adding recipes for endstone from sandstone by liquid ender_distillation
+//Adding recipes for endstone from sandstone by liquid ender
 
 val sandstone = <ore:sandstone>;
 

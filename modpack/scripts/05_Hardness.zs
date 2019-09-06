@@ -18,17 +18,27 @@ print("Initializing 05_Hardness.zs");
 //
 #
 
+/*
 #Fixing Malisis Doors
 val ironDoor = <malisisdoors:big_door_iron_3x3>;
 ironDoor.hardness = 5.0;
+*/
 
 #Making netherrack less annoying
 <minecraft:netherrack>.hardness = 1.5;
 <biomesoplenty:grass:6>.hardness = 1.5;
 <biomesoplenty:grass:8>.hardness = 1.5;
 <chisel:netherrack:*>.hardness = 1.5;
-<nex:netherrack:*>.hardness = 1.5;
-<nex:netherrack_path:*>.hardness = 1.5;
+<netherex:gloomy_netherrack:*>.hardness = 1.5;
+<netherex:fiery_netherrack:*>.hardness = 1.5;
+<netherex:icy_netherrack:*>.hardness = 1.5;
+<netherex:lively_netherrack:*>.hardness = 1.5;
+<netherex:gloomy_netherrack_path:*>.hardness = 1.5;
+<netherex:fiery_netherrack_path:*>.hardness = 1.5;
+<netherex:icy_netherrack_path:*>.hardness = 1.5;
+<netherex:lively_netherrack_path:*>.hardness = 1.5;
+<netherex:netherrack_path:*>.hardness = 1.5;
+
 
 #Bedrock
 <extrautils2:decorativebedrock:*>.hardness = 100;

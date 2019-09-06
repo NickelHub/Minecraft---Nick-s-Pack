@@ -19,6 +19,7 @@ import mods.thermalexpansion.Sawmill;
 import mods.mekanism.crusher;
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.Fermenter;
+import mods.industrialforegoing.Extractor;
 
 print("Initializing 02_Removing.zs");
 
@@ -31,15 +32,20 @@ recipes.removeByRecipeName("endercore:slabcobblestone_to_cobblestone");
 recipes.removeByRecipeName("endercore:slabstone_to_stone");
 recipes.removeByRecipeName("endercore:slabstonebrick_to_stonebrick");
 
-#Removing gears and plates recipes
+#Removing UniDict's stuff
 mods.unidict.removalByKind.get("Crafting").remove("gear");
 mods.unidict.removalByKind.get("Crafting").remove("plate");
+recipes.removeByRecipeName("unidict:ingotbronze_x4_size.4");
 
 #
 //
 //The next section removes things from magic mods
 //
 #
+
+#Removing Abyssalcraft's stuff
+recipes.removeByRecipeName("abyssalcraft:coraliumstone");
+recipes.removeByRecipeName("abyssalcraft:coraliumstone_alt");
 
 #Removing Enchanting Plus' stuff
 recipes.removeByRecipeName("eplus:table");
@@ -53,10 +59,6 @@ recipes.remove(<xat:dragons_eye>);
 recipes.removeByRecipeName("torchmaster:mega_torch");
 recipes.removeByRecipeName("torchmaster:terrain_lighter");
 recipes.removeByRecipeName("torchmaster:dread_lamp");
-
-#Removing Infused Ring's stuff
-recipes.remove(<infusedring:magicalstone>);
-recipes.remove(<infusedring:infusingring>);
 
 #Removing Mystcraft's stuff
 recipes.removeByRecipeName("mystcraft:inkmixer");
@@ -83,17 +85,6 @@ recipes.remove(<enderstorage:ender_pouch>);
 recipes.remove(<enderstorage:ender_storage:1>);
 recipes.remove(<enderstorage:ender_storage>);
 
-#Removing Gravestone Mod's and Gravestone Mod Extended's stuff
-recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/gallows");
-recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/gibbets");
-recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/stocks");
-recipes.removeByRecipeName("gravestone-extended:crafting/blocks/execution/burning_stake");
-recipes.removeByRecipeName("gravestone-extended:nightstone");
-recipes.removeByRecipeName("gravestone-extended:thunderstone");
-recipes.removeByRecipeName("gravestone-extended:crafting/blocks/withered_glass");
-recipes.removeByRecipeName("gravestone-extended:crafting/blocks/candle");
-recipes.removeByRecipeName("gravestone-extended:gs_undertaker_backpack");
-
 #Removing Magic Bee's stuff
 recipes.removeByRecipeName("magicbees:essence_fl1");
 recipes.removeByRecipeName("magicbees:essence_fl2");
@@ -118,9 +109,6 @@ recipes.remove(<magicbees:manasteelscoop>);
 #Removing Elevators Mod's stuff 
 recipes.removeByRegex("elevatorid:elevator_.*");
 
-#Removing QuantumFlux' stuff
-recipes.remove(<quantumflux:craftingpiece:5>);
-
 #Removing Exchangers' stuff
 recipes.remove(<exchangers:eio_exchanger_core_tier1>);
 recipes.remove(<exchangers:eio_exchanger_core_tier2>);
@@ -134,9 +122,6 @@ recipes.remove(<exchangers:mekanism_exchanger_core_tier3>);
 recipes.remove(<exchangers:ie_exchanger_core_tier1>);
 recipes.remove(<exchangers:ie_exchanger_core_tier2>);
 recipes.remove(<exchangers:ie_exchanger_core_tier3>);
-
-#Removing MatterOverdrive's stuff
-recipes.remove(<matteroverdrive:isolinear_circuit>);
 
 #Removing Wireless Crafting Terminal' stuff
 recipes.remove(<ae2wtlib:infinity_booster_card>);
@@ -172,20 +157,9 @@ recipes.remove(<ore:gearQuartzBlack>);
 recipes.remove(<ore:gearRuby>);
 recipes.remove(<ore:gearSapphire>);
 recipes.remove(<ore:gearTanzanite>);
+recipes.remove(<ore:gearTritanium>);
+recipes.remove(<ore:gearDilithium>);
 recipes.remove(<ore:gearTopaz>);
-
-#Removing Railcraft's stuff
-recipes.remove(<railcraft:tool_notepad>);
-recipes.removeByRecipeName("railcraft:brick_bloodstained+blood stained block#337");
-recipes.removeByRecipeName("railcraft:brick_bloodstained+blood stained block#338");
-recipes.remove(<railcraft:boiler_firebox_solid>);
-recipes.removeByRecipeName("railcraft:blast_furnace+blast furnace brick#118");
-recipes.removeByRecipeName("railcraft:coke_oven_red+tile.railcraft.coke.oven.red.name#117");
-recipes.removeByRecipeName("railcraft:coke_oven+coke oven brick#116");
-recipes.removeByRecipeName("railcraft:equipment+smoker#59");
-recipes.removeByRecipeName("railcraft:track_kit+embarking track kit#476");
-recipes.removeByRecipeName("railcraft:detector+cart detector - mob#48");
-recipes.removeByRecipeName("railcraft:detector+cart detector - mob#47");
 
 #Removing Extreme Reactors' stuff
 recipes.removeByRecipeName("bigreactors:turbinecontroller");
@@ -270,16 +244,6 @@ mods.jei.JEI.removeAndHide(<extracells:storage.component:6>);
 mods.jei.JEI.removeAndHide(<extracells:storage.component:7>);
 mods.jei.JEI.removeAndHide(<extracells:ecbaseblock:0>);
 
-#Removing Tech Reborn's stuff
-mods.jei.JEI.removeAndHide(<techreborn:ore:1>);
-mods.jei.JEI.removeAndHide(<techreborn:ore:12>);
-mods.jei.JEI.removeAndHide(<techreborn:ore:13>);
-mods.jei.JEI.removeAndHide(<techreborn:ore2:1>);
-mods.jei.JEI.removeAndHide(<techreborn:ore2:0>);
-recipes.remove(<techreborn:grinder>);
-recipes.remove(<techreborn:part:29>);
-recipes.remove(<techreborn:part:30>);
-
 #Removing Thermal stuff
 recipes.remove(<thermalexpansion:machine:6>);
 recipes.remove(<thermalexpansion:augment:258>);
@@ -333,15 +297,11 @@ mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:material:
 //mods.immersiveengineering.Fermenter.removeFluidRecipe(ILiquidStack fluid);
 mods.immersiveengineering.Fermenter.removeFluidRecipe(<liquid:ethanol>);
 
-#Removing Immersive Hempcraft's stuff
-mods.jei.JEI.removeAndHide(<immersivehempcraft:granite_dust>);
-mods.jei.JEI.removeAndHide(<immersivehempcraft:diorite_dust>);
-mods.jei.JEI.removeAndHide(<immersivehempcraft:andesite_dust>);
-mods.jei.JEI.removeAndHide(<immersivehempcraft:apatite>);
-furnace.remove(<immersivehempcraft:perlite>);
-
 #Removing Immersive Petroleum's stuff
 recipes.remove(<immersivepetroleum:stone_decoration>);
+
+#Removing Immersive Hempcraft's stuff
+recipes.removeByRecipeName("immersivehempcraft:crop_to_fiber");
 
 #Removing Actually Additions' stuff
 recipes.removeByRecipeName("actuallyadditions:recipes114");
@@ -665,11 +625,10 @@ recipes.remove(<exoticbirds:egg_sorter>);
 recipes.remove(<exoticbirds:phoenix_egg>);
 recipes.remove(<exoticbirds:egg_incubator>);
 
-#Removing Plants 2's stuff
-recipes.removeByRecipeName("plants2:recipe195");
-
 #Removing Harvestcraft's stuff
 recipes.removeByRecipeName("harvestcraft:string");
+recipes.removeByRecipeName("harvestcraft:flouritem_listAllwheat");
+
 
 #
 //
@@ -700,11 +659,13 @@ mods.jei.JEI.removeAndHide(<plustic:battery_cell>);
 //
 #
 
+/*
 #Removing Malisis' mods' stuff
 recipes.remove(<malisisdoors:wood_sliding_door>);
 recipes.remove(<malisisdoors:shoji_door>);
 recipes.remove(<malisisdoors:saloon>);
 recipes.remove(<malisisdoors:garage_door>);
+*/
 
 #Removing Random Things' stuff
 recipes.remove(<randomthings:idcard>);
@@ -766,6 +727,26 @@ recipes.removeByRecipeName("storagedrawers:compacting_drawer");
 #Removing Compact Drawers' stuff
 recipes.removeByRecipeName("compactdrawers:compact_drawer_2by1");
 
+#Removing Iron Chests' stuff
+recipes.remove(<ironchest:iron_chest:0>);
+recipes.remove(<ironchest:iron_chest:4>);
+recipes.remove(<ironchest:iron_chest:1>);
+recipes.removeByRecipeName("ironchest:chest/diamond/silver_diamond_chest");
+mods.jei.JEI.removeAndHide(<ironchest:iron_gold_chest_upgrade>);
+mods.jei.JEI.removeAndHide(<ironchest:copper_silver_chest_upgrade>);
+recipes.remove(<ironchest:silver_gold_chest_upgrade>);
+recipes.remove(<ironchest:copper_iron_chest_upgrade>);
+recipes.remove(<ironchest:diamond_crystal_chest_upgrade>);
+mods.jei.JEI.removeAndHide(<ironchest:wood_iron_chest_upgrade>);
+recipes.remove(<ironchest:diamond_obsidian_chest_upgrade>);
+mods.jei.JEI.removeAndHide(<ironchest:iron_gold_shulker_upgrade>);
+mods.jei.JEI.removeAndHide(<ironchest:copper_silver_shulker_upgrade>);
+recipes.remove(<ironchest:silver_gold_shulker_upgrade>);
+recipes.remove(<ironchest:copper_iron_shulker_upgrade>);
+recipes.remove(<ironchest:diamond_crystal_shulker_upgrade>);
+mods.jei.JEI.removeAndHide(<ironchest:vanilla_iron_shulker_upgrade>);
+recipes.remove(<ironchest:diamond_obsidian_shulker_upgrade>);
+
 #Removing Zero Core's stuff
 mods.jei.JEI.removeAndHide(<zerocore:debugtool>);
 
@@ -779,15 +760,6 @@ mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.gem_ore.rub
 mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.gem_ore.sapphire_ore:*>);
 mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.gem_ore.sapphire_ore:*>);
 mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.gem_ore.sapphire_ore:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.techreborn.ore.iridium:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.techreborn.ore.iridium:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.techreborn.ore.iridium:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.techreborn.ore.silver:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.techreborn.ore.silver:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.techreborn.ore.silver:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_tile.techreborn.ore.lead:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_tile.techreborn.ore.lead:*>);
-mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_tile.techreborn.ore.lead:*>);
 mods.jei.JEI.removeAndHide(<undergroundbiomes:igneous_stone_immersiveengineering_ore_4:*>);
 mods.jei.JEI.removeAndHide(<undergroundbiomes:metamorphic_stone_immersiveengineering_ore_4:*>);
 mods.jei.JEI.removeAndHide(<undergroundbiomes:sedimentary_stone_immersiveengineering_ore_4:*>);

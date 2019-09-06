@@ -17,9 +17,6 @@ print("Initializing 04_Replacing.zs");
 //
 #
 
-#Malisis Mods
-recipes.replaceAllOccurences(<minecraft:ender_pearl>, <randomthings:stableenderpearl>, <malisisblocks:vanishing_block:*>);
-
 #mushroom
 recipes.replaceAllOccurences(<ore:foodMushroom>, <ore:listAllmushroom>);
 
@@ -31,9 +28,13 @@ recipes.replaceAllOccurences(<ore:itemFertilizer>, <ore:fertilizer>);
 recipes.replaceAllOccurences(<ore:dustFertilizer>, <ore:fertilizer>);
 recipes.replaceAllOccurences(<ore:powderFertilizer>, <ore:fertilizer>);
 
-#Fixing rubber
-recipes.replaceAllOccurences(<industrialforegoing:plastic>, <ore:itemRubber>);
-recipes.replaceAllOccurences(<mekanism:polyethene:2>, <ore:itemRubber>);
+#Replacing itemRubber
+recipes.replaceAllOccurences(<industrialforegoing:dryrubber>, <ore:itemRubber>);
+
+#Fixing itemPlastic
+recipes.replaceAllOccurences(<industrialforegoing:plastic>, <ore:itemPlastic>);
+recipes.replaceAllOccurences(<mekanism:polyethene:2>, <ore:itemPlastic>);
+recipes.replaceAllOccurences(<nuclearcraft:part:6>, <ore:itemPlastic>);
 
 #Fixing sticks
 recipes.replaceAllOccurences(<minecraft:stick>, <ore:stickWood>);
@@ -46,7 +47,6 @@ recipes.replaceAllOccurences(<minecraft:leather>, <ore:leather>);
 
 #Fixing feather
 recipes.replaceAllOccurences(<minecraft:feather>, <ore:feather>);
-recipes.replaceAllOccurences(<ore:minecraft:feather>, <ore:feather>);
 
 #Fixing sugar
 recipes.replaceAllOccurences(<minecraft:sugar>, <ore:listAllsugar>);
@@ -72,7 +72,6 @@ recipes.replaceAllOccurences(<minecraft:water_bucket>, <ore:listAllwater>);
 recipes.replaceAllOccurences(<minecraft:milk_bucket>, <ore:listAllmilk>);
 
 #Unifying bat wings
-recipes.replaceAllOccurences(<gravestone-extended:gs_bat_wing>, <ore:wingBat>);
 recipes.replaceAllOccurences(<actuallyadditions:item_misc:15>, <ore:wingBat>);
 recipes.replaceAllOccurences(<xreliquary:mob_ingredient:5>, <ore:wingBat>);
 
@@ -104,6 +103,9 @@ recipes.replaceAllOccurences(<minecraft:ender_chest>, <ore:chestEnder>);
 //The next section replaces blocks as crafting ingredients
 //
 #
+
+#Quartz Glass
+recipes.replaceAllOccurences(<appliedenergistics2:quartz_glass>, <ore:glassQuartz>);
 
 #Netherrack
 recipes.replaceAllOccurences(<minecraft:netherrack>, <ore:netherrack>, <*>.only(function(item) {
@@ -155,10 +157,8 @@ recipes.replaceAllOccurences(<teslacorelib:machine_case>, <ore:machineBlockBasic
 recipes.replaceAllOccurences(<thermalexpansion:frame>, <ore:machineBlockBasic>);
 recipes.replaceAllOccurences(<enderio:item_material:0>, <ore:machineBlockBasic>);
 recipes.replaceAllOccurences(<rftools:machine_frame>, <ore:machineBlockBasic>);
-recipes.replaceAllOccurences(<techreborn:machine_frame:0>, <ore:machineBlockBasic>);
 recipes.replaceAllOccurences(<mekanism:basicblock:8>, <ore:machineBlockAdvanced>);
 recipes.replaceAllOccurences(<nuclearcraft:part:10>, <ore:machineBlockAdvanced>);
-recipes.replaceAllOccurences(<techreborn:machine_frame:0>, <ore:machineBlockAdvanced>);
 
 print("Initialized 04_Replacing.zs");
 

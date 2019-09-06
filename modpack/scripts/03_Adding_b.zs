@@ -12,11 +12,6 @@ import mods.actuallyadditions.Crusher;
 
 print("Initializing 03_Adding_b.zs");
 
-#Adding Immersive Hempcraft's stuff
-mods.actuallyadditions.Crusher.addRecipe(<techreborn:dust:63>, <minecraft:stone:1>);
-mods.actuallyadditions.Crusher.addRecipe(<techreborn:dust:62>, <minecraft:stone:3>);
-mods.actuallyadditions.Crusher.addRecipe(<techreborn:dust:61>, <minecraft:stone:5>);
-
 print("Initialized 03_Adding_b.zs");
 
 //File End

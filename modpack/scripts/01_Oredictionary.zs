@@ -32,7 +32,6 @@ crudeOil.add(<immersivepetroleum:fluid_crude_oil>);
 
 #Unifying circuits
 val cirU = <ore:circuitUltimate>;
-cirU.add(<techreborn:part:0>);
 val cirM = <ore:circuitMaster>;
 cirM.add(<mekanism:controlcircuit:3>);
 
@@ -105,12 +104,6 @@ chest.add(<extrautils2:largishchest>);
 chest.add(<forestry:bee_chest>);
 chest.add(<forestry:butterfly_chest>);
 chest.add(<forestry:tree_chest>);
-chest.add(<metalchests:metal_chest:0>);
-chest.add(<metalchests:metal_chest:1>);
-chest.add(<metalchests:metal_chest:2>);
-chest.add(<metalchests:metal_chest:3>);
-chest.add(<metalchests:metal_chest:4>);
-chest.add(<metalchests:metal_chest:5>);
 chest.add(<randomthings:specialchest:0>);
 chest.add(<randomthings:specialchest:1>);
 chest.add(<enderstorage:ender_storage:0>);
@@ -126,37 +119,18 @@ chestE.add(<enderstorage:ender_storage:0>);
 
 #Skull
 val skull = <ore:itemSkull>;
-for item in itemUtils.getItemsByRegexRegistryName("betteranimalsplus:.*head.*"){
-skull.add(item.withDamage(32767));
-}
-for item in itemUtils.getItemsByRegexRegistryName("betteranimalsplus:.*skull.*"){
-skull.add(item.withDamage(32767));
-}
-
-#Dust Ender
-val DustEnder = <ore:dustEnder>;
-DustEnder.add(<techreborn:dust:20>);
-val dustEP = <ore:dustEnderPearl>;
-dustEP.add(<railcraft:dust:6>);
 
 #Dust Nitre
 val dustNitre = <ore:dustNitre>;
 dustNitre.add(<thermalfoundation:material:772>);
-
-#Fixing MatterOverdrive's registration
-val plateT = <ore:plateTritanium>;
-plateT.add(<matteroverdrive:tritanium_plate>);
-
-#Graphite dust
-val dustGraphite = <ore:dustGraphite>;
-dustGraphite.add(<quantumflux:graphitedust>);
+dustNitre.add(<immersiveengineering:material:24>);
+dustNitre.add(<abyssalcraft:nitre>);
 
 #ingotBrick
 val ingotBrick = <ore:ingotBrick>;
 ingotBrick.add(<tconstruct:materials:0>);
 ingotBrick.add(<tconstruct:materials:1>);
 ingotBrick.add(<tconstruct:materials:2>);
-ingotBrick.add(<ceramics:unfired_clay:5>);
 
 #Bitumen
 val crystalCO = <ore:crystalCrudeOil>;
@@ -177,7 +151,16 @@ hardenedLeather.add(<harvestcraft:hardenedleatheritem>);
 
 #Unifying itemRubber
 val rubber = <ore:itemRubber>;
-rubber.add(<mekanism:polyethene:2>);
+val Mrubber = <ore:materialRubber>;
+rubber.remove(<industrialforegoing:plastic>);
+rubber.add(<industrialforegoing:dryrubber>);
+Mrubber.add(<industrialforegoing:dryrubber>);
+
+#Unifying itemPlastic
+val plastic = <ore:itemPlastic>;
+plastic.add(<mekanism:polyethene:2>);
+plastic.add(<industrialforegoing:plastic>);
+plastic.add(<nuclearcraft:part:6>);
 
 #Adding ordictionary to Draconic Evolution's Chaos Shards
 val csTiny = <ore:shardChaosTiny>;
@@ -201,11 +184,9 @@ rabbithide.add(<natura:materials:6>);
 val feather = <ore:feather>;
 feather.add(<exoticbirds:peacock_feather>);
 feather.add(<exoticbirds:phoenix_feather>);
-feather.add(<gravestone-extended:gs_raven_feather>);
 
 #Ordicting bat wings
 val batwing = <ore:wingBat>;
-batwing.add(<gravestone-extended:gs_bat_wing>);
 batwing.add(<actuallyadditions:item_misc:15>);
 batwing.add(<xreliquary:mob_ingredient:5>);
 
@@ -219,11 +200,6 @@ stick.add(<immersiveengineering:material:0>);
 for item in itemUtils.getItemsByRegexRegistryName("pmp:bamb_.*"){
 stick.add(item.withDamage(32767));
 }
-
-val stonemeal = <ore:dustStonemeal>;
-stonemeal.add(<techreborn:dust:61>);
-stonemeal.add(<techreborn:dust:62>);
-stonemeal.add(<techreborn:dust:63>);
 
 #
 //
@@ -249,11 +225,7 @@ vine.add(item.withDamage(32767));
 }
 vine.add(<biomesoplenty:willow_vine>);
 vine.add(<natura:nether_thorn_vines>);
-vine.add(<plants2:adlumia_f>);
-vine.add(<plants2:afgekia_m>);
-vine.add(<plants2:androsace_a>);
-vine.add(<plants2:akebia_q_vine>);
-vine.add(<plants2:ampelopsis_a_vine>);
+
 
 //Adding more registration to food stuff
 #Royal Jelly
@@ -262,23 +234,15 @@ jellyr.add(<harvestcraft:royaljellyitem>);
 
 #Adding more spice
 val spice = <ore:listAllspice>;
-spice.add(<plants2:saffron>);
+
 
 #Adding more veggie
 val veggie = <ore:listAllveggie>;
-veggie.add(<plants2:amaranthus_h>);
-veggie.add(<plants2:okra>);
-veggie.add(<plants2:daucus_c>);
-veggie.add(<plants2:plantago_m>);
-veggie.add(<plants2:alternanthera_f>);
-veggie.add(<plants2:tahitian_spinach>);
+
 
 #Adding more green veggie
 val veggieG = <ore:listAllgreenveggie>;
-veggieG.add(<plants2:okra>);
-veggieG.add(<plants2:plantago_m>);
-veggieG.add(<plants2:alternanthera_f>);
-veggieG.add(<plants2:tahitian_spinach>);
+
 
 #Adding more berries
 val berry = <ore:listAllberry>;
@@ -289,41 +253,12 @@ berry.add(<natura:edibles:5>);
 berry.add(<natura:edibles:6>);
 berry.add(<natura:edibles:7>);
 berry.add(<natura:edibles:8>);
-berry.add(<plants2:phytolacca_a>);
-berry.add(<plants2:rubus_o>);
-berry.add(<plants2:rubus_p>);
-berry.add(<plants2:solanum_c>);
-berry.add(<plants2:solanum_d>);
-berry.add(<plants2:solanum_n>);
-berry.add(<plants2:alyxia_b>);
-berry.add(<plants2:actaea_p>);
-berry.add(<plants2:ampelopsis_a>);
-berry.add(<plants2:blackberry>);
-berry.add(<plants2:blueberry>);
-berry.add(<plants2:raspberry>);
-berry.add(<plants2:huckleberry>);
-berry.add(<plants2:fire_fruit>);
 berry.add(<pmp:berry_straw>);
 berry.add(<biomesoplenty:berries>);
 
 #Adding more fruits
 val fruit = <ore:listAllfruit>;
 fruit.add(<natura:saguaro_fruit_item>);
-fruit.add(<plants2:pineapple>);
-fruit.add(<plants2:phytolacca_a>);
-fruit.add(<plants2:rubus_o>);
-fruit.add(<plants2:rubus_p>);
-fruit.add(<plants2:solanum_c>);
-fruit.add(<plants2:solanum_d>);
-fruit.add(<plants2:solanum_n>);
-fruit.add(<plants2:alyxia_b>);
-fruit.add(<plants2:actaea_p>);
-fruit.add(<plants2:ampelopsis_a>);
-fruit.add(<plants2:blackberry>);
-fruit.add(<plants2:blueberry>);
-fruit.add(<plants2:raspberry>);
-fruit.add(<plants2:huckleberry>);
-fruit.add(<plants2:fire_fruit>);
 fruit.add(<pmp:berry_straw>);
 fruit.add(<pmp:fruit_pinea>);
 fruit.add(<pmp:fruit_prpea>);
@@ -349,23 +284,43 @@ egg.add(<primitivemobs:spider_egg>);
 #Ordicting bird meat
 val listallrawbird = <ore:listAllbirdraw>;
 listallrawbird.add(<exoticbirds:birdmeat:0>);
-listallrawbird.add(<betteranimalsplus:pheasantraw>);
+listallrawbird.add(<mocreatures:turkeyraw>);
+listallrawbird.add(<primitivemobs:dodo>);
 val listallcookedbird = <ore:listAllbirdcooked>;
 listallcookedbird.add(<exoticbirds:cooked_birdmeat>);
-listallcookedbird.add(<betteranimalsplus:pheasantcooked>);
+listallcookedbird.add(<mocreatures:turkeycooked>);
+listallcookedbird.add(<primitivemobs:cooked_dodo>);
+
+#Turkey
+val turkeyraw = <ore:listAllturkeyraw>;
+turkeyraw.add(<mocreatures:turkeyraw>);
+val turkeycooked = <ore:listAllturkeycooked>;
+turkeycooked.add(<mocreatures:turkeycooked>);
+
+#Fish
+val fish = <ore:listAllfishraw>;
+fish.add(<mocreatures:crabraw>);
+val fishcooked = <ore:listAllfishcooked>;
+fishcooked.add(<mocreatures:crabcooked>);
 
 #More generic meat
 val listallrawmeat = <ore:listAllmeatraw>;
 listallrawmeat.add(<exoticbirds:birdmeat>);
-listallrawmeat.add(<cannibalism:playerflesh>);
-listallrawmeat.add(<cannibalism:villagerflesh>);
-listallrawmeat.add(<cannibalism:witchflesh>);
+listallrawmeat.add(<primitivemobs:dodo>);
+listallrawmeat.add(<mocreatures:turtleraw>);
+listallrawmeat.add(<mocreatures:ostrichraw>);
+listallrawmeat.add(<mocreatures:crabraw>);
+listallrawmeat.add(<mocreatures:ratraw>);
+listallrawmeat.add(<mocreatures:turkeyraw>);
 
 #More cooked generic meat
 val listallcookedmeat = <ore:listAllmeatcooked>;
 listallcookedmeat.add(<exoticbirds:cooked_birdmeat>);
-listallcookedmeat.add(<cannibalism:playerfleshcooked>);
-listallcookedmeat.add(<cannibalism:villagerfleshcooked>);
+listallcookedmeat.add(<primitivemobs:cooked_dodo>);
+listallcookedmeat.add(<mocreatures:turkeycooked>);
+listallcookedmeat.add(<mocreatures:ostrichcooked>);
+listallcookedmeat.add(<mocreatures:ratcooked>);
+listallcookedmeat.add(<mocreatures:crabcooked>);
 
 #Oredict seeds
 val seed = <ore:listAllseed>;
@@ -374,10 +329,7 @@ seed.add(<actuallyadditions:item_rice_seed>);
 seed.add(<actuallyadditions:item_coffee_seed>);
 seed.add(<actuallyadditions:item_flax_seed>);
 seed.add(<actuallyadditions:item_canola_seed>);
-seed.add(<plants2:apocynum_c>);
-seed.add(<plants2:pineapple_seeds>);
-seed.add(<plants2:okra_seeds>);
-seed.add(<plants2:amaranthus_h_seeds>);
+
 
 val mushroom = <ore:listAllmushroom>;
 mushroom.add(<biomesoplenty:mushroom:0>);
@@ -405,60 +357,43 @@ cheese.add(<actuallyadditions:item_food:0>);
 
 #Milk 
 val milk = <ore:listAllmilk>;
-milk.add(<betteranimalsplus:goatmilk>);
 
 //The next section adds more crops
 val grape = <ore:cropGrape>;
 grape.add(<pmp:fruit_purgr>);
 
 val okra = <ore:cropOkra>;
-okra.add(<plants2:okra>);
+
 
 val pineapple = <ore:cropPineapple>;
-pineapple.add(<plants2:pineapple>);
+
 
 val carrot = <ore:cropCarrot>;
-carrot.add(<plants2:daucus_c>);
+
 
 val raspberry = <ore:cropRaspberry>;
-raspberry.add(<plants2:rubus_o>);
-raspberry.add(<plants2:rubus_p>);
-raspberry.add(<plants2:raspberry>);
+
 
 val blackberry = <ore:cropBlackberry>;
-blackberry.add(<plants2:blackberry>);
+
 
 val huckleberry = <ore:cropHuckleberry>;
-huckleberry.add(<plants2:huckleberry>);
+
 
 val blueberry = <ore:cropBlueberry>;
-blueberry.add(<plants2:blueberry>);
+
 
 val spinach = <ore:cropSpinach>;
-spinach.add(<plants2:tahitian_spinach>);
+
 
 val cotton = <ore:cropCotton>;
-cotton.add(<plants2:generic:0>);
+
 
 #
 //
 //The following section contains additional registrations for blocks
 //
 #
-
-#Graphite ore
-val oreG = <ore:oreGraphite>;
-oreG.add(<quantumflux:graphiteore>);
-
-#Fixing MatterOverdrive's registration
-val oreT = <ore:oreTritanium>;
-oreT.add(<matteroverdrive:tritanium_ore>);
-
-val oreD = <ore:oreDilithium>;
-oreD.add(<matteroverdrive:dilithium_ore>);
-
-val blockT = <ore:blockTritanium>;
-blockT.add(<matteroverdrive:tritanium_block>);
 
 #Soul sandstone
 val souls = <ore:soulSand>;
@@ -469,18 +404,25 @@ val glassCoulerless = <ore:blockGlassColorless>;
 glassCoulerless.add(<tconstruct:clear_glass>);
 
 val glassHardened = <ore:blockGlassHardened>;
-glassHardened.add(<techreborn:reinforced_glass>);
-glassHardened.add(<railcraft:glass:*>);
+glassHardened.add(<enderio:block_enlightened_fused_quartz>);
+glassHardened.add(<enderio:block_dark_fused_quartz>);
+
+val quartzglass = <ore:glassQuartz>;
+quartzglass.add(<enderio:block_fused_quartz>);
+quartzglass.add(<enderio:block_enlightened_fused_quartz>);
+quartzglass.add(<enderio:block_dark_fused_quartz>);
+quartzglass.add(<appliedenergistics2:quartz_glass>);
+quartzglass.add(<randomthings:quartzglass>);
 
 #Ice
 val ice = <ore:blockIce>;
 ice.add(<minecraft:packed_ice>);
-ice.add(<nex:frostburn_ice>);
+ice.add(<netherex:frostburn_ice>);
 ice.add(<biomesoplenty:hard_ice>);
 ice.add(<nuclearcraft:block_ice>);
 
 val pckice = <ore:blockPackedIce>;
-pckice.add(<nex:frostburn_ice>);
+pckice.add(<netherex:frostburn_ice>);
 pckice.add(<biomesoplenty:hard_ice>);
 pckice.add(<nuclearcraft:block_ice>);
 
@@ -488,21 +430,18 @@ pckice.add(<nuclearcraft:block_ice>);
 val cokeblock = <ore:blockCoke>;
 cokeblock.add(<immersiveengineering:stone_decoration:3>);
 cokeblock.add(<thermalfoundation:storage_resource:1>);
-cokeblock.add(<railcraft:generic:6>);
 for item in itemUtils.getItemsByRegexRegistryName("chisel:block_coal_co.*"){
 cokeblock.add(item.withDamage(32767));
 }
 val cokeblockF = <ore:blockFuelCoke>;
 cokeblockF.add(<immersiveengineering:stone_decoration:3>);
 cokeblockF.add(<thermalfoundation:storage_resource:1>);
-cokeblockF.add(<railcraft:generic:6>);
 for item in itemUtils.getItemsByRegexRegistryName("chisel:block_coal_co.*"){
 cokeblockF.add(item.withDamage(32767));
 }
 val cokeblockC = <ore:blockCoalCoke>;
 cokeblockC.add(<immersiveengineering:stone_decoration:3>);
 cokeblockC.add(<thermalfoundation:storage_resource:1>);
-cokeblockC.add(<railcraft:generic:6>);
 for item in itemUtils.getItemsByRegexRegistryName("chisel:block_coal_co.*"){
 cokeblockC.add(item.withDamage(32767));
 }
@@ -518,14 +457,16 @@ brickblock.add(<unlimitedchiselworks:chisel_bricks_forestry_ash_brick_0:*>);
 brickblock.add(<unlimitedchiselworks:chisel_bricks1_forestry_ash_brick_0:*>);
 brickblock.add(<unlimitedchiselworks:chisel_bricks2_forestry_ash_brick_0:*>);
 brickblock.add(<immersivehempcraft:hempstone_bricks>);
-brickblock.add(<ceramics:clay_hard:*>);
 
 #Ordicting Nether Bricks
 val netherbrick = <ore:bricksNether>;
 netherbrick.add(<minecraft:nether_brick>);
 netherbrick.add(<minecraft:red_nether_brick>);
 netherbrick.add(<chisel:netherbrick:*>);
-netherbrick.add(<nex:nether_brick:*>);
+netherbrick.add(<netherex:fiery_nether_brick:*>);
+netherbrick.add(<netherex:gloomy_nether_brick:*>);
+netherbrick.add(<netherex:lively_nether_brick:*>);
+netherbrick.add(<netherex:icy_nether_brick:*>);
 
 #More Stone Bricks
 val stonebrick = <ore:bricksStone>; //This adds more bricks made of any kind of stone
@@ -539,8 +480,8 @@ stonebrick.add(<appliedenergistics2:sky_stone_brick:*>);
 for item in itemUtils.getItemsByRegexRegistryName("unlimitedchiselworks:chisel_stonebrick.*"){
 stonebrick.add(item.withDamage(32767));
 }
-stonebrick.add(<nex:basalt:2>);
-stonebrick.add(<nex:basalt:3>);
+stonebrick.add(<netherex:basalt_brick>);
+stonebrick.add(<netherex:basalt_pillar>);
 stonebrick.add(<undergroundbiomes:igneous_brick:*>);
 stonebrick.add(<undergroundbiomes:metamorphic_brick:*>);
 
@@ -602,7 +543,7 @@ stone.add(<bloodmagic:demon_extras:6>);
 stone.add(<bloodmagic:demon_extras:7>);
 stone.add(<bloodmagic:demon_extras:8>);
 stone.add(<bloodmagic:demon_extras:9>);
-stone.add(<nex:basalt:0>);
+stone.add(<netherex:basalt>);
 stone.add(<minecraft:stone:1>);
 stone.add(<minecraft:stone:3>);
 stone.add(<minecraft:stone:5>);
@@ -676,7 +617,7 @@ dirt.add(<unlimitedchiselworks:chisel_dirt_biomesoplenty_dirt_2:*>);
 
 val log = <ore:logWood>;
 
-val planks = <ore:planksWood>;
+val planks = <ore:plankWood>;
 planks.add(<immersiveengineering:treated_wood:*>);
 for item in itemUtils.getItemsByRegexRegistryName("unlimitedchiselworks:chisel_planks.*"){
 planks.add(item.withDamage(32767));
@@ -698,9 +639,6 @@ val fencewg = <ore:fenceWoodGate>;
 //The next section removes entries from OreDictionary
 //
 #
-
-val dustQ = <ore:dustQuartz>;
-dustQ.remove(<actuallyadditions:item_dust:5>);
 
 print("Initialized 01_Oredictionary.zs");
 
