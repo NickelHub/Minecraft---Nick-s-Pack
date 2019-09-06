@@ -125,7 +125,6 @@ val skull = <ore:itemSkull>;
 val DustEnder = <ore:dustEnder>;
 DustEnder.add(<techreborn:dust:20>);
 val dustEP = <ore:dustEnderPearl>;
-dustEP.add(<railcraft:dust:6>);
 
 #Fixing MatterOverdrive's registration
 val plateT = <ore:plateTritanium>;
