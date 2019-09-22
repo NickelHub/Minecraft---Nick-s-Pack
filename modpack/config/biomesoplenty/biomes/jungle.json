@@ -1,6 +1,5 @@
 {
-   "canGenerateRivers":false,
-   "averageHeight":65.0,
+   "canGenerateRivers":true,
    "lakes":{
       "liquid":{
          "block":"minecraft:water",

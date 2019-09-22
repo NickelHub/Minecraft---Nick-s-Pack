@@ -1,6 +1,5 @@
 {
    "canGenerateRivers":false,
-   "averageHeight":65.0,
    "lakes":{
       "liquid":{
          "block":"minecraft:water",
@@ -9,7 +8,7 @@
          }
       },
       "amountPerChunk":0.075,
-      "enable":true,
+      "enable":false,
       "frozenLiquid":{
          "block":"minecraft:ice",
          "properties":{
